@@ -5,8 +5,8 @@ from abc import ABC
 import aiofiles
 from playhouse.shortcuts import model_to_dict
 from MagicTestPlatform.handlers import BaseHandler, RedisHandler
-from apps.communities.forms import CommunityGroupForm, GroupApplyForm, PostForm
-from apps.communities.models import CommunityGroup, CommunityGroupMember, Post
+from apps.communities.forms import CommunityGroupForm, GroupApplyForm, PostForm, CommentForm
+from apps.communities.models import CommunityGroup, CommunityGroupMember, Post, PostComment
 from apps.utils.Result import Result
 from apps.utils.async_decorators import authenticated_async
 
@@ -195,3 +195,48 @@ class PostDetailHandler(BaseHandler, RedisHandler, ABC):
             return self.json(Result(code=1, msg="success", data=ret_data))
         except Post.DoesNotExist:
             self.set_status(404)
+
+
+class PostCommentHandler(BaseHandler, RedisHandler, ABC):
+
+    @authenticated_async
+    async def get(self, post_id, *args, **kwargs):
+        ret_data = []
+        try:
+            post = await self.application.objects.get(Post, id=int(post_id))
+            comment_query = PostComment.extend().where(PostComment.post == post, PostComment.parent_comment.is_null(True)).order_by(
+                PostComment.add_time.desc()
+            )
+            post_comments = await self.application.objects.execute(comment_query)
+            for item in post_comments:
+                item_dict = {
+                    'user': model_to_dict(item.user),
+                    'content': item.content,
+                    'reply_nums': item.reply_nums,
+                    'like_nums': item.like_nums,
+                    'id': item.id
+                }
+                ret_data.append(item_dict)
+                return self.json(Result(code=1, msg='success', data=ret_data))
+        except Post.DoestNotExist:
+            self.set_status(404)
+
+    @authenticated_async
+    async def post(self, post_id, *args, **kwargs):
+        params = self.request.body.decode('utf-8')
+        params = json.loads(params)
+        form = CommentForm.from_json(params)
+
+        if form.validate():
+            try:
+                post = await self.application.objects.get(Post, id=int(post_id))
+                comment = await self.application.objects.create(PostComment, user=self.current_user, post=post,
+                                                                content=form.content.data)
+                post.comment_nums += 1
+                await self.application.object.update(post)
+                return self.json(Result(code=1, msg="success", data={"id": comment.id, "user": self.current_user.nick_name}))
+            except Post.DoesNotExist:
+                self.set_status(404)
+        else:
+            self.set_status(400)
+            return self.json(Result(code=10090, msg=form.errors))

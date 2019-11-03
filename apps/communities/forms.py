@@ -21,3 +21,8 @@ class PostForm(Form):
 
     title = StringField("标题", validators=[DataRequired("请输入标题")])
     content = TextAreaField("内容", validators=[DataRequired(message="请输入内容")])
+
+
+class CommentForm(Form):
+
+    content = TextAreaField("评论内容", validators=[DataRequired(message="请输入评论内容")])

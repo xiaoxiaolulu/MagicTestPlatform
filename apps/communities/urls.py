@@ -1,5 +1,5 @@
 from tornado.web import url
-from apps.communities.handlers import GroupHandler, GroupMemberHandler, PostDetailHandler, GroupDetailHandler, PostHandler
+from apps.communities.handlers import GroupHandler, PostCommentHandler, GroupMemberHandler, PostDetailHandler, GroupDetailHandler, PostHandler
 
 
 urlpatterns = [
@@ -8,4 +8,5 @@ urlpatterns = [
     url('/groups/([0-9]+)/member', GroupMemberHandler),
     url('/groups/([0-9]+)/posts', PostHandler),
     url('/posts/([0-9]+)/', PostDetailHandler),
+    url('/posts/([0-9]+)/comments', PostCommentHandler)
 ]
