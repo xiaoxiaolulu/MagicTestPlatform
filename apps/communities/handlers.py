@@ -178,3 +178,20 @@ class PostHandler(BaseHandler, RedisHandler, ABC):
         else:
             self.set_status(400)
             return self.json(Result(code=10090, msg=form.errors))
+
+
+class PostDetailHandler(BaseHandler, RedisHandler, ABC):
+
+    @authenticated_async
+    async def get(self, post_id, *args, **kwargs):
+        ret_data = {}
+        try:
+            posts_query = Post.extend().where(Post.id == int(post_id))
+            posts = await self.application.objects.execute(posts_query)
+            for data in posts:
+                item_dict = dict()
+                item_dict['user'] = model_to_dict(data.user)
+                ret_data.update(item_dict)
+            return self.json(Result(code=1, msg="success", data=ret_data))
+        except Post.DoesNotExist:
+            self.set_status(404)

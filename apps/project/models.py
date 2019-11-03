@@ -24,3 +24,15 @@ class FunctionGenerator(BaseModel):
     @classmethod
     def extend(cls):
         return cls.select(cls, User.id, User.nick_name).join(User)
+
+
+class TestEnvironment(BaseModel):
+
+    name = CharField(max_length=50, null=True, verbose_name="测试环境名称")
+    creator = ForeignKeyField(User, verbose_name="环境创建者")
+    host_address = CharField(max_length=50, null=True, verbose_name="环境地址")
+    desc = TextField(verbose_name="环境描述")
+    
+    @classmethod
+    def extend(cls):
+        return cls.select(cls, User.id, User.nick_name).join(User)

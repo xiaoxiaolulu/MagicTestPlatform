@@ -1,10 +1,4 @@
 
-E
-LehuForum/settings.py,5\7\576ed2663fa6833aab71b86127021bd2f7da4b9a
-E
-LehuForum/handlers.py,4\9\49f24cb6b2df73c35ba622339b0039d0913e3b48
-A
-LehuForum/urls.py,1\8\183a10fca3ff5cbd23c620b7d7954c822efefa86
 F
 apps/users/__init__.py,d\4\d43fd7ebf1a84fbe884753522adb46d8abf75b54
 C
@@ -27,8 +21,6 @@ J
 apps/utils/AsyncYunPian.py,e\0\e03407deb946939d37c72909ddf5d74412216fae
 @
 tools/init_db.py,4\e\4e3aa5199720e5f4617a70b38c3d491c61f8dfe4
-C
-LehuForum/models.py,9\5\95629271f7ca15574d737f43044b9e1fa53f3622
 G
 apps/utils/Exception.py,b\a\baacc2f8151d4c585854d4873426601f46d794e8
 D
@@ -61,3 +53,12 @@ H
 apps/project/__init__.py,0\7\07d04932377e0f3a7b3a8276d20a494713565422
 M
 apps/utils/json_serializer.py,f\6\f64254204bca122f694bcce0978a78f763bb95c1
+I
+MagicTestPlatform/urls.py,4\f\4f492ce187404481d86e37b0c3e4400ba611536c
+M
+MagicTestPlatform/settings.py,2\4\24ad17cda1a6a5eedd6276f5d06ecac7d911ad78
+M
+MagicTestPlatform/handlers.py,e\4\e4a38f84c152abdf0789ef2e9e96557ce90cd60f
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302

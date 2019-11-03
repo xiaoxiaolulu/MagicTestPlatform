@@ -2,8 +2,8 @@ import json
 from abc import ABC
 from playhouse.shortcuts import model_to_dict
 from MagicTestPlatform.handlers import BaseHandler, RedisHandler
-from apps.project.models import Project
-from apps.project.forms import ProjectForm
+from apps.project.models import Project, TestEnvironment
+from apps.project.forms import ProjectForm, TestEnvironmentForm
 from apps.utils.Result import Result
 from apps.utils.async_decorators import authenticated_async
 
@@ -91,6 +91,44 @@ class ProjectChangeHandler(BaseHandler, ABC):
             except Project.DoesNotExist:
                 self.set_status(404)
                 return self.json(Result(code=10020, msg="项目不存在!"))
+
+        else:
+            self.set_status(400)
+            return self.json(Result(code=10090, msg=form.errors))
+
+
+class TestEnvironmentHandler(BaseHandler, ABC):
+
+    @authenticated_async
+    async def get(self, *args, **kwargs):
+        pass
+    
+    @authenticated_async
+    async def post(self, *args, **kwargs):
+
+        param = self.request.body.decode('utf-8')
+        param = json.loads(param)
+        form = TestEnvironmentForm.from_json(param)
+        name = form.name.data
+        host = form.host_address.data
+        desc = form.desc.data
+
+        if name is None:
+            return self.json(Result(code=10080, msg="参数有误, 参数name不可缺少"))
+        if host is None:
+            return self.json(Result(code=10080, msg="参数有误, 参数host不可缺少"))
+        if desc is None:
+            return self.json(Result(code=10080, msg="参数有误, 参数desc不可缺少"))
+
+        if form.validate():
+            try:
+                existed_environment = await self.application.objects.get(Project, name=name)
+                return self.json(
+                    Result(code=10020, msg='这个测试环境已经被创建！'))
+
+            except TestEnvironment.DoesNotExist:
+                environment = await self.application.objects.create(TestEnvironment, name=name, host_address=host, desc=desc, creator=self.current_user)
+                return self.json(Result(code=1, msg="创建测试环境成功!", data={"EnvironmentId": TestEnvironment.id}))
 
         else:
             self.set_status(400)
