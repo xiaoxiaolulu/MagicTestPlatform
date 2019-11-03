@@ -1,0 +1,11 @@
+aiofiles
+requests==2.18.4
+wtforms_tornado==0.0.2
+tornado==6.0.3
+WTForms==2.2.1
+peewee_async==0.5.12
+redis==3.2.0
+peewee==2.10.2
+WTForms_JSON==0.3.3
+python_bcrypt==0.3.2
+PyJWT==1.7.1
