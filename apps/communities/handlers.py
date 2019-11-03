@@ -119,7 +119,40 @@ class PostHandler(BaseHandler, RedisHandler, ABC):
 
     @authenticated_async
     async def get(self, group_id, *args, **kwargs):
-        pass
+        ret_data = []
+        try:
+            group = await self.application.objects.get(CommunityGroup, id=int(group_id))
+            group_member = await self.application.objects.get(CommunityGroupMember, group=group, user=self.current_user,
+                                                              status='agree')
+
+            post_query = Post.extend()
+
+            # 排序
+            order = self.get_argument('order', None)
+            if order:
+                if order == '-add_time':
+                    post_query = post_query.order_by(Post.add_time.desc())
+
+            posts = await self.application.objects.execute(post_query)
+            for post in posts:
+                item_dict = {
+                    'id': post.id,
+                    'title': post.title,
+                    'content': post.content,
+                    'comment_nums': post.comment_nums,
+                    'user': {
+                        'id': post.user.id,
+                        'nick_name': post.user.nick_name
+                    }
+                }
+                ret_data.append(item_dict)
+
+            return self.json(Result(code=1, msg="success", data=ret_data))
+
+        except CommunityGroup.DoesNotExist:
+            self.set_status(404)
+        except CommunityGroupMember.DoesNotExist:
+            self.set_status(403)
 
     @authenticated_async
     async def post(self, group_id, *args, **kwargs):

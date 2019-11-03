@@ -46,6 +46,10 @@ class Post(BaseModel):
     is_hot = BooleanField(default=0, verbose_name="是否热门")
     content = TextField(verbose_name="内容")
 
+    @classmethod
+    def extend(cls):
+        return cls.select(cls, User.id, User.nick_name).join(User)
+
 
 class PostComment(BaseModel):
 
