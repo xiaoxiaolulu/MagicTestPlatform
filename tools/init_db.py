@@ -1,5 +1,5 @@
 from peewee import MySQLDatabase
-from apps.communities.models import CommunityGroup, CommunityGroupMember
+from apps.communities.models import CommunityGroup, CommunityGroupMember, PostComment, Post
 from apps.project.models import Project, FunctionGenerator
 from apps.users.models import User
 from MagicTestPlatform.settings import database, settings
@@ -13,8 +13,8 @@ database = MySQLDatabase(
 
 def init():
     # database.create_tables([User, ])
-    # database.create_tables([CommunityGroup, CommunityGroupMember])
-    database.create_tables([Project, FunctionGenerator])
+    database.create_tables([CommunityGroup, CommunityGroupMember, Post, PostComment])
+    # database.create_tables([Project, FunctionGenerator])
 
 
 if __name__ == '__main__':

@@ -5,8 +5,8 @@ from abc import ABC
 import aiofiles
 from playhouse.shortcuts import model_to_dict
 from MagicTestPlatform.handlers import BaseHandler, RedisHandler
-from apps.communities.forms import CommunityGroupForm, GroupApplyForm
-from apps.communities.models import CommunityGroup, CommunityGroupMember
+from apps.communities.forms import CommunityGroupForm, GroupApplyForm, PostForm
+from apps.communities.models import CommunityGroup, CommunityGroupMember, Post
 from apps.utils.Result import Result
 from apps.utils.async_decorators import authenticated_async
 
@@ -91,6 +91,57 @@ class GroupMemberHandler(BaseHandler, RedisHandler, ABC):
                     apply_reason=form.apply_reason.data
                 )
                 return self.json(Result(code=1, msg="创建小组成功", data={"id": group_members.id}))
+        else:
+            self.set_status(400)
+            return self.json(Result(code=10090, msg=form.errors))
+
+
+class GroupDetailHandler(BaseHandler, RedisHandler, ABC):
+
+    @authenticated_async
+    async def get(self, group_id, *args, **kwargs):
+        try:
+            group = await self.application.objects.get(CommunityGroup, id=int(group_id))
+            item_dict = dict()
+            item_dict['name'] = group.name
+            item_dict['id'] = group.id
+            item_dict['desc'] = group.desc
+            item_dict['notice'] = group.notice
+            item_dict['member_nums'] = group.member_nums
+            item_dict['post_nums'] = group.post_nums
+            item_dict['cover'] = '{}/media/{}'.format(self.settings['SITE_URL'], group.cover)
+            self.json(Result(code=1, msg="success", data=item_dict))
+        except CommunityGroup.DoesNotExist:
+            self.set_status(404)
+
+
+class PostHandler(BaseHandler, RedisHandler, ABC):
+
+    @authenticated_async
+    async def get(self, group_id, *args, **kwargs):
+        pass
+
+    @authenticated_async
+    async def post(self, group_id, *args, **kwargs):
+        params = self.request.body.decode('utf-8')
+        params = json.loads(params)
+        form = PostForm.from_json(params)
+
+        if form.validate():
+
+            try:
+                group = await self.application.objects.get(CommunityGroup, id=int(group_id))
+                group_member = await self.application.objects.get(CommunityGroupMember, group=group, user=self.current_user, status='agree')
+
+                post = await self.application.objects.create(Post,
+                                                             group=group, user=self.current_user,
+                                                             title=form.title.data,
+                                                             content=form.content.data)
+                return self.json(Result(code=1, msg="success", data={"id": post.id}))
+            except CommunityGroup.DoesNotExist:
+                self.set_status(404)
+            except CommunityGroupMember.DoesNotExist:
+                self.set_status(403)
         else:
             self.set_status(400)
             return self.json(Result(code=10090, msg=form.errors))

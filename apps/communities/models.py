@@ -34,3 +34,31 @@ class CommunityGroupMember(BaseModel):
     handler_msg = CharField(max_length=200, null=True, verbose_name="处理内容")
     apply_reason = CharField(max_length=200, verbose_name="申请理由")
     handler_time = DateTimeField(default=datetime.now(), verbose_name="加入时间")
+
+
+class Post(BaseModel):
+    
+    user = ForeignKeyField(User, verbose_name="用户")
+    title = CharField(max_length=200, verbose_name="标题", null=True)
+    group = ForeignKeyField(CommunityGroup, verbose_name="小组")
+    comment_nums = IntegerField(default=0, verbose_name="评论数")
+    is_excellent = BooleanField(default=0, verbose_name="是否精华")
+    is_hot = BooleanField(default=0, verbose_name="是否热门")
+    content = TextField(verbose_name="内容")
+
+
+class PostComment(BaseModel):
+
+    user = ForeignKeyField(User, verbose_name="用户", related_name="author")
+    post = ForeignKeyField(Post, null=True, verbose_name="帖子")
+    parent_comment = ForeignKeyField("self", null=True, verbose_name="评论", related_name="comments_parent")
+    reply_user = ForeignKeyField(User, verbose_name="用户", related_name="replyed_author", null=True)
+    content = CharField(max_length=1000, verbose_name="内容")
+    reply_nums = IntegerField(default=True, verbose_name="回复数")
+    like_nums = IntegerField(default=0, verbose_name="点赞数")
+
+
+class CommentLike(BaseModel):
+
+    user = ForeignKeyField(User, verbose_name="用户")
+    post_comment = ForeignKeyField(PostComment, verbose_name="评论或回复")
