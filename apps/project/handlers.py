@@ -101,8 +101,24 @@ class TestEnvironmentHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def get(self, *args, **kwargs):
-        pass
-    
+        ret_data = []
+        environment_query = TestEnvironment.extend()
+
+        # 根据环境名过滤
+        name = self.get_argument('name', None)
+        if name is not None:
+            environment_query = environment_query.filter(TestEnvironment.name == name)
+
+        # 默认排序规则
+        environment_query = environment_query.order_by(TestEnvironment.add_time.desc())
+
+        environments = await self.application.objects.execute(environment_query)
+        for environment in environments:
+            environment_dict = model_to_dict(environment)
+            ret_data.append(environment_dict)
+
+        return self.json(Result(code=1, msg="测试环境数据查询成功!", data=ret_data))
+
     @authenticated_async
     async def post(self, *args, **kwargs):
 
@@ -128,7 +144,7 @@ class TestEnvironmentHandler(BaseHandler, ABC):
 
             except TestEnvironment.DoesNotExist:
                 environment = await self.application.objects.create(TestEnvironment, name=name, host_address=host, desc=desc, creator=self.current_user)
-                return self.json(Result(code=1, msg="创建测试环境成功!", data={"EnvironmentId": TestEnvironment.id}))
+                return self.json(Result(code=1, msg="创建测试环境成功!", data={"EnvironmentId": environment.id}))
 
         else:
             self.set_status(400)
