@@ -39,11 +39,6 @@ class ProjectHandler(BaseHandler, ABC):
         name = form.name.data
         desc = form.desc.data
 
-        if name is None:
-            return self.json(Result(code=10080, msg="参数有误, 参数name不可缺少"))
-        if desc is None:
-            return self.json(Result(code=10080, msg="参数有误, 参数desc不可缺少"))
-
         if form.validate():
             try:
                 existed_project = await self.application.objects.get(Project, name=name)
@@ -128,13 +123,6 @@ class TestEnvironmentHandler(BaseHandler, ABC):
         name = form.name.data
         host = form.host_address.data
         desc = form.desc.data
-
-        if name is None:
-            return self.json(Result(code=10080, msg="参数有误, 参数name不可缺少"))
-        if host is None:
-            return self.json(Result(code=10080, msg="参数有误, 参数host不可缺少"))
-        if desc is None:
-            return self.json(Result(code=10080, msg="参数有误, 参数desc不可缺少"))
 
         if form.validate():
             try:

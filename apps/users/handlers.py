@@ -53,16 +53,6 @@ class RegisterHandler(BaseHandler, RedisHandler, ABC):
         code = form.code.data
         password = form.password.data
 
-        if account is None:
-            return self.json(
-                Result(code=10080, msg="参数有误, 不可缺少account参数"))
-        if code is None:
-            return self.json(
-                Result(code=10080, msg="参数有误, 不可缺少code参数"))
-        if password is None:
-            return self.json(
-                Result(code=10080, msg="参数有误, 不可缺少password参数"))
-
         if form.validate():
             if not self.redis_conn.get(f'{account}_{code}'):
                 return self.json(
@@ -91,16 +81,6 @@ class LoginHandler(BaseHandler, RedisHandler, ABC):
         form = LoginForm.from_json(param)
         account = form.account.data
         password = form.password.data
-
-        if account is None:
-            return self.json(
-                Result(code=10080, msg="参数有误, 不可缺少account字段")
-            )
-
-        if password is None:
-            return self.json(
-                Result(code=10080, msg="参数有误, 不可缺少password字段")
-            )
 
         if form.validate():
 
@@ -146,16 +126,6 @@ class RestPasswordHandler(BaseHandler, RedisHandler, ABC):
         form = RestPasswordForm.from_json(param)
         account = form.account.data
         password = form.password.data
-
-        if account is None:
-            self.json(
-                Result(code=10080, msg="参数有误, 不可缺少account参数.")
-            )
-
-        if password is None:
-            self.json(
-                Result(code=10080, msg="参数有误, 不可缺少password参数.")
-            )
 
         if form.validate():
 
