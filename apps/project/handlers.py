@@ -1,9 +1,10 @@
 import json
 from abc import ABC
+import paramiko
 from playhouse.shortcuts import model_to_dict
 from MagicTestPlatform.handlers import BaseHandler, RedisHandler
-from apps.project.models import Project, TestEnvironment, DBSetting
-from apps.project.forms import ProjectForm, TestEnvironmentForm, DBSettingForm
+from apps.project.models import Project, TestEnvironment, DBSetting, FunctionGenerator
+from apps.project.forms import ProjectForm, TestEnvironmentForm, DBSettingForm, FunctionDebugForm, FunctionGeneratorForm
 from apps.utils.Result import Result
 from apps.utils.async_decorators import authenticated_async
 
@@ -284,14 +285,127 @@ class DbSettingChangeHandler(BaseHandler, ABC):
 
 class FunctionDebugHandler(BaseHandler, ABC):
 
-    pass
+    @staticmethod
+    def python_running_env(code):
+
+        def sftp_exec_command(ssh_client, command):
+            try:
+                std_in, std_out, std_err = ssh_client.exec_command(command, timeout=4)
+                out = "".join([line for line in std_out])
+                return out
+            except Exception as e:
+                print(e)
+            return None
+
+        ssh_client = paramiko.SSHClient()
+        ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        ssh_client.connect('172.81.242.70', 22, 'root', 'bubai.4393,')
+        sftp_exec_command(ssh_client, "touch test.py")
+        sftp_exec_command(ssh_client, f"echo \"{code}\" > test.py")
+        response = sftp_exec_command(ssh_client, "python test.py")
+        sftp_exec_command(ssh_client, "rm -rf test.py")
+        ssh_client.close()
+        return response
+
+    def post(self, *args, **kwargs):
+        param = self.request.body.decode('utf-8')
+        param = json.loads(param)
+        form = FunctionDebugForm.from_json(param)
+
+        if form.validate():
+            code = form.function.data
+            result = self.python_running_env(code)
+
+            return self.json(Result(code=1, msg='success', data={'RunningRes': result}))
+        else:
+            self.set_status(400)
+            return self.json(Result(code=10090, msg=form.errors))
 
 
 class FunctionHandler(BaseHandler, ABC):
 
-    pass
+    @authenticated_async
+    async def get(self, *args, **kwargs):
+        ret_data = []
+        function_query = FunctionGenerator.extend()
+
+        # 根据方法名过滤
+        name = self.get_argument('name', None)
+        if name is not None:
+            function_query = function_query.filter(FunctionGenerator.name == name)
+
+        # 默认排序规则
+        function_query = function_query.order_by(FunctionGenerator.add_time.desc())
+
+        functions = await self.application.objects.execute(function_query)
+        for func in functions:
+            func_dict = model_to_dict(func)
+            ret_data.append(func_dict)
+
+        return self.json(Result(code=1, msg="函数方法数据查询成功!", data=ret_data))
+
+    @authenticated_async
+    async def post(self, *args, **kwargs):
+
+        param = self.request.body.decode('utf-8')
+        param = json.loads(param)
+        form = FunctionGeneratorForm.from_json(param)
+        name = form.name.data
+        function = form.function.data
+        desc = form.desc.data
+
+        if form.validate():
+            try:
+                existed_function = await self.application.objects.get(FunctionGenerator, name=name)
+                return self.json(
+                    Result(code=10020, msg='这个函数方法已经被创建！'))
+
+            except FunctionGenerator.DoesNotExist:
+                function = await self.application.objects.create(FunctionGenerator, name=name, desc=desc,
+                                                                 function=function, creator=self.current_user)
+                return self.json(Result(code=1, msg="创建函数方法成功!", data={"functionId": function.id}))
+
+        else:
+            self.set_status(400)
+            return self.json(Result(code=10090, msg=form.errors))
 
 
 class FunctionChangeHandler(BaseHandler, ABC):
 
-    pass
+    @authenticated_async
+    async def delete(self, function_id, *args, **kwargs):
+        try:
+            function = await self.application.objects.get(FunctionGenerator, id=int(function_id))
+            await self.application.objects.delete(function)
+            return self.json(Result(code=1, msg="函数方法删除成功!", data={"functionId": function_id}))
+        except FunctionGenerator.DoesNotExist:
+            self.set_status(400)
+            return self.json(Result(code=10020, msg="该函数方法尚未创建!"))
+
+    @authenticated_async
+    async def patch(self, function_id, *args, **kwargs):
+
+        param = self.request.body.decode('utf-8')
+        param = json.loads(param)
+        form = FunctionGeneratorForm.from_json(param)
+
+        if form.validate():
+            name = form.name.data
+            function = form.function.data
+            desc = form.desc.data
+
+            try:
+                existed_function = await self.application.objects.get(FunctionGenerator, id=int(function_id))
+                existed_function.name = name
+                existed_function.function = function
+                existed_function.desc = desc
+                await self.application.objects.update(existed_function)
+                return self.json(Result(code=1, msg="函数方法更新成功!", data={"id": function_id}))
+
+            except FunctionGenerator.DoesNotExist:
+                self.set_status(404)
+                return self.json(Result(code=10020, msg="该函数方法不存在!"))
+
+        else:
+            self.set_status(400)
+            return self.json(Result(code=10090, msg=form.errors))

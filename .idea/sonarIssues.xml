@@ -213,12 +213,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/hello.py">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/requirements.txt">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/server.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/test.json">
           <value>
             <set />
           </value>

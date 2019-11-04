@@ -26,3 +26,13 @@ class DBSettingForm(Form):
     db_port = IntegerField("数据库端口号", validators=[DataRequired("请输入数据库端口号")])
     desc = TextAreaField("数据库描述", validators=[DataRequired(message="请输入数据库描述")])
 
+
+class FunctionGeneratorForm(Form):
+
+    name = StringField("函数名称", validators=[DataRequired("请输入函数名称")])
+    function = StringField("函数方法", validators=[DataRequired("请输入方法名称")])
+    desc = TextAreaField("方法描述", validators=[DataRequired(message="请输入方法描述")])
+
+
+class FunctionDebugForm(Form):
+    function = StringField("函数方法", validators=[DataRequired("请输入方法名称")])
