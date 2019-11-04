@@ -36,3 +36,19 @@ class TestEnvironment(BaseModel):
     @classmethod
     def extend(cls):
         return cls.select(cls, User.id, User.nick_name).join(User)
+
+
+class DBSetting(BaseModel):
+    
+    name = CharField(max_length=50, null=True, verbose_name="数据库名称")
+    creator = ForeignKeyField(User, verbose_name="数据库创建者")
+    db_type = CharField(max_length=20, null=True, verbose_name="数据库类型")
+    db_user = CharField(max_length=20, null=True, verbose_name='数据库账号')
+    db_password = CharField(max_length=30, null=True, verbose_name="数据库密码")
+    db_host = CharField(max_length=30, null=True, verbose_name="数据库地址")
+    db_port = IntegerField(null=True, verbose_name="数据库端口号")
+    desc = TextField(verbose_name="数据库描述")
+    
+    @classmethod
+    def extend(cls):
+        return cls.select(cls, User.id, User.nick_name).join(User)
