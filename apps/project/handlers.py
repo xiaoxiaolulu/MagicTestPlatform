@@ -126,7 +126,7 @@ class TestEnvironmentHandler(BaseHandler, ABC):
 
         if form.validate():
             try:
-                existed_environment = await self.application.objects.get(Project, name=name)
+                existed_environment = await self.application.objects.get(TestEnvironment, name=name)
                 return self.json(
                     Result(code=10020, msg='这个测试环境已经被创建！'))
 

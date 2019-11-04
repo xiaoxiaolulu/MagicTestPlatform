@@ -5,6 +5,6 @@ from apps.project.handlers import (
 urlpatterns = [
     url('/projects/', ProjectHandler),
     url("/projects/([0-9]+)/", ProjectChangeHandler),
-    url('/test_env/', TestEnvironmentHandler),
-    url("/test_env/([0-9]+)/", TestEnvironmentChangeHandler),
+    url('/test_envs/', TestEnvironmentHandler),
+    url("/test_envs/([0-9]+)/", TestEnvironmentChangeHandler),
 ]
