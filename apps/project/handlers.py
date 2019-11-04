@@ -139,6 +139,47 @@ class TestEnvironmentHandler(BaseHandler, ABC):
             return self.json(Result(code=10090, msg=form.errors))
 
 
+class TestEnvironmentChangeHandler(BaseHandler, ABC):
+
+    @authenticated_async
+    async def delete(self, environment_id, *args, **kwargs):
+        try:
+            environment = await self.application.objects.get(TestEnvironment, id=int(environment_id))
+            await self.application.objects.delete(environment)
+            return self.json(Result(code=1, msg="测试环境删除成功!", data={"id": environment_id}))
+        except TestEnvironment.DoesNotExist:
+            self.set_status(400)
+            return self.json(Result(code=10020, msg="该环境尚未创建!"))
+
+    @authenticated_async
+    async def patch(self, environment_id, *args, **kwargs):
+
+        param = self.request.body.decode('utf-8')
+        param = json.loads(param)
+        form = TestEnvironmentForm.from_json(param)
+
+        if form.validate():
+            name = form.name.data
+            host = form.host_address.data
+            desc = form.desc.data
+
+            try:
+                existed_environment = await self.application.objects.get(TestEnvironment, id=int(environment_id))
+                existed_environment.name = name
+                existed_environment.host = host
+                existed_environment.desc = desc
+                await self.application.objects.update(existed_environment)
+                return self.json(Result(code=1, msg="环境更新成功!", data={"id": environment_id}))
+
+            except TestEnvironment.DoesNotExist:
+                self.set_status(404)
+                return self.json(Result(code=10020, msg="该环境不存在!"))
+
+        else:
+            self.set_status(400)
+            return self.json(Result(code=10090, msg=form.errors))
+
+
 class FunctionDebugHandler(BaseHandler, ABC):
 
     pass

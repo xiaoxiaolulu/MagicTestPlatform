@@ -2,7 +2,6 @@ import json
 from abc import ABC
 import redis
 from tornado.web import RequestHandler
-
 from apps.utils.json_serializer import json_serializer
 
 
