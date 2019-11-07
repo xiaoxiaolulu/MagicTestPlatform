@@ -1,3 +1,20 @@
+"""
+    项目管理模块
+    ———————
+            |
+            |---内置函数
+            |
+            |---项目配置
+            |
+            |---数据库配置
+            |
+            |---环境配置
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    DESCRIPTION
+
+    :copyright: (c) 2019 by Null.
+"""
 import json
 from abc import ABC
 import paramiko
@@ -13,6 +30,9 @@ class ProjectHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def get(self, *args, **kwargs):
+        """
+        项目数据查询
+        """
         ret_data = []
         project_query = Project.extend()
 
@@ -25,7 +45,6 @@ class ProjectHandler(BaseHandler, ABC):
         project_query = project_query.order_by(-Project.add_time)
         projects = await self.application.objects.execute(project_query)
         for project in projects:
-            pass
             project_dict = model_to_dict(project)
             ret_data.append(project_dict)
 
@@ -33,6 +52,9 @@ class ProjectHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def post(self, *args, **kwargs):
+        """
+        新增项目数据
+        """
 
         param = self.request.body.decode('utf-8')
         param = json.loads(param)
@@ -59,6 +81,10 @@ class ProjectChangeHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def delete(self, project_id, *args, **kwargs):
+        """
+        删除项目数据
+        :param project_id: 删除的项目id
+        """
         try:
             project = await self.application.objects.get(Project, id=int(project_id))
             await self.application.objects.delete(project)
@@ -69,6 +95,10 @@ class ProjectChangeHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def patch(self, project_id, *args, **kwargs):
+        """
+        更新项目数据
+        :param project_id: 更新的项目id
+        """
 
         param = self.request.body.decode('utf-8')
         param = json.loads(param)
@@ -97,6 +127,9 @@ class TestEnvironmentHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def get(self, *args, **kwargs):
+        """
+        获取测试环境列表数据
+        """
         ret_data = []
         environment_query = TestEnvironment.extend()
 
@@ -117,6 +150,9 @@ class TestEnvironmentHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def post(self, *args, **kwargs):
+        """
+        新增测试环境数据
+        """
 
         param = self.request.body.decode('utf-8')
         param = json.loads(param)
@@ -144,6 +180,10 @@ class TestEnvironmentChangeHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def delete(self, environment_id, *args, **kwargs):
+        """
+        删除测试环境数据
+        :param environment_id: 删除环境的id
+        """
         try:
             environment = await self.application.objects.get(TestEnvironment, id=int(environment_id))
             await self.application.objects.delete(environment)
@@ -154,6 +194,10 @@ class TestEnvironmentChangeHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def patch(self, environment_id, *args, **kwargs):
+        """
+        更新测试环境数据
+        :param environment_id: 更新的测试环境id
+        """
 
         param = self.request.body.decode('utf-8')
         param = json.loads(param)
@@ -185,6 +229,9 @@ class DbSettingHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def get(self, *args, **kwargs):
+        """
+        获取数据库配置列表数据
+        """
         ret_data = []
         db_query = DBSetting.extend()
 
@@ -205,6 +252,9 @@ class DbSettingHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def post(self, *args, **kwargs):
+        """
+        更新数据库配置数据
+        """
 
         param = self.request.body.decode('utf-8')
         param = json.loads(param)
@@ -238,6 +288,10 @@ class DbSettingChangeHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def delete(self, db_id, *args, **kwargs):
+        """
+        删除数据库配置
+        :param db_id: 删除的配置数据库id
+        """
         try:
             db = await self.application.objects.get(DBSetting, id=int(db_id))
             await self.application.objects.delete(db)
@@ -248,6 +302,10 @@ class DbSettingChangeHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def patch(self, db_id, *args, **kwargs):
+        """
+        更新数据配置
+        :param db_id: 更新的配置数据库id
+        """
 
         param = self.request.body.decode('utf-8')
         param = json.loads(param)
@@ -287,6 +345,10 @@ class FunctionDebugHandler(BaseHandler, ABC):
 
     @staticmethod
     def python_running_env(code):
+        """
+        python 代码运行环境
+        :param code: python代码
+        """
 
         def sftp_exec_command(ssh_client, command):
             try:
@@ -308,6 +370,9 @@ class FunctionDebugHandler(BaseHandler, ABC):
         return response
 
     def post(self, *args, **kwargs):
+        """
+        内置函数-自定义python解释器, 并提供代码运行环境用于debug
+        """
         param = self.request.body.decode('utf-8')
         param = json.loads(param)
         form = FunctionDebugForm.from_json(param)
@@ -326,6 +391,9 @@ class FunctionHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def get(self, *args, **kwargs):
+        """
+        获取内置函数列表
+        """
         ret_data = []
         function_query = FunctionGenerator.extend()
 
@@ -346,6 +414,9 @@ class FunctionHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def post(self, *args, **kwargs):
+        """
+        增加内置函数数据
+        """
 
         param = self.request.body.decode('utf-8')
         param = json.loads(param)
@@ -374,6 +445,10 @@ class FunctionChangeHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def delete(self, function_id, *args, **kwargs):
+        """
+        删除内置函数数据
+        :param function_id: 删除内置函数数据id
+        """
         try:
             function = await self.application.objects.get(FunctionGenerator, id=int(function_id))
             await self.application.objects.delete(function)
@@ -384,6 +459,10 @@ class FunctionChangeHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def patch(self, function_id, *args, **kwargs):
+        """
+        更新内置函数数据
+        :param function_id: 更新内置函数数据的id
+        """
 
         param = self.request.body.decode('utf-8')
         param = json.loads(param)
@@ -409,3 +488,39 @@ class FunctionChangeHandler(BaseHandler, ABC):
         else:
             self.set_status(400)
             return self.json(Result(code=10090, msg=form.errors))
+
+
+class SearchTestEnvNameHandler(BaseHandler, ABC):
+
+    def get(self, *args, **kwargs):
+        """
+        检索出所有环境配置的名称
+        """
+        pass
+
+
+class SearchDataBaseNameHandler(BaseHandler, ABC):
+
+    def get(self, *args, **kwargs):
+        """
+        检索出所有数据库配置的名称
+        """
+        pass
+
+
+class GetTestEnvIdByTestEnvNameHandler(BaseHandler, ABC):
+
+    def get(self, *args, **kwargs):
+        """
+        根据环境名获取对应id
+        """
+        pass
+
+
+class GetDataBaseIdByDataBaseNameHandler(BaseHandler, ABC):
+
+    def get(self, *args, **kwargs):
+        """
+        根据数据库配置名获取对应id
+        """
+        pass
