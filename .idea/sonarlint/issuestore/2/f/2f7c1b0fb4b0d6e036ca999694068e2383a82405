@@ -1,3 +1,5 @@
 
-Ppython:S1481,"3Remove the unused local variable "existed_project".(·‰Êøÿÿÿÿ
-\python:S1481"7Remove the unused local variable "existed_environment".(ıÇñÆúÿÿÿÿ8µÑºŒã-
+Ppython:S1481."3Remove the unused local variable "existed_project".(·‰Êøÿÿÿÿ
+Ypython:S1481è"4Remove the unused local variable "existed_function".(™ßÆéüÿÿÿÿ8”Ÿôã-
+Npython:S1481ß".Remove the unused local variable "existed_db".(í™Î›8”Ÿôã-
+Wpython:S1481ƒ"7Remove the unused local variable "existed_environment".(æÅ—8”Ÿôã-

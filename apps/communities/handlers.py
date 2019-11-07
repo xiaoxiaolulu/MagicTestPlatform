@@ -8,7 +8,7 @@ from MagicTestPlatform.handlers import BaseHandler, RedisHandler
 from apps.communities.forms import CommunityGroupForm, GroupApplyForm, PostForm, CommentForm
 from apps.communities.models import CommunityGroup, CommunityGroupMember, Post, PostComment
 from apps.utils.Result import Result
-from apps.utils.async_decorators import authenticated_async
+from apps.utils.wrappers import authenticated_async
 
 
 class GroupHandler(BaseHandler, RedisHandler, ABC):

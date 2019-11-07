@@ -6,7 +6,7 @@ from MagicTestPlatform.handlers import BaseHandler, RedisHandler
 from apps.project.models import Project, TestEnvironment, DBSetting, FunctionGenerator
 from apps.project.forms import ProjectForm, TestEnvironmentForm, DBSettingForm, FunctionDebugForm, FunctionGeneratorForm
 from apps.utils.Result import Result
-from apps.utils.async_decorators import authenticated_async
+from apps.utils.wrappers import authenticated_async
 
 
 class ProjectHandler(BaseHandler, ABC):
@@ -22,10 +22,10 @@ class ProjectHandler(BaseHandler, ABC):
             project_query = project_query.filter(Project.name == name)
 
         # 默认排序规则
-        project_query = project_query.order_by(Project.add_time.desc())
-
+        project_query = project_query.order_by(-Project.add_time)
         projects = await self.application.objects.execute(project_query)
         for project in projects:
+            pass
             project_dict = model_to_dict(project)
             ret_data.append(project_dict)
 

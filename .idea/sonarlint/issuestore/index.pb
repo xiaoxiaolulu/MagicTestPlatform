@@ -17,12 +17,8 @@ G
 apps/questions/forms.py,d\4\d41cc58afcde9ab69fb3b7547ea388a94a34b0f4
 I
 apps/communities/forms.py,3\c\3c52f6b57478b551fca58099831742a6675ea86d
-J
-apps/utils/AsyncYunPian.py,e\0\e03407deb946939d37c72909ddf5d74412216fae
 @
 tools/init_db.py,4\e\4e3aa5199720e5f4617a70b38c3d491c61f8dfe4
-G
-apps/utils/Exception.py,b\a\baacc2f8151d4c585854d4873426601f46d794e8
 D
 apps/utils/Result.py,8\c\8c3927f09ddb9f9cd418d4905f663794268966d4
 J
@@ -31,8 +27,6 @@ L
 apps/communities/handlers.py,a\7\a7007240998248def4882097fbf479c4a9b516cd
 H
 apps/communities/urls.py,4\a\4a542f41ad6eb3cfe13dc0643e89e7c72a1523cb
-N
-apps/utils/async_decorators.py,8\4\84d3f4d64bafce253825ee84b570bd8bc434a2b9
 I
 apps/communities/tests.py,e\d\ed1ff2134736f0baed445fc6d11a4160282cc63b
 @

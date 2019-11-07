@@ -17,11 +17,12 @@ def authenticated_async(method):
                     user = await self.application.objects.get(User, id=user_id)
                     self._current_user = user
                     await method(self, *args, **kwargs)
-                except User.DoesNotExist as e:
+                except User.DoesNotExist:
                     self.set_status(401)
-            except jwt.ExpiredSignatureError as e:
+            except jwt.ExpiredSignatureError:
                 self.set_status(401)
         else:
             self.set_status(401)
             self.finish({})
     return wrapper
+

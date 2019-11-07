@@ -88,6 +88,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/MagicTestPlatform/urls.py">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/README.md">
           <value>
             <set />
@@ -148,6 +153,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/apps/test_tools/handlers.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/apps/test_tools/urls.py">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/apps/users/__init__.py">
           <value>
             <set />
@@ -198,6 +213,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/apps/utils/Recursion.py">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/apps/utils/Result.py">
           <value>
             <set />
@@ -209,6 +229,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/apps/utils/async_decorators.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/apps/utils/http_keywords.py">
           <value>
             <set />
           </value>

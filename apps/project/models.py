@@ -3,17 +3,6 @@ from MagicTestPlatform.models import BaseModel
 from apps.users.models import User
 
 
-class Project(BaseModel):
-
-    name = CharField(max_length=50, null=True, verbose_name="名称")
-    creator = ForeignKeyField(User, verbose_name="创建者")
-    desc = TextField(verbose_name="描述")
-
-    @classmethod
-    def extend(cls):
-        return cls.select(cls, User.id, User.nick_name).join(User)
-
-
 class FunctionGenerator(BaseModel):
 
     name = CharField(max_length=50, null=True, verbose_name="名称")
@@ -32,14 +21,14 @@ class TestEnvironment(BaseModel):
     creator = ForeignKeyField(User, verbose_name="环境创建者")
     host_address = CharField(max_length=50, null=True, verbose_name="环境地址")
     desc = TextField(verbose_name="环境描述")
-    
+
     @classmethod
     def extend(cls):
         return cls.select(cls, User.id, User.nick_name).join(User)
 
 
 class DBSetting(BaseModel):
-    
+
     name = CharField(max_length=50, null=True, verbose_name="数据库名称")
     creator = ForeignKeyField(User, verbose_name="数据库创建者")
     db_type = CharField(max_length=20, null=True, verbose_name="数据库类型")
@@ -48,7 +37,34 @@ class DBSetting(BaseModel):
     db_host = CharField(max_length=30, null=True, verbose_name="数据库地址")
     db_port = IntegerField(null=True, verbose_name="数据库端口号")
     desc = TextField(verbose_name="数据库描述")
-    
+
     @classmethod
     def extend(cls):
         return cls.select(cls, User.id, User.nick_name).join(User)
+
+
+class Project(BaseModel):
+
+    name = CharField(max_length=50, null=True, verbose_name="名称")
+    env = ForeignKeyField(TestEnvironment, verbose_name="环境配置")
+    db_setting = ForeignKeyField(DBSetting, verbose_name="数据库配置")
+    creator = ForeignKeyField(User, verbose_name="创建者")
+    desc = TextField(verbose_name="描述")
+
+    @classmethod
+    def extend(cls):
+        return cls.select(
+            cls,
+            User.id,
+            User.nick_name,
+            DBSetting.name,
+            DBSetting.db_user,
+            DBSetting.db_host,
+            DBSetting.db_password,
+            DBSetting.db_port,
+            DBSetting.db_type,
+            TestEnvironment.name,
+            TestEnvironment.host_address)\
+            .join(User, join_type=JOIN.LEFT_OUTER, on=cls.creator)\
+            .switch(cls).join(DBSetting, join_type=JOIN.LEFT_OUTER, on=cls.db_setting)\
+            .switch(cls).join(TestEnvironment, join_type=JOIN.LEFT_OUTER, on=cls.env)
