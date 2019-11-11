@@ -3,6 +3,8 @@ from peewee_async import Manager
 from tornado import web, ioloop
 from MagicTestPlatform.settings import settings, database
 from apps.utils.Router import route
+from apps.project.handlers import *
+from apps.users.handlers import *
 
 
 def make_app():
@@ -10,7 +12,7 @@ def make_app():
     return web.Application(route.urls, debug=True, **settings)
 
 
-if __name__ == '__main__':
+def main():
     app = make_app()
     wtforms_json.init()
     app.listen(8082)
@@ -18,3 +20,8 @@ if __name__ == '__main__':
     database.set_allow_sync(False)
     app.objects = objects
     ioloop.IOLoop.current().start()
+    return app
+
+
+if __name__ == '__main__':
+    main()
