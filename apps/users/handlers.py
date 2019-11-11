@@ -6,9 +6,11 @@ import jwt
 from apps.users.models import User
 from apps.utils.Result import Result
 from MagicTestPlatform.handlers import RedisHandler, BaseHandler
-from apps.users.forms import SmsCodeForm, RegisterForm, LoginForm, RestPasswordForm
+from apps.users.forms import SmsCodeForm, RegisterForm, LoginForm, PasswordForm
+from apps.utils.Router import route
 
 
+@route(r'/code/')
 class SmsHandler(BaseHandler, RedisHandler, ABC):
 
     @staticmethod
@@ -30,19 +32,17 @@ class SmsHandler(BaseHandler, RedisHandler, ABC):
         form = SmsCodeForm.from_json(param)
         account = form.account.data
 
-        if account is None:
-            return self.json(
-                Result(code=10080, msg='参数有误，缺少account参数!'))
-
         if form.validate():
             code = self.generate_code()
             self.redis_conn.set(f'{account}_{code}', 1, 10 * 60)
             return self.json(
                 Result(code=1, msg="验证码已发送，请注意接收〜", data={'account': account, 'VerCode': code}))
         else:
+            self.set_status(404)
             return self.json(Result(code=10090, msg=form.errors))
 
 
+@route(r'/register/')
 class RegisterHandler(BaseHandler, RedisHandler, ABC):
 
     async def post(self, *args, **kwargs):
@@ -55,14 +55,14 @@ class RegisterHandler(BaseHandler, RedisHandler, ABC):
 
         if form.validate():
             if not self.redis_conn.get(f'{account}_{code}'):
-                return self.json(
-                    Result(code=10018, msg="验证码失效或不正确！"))
+                self.set_status(404)
+                return self.json(Result(code=10018, msg="验证码失效或不正确！"))
 
             else:
                 try:
                     existed_user = await self.application.objects.get(User, account=account)
-                    return self.json(
-                        Result(code=10020, msg='这个账号已经被注册！'))
+                    self.set_status(404)
+                    return self.json(Result(code=10020, msg='这个账号已经被注册！'))
 
                 # 没有创建user表
                 except User.DoesNotExist:
@@ -73,6 +73,7 @@ class RegisterHandler(BaseHandler, RedisHandler, ABC):
             return self.json(Result(code=10090, msg=form.errors))
 
 
+@route(r'/login/')
 class LoginHandler(BaseHandler, RedisHandler, ABC):
 
     async def post(self, *args, **kwargs):
@@ -87,9 +88,8 @@ class LoginHandler(BaseHandler, RedisHandler, ABC):
             try:
                 user = await self.application.objects.get(User, account=account)
                 if not user.password.check_password(password):
-                    return self.json(
-                        Result(code=10090, msg="密码错误,请重新输入!")
-                    )
+                    return self.json(Result(code=10090, msg="密码错误,请重新输入!"))
+
                 else:
                     payload = {
                         "id": user.id,
@@ -109,33 +109,34 @@ class LoginHandler(BaseHandler, RedisHandler, ABC):
                                 'token': token.decode('utf-8')}))
 
             except User.DoesNotExist:
-                return self.json(
-                    Result(code=10020, msg="该账户不存在，尚未注册过！")
-                )
+                self.set_status(404)
+                return self.json(Result(code=10020, msg="该账户不存在，尚未注册过！"))
         else:
-            return self.json(
-                Result(code=10090, msg="账号或密码错误, 请检查!")
-            )
+            self.set_status(404)
+            return self.json(Result(code=10090, msg="账号或密码错误, 请检查!"))
 
 
+@route(r'/rest/')
 class RestPasswordHandler(BaseHandler, RedisHandler, ABC):
 
     async def post(self, *args, **kwargs):
+
         param = self.request.body.decode('utf-8')
         param = json.loads(param)
-        form = RestPasswordForm.from_json(param)
-        account = form.account.data
-        password = form.password.data
+        form = PasswordForm.from_json(param)
 
         if form.validate():
-
-            try:
-                user = await self.application.objects.get(User, account=account)
-                await self.application.objects.execute(User.update(password=password).where(User.account == account))
-                return self.json(Result(code=1, msg="修改密码成功！"))
-            except User.DoesNotExist:
-                return self.json(
-                    Result(code=10090, msg="该账号尚未被注册!")
-                )
+            # 检查旧密码
+            if not self.current_user.password.check_password(form.oldPassword.data):
+                self.set_status(400)
+                self.json(Result(code=10090, msg="旧密码错误!"))
+            else:
+                if form.newPassword.data != form.checkPassword.data:
+                    self.set_status(400)
+                    self.json(Result(code=10090, msg="两次密码不一致!"))
+                else:
+                    self.current_user.password = form.newPassword.data
+                    await self.application.objects.update(self.current_user)
         else:
+            self.set_status(400)
             return self.json(Result(code=10090, msg=form.errors))

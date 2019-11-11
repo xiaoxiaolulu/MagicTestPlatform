@@ -98,6 +98,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/apps/ResourceManager/forms.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/apps/ResourceManager/models.py">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/apps/communities/forms.py">
           <value>
             <set />
@@ -219,6 +229,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/apps/utils/Result.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/apps/utils/Router.py">
           <value>
             <set />
           </value>

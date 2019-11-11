@@ -27,9 +27,8 @@ class LoginForm(Form):
     password = StringField('密码', validators=[DataRequired(message='请输入密码')])
 
 
-class RestPasswordForm(Form):
+class PasswordForm(Form):
 
-    account = StringField('账号', validators=[DataRequired(message='请输入账号'),
-                                            Regexp(EMAIL_REGEX, message="请输入合法的账号")])
-    code = StringField('验证码', validators=[DataRequired(message='请输入验证码')])
-    password = StringField('密码', validators=[DataRequired(message='请输入密码')])
+    oldPassword = StringField("旧密码", validators=[DataRequired(message="请输入旧密码")])
+    newPassword = StringField("新密码", validators=[DataRequired(message="请输入新密码")])
+    checkPassword = StringField("确认密码", validators=[DataRequired(message="请输入确认密码")])

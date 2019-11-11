@@ -23,9 +23,11 @@ from MagicTestPlatform.handlers import BaseHandler, RedisHandler
 from apps.project.models import Project, TestEnvironment, DBSetting, FunctionGenerator
 from apps.project.forms import ProjectForm, TestEnvironmentForm, DBSettingForm, FunctionDebugForm, FunctionGeneratorForm
 from apps.utils.Result import Result
+from apps.utils.Router import route
 from apps.utils.wrappers import authenticated_async
 
 
+@route(r'/projects/')
 class ProjectHandler(BaseHandler, ABC):
 
     @authenticated_async
@@ -77,6 +79,7 @@ class ProjectHandler(BaseHandler, ABC):
             return self.json(Result(code=10090, msg=form.errors))
 
 
+@route(r'/projects/([0-9]+)/')
 class ProjectChangeHandler(BaseHandler, ABC):
 
     @authenticated_async
@@ -123,6 +126,7 @@ class ProjectChangeHandler(BaseHandler, ABC):
             return self.json(Result(code=10090, msg=form.errors))
 
 
+@route(r'/test_envs/')
 class TestEnvironmentHandler(BaseHandler, ABC):
 
     @authenticated_async
@@ -176,6 +180,7 @@ class TestEnvironmentHandler(BaseHandler, ABC):
             return self.json(Result(code=10090, msg=form.errors))
 
 
+@route(r'/test_envs/([0-9]+)/')
 class TestEnvironmentChangeHandler(BaseHandler, ABC):
 
     @authenticated_async
@@ -225,6 +230,7 @@ class TestEnvironmentChangeHandler(BaseHandler, ABC):
             return self.json(Result(code=10090, msg=form.errors))
 
 
+@route('/db_settings/')
 class DbSettingHandler(BaseHandler, ABC):
 
     @authenticated_async
@@ -284,6 +290,7 @@ class DbSettingHandler(BaseHandler, ABC):
             return self.json(Result(code=10090, msg=form.errors))
 
 
+@route(r'/db_settings/([0-9]+)/')
 class DbSettingChangeHandler(BaseHandler, ABC):
 
     @authenticated_async
@@ -341,6 +348,7 @@ class DbSettingChangeHandler(BaseHandler, ABC):
             return self.json(Result(code=10090, msg=form.errors))
 
 
+@route(r'/debug/')
 class FunctionDebugHandler(BaseHandler, ABC):
 
     @staticmethod
@@ -387,6 +395,7 @@ class FunctionDebugHandler(BaseHandler, ABC):
             return self.json(Result(code=10090, msg=form.errors))
 
 
+@route(r'/functions/')
 class FunctionHandler(BaseHandler, ABC):
 
     @authenticated_async
@@ -441,6 +450,7 @@ class FunctionHandler(BaseHandler, ABC):
             return self.json(Result(code=10090, msg=form.errors))
 
 
+@route(r'/functions/([0-9]+)/')
 class FunctionChangeHandler(BaseHandler, ABC):
 
     @authenticated_async
@@ -488,39 +498,3 @@ class FunctionChangeHandler(BaseHandler, ABC):
         else:
             self.set_status(400)
             return self.json(Result(code=10090, msg=form.errors))
-
-
-class SearchTestEnvNameHandler(BaseHandler, ABC):
-
-    def get(self, *args, **kwargs):
-        """
-        检索出所有环境配置的名称
-        """
-        pass
-
-
-class SearchDataBaseNameHandler(BaseHandler, ABC):
-
-    def get(self, *args, **kwargs):
-        """
-        检索出所有数据库配置的名称
-        """
-        pass
-
-
-class GetTestEnvIdByTestEnvNameHandler(BaseHandler, ABC):
-
-    def get(self, *args, **kwargs):
-        """
-        根据环境名获取对应id
-        """
-        pass
-
-
-class GetDataBaseIdByDataBaseNameHandler(BaseHandler, ABC):
-
-    def get(self, *args, **kwargs):
-        """
-        根据数据库配置名获取对应id
-        """
-        pass
