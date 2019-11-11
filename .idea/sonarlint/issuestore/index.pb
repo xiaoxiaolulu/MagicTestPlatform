@@ -9,8 +9,6 @@ D
 apps/users/models.py,0\d\0dafbf12be60a998b1372c6e428ff240091d2cd7
 C
 apps/users/tests.py,e\8\e841d3f4d51f6ce3cc22771888857a2a6accb528
-B
-apps/users/urls.py,a\8\a83284959a3f8d8c2137ee8b87c3724e180e7a56
 9
 	server.py,3\7\37f78d9e69dff05b443a39c32175987bb0cbdccd
 G
@@ -37,8 +35,6 @@ E
 apps/project/forms.py,e\9\e98753bb999a9b6e72ed763f278fcc8c5452f854
 F
 apps/project/models.py,9\4\94c7323ada9572af526c8d9a46c19c3c52ce047c
-D
-apps/project/urls.py,a\2\a2235707ce12258ff3dea8080e9a88183bf2e096
 H
 apps/project/handlers.py,2\f\2f7c1b0fb4b0d6e036ca999694068e2383a82405
 E
@@ -47,8 +43,6 @@ H
 apps/project/__init__.py,0\7\07d04932377e0f3a7b3a8276d20a494713565422
 M
 apps/utils/json_serializer.py,f\6\f64254204bca122f694bcce0978a78f763bb95c1
-I
-MagicTestPlatform/urls.py,4\f\4f492ce187404481d86e37b0c3e4400ba611536c
 M
 MagicTestPlatform/settings.py,2\4\24ad17cda1a6a5eedd6276f5d06ecac7d911ad78
 M

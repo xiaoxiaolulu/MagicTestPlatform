@@ -158,6 +158,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/apps/questions/handlers.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/apps/questions/models.py">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/apps/questions/urls.py">
           <value>
             <set />
