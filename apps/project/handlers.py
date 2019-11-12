@@ -62,6 +62,7 @@ class ProjectHandler(BaseHandler, ABC):
         param = json.loads(param)
         form = ProjectForm.from_json(param)
         name = form.name.data
+        env = form.env.data
         desc = form.desc.data
 
         if form.validate():
@@ -71,7 +72,7 @@ class ProjectHandler(BaseHandler, ABC):
                     Result(code=10020, msg='这个项目已经被创建！'))
 
             except Project.DoesNotExist:
-                project = await self.application.objects.create(Project, name=name, desc=desc, creator=self.current_user)
+                project = await self.application.objects.create(Project, name=name, desc=desc, creator=self.current_user, env=env)
                 return self.json(Result(code=1, msg="创建项目成功!", data={"projectId": project.id}))
 
         else:
@@ -109,10 +110,12 @@ class ProjectChangeHandler(BaseHandler, ABC):
 
         if form.validate():
             name = form.name.data
+            env = form.env.data
             desc = form.desc.data
             try:
                 existed_project = await self.application.objects.get(Project, id=int(project_id))
                 existed_project.name = name
+                existed_project.env = env
                 existed_project.desc = desc
                 await self.application.objects.update(existed_project)
                 return self.json(Result(code=1, msg="项目更新成功!", data={"id": project_id}))

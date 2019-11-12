@@ -6,6 +6,7 @@ from wtforms_tornado import Form
 class ProjectForm(Form):
 
     name = StringField("项目名称", validators=[DataRequired("请输入项目名称")])
+    env = IntegerField("测试环境", validators=[DataRequired("请选择环境")])
     desc = TextAreaField("项目描述", validators=[DataRequired(message="请输入项目描述")])
 
 

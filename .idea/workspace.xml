@@ -28,7 +28,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5db38437-6573-4939-886a-8cb1fda998b1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/project/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/project/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/project/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/project/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/project/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/project/handlers.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +42,7 @@
     <SUITE FILE_PATH="coverage/MagicTestPlatform$init_db.coverage" NAME="init_db Coverage Results" MODIFIED="1573539791618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
     <SUITE FILE_PATH="coverage/LehuForum$Result.coverage" NAME="Result Coverage Results" MODIFIED="1571715022593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
     <SUITE FILE_PATH="coverage/LehuForum$AsyncYunPian.coverage" NAME="AsyncYunPian Coverage Results" MODIFIED="1571541586225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
-    <SUITE FILE_PATH="coverage/MagicTestPlatform$server.coverage" NAME="server Coverage Results" MODIFIED="1573539840674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MagicTestPlatform$server.coverage" NAME="server Coverage Results" MODIFIED="1573540804820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LehuForum$init_db.coverage" NAME="init_db Coverage Results" MODIFIED="1572491495079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
     <SUITE FILE_PATH="coverage/LehuForum$tests__1_.coverage" NAME="tests (1) Coverage Results" MODIFIED="1572251593133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/project" />
     <SUITE FILE_PATH="coverage/LehuForum$server.coverage" NAME="server Coverage Results" MODIFIED="1572620271380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -55,12 +56,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/project/handlers.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="7889">
-                <caret line="373" column="67" lean-forward="true" selection-start-line="373" selection-start-column="67" selection-end-line="373" selection-end-column="67" />
+              <first_editor relative-caret-position="230">
+                <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
                 <folding>
                   <element signature="e#256#267#0" expanded="true" />
                 </folding>
@@ -74,8 +75,8 @@
         <entry file="file://$PROJECT_DIR$/apps/project/models.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="437">
-                <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+              <first_editor relative-caret-position="232">
+                <caret line="49" column="55" lean-forward="true" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
                 <folding>
                   <element signature="e#0#20#0" expanded="true" />
                 </folding>
@@ -95,12 +96,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tools/init_db.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="368">
-                <caret line="16" column="82" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="82" />
+              <first_editor relative-caret-position="483">
+                <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
                 <folding>
                   <element signature="e#0#32#0" expanded="true" />
                 </folding>
@@ -166,6 +167,21 @@
                 </folding>
               </first_editor>
               <second_editor relative-caret-position="-161" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/project/forms.py">
+          <provider selected="true" editor-type-id="live-pycharm">
+            <state>
+              <first_editor relative-caret-position="115">
+                <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+                <folding>
+                  <element signature="e#0#60#0" expanded="true" />
+                </folding>
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -237,7 +253,6 @@
         <option value="$PROJECT_DIR$/test.json" />
         <option value="$PROJECT_DIR$/hello.py" />
         <option value="$PROJECT_DIR$/apps/utils/async_decorators.py" />
-        <option value="$PROJECT_DIR$/apps/project/forms.py" />
         <option value="$PROJECT_DIR$/apps/utils/Recursion.py" />
         <option value="$PROJECT_DIR$/apps/utils/http_keywords.py" />
         <option value="$PROJECT_DIR$/apps/test_tools/handlers.py" />
@@ -249,13 +264,14 @@
         <option value="$PROJECT_DIR$/apps/users/forms.py" />
         <option value="$PROJECT_DIR$/apps/users/handlers.py" />
         <option value="$PROJECT_DIR$/apps/project/urls.py" />
-        <option value="$PROJECT_DIR$/apps/project/handlers.py" />
         <option value="$PROJECT_DIR$/server.py" />
         <option value="$PROJECT_DIR$/apps/utils/Router.py" />
         <option value="$PROJECT_DIR$/apps/questions/models.py" />
         <option value="$PROJECT_DIR$/apps/questions/handlers.py" />
         <option value="$PROJECT_DIR$/apps/project/models.py" />
         <option value="$PROJECT_DIR$/tools/init_db.py" />
+        <option value="$PROJECT_DIR$/apps/project/forms.py" />
+        <option value="$PROJECT_DIR$/apps/project/handlers.py" />
       </list>
     </option>
   </component>
@@ -530,7 +546,7 @@
       <workItem from="1573175818967" duration="5110000" />
       <workItem from="1573456612761" duration="10382000" />
       <workItem from="1573482156094" duration="2282000" />
-      <workItem from="1573528443739" duration="3353000" />
+      <workItem from="1573528443739" duration="4468000" />
     </task>
     <task id="LOCAL-00001" summary="测试代码001">
       <created>1572765563593</created>
@@ -644,11 +660,18 @@
       <option name="project" value="LOCAL" />
       <updated>1573472871524</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="更新项目表结构">
+      <created>1573539924241</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1573539924241</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232171000" />
+    <option name="totallyTimeSpent" value="233286000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -660,10 +683,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.25537634" visible="true" weight="0.2680965" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.25537634" weight="0.2680965" />
       <window_info id="Structure" order="1" sideWeight="0.74462366" side_tool="true" weight="0.19034852" />
       <window_info id="Favorites" order="2" sideWeight="0.5013441" side_tool="true" weight="0.3297587" />
       <window_info id="DB Browser" order="3" sideWeight="0.49865592" weight="0.3297587" />
@@ -714,14 +737,14 @@
       <window_info anchor="right" id="Google Cloud Storage" order="18" show_stripe_button="false" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.25537634" visible="true" weight="0.3378016" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.25537634" weight="0.2680965" />
       <window_info id="Structure" order="1" sideWeight="0.74462366" side_tool="true" weight="0.19034852" />
       <window_info id="Favorites" order="2" sideWeight="0.5013441" side_tool="true" weight="0.3297587" />
       <window_info id="DB Browser" order="3" sideWeight="0.49865592" weight="0.3297587" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3293011" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.57930106" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49932975" visible="true" weight="0.34811828" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49865952" visible="true" weight="0.36021507" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3293011" />
@@ -729,15 +752,15 @@
       <window_info anchor="bottom" id="Python Console" order="8" />
       <window_info anchor="bottom" id="Pylint" order="9" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067025" side_tool="true" weight="0.37231183" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5013405" side_tool="true" weight="0.35935396" />
       <window_info anchor="bottom" id="Code Review" order="12" />
       <window_info anchor="bottom" id="Dependency Graph" order="13" />
       <window_info anchor="bottom" id="SonarLint" order="14" />
       <window_info anchor="bottom" id="Mypy" order="15" weight="0.3293011" />
       <window_info anchor="bottom" id="Gerrit" order="16" />
       <window_info anchor="bottom" id="Database Changes" order="17" />
-      <window_info anchor="bottom" id="reVu" order="18" />
-      <window_info anchor="bottom" id="Terminal" order="19" weight="0.3293011" />
+      <window_info anchor="bottom" id="Terminal" order="18" weight="0.3293011" />
+      <window_info anchor="bottom" id="reVu" order="19" weight="0.3293011" />
       <window_info anchor="bottom" id="Review Board" order="20" />
       <window_info anchor="bottom" id="TeamCity" order="21" />
       <window_info anchor="bottom" id="GitLabIntegration" order="22" />
@@ -823,7 +846,8 @@
     <MESSAGE value="项目管理模块待完善，添加相应注释" />
     <MESSAGE value="修改项目路由" />
     <MESSAGE value="修复路由注册找不到模块问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复路由注册找不到模块问题" />
+    <MESSAGE value="更新项目表结构" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新项目表结构" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1188,19 +1212,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/project/forms.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="828">
-            <caret line="38" selection-start-line="38" selection-end-line="38" />
-            <folding>
-              <element signature="e#0#60#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor relative-caret-position="-46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/test_tools/handlers.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
@@ -1287,32 +1298,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/project/handlers.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="7889">
-            <caret line="373" column="67" lean-forward="true" selection-start-line="373" selection-start-column="67" selection-end-line="373" selection-end-column="67" />
-            <folding>
-              <element signature="e#256#267#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor relative-caret-position="-161" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/project/models.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="437">
-            <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
-            <folding>
-              <element signature="e#0#20#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor relative-caret-position="-161" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tools/__init__.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
@@ -1324,13 +1309,52 @@
     <entry file="file://$PROJECT_DIR$/tools/init_db.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="368">
-            <caret line="16" column="82" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="82" />
+          <first_editor relative-caret-position="483">
+            <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             <folding>
               <element signature="e#0#32#0" expanded="true" />
             </folding>
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/project/models.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="232">
+            <caret line="49" column="55" lean-forward="true" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
+            <folding>
+              <element signature="e#0#20#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor relative-caret-position="-161" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/project/forms.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="115">
+            <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+            <folding>
+              <element signature="e#0#60#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/project/handlers.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="230">
+            <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
+            <folding>
+              <element signature="e#256#267#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor relative-caret-position="-161" />
         </state>
       </provider>
     </entry>
