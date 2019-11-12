@@ -1,3 +1,11 @@
+"""
+    项目管理模块数据库模型
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    DESCRIPTION
+
+    :copyright: (c) 2019 by Null.
+"""
 from peewee import *
 from MagicTestPlatform.models import BaseModel
 from apps.users.models import User
@@ -14,6 +22,14 @@ class FunctionGenerator(BaseModel):
     def extend(cls):
         return cls.select(cls, User.id, User.nick_name).join(User)
 
+    def __init__(self, name: CharField = None, creator: ForeignKeyField = None, function: CharField = None,
+                 desc: TextField = None, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.name: CharField = name
+        self.creator: ForeignKeyField = creator
+        self.function: CharField = function
+        self.desc: TextField = desc
+
 
 class TestEnvironment(BaseModel):
 
@@ -25,6 +41,14 @@ class TestEnvironment(BaseModel):
     @classmethod
     def extend(cls):
         return cls.select(cls, User.id, User.nick_name).join(User)
+
+    def __init__(self, name: CharField = None, creator: ForeignKeyField = None, host_address: CharField = None,
+                 desc: TextField = None, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.name: CharField = name
+        self.creator: ForeignKeyField = creator
+        self.host_address: CharField = host_address
+        self.desc: TextField = desc
 
 
 class DBSetting(BaseModel):
@@ -42,6 +66,28 @@ class DBSetting(BaseModel):
     def extend(cls):
         return cls.select(cls, User.id, User.nick_name).join(User)
 
+    def __init__(
+            self,
+            name: CharField = None,
+            creator: ForeignKeyField = None,
+            db_type: CharField = None,
+            db_user: CharField = None,
+            db_password: CharField = None,
+            db_host: CharField = None,
+            db_port: IntegerField = None,
+            desc: TextField = None,
+            *args,
+            **kwargs):
+        super().__init__(*args, **kwargs)
+        self.name: CharField = name
+        self.creator: ForeignKeyField = creator
+        self.db_type: CharField = db_type
+        self.db_user: CharField = db_user
+        self.db_password: CharField = db_password
+        self.db_host: CharField = db_host
+        self.db_port: IntegerField = db_port
+        self.desc: TextField = desc
+
 
 class Project(BaseModel):
 
@@ -52,11 +98,20 @@ class Project(BaseModel):
 
     @classmethod
     def extend(cls):
-        return cls.select(
-            cls,
-            User.id,
-            User.nick_name,
-            TestEnvironment.name,
-            TestEnvironment.host_address)\
-            .join(User, join_type=JOIN.LEFT_OUTER, on=cls.creator)\
-            .switch(cls).join(TestEnvironment, join_type=JOIN.LEFT_OUTER, on=cls.env)
+        return cls.select(cls, User.id, User.nick_name, TestEnvironment.name, TestEnvironment.host_address)\
+            .join(User, join_type=JOIN.LEFT_OUTER, on=cls.creator) .switch(cls)\
+            .join(TestEnvironment, join_type=JOIN.LEFT_OUTER, on=cls.env)
+
+    def __init__(
+            self,
+            name: CharField = None,
+            env: ForeignKeyField = None,
+            creator: ForeignKeyField = None,
+            desc: TextField = None,
+            *args,
+            **kwargs):
+        super().__init__(*args, **kwargs)
+        self.name: CharField = name
+        self.env: ForeignKeyField = env
+        self.creator: ForeignKeyField = creator
+        self.desc: TextField = desc

@@ -19,7 +19,7 @@ import json
 from abc import ABC
 import paramiko
 from playhouse.shortcuts import model_to_dict
-from MagicTestPlatform.handlers import BaseHandler, RedisHandler
+from MagicTestPlatform.handlers import BaseHandler
 from apps.project.models import Project, TestEnvironment, DBSetting, FunctionGenerator
 from apps.project.forms import ProjectForm, TestEnvironmentForm, DBSettingForm, FunctionDebugForm, FunctionGeneratorForm
 from apps.utils.Result import Result
@@ -72,7 +72,8 @@ class ProjectHandler(BaseHandler, ABC):
                     Result(code=10020, msg='这个项目已经被创建！'))
 
             except Project.DoesNotExist:
-                project = await self.application.objects.create(Project, name=name, desc=desc, creator=self.current_user, env=env)
+                project = await self.application.objects.create(
+                    Project, name=name, desc=desc, creator=self.current_user, env=env)
                 return self.json(Result(code=1, msg="创建项目成功!", data={"projectId": project.id}))
 
         else:
@@ -175,7 +176,8 @@ class TestEnvironmentHandler(BaseHandler, ABC):
                     Result(code=10020, msg='这个测试环境已经被创建！'))
 
             except TestEnvironment.DoesNotExist:
-                environment = await self.application.objects.create(TestEnvironment, name=name, host_address=host, desc=desc, creator=self.current_user)
+                environment = await self.application.objects.create(
+                    TestEnvironment, name=name, host_address=host, desc=desc, creator=self.current_user)
                 return self.json(Result(code=1, msg="创建测试环境成功!", data={"EnvironmentId": environment.id}))
 
         else:
