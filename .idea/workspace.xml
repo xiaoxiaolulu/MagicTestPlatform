@@ -24,26 +24,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5db38437-6573-4939-886a-8cb1fda998b1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/MagicTestPlatform.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MagicTestPlatform.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/test_tools/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/test_tools/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/communities/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/communities/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/communities/handlers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/communities/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/communities/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/communities/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/questions/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/questions/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/questions/handlers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/questions/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/questions/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/questions/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/test_tools/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/test_tools/handlers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/init_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/init_db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/project/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/project/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/test_tools/urls.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -326,7 +311,7 @@
       <workItem from="1573528443739" duration="7162000" />
       <workItem from="1574043934737" duration="457000" />
       <workItem from="1574044408703" duration="272000" />
-      <workItem from="1574056778352" duration="4298000" />
+      <workItem from="1574056778352" duration="5557000" />
     </task>
     <task id="LOCAL-00001" summary="测试代码001">
       <created>1572765563593</created>
@@ -454,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573540920886</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="删除无用目录">
+      <created>1574061282801</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1574061282801</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView">
@@ -513,7 +505,8 @@
     <MESSAGE value="修复路由注册找不到模块问题" />
     <MESSAGE value="更新项目表结构" />
     <MESSAGE value="fixed 潜在问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed 潜在问题" />
+    <MESSAGE value="删除无用目录" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除无用目录" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
