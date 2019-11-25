@@ -24,11 +24,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5db38437-6573-4939-886a-8cb1fda998b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/test_tools/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/test_tools/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/interface_test/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/project/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/project/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/test_tools/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MagicTestPlatform/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/MagicTestPlatform/handlers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,10 +92,10 @@
   <component name="PropertiesComponent">
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../intellectual_bloom" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../torext" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -120,7 +121,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.init_db">
+  <component name="RunManager" selected="Python.server">
     <configuration name="handlers" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MagicTestPlatform" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -233,9 +234,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.server" />
         <item itemvalue="Python.init_db" />
         <item itemvalue="Python.handlers" />
-        <item itemvalue="Python.server" />
         <item itemvalue="Python.tests (1)" />
         <item itemvalue="Python.tests" />
       </list>
@@ -311,7 +312,11 @@
       <workItem from="1573528443739" duration="7162000" />
       <workItem from="1574043934737" duration="457000" />
       <workItem from="1574044408703" duration="272000" />
-      <workItem from="1574056778352" duration="5557000" />
+      <workItem from="1574056778352" duration="5688000" />
+      <workItem from="1574306944242" duration="224000" />
+      <workItem from="1574668757913" duration="595000" />
+      <workItem from="1574669372619" duration="92000" />
+      <workItem from="1574669483514" duration="5230000" />
     </task>
     <task id="LOCAL-00001" summary="测试代码001">
       <created>1572765563593</created>
@@ -446,7 +451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574061282801</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="fixed">
+      <created>1574062444160</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1574062444160</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView">
@@ -492,7 +504,6 @@
     <MESSAGE value="测试代码001" />
     <MESSAGE value="测试代码002" />
     <MESSAGE value="add测试环境配置接口" />
-    <MESSAGE value="fixed" />
     <MESSAGE value="添加md" />
     <MESSAGE value="测试003" />
     <MESSAGE value="新增删除&amp;更新环境接口" />
@@ -506,7 +517,8 @@
     <MESSAGE value="更新项目表结构" />
     <MESSAGE value="fixed 潜在问题" />
     <MESSAGE value="删除无用目录" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除无用目录" />
+    <MESSAGE value="fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -529,6 +541,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MagicTestPlatform$handlers.coverage" NAME="handlers Coverage Results" MODIFIED="1574059618043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/test_tools" />
     <SUITE FILE_PATH="coverage/MagicTestPlatform$init_db.coverage" NAME="init_db Coverage Results" MODIFIED="1574060665244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
+    <SUITE FILE_PATH="coverage/MagicTestPlatform$server.coverage" NAME="server Coverage Results" MODIFIED="1574676081083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="p4-ProjectCache">
     <option name="serverState">

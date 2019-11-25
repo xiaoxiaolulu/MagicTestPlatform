@@ -15,7 +15,7 @@ def make_app():
 def main():
     app = make_app()
     wtforms_json.init()
-    app.listen(8082)
+    app.listen(9098)
     objects = Manager(database)
     database.set_allow_sync(False)
     app.objects = objects
