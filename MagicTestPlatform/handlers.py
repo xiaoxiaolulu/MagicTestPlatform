@@ -1,5 +1,7 @@
+import ast
 import json
 import sys
+import response
 from abc import ABC
 import redis
 from torext.log import app_log
@@ -30,11 +32,12 @@ def log_response(handler):
                 return [s]
 
         try:
-            body = ''.join(handler.request.body.decode('utf-8'))
+            body = handler._write_buffer[0].decode('utf-8')
         except Exception as e:
             body = f"{handler.__class__.__name__} object has {e}"
 
         lines = []
+
         for i in body.split('\n'):
             lines += ['| ' + j for j in cut(i)]
         block += '\nBody:\n' + '\n'.join(lines)
@@ -48,9 +51,11 @@ def log_request(handler):
     """
     block = 'Request Infomations:\n' + _format_headers_log(handler.request.headers)
 
-    if handler.request.arguments:
+    request_body = ast.literal_eval(handler.request.body.decode('utf-8'))
+
+    if request_body:
         block += '+----Arguments----+\n'
-        for k, v in handler.request.arguments.items():
+        for k, v in request_body.items():
             block += '| {0:<15} | {1:<15} \n'.format(repr(k), repr(v))
 
     app_log.info(block)
@@ -74,6 +79,8 @@ class RedisHandler(RequestHandler, ABC):
 class BaseHandler(RequestHandler, ABC):
 
     EXCEPTION_HANDLERS = None
+
+    PREPARES = []
 
     def _exception_default_handler(self, e):
         """This method is a copy of tornado.web.RequestHandler._handle_request_exception
@@ -138,6 +145,22 @@ class BaseHandler(RequestHandler, ABC):
 
     def options(self, *args, **kwargs):
         pass
+
+    def prepare(self):
+        """Behaves like a middleware between raw request and handling process,
+
+        If `PREPARES` is defined on handler class, which should be
+        a list, for example, ['auth', 'context'], method whose name
+        is constitute by prefix '_prepare_' and string in this list
+        will be executed by sequence. In this example, those methods are
+        `_prepare_auth` and `_prepare_context`
+        """
+        log_request(self)
+
+        for i in self.PREPARES:
+            getattr(self, 'prepare_' + i)()
+            if self._finished:
+                return
 
     def flush(self, *args, **kwgs):
         """
