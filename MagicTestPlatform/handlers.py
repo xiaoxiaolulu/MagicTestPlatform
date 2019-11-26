@@ -46,7 +46,10 @@ def log_request(handler):
     """
     block = 'Request Infomations:\n' + _format_headers_log(handler.request.headers)
 
-    request_body = handler.request.arguments
+    try:
+        request_body = json.loads(handler.request.body)
+    except SyntaxError:
+        request_body = handler.request.arguments
 
     if request_body:
         block += '+----Arguments----+\n'
