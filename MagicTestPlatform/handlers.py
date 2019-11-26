@@ -47,7 +47,7 @@ def log_request(handler):
     block = 'Request Infomations:\n' + _format_headers_log(handler.request.headers)
 
     try:
-        request_body = json.loads(handler.request.body)
+        request_body = ast.literal_eval(handler.request.body.decode('utf-8'))
     except SyntaxError:
         request_body = handler.request.arguments
 
