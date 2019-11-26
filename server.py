@@ -1,26 +1,26 @@
 import wtforms_json
 from peewee_async import Manager
-from tornado import web, ioloop
+from tornado import web
+from tornado.ioloop import IOLoop
+from tornado.httpserver import HTTPServer
 from MagicTestPlatform.settings import settings, database
 from apps.utils.Router import route
-from apps.project.handlers import *
-from apps.users.handlers import *
 
 
-def make_app():
-    # 创建app，并且把路有关系放入到Application对象中
-    return web.Application(route.urls, debug=True, **settings)
+class Application(web.Application):
+    def __init__(self):
+        super(Application, self).__init__(route.urls, debug=True, **settings)
 
 
 def main():
-    app = make_app()
+    print("http server start, Ctrl + C to stop...")
+    http_server = HTTPServer(Application(), xheaders=True)
+    http_server.listen(8084)
     wtforms_json.init()
-    app.listen(6995)
     objects = Manager(database)
     database.set_allow_sync(False)
-    app.objects = objects
-    ioloop.IOLoop.current().start()
-    return app
+    web.Application.objects = objects
+    IOLoop.current().start()
 
 
 if __name__ == '__main__':

@@ -24,8 +24,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5db38437-6573-4939-886a-8cb1fda998b1" name="Default Changelist" comment="接口控制台打印输出">
+      <change afterPath="$PROJECT_DIR$/apps/utils/logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MagicTestPlatform.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MagicTestPlatform.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MagicTestPlatform/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/MagicTestPlatform/handlers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MagicTestPlatform/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MagicTestPlatform/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,20 +66,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>SelectQuery</find>
-      <find>Field</find>
-      <find>yunpian</find>
-      <find>D</find>
-      <find>DoesNotExist</find>
-      <find>Email</find>
-      <find>mobile</find>
-      <find>Au</find>
-      <find>Inter</find>
-      <find>PostCommentHandler</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
@@ -89,21 +81,23 @@
   <component name="PropertiesComponent">
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/apps/logs/2019-11-26-14_42_02.log&#10;F:/MagicTestPlatform/apps/logs/2019-11-26-14_16_25.log" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../torext" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\MagicTestPlatform\apps" />
+      <recent name="G:\LehuForum\apps\utils" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\MagicTestPlatform\apps\ResourceManager" />
       <recent name="G:\MagicTestPlatform\apps\test_tools" />
       <recent name="G:\MagicTestPlatform\apps\utils" />
       <recent name="G:\LehuForum\apps\project" />
       <recent name="G:\LehuForum\apps\communities" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\LehuForum\apps\utils" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -239,6 +233,9 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_FIELDS,SHOW_INHERITED" />
+  </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\56464\AppData\Roaming\Subversion</configuration>
     <supportedVersion>125</supportedVersion>
@@ -314,6 +311,10 @@
       <workItem from="1574668757913" duration="595000" />
       <workItem from="1574669372619" duration="92000" />
       <workItem from="1574669483514" duration="8871000" />
+      <workItem from="1574686870378" duration="560000" />
+      <workItem from="1574693120074" duration="2695000" />
+      <workItem from="1574695852983" duration="120000" />
+      <workItem from="1574733908070" duration="14301000" />
     </task>
     <task id="LOCAL-00001" summary="测试代码001">
       <created>1572765563593</created>
@@ -465,15 +466,6 @@
     <option name="localTasksCounter" value="22" />
     <servers />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -545,8 +537,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MagicTestPlatform$handlers.coverage" NAME="handlers Coverage Results" MODIFIED="1574059618043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/test_tools" />
-    <SUITE FILE_PATH="coverage/MagicTestPlatform$init_db.coverage" NAME="init_db Coverage Results" MODIFIED="1574060665244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
-    <SUITE FILE_PATH="coverage/MagicTestPlatform$server.coverage" NAME="server Coverage Results" MODIFIED="1574679635255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MagicTestPlatform$init_db.coverage" NAME="init_db Coverage Results" MODIFIED="1574694770522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
+    <SUITE FILE_PATH="coverage/MagicTestPlatform$server.coverage" NAME="server Coverage Results" MODIFIED="1574753814245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="p4-ProjectCache">
     <option name="serverState">

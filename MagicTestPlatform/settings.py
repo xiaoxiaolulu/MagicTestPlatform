@@ -15,7 +15,7 @@ settings = {
         'host': '127.0.0.1',
         'user': 'root',
         'password': '123456',
-        'name': 'lehuforum',
+        'name': 'magic',
         'port': 3306
     },
     'redis': {

@@ -10,5 +10,4 @@ tornado==6.0.3
 requests==2.22.0
 paramiko==2.6.0
 PyJWT==1.7.1
-python_bcrypt==0.3.2
 simplejson==3.17.0
