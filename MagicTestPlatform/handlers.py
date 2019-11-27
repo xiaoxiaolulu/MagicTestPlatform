@@ -98,7 +98,7 @@ class BaseHandler(RequestHandler, ABC):
                 self.send_error(e.status_code, exc_info=sys.exc_info())
         else:
             logger.error("Uncaught exception %s\n%r", self._request_summary(),
-                          self.request, exc_info=True)
+                         self.request, exc_info=True)
             self.send_error(500, exc_info=sys.exc_info())
 
     def _handle_request_exception(self, e):
