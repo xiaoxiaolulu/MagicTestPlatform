@@ -24,10 +24,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5db38437-6573-4939-886a-8cb1fda998b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/interface_test/handlers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/interface_test/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/interface_test/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/interface_test/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/interface_test/handlers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/interface_test/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/interface_test/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +59,7 @@
         <option value="md" />
         <option value="Json" />
         <option value="Python Script" />
+        <option value="json" />
       </list>
     </option>
   </component>
@@ -76,7 +78,7 @@
   <component name="PropertiesComponent">
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/apps/logs/2019-11-26-16_33_23.log&#10;F:/MagicTestPlatform/apps/logs/2019-11-26-14_42_02.log&#10;F:/MagicTestPlatform/apps/logs/2019-11-26-14_16_25.log" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/apps/logs/2019-11-26-16_33_23.log&#10;F:/MagicTestPlatform/apps/logs/2019-11-26-14_42_02.log&#10;F:/MagicTestPlatform/apps/logs/2019-11-26-14_16_25.log&#10;F:/MagicTestPlatform/apps/logs/2019-11-27-17_16_23.log&#10;F:/MagicTestPlatform/apps/logs/2019-11-27-16_48_47.log" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -314,7 +316,7 @@
       <workItem from="1574820750698" duration="1085000" />
       <workItem from="1574821876130" duration="896000" />
       <workItem from="1574823529081" duration="6027000" />
-      <workItem from="1574838124694" duration="6388000" />
+      <workItem from="1574838124694" duration="11571000" />
     </task>
     <task id="LOCAL-00001" summary="测试代码001">
       <created>1572765563593</created>
@@ -512,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574838657998</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Add -&gt; 接口测试模块---接口调试功能">
+      <created>1574844766521</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1574844766521</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -567,7 +576,8 @@
     <MESSAGE value="fixed" />
     <MESSAGE value="添加接口管理数据模型" />
     <MESSAGE value="Gbk编码问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gbk编码问题" />
+    <MESSAGE value="Add -&gt; 接口测试模块---接口调试功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add -&gt; 接口测试模块---接口调试功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -590,7 +600,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MagicTestPlatform$handlers.coverage" NAME="handlers Coverage Results" MODIFIED="1574059618043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/test_tools" />
     <SUITE FILE_PATH="coverage/MagicTestPlatform$init_db.coverage" NAME="init_db Coverage Results" MODIFIED="1574843821327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
-    <SUITE FILE_PATH="coverage/MagicTestPlatform$server.coverage" NAME="server Coverage Results" MODIFIED="1574844525711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MagicTestPlatform$server.coverage" NAME="server Coverage Results" MODIFIED="1574850394364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MagicTestPlatform$models.coverage" NAME="models Coverage Results" MODIFIED="1574838218768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/interface_test" />
   </component>
   <component name="p4-ProjectCache">

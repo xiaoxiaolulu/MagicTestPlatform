@@ -40,8 +40,12 @@ class Interfaces(BaseModel):
             DBSetting.db_password,
             DBSetting.db_user,
             DBSetting.db_port,
-            Project.name,
-            Project.env) \
+            Project.name) \
             .join(User, join_type=JOIN.LEFT_OUTER, on=cls.creator).switch(cls) \
             .join(DBSetting, join_type=JOIN.LEFT_OUTER, on=cls.db).switch(cls) \
             .join(Project, join_type=JOIN.LEFT_OUTER, on=cls.project)
+
+
+class VariableDependency(BaseModel):
+
+    response_extraction = CharField(max_length=252, null=True, verbose_name="临时提取变量")

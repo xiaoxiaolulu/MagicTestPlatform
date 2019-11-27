@@ -2,6 +2,9 @@
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/apps/interface_test/models.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apps/logs/2019-11-27-16_48_47.log" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/apps/logs/2019-11-27-17_16_23.log" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/apps/logs/2019-11-27-18_05_57.log" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
