@@ -1,5 +1,5 @@
 """
-    ½Ó¿Ú²âÊÔÄ£¿éÊı¾İ¿âÄ£ĞÍ
+    æ¥å£æµ‹è¯•æ¨¡å—æ•°æ®åº“æ¨¡å‹
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     DESCRIPTION
@@ -8,7 +8,6 @@
 """
 from peewee import *
 from peewee import CharField
-
 from MagicTestPlatform.models import BaseModel
 from apps.project.models import Project, DBSetting
 from apps.users.models import User
@@ -16,22 +15,18 @@ from apps.users.models import User
 
 class Interfaces(BaseModel):
 
-    """"
-    ½Ó¿ÚÅäÖÃÊı¾İ¿âÄ£ĞÍ
-    """
-
-    interface_name = CharField(max_length=50, null=True, verbose_name="½Ó¿ÚÃû³Æ")
-    url = CharField(max_length=252, null=True, verbose_name="ÇëÇóÂ·ÓÉ")
-    method = CharField(max_length=25, null=True, verbose_name="ÇëÇó·½Ê½")
-    headers = CharField(max_length=252, null=True, verbose_name="ÇëÇóÍ·²¿")
-    params = CharField(max_length=252, null=True, verbose_name="ÇëÇó²ÎÊı")
-    assertion = CharField(max_length=252, null=True, verbose_name="¶ÏÑÔÊı¾İ")
-    db = ForeignKeyField(DBSetting, verbose_name="Êı¾İ¿âÅäÖÃ")
-    check_db = CharField(max_length=252, null=True, verbose_name="Âä¿âĞ£Ñé")
-    response_extraction = CharField(max_length=252, null=True, verbose_name="·µ»ØÖµÌáÈ¡")
-    creator = ForeignKeyField(User, verbose_name="´´½¨Õß")
-    project = ForeignKeyField(Project, verbose_name='»·¾³ÅäÖÃ')
-    desc = TextField(verbose_name="½Ó¿ÚÃèÊö")
+    interface_name = CharField(max_length=50, null=True, verbose_name='æ¥å£åç§°')
+    url = CharField(max_length=252, null=True, verbose_name="è¯·æ±‚è·¯ç”±")
+    method = CharField(max_length=25, null=True, verbose_name="è¯·æ±‚æ–¹æ³•")
+    headers = CharField(max_length=252, null=True, verbose_name="è¯·æ±‚å¤´éƒ¨")
+    params = CharField(max_length=252, null=True, verbose_name="è¯·æ±‚å‚æ•°")
+    assertion = CharField(max_length=252, null=True, verbose_name="æ–­è¨€æ•°æ®")
+    db = ForeignKeyField(DBSetting, verbose_name="æ•°æ®åº“é…ç½®")
+    check_db = CharField(max_length=252, null=True, verbose_name="è½åº“æ ¡éªŒ")
+    response_extraction = CharField(max_length=252, null=True, verbose_name="è¿”å›å€¼æå–")
+    creator = ForeignKeyField(User, verbose_name="åˆ›å»ºè€…")
+    project = ForeignKeyField(Project, verbose_name='é¡¹ç›®é…ç½®')
+    desc = TextField(verbose_name="æ¥å£æè¿°")
 
     @classmethod
     def extend(cls):

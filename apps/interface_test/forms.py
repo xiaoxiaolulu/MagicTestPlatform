@@ -1,5 +1,5 @@
 """
-    ½Ó¿Ú²âÊÔÄ£¿é±íµ¥ÑéÖ¤Æ÷
+    æ¥å£æµ‹è¯•æ¨¡å—è¡¨å•éªŒè¯å™¨
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     DESCRIPTION
@@ -13,11 +13,11 @@ from wtforms_tornado import Form
 
 class InterfacesForm(Form):
 
-    interface_name = StringField("½Ó¿ÚÃû³Æ", validators=[DataRequired("ÇëÊäÈë½Ó¿ÚÃû³Æ")])
-    url = StringField("ÇëÇóµØÖ·", validators=[DataRequired("ÇëÊäÈëÇëÇóµØÖ·")])
-    method = StringField("ÇëÇó·½·¨", validators=[DataRequired("ÇëÊäÈëÇëÇó·½·¨")])
-    headers = StringField("ÇëÇóÍ·²¿", validators=[DataRequired("ÇëÇóÍ·²¿")])
-    params = StringField("ÇëÇó²ÎÊı", validators=[DataRequired("ÇëÇó²ÎÊı")])
-    project = IntegerField("ÏîÄ¿ÅäÖÃ", validators=[DataRequired("ÇëÑ¡ÔñÏîÄ¿")])
-    desc = TextAreaField("·½·¨ÃèÊö", validators=[DataRequired(message="ÇëÊäÈë·½·¨ÃèÊö")])
+    interface_name = StringField("æ¥å£åç§°", validators=[DataRequired("è¯·è¾“å…¥æ¥å£åç§°")])
+    url = StringField("è¯·æ±‚åœ°å€", validators=[DataRequired("è¯·è¾“å…¥è¯·æ±‚åœ°å€")])
+    method = StringField("è¯·æ±‚æ–¹æ³•", validators=[DataRequired("è¯·è¾“å…¥è¯·æ±‚æ–¹æ³•")])
+    headers = StringField("è¯·æ±‚å¤´éƒ¨", validators=[DataRequired("è¯·è¾“å…¥è¯·æ±‚å¤´éƒ¨")])
+    params = StringField("è¯·æ±‚å‚æ•°", validators=[DataRequired("è¯·è¾“å…¥è¯·æ±‚å‚æ•°")])
+    project = IntegerField("é¡¹ç›®é…ç½®", validators=[DataRequired("è¯·é€‰æ‹©é¡¹ç›®")])
+    desc = TextAreaField("æ¥å£æè¿°", validators=[DataRequired(message="è¯·è¾“å…¥æ¥å£æè¿°")])
 
