@@ -1,5 +1,4 @@
 from datetime import datetime
-
 from peewee import *
 from MagicTestPlatform.models import BaseModel
 from apps.users.models import User
