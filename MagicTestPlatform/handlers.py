@@ -4,8 +4,12 @@ import sys
 from abc import ABC
 import redis
 import http.client as httplib
-from tornado.web import RequestHandler, HTTPError
+from tornado.web import (
+    RequestHandler,
+    HTTPError
+)
 from apps.utils.logger import logger
+from apps.utils.parse_settings import settings
 from apps.utils.json_serializer import json_serializer
 
 
@@ -74,7 +78,7 @@ class RedisHandler(RequestHandler, ABC):
 
     def __init__(self, application, request, **kwargs):
         super().__init__(application, request, **kwargs)
-        self.redis_conn = redis.StrictRedis(**self.settings['redis'])
+        self.redis_conn = redis.StrictRedis(**settings.REDIS.get('default'))
 
 
 class BaseHandler(RequestHandler, ABC):

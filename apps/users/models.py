@@ -1,5 +1,8 @@
 from peewee import *
-from bcrypt import hashpw, gensalt
+from bcrypt import (
+    hashpw,
+    gensalt
+)
 from MagicTestPlatform.models import BaseModel
 
 

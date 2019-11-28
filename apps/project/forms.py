@@ -6,7 +6,11 @@
 
     :copyright: (c) 2019 by Null.
 """
-from wtforms import StringField, TextAreaField, IntegerField
+from wtforms import (
+    StringField,
+    TextAreaField,
+    IntegerField
+)
 from wtforms.validators import DataRequired
 from wtforms_tornado import Form
 

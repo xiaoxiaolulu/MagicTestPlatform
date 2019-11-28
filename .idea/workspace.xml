@@ -24,9 +24,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5db38437-6573-4939-886a-8cb1fda998b1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/apps/utils/storage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/interface_test/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/interface_test/handlers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/project/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/project/handlers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MagicTestPlatform/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/MagicTestPlatform/handlers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MagicTestPlatform/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MagicTestPlatform/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/ResourceManager/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/ResourceManager/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/ResourceManager/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/utils/parse_settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/ResourceManager/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/interface_test/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/interface_test/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/interface_test/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/interface_test/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/project/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/project/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/users/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/handlers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/utils/http_keywords.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/utils/http_keywords.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/utils/json_serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/utils/json_serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/utils/wrappers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/utils/wrappers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/init_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/init_db.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,8 +72,8 @@
       <list>
         <option value="md" />
         <option value="Json" />
-        <option value="Python Script" />
         <option value="json" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -77,7 +93,7 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/apps/logs/2019-11-26-16_33_23.log&#10;F:/MagicTestPlatform/apps/logs/2019-11-26-14_42_02.log&#10;F:/MagicTestPlatform/apps/logs/2019-11-26-14_16_25.log&#10;F:/MagicTestPlatform/apps/logs/2019-11-27-17_16_23.log&#10;F:/MagicTestPlatform/apps/logs/2019-11-27-16_48_47.log" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../intellectual_bloom" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pyadmin" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
@@ -107,29 +123,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.server">
-    <configuration name="handlers" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="MagicTestPlatform" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apps/test_tools" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/test_tools/handlers.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.parse_settings">
     <configuration name="init_db" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MagicTestPlatform" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -174,6 +168,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="parse_settings" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MagicTestPlatform" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apps/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/utils/parse_settings.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MagicTestPlatform" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -196,7 +212,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tests (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="wrappers" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MagicTestPlatform" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -204,12 +220,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apps/project" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apps/utils" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/project/tests.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/utils/wrappers.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -221,10 +237,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.server" />
+        <item itemvalue="Python.parse_settings" />
+        <item itemvalue="Python.wrappers" />
         <item itemvalue="Python.init_db" />
         <item itemvalue="Python.models" />
-        <item itemvalue="Python.handlers" />
-        <item itemvalue="Python.tests (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -317,7 +333,7 @@
       <workItem from="1574838124694" duration="11842000" />
       <workItem from="1574851193208" duration="51000" />
       <workItem from="1574858666293" duration="2834000" />
-      <workItem from="1574910207646" duration="3208000" />
+      <workItem from="1574910207646" duration="13475000" />
     </task>
     <task id="LOCAL-00001" summary="测试代码001">
       <created>1572765563593</created>
@@ -543,7 +559,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574912194639</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="优化部分代码">
+      <created>1574913424235</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1574913424235</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -625,7 +648,9 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MagicTestPlatform$handlers.coverage" NAME="handlers Coverage Results" MODIFIED="1574059618043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/test_tools" />
     <SUITE FILE_PATH="coverage/MagicTestPlatform$init_db.coverage" NAME="init_db Coverage Results" MODIFIED="1574843821327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
-    <SUITE FILE_PATH="coverage/MagicTestPlatform$server.coverage" NAME="server Coverage Results" MODIFIED="1574850394364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MagicTestPlatform$parse_settings.coverage" NAME="parse_settings Coverage Results" MODIFIED="1574929319927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
+    <SUITE FILE_PATH="coverage/MagicTestPlatform$wrappers.coverage" NAME="wrappers Coverage Results" MODIFIED="1574928427741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
+    <SUITE FILE_PATH="coverage/MagicTestPlatform$server.coverage" NAME="server Coverage Results" MODIFIED="1574929459490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MagicTestPlatform$models.coverage" NAME="models Coverage Results" MODIFIED="1574838218768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/interface_test" />
   </component>
   <component name="p4-ProjectCache">

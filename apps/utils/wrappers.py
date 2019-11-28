@@ -1,6 +1,7 @@
 import functools
 import jwt
 from apps.users.models import User
+from apps.utils.parse_settings import settings
 
 
 def authenticated_async(method):
@@ -9,8 +10,13 @@ def authenticated_async(method):
         authorization = self.request.headers.get('Authorization', None)
         if authorization:
             try:
-                jwt_data = jwt.decode(authorization, self.settings["secret_key"], leeway=self.settings["jwt_expire"],
-                                      options={"verify_exp": True})
+                jwt_data = jwt.decode(
+                    authorization,
+                    settings.TORNADO_CONF.secret_key,
+                    leeway=settings.TORNADO_CONF.jwt_expire,
+                    options={"verify_exp": True}
+                )
+
                 user_id = jwt_data["id"]
                 # 从数据库中获取到user并设置给_current_user
                 try:

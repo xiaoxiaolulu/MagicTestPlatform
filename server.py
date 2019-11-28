@@ -3,13 +3,14 @@ from peewee_async import Manager
 from tornado import web
 from tornado.ioloop import IOLoop
 from tornado.httpserver import HTTPServer
-from MagicTestPlatform.settings import settings, database
+from MagicTestPlatform.settings import database
+from apps.utils.parse_settings import settings
 from apps.utils.Router import route
 
 
 class Application(web.Application):
     def __init__(self):
-        super(Application, self).__init__(route.urls, debug=True, **settings)
+        super(Application, self).__init__(route.urls, debug=settings.DEBUG)
 
 
 def main():

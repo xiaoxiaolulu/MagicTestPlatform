@@ -1,8 +1,7 @@
-import json
 import urllib3
+from urllib import parse
 import requests
 import simplejson
-from urllib import parse
 from requests import exceptions
 from apps.utils.Recursion import GetJsonParams
 

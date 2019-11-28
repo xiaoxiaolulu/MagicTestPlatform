@@ -1,6 +1,9 @@
 from wtforms_tornado import Form
 from wtforms import StringField
-from wtforms.validators import DataRequired, Regexp
+from wtforms.validators import (
+    DataRequired,
+    Regexp
+)
 
 
 EMAIL_REGEX = "^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$"

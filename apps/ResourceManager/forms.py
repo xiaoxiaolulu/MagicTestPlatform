@@ -1,5 +1,11 @@
-from wtforms import StringField, TextAreaField
-from wtforms.validators import DataRequired, AnyOf
+from wtforms import (
+    StringField,
+    TextAreaField
+)
+from wtforms.validators import (
+    DataRequired,
+    AnyOf
+)
 from wtforms_tornado import Form
 
 

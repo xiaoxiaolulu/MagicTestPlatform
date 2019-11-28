@@ -5,9 +5,18 @@ from datetime import datetime
 import jwt
 from apps.users.models import User
 from apps.utils.Result import Result
-from MagicTestPlatform.handlers import RedisHandler, BaseHandler
-from apps.users.forms import SmsCodeForm, RegisterForm, LoginForm, PasswordForm
+from MagicTestPlatform.handlers import (
+    RedisHandler,
+    BaseHandler
+)
+from apps.users.forms import (
+    SmsCodeForm,
+    RegisterForm,
+    LoginForm,
+    PasswordForm
+)
 from apps.utils.Router import route
+from apps.utils.parse_settings import settings
 
 
 @route(r'/code/')
@@ -96,7 +105,9 @@ class LoginHandler(BaseHandler, RedisHandler, ABC):
                         "exp": datetime.utcnow()
                     }
                     token = jwt.encode(
-                        payload, self.settings['secret_key'], algorithm='HS256')
+                        payload,
+                        settings.TORNADO_CONF.secret_key, algorithm='HS256'
+                    )
 
                     nick_name = user.nick_name if user.nick_name is not None else user.account
                     return self.json(

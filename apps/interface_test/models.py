@@ -9,7 +9,10 @@
 from peewee import *
 from peewee import CharField
 from MagicTestPlatform.models import BaseModel
-from apps.project.models import Project, DBSetting
+from apps.project.models import (
+    Project,
+    DBSetting
+)
 from apps.users.models import User
 
 
