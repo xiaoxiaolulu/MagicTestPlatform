@@ -1,0 +1,80 @@
+[2019-11-28 16:59:12] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzQ3NTIxNzd9.lsuunSK7H4MUPRRm-P6uWJxAqSpLvm7yJ6CS0LVBwa8 
+| Content-Type    | application/json 
+| User-Agent      | PostmanRuntime/7.20.1 
+| Accept          | */*             
+| Cache-Control   | no-cache        
+| Postman-Token   | 8a80dd8b-b93d-4d09-b23d-6407f529a132 
+| Host            | 127.0.0.1:8084  
+| Accept-Encoding | gzip, deflate   
+| Content-Length  | 244             
+| Connection      | keep-alive      
++----Arguments----+
+| 'interface_name' | '圆圆死胖子'         
+| 'url'           | '123131'        
+| 'method'        | 'get'           
+| 'headers'       | '23113'         
+| 'params'        | '32131'         
+| 'assertion'     | '231413'        
+| 'db'            | '2'             
+| 'check_db'      | '123131'        
+| 'response_extraction' | '23131'         
+| 'project'       | '5'             
+| 'desc'          | '21331'         
+
+[2019-11-28 16:59:12] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "接口数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:07:18",
+|             "interface_name": "圆圆死胖子",
+|             "url": "123131",
+|             "method": "get",
+|             "headers": "get",
+|             "params": "32131",
+|             "assertion": "231413",
+|             "db": {
+|                 "id": 2,
+|                 "add_time": "2019-11-28T16:59:12.315786",
+|                 "name": "3131",
+|                 "creator": null,
+|                 "db_type": "313",
+|                 "db_user": "31",
+|                 "db_password": "31",
+|                 "db_host": "31",
+|                 "db_port": 31,
+|                 "desc": null
+|             },
+|             "check_db": "123131",
+|             "response_extraction": "23131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-11-28T16:59:12.315786",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "project": {
+|                 "id": 5,
+|                 "add_time": "2019-11-28T16:59:12.315786",
+|                 "name": "踩踩踩踩踩",
+|                 "env": null,
+|                 "creator": null,
+|                 "desc": null
+|             },
+|             "desc": "21331"
+|         }
+|     ]
+| }

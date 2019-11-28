@@ -24,11 +24,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5db38437-6573-4939-886a-8cb1fda998b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MagicTestPlatform/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MagicTestPlatform/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MagicTestPlatform/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/utils/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/utils/logger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -319,7 +315,7 @@
       <workItem from="1574838124694" duration="11842000" />
       <workItem from="1574851193208" duration="51000" />
       <workItem from="1574858666293" duration="2834000" />
-      <workItem from="1574910207646" duration="14942000" />
+      <workItem from="1574910207646" duration="15184000" />
     </task>
     <task id="LOCAL-00001" summary="测试代码001">
       <created>1572765563593</created>
@@ -559,7 +555,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574930027520</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="日志路径变更">
+      <created>1574931603589</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1574931603589</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -593,7 +596,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="测试代码002" />
     <MESSAGE value="add测试环境配置接口" />
     <MESSAGE value="添加md" />
     <MESSAGE value="测试003" />
@@ -618,7 +620,8 @@
     <MESSAGE value="Add -&gt; 完善接口管理模块" />
     <MESSAGE value="优化部分代码" />
     <MESSAGE value="配置文件逻辑优化 &amp; 部分模块代码优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="配置文件逻辑优化 &amp; 部分模块代码优化" />
+    <MESSAGE value="日志路径变更" />
+    <option name="LAST_COMMIT_MESSAGE" value="日志路径变更" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
