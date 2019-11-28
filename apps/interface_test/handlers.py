@@ -56,7 +56,9 @@ class InterfacesDebugHandler(BaseHandler, ABC):
 
             http_client = BaseKeyWords(request_body)
             response = http_client.make_test_templates()
-            return self.json(Result(code=1, msg=f'{name} 接口请求成功', data=response))
+            return self.json(
+                Result(code=1, msg=f'{name} 接口请求成功', data=response)
+            )
 
         else:
             self.set_status(400)
@@ -100,40 +102,89 @@ class InterfacesHandler(BaseHandler, ABC):
 
         if form.validate():
 
-            name = form.interface_name.data
-            api = form.url.data
-            method = form.method.data
-            headers = form.method.data
-            params = form.params.data
-            assertion = form.assertion.data
-            db = form.db.data
-            check_db = form.check_db.data
-            response_extraction = form.response_extraction.data
-            project = form.project.data
-            desc = form.desc.data
-
             try:
-                existed_interface = await self.application.objects.get(Interfaces, interface_name=name)
+                await self.application.objects.get(
+                    Interfaces, interface_name=form.interface_name.data
+                )
                 return self.json(
                     Result(code=10020, msg='这个接口已经创建！'))
 
             except Interfaces.DoesNotExist:
                 interface = await self.application.objects.create(
                     Interfaces,
-                    interface_name=name,
-                    url=api,
-                    method=method,
-                    headers=headers,
-                    params=params,
-                    assertion=assertion,
-                    db=db,
-                    check_db=check_db,
-                    response_extraction=response_extraction,
-                    project=project,
-                    desc=desc,
-                    creator=self.current_user)
+                    interface_name=form.interface_name.data,
+                    url=form.url.data,
+                    method=form.method.data,
+                    headers=form.method.data,
+                    params=form.params.data,
+                    assertion=form.assertion.data,
+                    db=form.db.data,
+                    check_db=form.check_db.data,
+                    response_extraction=form.response_extraction.data,
+                    project=form.project.data,
+                    desc=form.desc.data,
+                    creator=self.current_user
+                )
 
-                return self.json(Result(code=1, msg="接口创建成功!", data={'interfaceId': interface.id}))
+                return self.json(
+                    Result(code=1, msg="接口创建成功!", data={'interfaceId': interface.id})
+                )
+
+        else:
+            self.set_status(400)
+            return self.json(Result(code=10090, msg=form.errors))
+
+
+@route(r'/interfaces/([0-9]+)/')
+class ProjectChangeHandler(BaseHandler, ABC):
+
+    @authenticated_async
+    async def delete(self, interface_id, *args, **kwargs):
+        """
+        删除接口数据
+        :param interface_id: 删除的接口id
+        """
+        try:
+            interface = await self.application.objects.get(Interfaces, id=int(interface_id))
+            await self.application.objects.delete(interface)
+            return self.json(Result(code=1, msg="接口删除成功!", data={"id": interface_id}))
+        except Interfaces.DoesNotExist:
+            self.set_status(400)
+            return self.json(Result(code=10020, msg="该接口尚未创建!"))
+
+    @authenticated_async
+    async def patch(self, interface_id, *args, **kwargs):
+        """
+        更新接口数据
+        :param interface_id: 更新的接口id
+        """
+
+        param = self.request.body.decode('utf-8')
+        param = json.loads(param)
+        form = InterfacesForm.from_json(param)
+
+        if form.validate():
+
+            try:
+                existed_interface = await self.application.objects.get(Interfaces, id=int(interface_id))
+                existed_interface.interface_name = form.interface_name.data
+                existed_interface.url = form.url.data
+                existed_interface.method = form.method.data
+                existed_interface.headers = form.method.data
+                existed_interface.params = form.params.data
+                existed_interface.assertion = form.assertion.data
+                existed_interface.db = form.db.data
+                existed_interface.check_db = form.check_db.data
+                existed_interface.response_extraction = form.response_extraction.data
+                existed_interface.project = form.project.data
+                existed_interface.desc = form.desc.data
+
+                await self.application.objects.update(existed_interface)
+                return self.json(Result(code=1, msg="接口更新成功!", data={"id": interface_id}))
+
+            except Interfaces.DoesNotExist:
+                self.set_status(404)
+                return self.json(Result(code=10020, msg="接口不存在!"))
 
         else:
             self.set_status(400)
