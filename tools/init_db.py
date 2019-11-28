@@ -7,7 +7,7 @@ from apps.project.models import (
     DBSetting
 )
 from apps.users.models import User
-from MagicTestPlatform.settings import database
+from MagicTestPlatform.settings import database_async
 from apps.utils.parse_settings import settings
 
 
@@ -21,9 +21,9 @@ database = MySQLDatabase(
 
 
 def init():
-    database.create_tables([User, ])
-    database.create_tables([Project, FunctionGenerator, TestEnvironment, DBSetting])
-    database.create_tables([Interfaces, ])
+    database_async.create_tables([User, ])
+    database_async.create_tables([Project, FunctionGenerator, TestEnvironment, DBSetting])
+    database_async.create_tables([Interfaces, ])
 
 
 if __name__ == '__main__':

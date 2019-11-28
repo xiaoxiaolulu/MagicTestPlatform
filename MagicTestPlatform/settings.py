@@ -17,6 +17,12 @@ DEBUG = True
 
 
 #################
+#   日志路径     #
+#################
+LOG_PATH = './logs/'
+
+
+#################
 #   全局配置     #
 #################
 TORNADO_CONF = {
@@ -56,10 +62,10 @@ REDIS = {
 #################
 # 数据库异步配置  #
 #################
-database = peewee_async.MySQLDatabase(
-    database=DATABASES['NAME'],
-    host=DATABASES['HOST'],
-    port=DATABASES['PORT'],
-    user=DATABASES['USER'],
-    password=DATABASES['PASSWORD']
+database_async = peewee_async.MySQLDatabase(
+    database=DATABASES.get('NAME'),
+    host=DATABASES.get('HOST'),
+    port=DATABASES.get('PORT'),
+    user=DATABASES.get('USER'),
+    password=DATABASES.get('PASSWORD')
 )

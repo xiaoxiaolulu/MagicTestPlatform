@@ -1,7 +1,9 @@
 import os
+import time
 import logging
 import logging.handlers
-import time
+from apps.utils.parse_settings import settings
+
 
 __all__ = ["logger"]
 
@@ -96,9 +98,8 @@ def _get_logger(log_to_file=True, log_level="DEBUG"):
     _logger.addHandler(stdout_handler)
 
     if log_to_file:
-        _tmp_path = os.path.dirname(os.path.abspath(__file__))
         now = time.strftime('%Y-%m-%d-%H_%M_%S', time.localtime(time.time()))
-        _tmp_path = os.path.join(_tmp_path, f"../logs/{now}.log")
+        _tmp_path = os.path.join(settings.LOG_PATH, f'{now}.log')
         file_handler = logging.handlers.TimedRotatingFileHandler(_tmp_path, when="midnight", backupCount=30)
         file_formatter = logging.Formatter(
             fmt=FILE_LOG_FMT,

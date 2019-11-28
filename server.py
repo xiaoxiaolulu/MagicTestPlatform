@@ -3,14 +3,14 @@ from peewee_async import Manager
 from tornado import web
 from tornado.ioloop import IOLoop
 from tornado.httpserver import HTTPServer
-from MagicTestPlatform.settings import database
+from MagicTestPlatform.settings import database_async
 from apps.utils.parse_settings import settings
 from apps.utils.Router import route
 
 
 class Application(web.Application):
     def __init__(self):
-        super(Application, self).__init__(route.urls, debug=settings.DEBUG)
+        super(Application, self).__init__(route.urls, debug=settings.DEBUG, **settings.TORNADO_CONF)
 
 
 def main():
@@ -18,8 +18,8 @@ def main():
     http_server = HTTPServer(Application(), xheaders=True)
     http_server.listen(8084)
     wtforms_json.init()
-    objects = Manager(database)
-    database.set_allow_sync(False)
+    objects = Manager(database_async)
+    database_async.set_allow_sync(False)
     web.Application.objects = objects
     IOLoop.current().start()
 
