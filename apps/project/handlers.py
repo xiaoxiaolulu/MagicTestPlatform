@@ -67,7 +67,7 @@ class ProjectHandler(BaseHandler, ABC):
 
         if form.validate():
             try:
-                existed_project = await self.application.objects.get(Project, name=name)
+                await self.application.objects.get(Project, name=name)
                 return self.json(
                     Result(code=10020, msg='这个项目已经被创建！'))
 
@@ -171,7 +171,7 @@ class TestEnvironmentHandler(BaseHandler, ABC):
 
         if form.validate():
             try:
-                existed_environment = await self.application.objects.get(TestEnvironment, name=name)
+                await self.application.objects.get(TestEnvironment, name=name)
                 return self.json(
                     Result(code=10020, msg='这个测试环境已经被创建！'))
 
@@ -280,7 +280,7 @@ class DbSettingHandler(BaseHandler, ABC):
 
         if form.validate():
             try:
-                existed_db = await self.application.objects.get(DBSetting, name=name)
+                await self.application.objects.get(DBSetting, name=name)
                 return self.json(
                     Result(code=10020, msg='这个数据库已经被创建！'))
 
@@ -441,7 +441,7 @@ class FunctionHandler(BaseHandler, ABC):
 
         if form.validate():
             try:
-                existed_function = await self.application.objects.get(FunctionGenerator, name=name)
+                await self.application.objects.get(FunctionGenerator, name=name)
                 return self.json(
                     Result(code=10020, msg='这个函数方法已经被创建！'))
 

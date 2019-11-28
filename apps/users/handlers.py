@@ -55,16 +55,15 @@ class RegisterHandler(BaseHandler, RedisHandler, ABC):
 
         if form.validate():
             if not self.redis_conn.get(f'{account}_{code}'):
-                self.set_status(404)
+                self.set_status(400)
                 return self.json(Result(code=10018, msg="验证码失效或不正确！"))
 
             else:
                 try:
-                    existed_user = await self.application.objects.get(User, account=account)
-                    self.set_status(404)
+                    await self.application.objects.get(User, account=account)
+                    self.set_status(400)
                     return self.json(Result(code=10020, msg='这个账号已经被注册！'))
 
-                # 没有创建user表
                 except User.DoesNotExist:
                     user = await self.application.objects.create(User, account=account, password=password)
                     return self.json(
