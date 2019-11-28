@@ -26,6 +26,7 @@
     <list default="true" id="5db38437-6573-4939-886a-8cb1fda998b1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/interface_test/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/interface_test/handlers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/project/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/project/handlers.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -316,7 +317,7 @@
       <workItem from="1574838124694" duration="11842000" />
       <workItem from="1574851193208" duration="51000" />
       <workItem from="1574858666293" duration="2834000" />
-      <workItem from="1574910207646" duration="1771000" />
+      <workItem from="1574910207646" duration="3208000" />
     </task>
     <task id="LOCAL-00001" summary="测试代码001">
       <created>1572765563593</created>
@@ -528,7 +529,21 @@
       <option name="project" value="LOCAL" />
       <updated>1574850478348</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Add -&gt; 完善接口管理模块">
+      <created>1574912012657</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1574912012657</updated>
+    </task>
+    <task id="LOCAL-00032" summary="优化部分代码">
+      <created>1574912194639</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1574912194639</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -585,7 +600,9 @@
     <MESSAGE value="Gbk编码问题" />
     <MESSAGE value="Add -&gt; 接口测试模块---接口调试功能" />
     <MESSAGE value="Add -&gt; 接口测试模块---接口新增&amp;查询" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add -&gt; 接口测试模块---接口新增&amp;查询" />
+    <MESSAGE value="Add -&gt; 完善接口管理模块" />
+    <MESSAGE value="优化部分代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化部分代码" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

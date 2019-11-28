@@ -20,8 +20,19 @@ from abc import ABC
 import paramiko
 from playhouse.shortcuts import model_to_dict
 from MagicTestPlatform.handlers import BaseHandler
-from apps.project.models import Project, TestEnvironment, DBSetting, FunctionGenerator
-from apps.project.forms import ProjectForm, TestEnvironmentForm, DBSettingForm, FunctionDebugForm, FunctionGeneratorForm
+from apps.project.models import (
+    Project,
+    TestEnvironment,
+    DBSetting,
+    FunctionGenerator
+)
+from apps.project.forms import (
+    ProjectForm,
+    TestEnvironmentForm,
+    DBSettingForm,
+    FunctionDebugForm,
+    FunctionGeneratorForm
+)
 from apps.utils.Result import Result
 from apps.utils.Router import route
 from apps.utils.wrappers import authenticated_async
@@ -62,8 +73,6 @@ class ProjectHandler(BaseHandler, ABC):
         param = json.loads(param)
         form = ProjectForm.from_json(param)
         name = form.name.data
-        env = form.env.data
-        desc = form.desc.data
 
         if form.validate():
             try:
@@ -73,8 +82,15 @@ class ProjectHandler(BaseHandler, ABC):
 
             except Project.DoesNotExist:
                 project = await self.application.objects.create(
-                    Project, name=name, desc=desc, creator=self.current_user, env=env)
-                return self.json(Result(code=1, msg="创建项目成功!", data={"projectId": project.id}))
+                    Project,
+                    name=name,
+                    desc=form.desc.data,
+                    env=form.env.data,
+                    creator=self.current_user
+                )
+                return self.json(
+                    Result(code=1, msg="创建项目成功!", data={"projectId": project.id})
+                )
 
         else:
             self.set_status(400)
@@ -93,7 +109,9 @@ class ProjectChangeHandler(BaseHandler, ABC):
         try:
             project = await self.application.objects.get(Project, id=int(project_id))
             await self.application.objects.delete(project)
-            return self.json(Result(code=1, msg="项目删除成功!", data={"id": project_id}))
+            return self.json(
+                Result(code=1, msg="项目删除成功!", data={"id": project_id})
+            )
         except Project.DoesNotExist:
             self.set_status(400)
             return self.json(Result(code=10020, msg="该项目尚未创建!"))
@@ -110,16 +128,16 @@ class ProjectChangeHandler(BaseHandler, ABC):
         form = ProjectForm.from_json(param)
 
         if form.validate():
-            name = form.name.data
-            env = form.env.data
-            desc = form.desc.data
+
             try:
                 existed_project = await self.application.objects.get(Project, id=int(project_id))
-                existed_project.name = name
-                existed_project.env = env
-                existed_project.desc = desc
+                existed_project.name = form.name.data
+                existed_project.env = form.env.data
+                existed_project.desc = form.desc.data
                 await self.application.objects.update(existed_project)
-                return self.json(Result(code=1, msg="项目更新成功!", data={"id": project_id}))
+                return self.json(
+                    Result(code=1, msg="项目更新成功!", data={"id": project_id})
+                )
 
             except Project.DoesNotExist:
                 self.set_status(404)
@@ -144,10 +162,14 @@ class TestEnvironmentHandler(BaseHandler, ABC):
         # 根据环境名过滤
         name = self.get_argument('name', None)
         if name is not None:
-            environment_query = environment_query.filter(TestEnvironment.name == name)
+            environment_query = environment_query.filter(
+                TestEnvironment.name == name
+            )
 
         # 默认排序规则
-        environment_query = environment_query.order_by(TestEnvironment.add_time.desc())
+        environment_query = environment_query.order_by(
+            TestEnvironment.add_time.desc()
+        )
 
         environments = await self.application.objects.execute(environment_query)
         for environment in environments:
@@ -166,8 +188,6 @@ class TestEnvironmentHandler(BaseHandler, ABC):
         param = json.loads(param)
         form = TestEnvironmentForm.from_json(param)
         name = form.name.data
-        host = form.host_address.data
-        desc = form.desc.data
 
         if form.validate():
             try:
@@ -177,8 +197,16 @@ class TestEnvironmentHandler(BaseHandler, ABC):
 
             except TestEnvironment.DoesNotExist:
                 environment = await self.application.objects.create(
-                    TestEnvironment, name=name, host_address=host, desc=desc, creator=self.current_user)
-                return self.json(Result(code=1, msg="创建测试环境成功!", data={"EnvironmentId": environment.id}))
+                    TestEnvironment,
+                    name=name,
+                    host_address=form.host_address.data,
+                    desc=form.desc.data,
+                    creator=self.current_user
+                )
+                return self.json(
+                    Result(
+                        code=1, msg="创建测试环境成功!", data={"EnvironmentId": environment.id})
+                )
 
         else:
             self.set_status(400)
@@ -197,7 +225,9 @@ class TestEnvironmentChangeHandler(BaseHandler, ABC):
         try:
             environment = await self.application.objects.get(TestEnvironment, id=int(environment_id))
             await self.application.objects.delete(environment)
-            return self.json(Result(code=1, msg="测试环境删除成功!", data={"id": environment_id}))
+            return self.json(
+                Result(code=1, msg="测试环境删除成功!", data={"id": environment_id})
+            )
         except TestEnvironment.DoesNotExist:
             self.set_status(400)
             return self.json(Result(code=10020, msg="该环境尚未创建!"))
@@ -214,17 +244,16 @@ class TestEnvironmentChangeHandler(BaseHandler, ABC):
         form = TestEnvironmentForm.from_json(param)
 
         if form.validate():
-            name = form.name.data
-            host = form.host_address.data
-            desc = form.desc.data
 
             try:
                 existed_environment = await self.application.objects.get(TestEnvironment, id=int(environment_id))
-                existed_environment.name = name
-                existed_environment.host = host
-                existed_environment.desc = desc
+                existed_environment.name = form.name.data
+                existed_environment.host = form.host_address.data
+                existed_environment.desc = form.desc.data
                 await self.application.objects.update(existed_environment)
-                return self.json(Result(code=1, msg="环境更新成功!", data={"id": environment_id}))
+                return self.json(
+                    Result(code=1, msg="环境更新成功!", data={"id": environment_id})
+                )
 
             except TestEnvironment.DoesNotExist:
                 self.set_status(404)
@@ -271,12 +300,6 @@ class DbSettingHandler(BaseHandler, ABC):
         param = json.loads(param)
         form = DBSettingForm.from_json(param)
         name = form.name.data
-        user = form.db_user.data
-        db_type = form.db_type.data
-        host = form.db_host.data
-        password = form.db_password.data
-        port = form.db_port.data
-        desc = form.desc.data
 
         if form.validate():
             try:
@@ -286,9 +309,20 @@ class DbSettingHandler(BaseHandler, ABC):
 
             except DBSetting.DoesNotExist:
                 db = await self.application.objects.create(
-                    DBSetting, name=name, db_type=db_type, db_password=password, db_user=user,
-                    db_host=host, db_port=port, desc=desc, creator=self.current_user)
-                return self.json(Result(code=1, msg="创建数据库成功!", data={"DBId": db.id}))
+                    DBSetting,
+                    name=name,
+                    db_type=form.db_type.data,
+                    db_password=form.db_password.data,
+                    db_user=form.db_user.data,
+                    db_host=form.db_host.data,
+                    db_port=form.db_port.data,
+                    desc=form.desc.data,
+                    creator=self.current_user
+                )
+                return self.json(
+                    Result(
+                        code=1, msg="创建数据库成功!", data={"DBId": db.id})
+                )
 
         else:
             self.set_status(400)
@@ -307,7 +341,10 @@ class DbSettingChangeHandler(BaseHandler, ABC):
         try:
             db = await self.application.objects.get(DBSetting, id=int(db_id))
             await self.application.objects.delete(db)
-            return self.json(Result(code=1, msg="数据库配置删除成功!", data={"id": db_id}))
+            return self.json(
+                Result(
+                    code=1, msg="数据库配置删除成功!", data={"id": db_id})
+            )
         except DBSetting.DoesNotExist:
             self.set_status(400)
             return self.json(Result(code=10020, msg="该数据库配置尚未创建!"))
@@ -324,25 +361,20 @@ class DbSettingChangeHandler(BaseHandler, ABC):
         form = DBSettingForm.from_json(param)
 
         if form.validate():
-            name = form.name.data
-            db_type = form.db_type.data
-            host = form.db_host.data
-            user = form.db_user.data
-            password = form.db_password.data
-            port = form.db_port.data
-            desc = form.desc.data
 
             try:
                 existed_db = await self.application.objects.get(DBSetting, id=int(db_id))
-                existed_db.name = name
-                existed_db.db_user = user
-                existed_db.db_type = db_type
-                existed_db.db_host = host
-                existed_db.db_password = password
-                existed_db.db_port = port
-                existed_db.desc = desc
+                existed_db.name = form.name.data
+                existed_db.db_user = form.db_user.data
+                existed_db.db_type = form.db_type.data
+                existed_db.db_host = form.db_host.data
+                existed_db.db_password = form.db_password.data
+                existed_db.db_port = form.db_port.data
+                existed_db.desc = form.desc.data
                 await self.application.objects.update(existed_db)
-                return self.json(Result(code=1, msg="数据库配置更新成功!", data={"id": db_id}))
+                return self.json(
+                    Result(code=1, msg="数据库配置更新成功!", data={"id": db_id})
+                )
 
             except DBSetting.DoesNotExist:
                 self.set_status(404)
@@ -365,7 +397,8 @@ class FunctionDebugHandler(BaseHandler, ABC):
 
         def sftp_exec_command(ssh_client, command):
             try:
-                std_in, std_out, std_err = ssh_client.exec_command(command, timeout=4)
+                std_in, std_out, std_err = ssh_client.exec_command(
+                    command, timeout=4)
                 out = "".join([line for line in std_out])
                 return out
             except Exception as e:
@@ -394,7 +427,9 @@ class FunctionDebugHandler(BaseHandler, ABC):
             code = form.function.data
             result = self.python_running_env(code)
 
-            return self.json(Result(code=1, msg='success', data={'RunningRes': result}))
+            return self.json(
+                Result(code=1, msg='success', data={'RunningRes': result})
+            )
         else:
             self.set_status(400)
             return self.json(Result(code=10090, msg=form.errors))
@@ -411,13 +446,15 @@ class FunctionHandler(BaseHandler, ABC):
         ret_data = []
         function_query = FunctionGenerator.extend()
 
-        # 根据方法名过滤
         name = self.get_argument('name', None)
         if name is not None:
-            function_query = function_query.filter(FunctionGenerator.name == name)
+            function_query = function_query.filter(
+                FunctionGenerator.name == name
+            )
 
-        # 默认排序规则
-        function_query = function_query.order_by(FunctionGenerator.add_time.desc())
+        function_query = function_query.order_by(
+            FunctionGenerator.add_time.desc()
+        )
 
         functions = await self.application.objects.execute(function_query)
         for func in functions:
@@ -436,19 +473,25 @@ class FunctionHandler(BaseHandler, ABC):
         param = json.loads(param)
         form = FunctionGeneratorForm.from_json(param)
         name = form.name.data
-        function = form.function.data
-        desc = form.desc.data
 
         if form.validate():
             try:
                 await self.application.objects.get(FunctionGenerator, name=name)
                 return self.json(
-                    Result(code=10020, msg='这个函数方法已经被创建！'))
+                    Result(code=10020, msg='这个函数方法已经被创建！')
+                )
 
             except FunctionGenerator.DoesNotExist:
-                function = await self.application.objects.create(FunctionGenerator, name=name, desc=desc,
-                                                                 function=function, creator=self.current_user)
-                return self.json(Result(code=1, msg="创建函数方法成功!", data={"functionId": function.id}))
+                function = await self.application.objects.create(
+                    FunctionGenerator,
+                    name=name,
+                    desc=form.desc.data,
+                    function=form.function.data,
+                    creator=self.current_user
+                )
+                return self.json(
+                    Result(code=1, msg="创建函数方法成功!", data={"functionId": function.id})
+                )
 
         else:
             self.set_status(400)
@@ -467,7 +510,9 @@ class FunctionChangeHandler(BaseHandler, ABC):
         try:
             function = await self.application.objects.get(FunctionGenerator, id=int(function_id))
             await self.application.objects.delete(function)
-            return self.json(Result(code=1, msg="函数方法删除成功!", data={"functionId": function_id}))
+            return self.json(
+                Result(code=1, msg="函数方法删除成功!", data={"functionId": function_id})
+            )
         except FunctionGenerator.DoesNotExist:
             self.set_status(400)
             return self.json(Result(code=10020, msg="该函数方法尚未创建!"))
@@ -484,17 +529,17 @@ class FunctionChangeHandler(BaseHandler, ABC):
         form = FunctionGeneratorForm.from_json(param)
 
         if form.validate():
-            name = form.name.data
-            function = form.function.data
-            desc = form.desc.data
 
             try:
                 existed_function = await self.application.objects.get(FunctionGenerator, id=int(function_id))
-                existed_function.name = name
-                existed_function.function = function
-                existed_function.desc = desc
+                existed_function.name = form.name.data
+                existed_function.function = form.function.data
+                existed_function.desc = form.desc.data
                 await self.application.objects.update(existed_function)
-                return self.json(Result(code=1, msg="函数方法更新成功!", data={"id": function_id}))
+                return self.json(
+                    Result(
+                        code=1, msg="函数方法更新成功!", data={"id": function_id})
+                )
 
             except FunctionGenerator.DoesNotExist:
                 self.set_status(404)

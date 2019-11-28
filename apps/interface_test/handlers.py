@@ -1,13 +1,35 @@
+"""
+    接口测试模块
+    ———————
+            |
+            |---接口管理
+            |
+            |---测试用例管理
+            |
+            |---测试套件管理
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    DESCRIPTION
+
+    :copyright: (c) 2019 by Null.
+"""
 import ast
 import json
 from abc import ABC
 from urllib import parse
 from playhouse.shortcuts import model_to_dict
 from MagicTestPlatform.handlers import BaseHandler
-from apps.interface_test.forms import InterfacesDebugForm, InterfacesForm
+from apps.interface_test.forms import (
+    InterfacesDebugForm,
+    InterfacesForm
+)
 from apps.interface_test.models import Interfaces
 from apps.project.models import Project
-from apps.utils import authenticated_async, Result, route
+from apps.utils import (
+    authenticated_async,
+    Result,
+    route
+)
 from apps.utils.Recursion import GetJsonParams
 from apps.utils.http_keywords import BaseKeyWords
 
@@ -79,7 +101,9 @@ class InterfacesHandler(BaseHandler, ABC):
 
         name = self.get_argument('name', None)
         if name is not None:
-            interfaces_query = interfaces_query.filter(Interfaces.interface_name == name)
+            interfaces_query = interfaces_query.filter(
+                Interfaces.interface_name == name
+            )
 
         interfaces_query = interfaces_query.order_by(-Project.add_time)
         interfaces = await self.application.objects.execute(interfaces_query)
@@ -147,7 +171,9 @@ class ProjectChangeHandler(BaseHandler, ABC):
         try:
             interface = await self.application.objects.get(Interfaces, id=int(interface_id))
             await self.application.objects.delete(interface)
-            return self.json(Result(code=1, msg="接口删除成功!", data={"id": interface_id}))
+            return self.json(
+                Result(code=1, msg="接口删除成功!", data={"id": interface_id})
+            )
         except Interfaces.DoesNotExist:
             self.set_status(400)
             return self.json(Result(code=10020, msg="该接口尚未创建!"))
@@ -180,7 +206,9 @@ class ProjectChangeHandler(BaseHandler, ABC):
                 existed_interface.desc = form.desc.data
 
                 await self.application.objects.update(existed_interface)
-                return self.json(Result(code=1, msg="接口更新成功!", data={"id": interface_id}))
+                return self.json(
+                    Result(code=1, msg="接口更新成功!", data={"id": interface_id})
+                )
 
             except Interfaces.DoesNotExist:
                 self.set_status(404)
