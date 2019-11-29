@@ -1,4 +1,3 @@
-torext
 redis==3.3.11
 wtforms_tornado==0.0.2
 peewee_async==0.5.12
