@@ -1,0 +1,23 @@
+[2019-11-29 18:07:44] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Connection      | close           
+| Host            | 127.0.0.1:65152 
+| Content-Length  | 29              
+| Content-Type    | application/x-www-form-urlencoded 
+| Accept-Encoding | gzip            
++----Arguments----+
+| 'account'       | '151829@163.com' 
+
+[2019-11-29 18:07:44] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "验证码已发送，请注意接收",
+|     "data": {
+|         "account": "151829@163.com",
+|         "VerCode": "8657"
+|     }
+| }

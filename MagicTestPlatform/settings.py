@@ -8,7 +8,7 @@ import peewee_async
 #   全局路径     #
 #################
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+print(BASE_DIR)
 
 #################
 #   调式开关     #
@@ -19,7 +19,7 @@ DEBUG = True
 #################
 #   日志路径     #
 #################
-LOG_PATH = './logs/'
+LOG_PATH = os.path.join(BASE_DIR, 'logs')
 
 
 #################

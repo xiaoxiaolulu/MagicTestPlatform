@@ -1,0 +1,23 @@
+[2019-11-29 17:52:54] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Connection      | close           
+| Host            | 127.0.0.1:63589 
+| Content-Length  | 29              
+| Content-Type    | application/x-www-form-urlencoded 
+| Accept-Encoding | gzip            
++----Arguments----+
+| 'account'       | '197206@163.com' 
+
+[2019-11-29 17:52:54] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "验证码已发送，请注意接收",
+|     "data": {
+|         "account": "197206@163.com",
+|         "VerCode": "2237"
+|     }
+| }

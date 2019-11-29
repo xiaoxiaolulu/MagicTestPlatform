@@ -10,6 +10,10 @@ from apps.utils.Router import route
 
 class Application(web.Application):
     def __init__(self):
+        wtforms_json.init()
+        objects = Manager(database_async)
+        database_async.set_allow_sync(False)
+        web.Application.objects = objects
         super(Application, self).__init__(route.urls, debug=settings.DEBUG, **settings.TORNADO_CONF)
 
 
@@ -17,10 +21,6 @@ def main():
     print("http server start, Ctrl + C to stop...")
     http_server = HTTPServer(Application(), xheaders=True)
     http_server.listen(8084)
-    wtforms_json.init()
-    objects = Manager(database_async)
-    database_async.set_allow_sync(False)
-    web.Application.objects = objects
     IOLoop.current().start()
 
 

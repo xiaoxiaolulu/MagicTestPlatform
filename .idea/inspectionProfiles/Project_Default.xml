@@ -72,6 +72,7 @@
           <option value="functools.partial.__await__" />
           <option value="jwt.encode" />
           <option value="str.*" />
+          <option value="urllib.urlencode" />
         </list>
       </option>
     </inspection_tool>

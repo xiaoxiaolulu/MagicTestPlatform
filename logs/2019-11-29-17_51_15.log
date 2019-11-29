@@ -1,0 +1,70 @@
+[2019-11-29 17:51:15] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Connection      | close           
+| Host            | 127.0.0.1:63413 
+| Content-Length  | 51              
+| Content-Type    | application/x-www-form-urlencoded 
+| Accept-Encoding | gzip            
++----Arguments----+
+| 'account'       | '123456@163.com' 
+| 'password'      | '123456'        
+
+[2019-11-29 17:51:16] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "登陆成功",
+|     "data": {
+|         "id": 1,
+|         "nick_name": "123456@163.com",
+|         "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjEwNzZ9.vzYW-qqjhffcfHOYJ4R3wmCq9XodBJkfaWLJnEy4jJk"
+|     }
+| }
+[2019-11-29 17:51:16] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Connection      | close           
+| Host            | 127.0.0.1:63418 
+| Content-Length  | 67              
+| Content-Type    | application/x-www-form-urlencoded 
+| Accept-Encoding | gzip            
++----Arguments----+
+| 'account'       | '174301@163.com' 
+| 'code'          | 'None'          
+| 'password'      | '123456'        
+
+[2019-11-29 17:51:16] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 10018,
+|     "msg": "验证码失效或不正确！",
+|     "data": null
+| }
+[2019-11-29 17:51:16] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Connection      | close           
+| Host            | 127.0.0.1:63423 
+| Content-Length  | 29              
+| Content-Type    | application/x-www-form-urlencoded 
+| Accept-Encoding | gzip            
++----Arguments----+
+| 'account'       | '174301@163.com' 
+
+[2019-11-29 17:51:16] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "验证码已发送，请注意接收",
+|     "data": {
+|         "account": "174301@163.com",
+|         "VerCode": "0912"
+|     }
+| }

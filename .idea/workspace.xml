@@ -24,11 +24,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5db38437-6573-4939-886a-8cb1fda998b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-10_27_35.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-16_50_51.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_15_14.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_15_37.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_16_15.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_16_32.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_18_03.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_19_42.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_40_20.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_40_51.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_41_08.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_41_28.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_42_23.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_43_27.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_44_10.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_44_45.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_49_20.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_49_54.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_50_16.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_51_15.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_51_48.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_52_10.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_52_30.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_52_54.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_53_32.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_53_59.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_54_26.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_54_37.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_55_11.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_57_46.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-17_59_34.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-18_04_02.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-18_04_32.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-18_05_51.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-18_07_22.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-18_07_43.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-18_08_07.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-11-29-18_09_33.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/_trial_temp/_trial_marker" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/_trial_temp/test.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/user_handler_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-11-28-16_59_11.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/2019-11-28-16_59_11.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MagicTestPlatform/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MagicTestPlatform/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/users/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/handlers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-11-28-16_59_11.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-11-29-10_27_35.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/tests.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,22 +123,23 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/apps/logs/2019-11-26-16_33_23.log&#10;F:/MagicTestPlatform/apps/logs/2019-11-26-14_42_02.log&#10;F:/MagicTestPlatform/apps/logs/2019-11-26-14_16_25.log&#10;F:/MagicTestPlatform/apps/logs/2019-11-27-17_16_23.log&#10;F:/MagicTestPlatform/apps/logs/2019-11-27-16_48_47.log" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/MagicTestPlatform" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../intellectual_bloom" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\MagicTestPlatform\test" />
+      <recent name="F:\MagicTestPlatform\apps" />
+      <recent name="G:\LehuForum\apps\utils" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\MagicTestPlatform\MagicTestPlatform" />
       <recent name="G:\MagicTestPlatform\apps\ResourceManager" />
       <recent name="G:\MagicTestPlatform\apps\test_tools" />
       <recent name="G:\MagicTestPlatform\apps\utils" />
       <recent name="G:\LehuForum\apps\project" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\MagicTestPlatform\apps" />
-      <recent name="G:\LehuForum\apps\utils" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -110,8 +154,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.server">
-    <configuration name="init_db" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python tests.Twisted Trial in user_handler_test.py">
+    <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MagicTestPlatform" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -119,34 +163,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tools" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools/init_db.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="parse_settings" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="MagicTestPlatform" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apps/utils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/utils/parse_settings.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -177,7 +199,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="settings" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="user_handler_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MagicTestPlatform" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -185,12 +207,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MagicTestPlatform" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MagicTestPlatform/settings.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/user_handler_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -199,35 +221,43 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="wrappers" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Twisted Trial for 1.TestHelloApp.test_homepage" type="tests" factoryName="Twisted Trial" temporary="true" nameIsGenerated="true">
       <module name="MagicTestPlatform" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apps/utils" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/utils/wrappers.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;1.TestHelloApp.test_homepage&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Twisted Trial in user_handler_test.py" type="tests" factoryName="Twisted Trial" temporary="true" nameIsGenerated="true">
+      <module name="MagicTestPlatform" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/user_handler_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Twisted Trial in user_handler_test.py" />
+        <item itemvalue="Python.user_handler_test" />
         <item itemvalue="Python.server" />
-        <item itemvalue="Python.settings" />
-        <item itemvalue="Python.parse_settings" />
-        <item itemvalue="Python.wrappers" />
-        <item itemvalue="Python.init_db" />
+        <item itemvalue="Python.1" />
+        <item itemvalue="Python tests.Twisted Trial for 1.TestHelloApp.test_homepage" />
       </list>
     </recent_temporary>
   </component>
@@ -321,7 +351,7 @@
       <workItem from="1574851193208" duration="51000" />
       <workItem from="1574858666293" duration="2834000" />
       <workItem from="1574910207646" duration="15443000" />
-      <workItem from="1574994350189" duration="2449000" />
+      <workItem from="1574994350189" duration="16007000" />
     </task>
     <task id="LOCAL-00001" summary="测试代码001">
       <created>1572765563593</created>
@@ -575,7 +605,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574931691285</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="优化">
+      <created>1574998216248</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1574998216248</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -610,7 +647,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add测试环境配置接口" />
     <MESSAGE value="添加md" />
     <MESSAGE value="测试003" />
     <MESSAGE value="新增删除&amp;更新环境接口" />
@@ -635,7 +671,8 @@
     <MESSAGE value="配置文件逻辑优化 &amp; 部分模块代码优化" />
     <MESSAGE value="日志路径变更" />
     <MESSAGE value="fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed" />
+    <MESSAGE value="优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -656,12 +693,18 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MagicTestPlatform$settings.coverage" NAME="settings Coverage Results" MODIFIED="1574931139932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MagicTestPlatform" />
-    <SUITE FILE_PATH="coverage/MagicTestPlatform$handlers.coverage" NAME="handlers Coverage Results" MODIFIED="1574059618043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/test_tools" />
+    <SUITE FILE_PATH="coverage/MagicTestPlatform$settings.coverage" NAME="settings Coverage Results" MODIFIED="1575008678839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MagicTestPlatform" />
+    <SUITE FILE_PATH="coverage/MagicTestPlatform$Twisted_Trial_for_1_TestHelloApp.coverage" NAME="Twisted Trial for 1.TestHelloApp Coverage Results" MODIFIED="1575007511285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/MagicTestPlatform$Twisted_Trial_in_1_py.coverage" NAME="Twisted Trial in 1.py Coverage Results" MODIFIED="1575012878768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/MagicTestPlatform$init_db.coverage" NAME="init_db Coverage Results" MODIFIED="1574843821327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
+    <SUITE FILE_PATH="coverage/MagicTestPlatform$user_handler_test.coverage" NAME="user_handler_test Coverage Results" MODIFIED="1575019082448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/MagicTestPlatform$server.coverage" NAME="server Coverage Results" MODIFIED="1575018991134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MagicTestPlatform$1.coverage" NAME="1 Coverage Results" MODIFIED="1575017539557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/MagicTestPlatform$Twisted_Trial_in_user_handler_test_py.coverage" NAME="Twisted Trial in user_handler_test.py Coverage Results" MODIFIED="1575022172143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/MagicTestPlatform$handlers.coverage" NAME="handlers Coverage Results" MODIFIED="1574059618043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/test_tools" />
+    <SUITE FILE_PATH="coverage/MagicTestPlatform$Twisted_Trial_for_1_TestHelloApp_test_homepage.coverage" NAME="Twisted Trial for 1.TestHelloApp.test_homepage Coverage Results" MODIFIED="1575017415553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/MagicTestPlatform$parse_settings.coverage" NAME="parse_settings Coverage Results" MODIFIED="1574929319927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
     <SUITE FILE_PATH="coverage/MagicTestPlatform$wrappers.coverage" NAME="wrappers Coverage Results" MODIFIED="1574928427741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
-    <SUITE FILE_PATH="coverage/MagicTestPlatform$server.coverage" NAME="server Coverage Results" MODIFIED="1574994443669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MagicTestPlatform$models.coverage" NAME="models Coverage Results" MODIFIED="1574838218768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/interface_test" />
   </component>
   <component name="p4-ProjectCache">

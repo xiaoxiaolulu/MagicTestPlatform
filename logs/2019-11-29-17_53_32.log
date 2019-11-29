@@ -1,0 +1,45 @@
+[2019-11-29 17:53:32] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Connection      | close           
+| Host            | 127.0.0.1:63639 
+| Content-Length  | 29              
+| Content-Type    | application/x-www-form-urlencoded 
+| Accept-Encoding | gzip            
++----Arguments----+
+| 'account'       | '118652@163.com' 
+
+[2019-11-29 17:53:32] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "验证码已发送，请注意接收",
+|     "data": {
+|         "account": "118652@163.com",
+|         "VerCode": "5728"
+|     }
+| }
+[2019-11-29 17:53:32] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Connection      | close           
+| Host            | 127.0.0.1:63644 
+| Content-Length  | 67              
+| Content-Type    | application/x-www-form-urlencoded 
+| Accept-Encoding | gzip            
++----Arguments----+
+| 'account'       | '118652@163.com' 
+| 'code'          | 'None'          
+| 'password'      | '123456'        
+
+[2019-11-29 17:53:32] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 10018,
+|     "msg": "验证码失效或不正确！",
+|     "data": null
+| }
