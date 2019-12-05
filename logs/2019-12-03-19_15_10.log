@@ -1,0 +1,139 @@
+[2019-12-03 19:15:11] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | PostmanRuntime/7.20.1 
+| Accept          | */*             
+| Cache-Control   | no-cache        
+| Postman-Token   | d804d73b-7f07-4753-be07-5556197ae3f2 
+| Host            | 127.0.0.1:8084  
+| Accept-Encoding | gzip, deflate   
+| Content-Length  | 1157            
+| Connection      | keep-alive      
++----Arguments----+
+| 'url'           | '/v31/mem/action/login' 
+| 'method'        | 'post'          
+| 'headers'       | "{'Content-Type': 'application/json', 'User-Agent': 'Autoyol_107:Android_28|91AE0144CE0782302F461E04A034F098D30A00DC04FA03A781D9F3CE45', 'Accept': 'application/json;version=3.0;compress=false'}" 
+| 'params'        | "{'publicCityCode': '021', 'IMEI': '06FB700B-5719-4CF0-AD14-FE68BD9B63CF', 'mobile': '13601603008', 'AppVersion': '101', 'schema': 'B', 'PublicLatitude': '31.332778', 'PublicLongitude': '121.450570', 'password': '3d4f2bf07dc1be38b20cd6e46949a1071f9d0e3d', 'deviceName': 'iPhone8,1', 'loginType': 'password', 'OS': 'IOS', 'OsVersion': '13.1.3', 'ModuleName': 'v31\\/mem\\/action\\/login', 'publicToken': '0', 'requestId': '06FB700B-5719-4CF0-AD14-FE68BD9B63CF4789275207346362241'}\n" 
+| 'project'       | '6'             
+
+[2019-12-03 19:15:12] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "接口请求成功",
+|     "data": {
+|         "status_code": 200,
+|         "response_body": {
+|             "data": {
+|                 "token": "8ebccda45911416bafbdb36d7efae3de",
+|                 "isNew": "0",
+|                 "hasPassword": "1",
+|                 "baseInfo": {
+|                     "authStatus": 0,
+|                     "memNo": 166680504,
+|                     "nickName": "博士专车",
+|                     "portrait": "portrait/17/01/166680504/20171205162721P.jpg",
+|                     "realName": "陈考荣",
+|                     "regTime": "2017年01月",
+|                     "joinTime": "20170119145334",
+|                     "mobile": "13601603008",
+|                     "idNo": "36232519740319193x",
+|                     "inviteCode": "ntnkub",
+|                     "haveCar": 93,
+|                     "autoCoins": 101988,
+|                     "autoCoinsReadFlag": 1,
+|                     "walletTotal": 1000,
+|                     "walletReadFlag": 0,
+|                     "walletItemReadFlag": 1,
+|                     "couponReadFlag": 0,
+|                     "drawalBalance": 26865,
+|                     "rechargeInfo": {
+|                         "rechargePackageList": [
+|                             {
+|                                 "packageId": "2",
+|                                 "payBalance": "2000",
+|                                 "giveBalance": "100",
+|                                 "totalBalance": "2100",
+|                                 "payBalanceTxt": "充2000",
+|                                 "giveBalanceTxt": "送100",
+|                                 "defaultPackageIconPath": "0",
+|                                 "isDefaultPackage": "0"
+|                             },
+|                             {
+|                                 "packageId": "3",
+|                                 "payBalance": "5000",
+|                                 "giveBalance": "250",
+|                                 "totalBalance": "5250",
+|                                 "payBalanceTxt": "充5000",
+|                                 "giveBalanceTxt": "送250",
+|                                 "defaultPackageIconPath": "https://carphoto.atzuche.com/app/recharge/package/icon1517888830641.png",
+|                                 "isDefaultPackage": "1"
+|                             },
+|                             {
+|                                 "packageId": "4",
+|                                 "payBalance": "10000",
+|                                 "giveBalance": "500",
+|                                 "totalBalance": "10500",
+|                                 "payBalanceTxt": "充10000",
+|                                 "giveBalanceTxt": "送500",
+|                                 "defaultPackageIconPath": "0",
+|                                 "isDefaultPackage": "0"
+|                             },
+|                             {
+|                                 "packageId": "5",
+|                                 "payBalance": "30000",
+|                                 "giveBalance": "1500",
+|                                 "totalBalance": "31500",
+|                                 "payBalanceTxt": "充30000",
+|                                 "giveBalanceTxt": "送1500",
+|                                 "defaultPackageIconPath": "0",
+|                                 "isDefaultPackage": "0"
+|                             }
+|                         ],
+|                         "bannerUrl": "https://carphoto.atzuche.com/app/recharge/package/banner1517888661042.png"
+|                     },
+|                     "verificationState": "5"
+|                 },
+|                 "ownerInfo": {
+|                     "stewardList": [
+|                         {
+|                             "city": "上海",
+|                             "phone": 18521782291
+|                         }
+|                     ],
+|                     "ownerTransMsg": 3,
+|                     "sellTimes": 187,
+|                     "totalIncome": 149202,
+|                     "totalIncomeReadFlag": 1,
+|                     "uploadStatus": 1
+|                 },
+|                 "rentInfo": {
+|                     "buyEvalBad": 0,
+|                     "buyEvalGood": 0,
+|                     "buyEvalMedium": 0,
+|                     "buyResAvgTime": 0,
+|                     "buyTimes": 0,
+|                     "couponNum": 9,
+|                     "driLicAuth": 2,
+|                     "driViceLicAuth": 2,
+|                     "idCardAuth": 2,
+|                     "idCardBackAuth": 2,
+|                     "rentDiscouponMsg": 0,
+|                     "rentTransMsg": 0,
+|                     "socialInsurAuth": 0,
+|                     "reliefFlag": "1"
+|                 },
+|                 "tecentMemberVo": {
+|                     "memberNo": "166680504!APP$2",
+|                     "sign": "eJxFkF1PgzAUhn*LxEujbWmr7g4XokuGIN0y4IYUaFnVMT46wrb4362Mxdv3OSfnfc7ZWi3ZPa9rVaRcp3ZbWDMLWHdjLIZatSLlUovWxJAQggC40l60ndpXBiAACUQ2AP9QFaLSSqrLIqX0CRCAb5wguEXTSKdKwzw3ni8*5vmW06N-kpn9fPh0dZHA79Xadd6jRtPHocT9LtbZW1Nm0llsHZ*FXh6yl4Y9nGgTdIPfxTKSVU*GGG0ikYRJ7i1fmb1ZX48VX*lo*VcHm54EY0wmqNVOjH6UGhVI7Cnneb4-VDrVx1qMb-n5BWTyWis_"
+|                 }
+|             },
+|             "resCode": "000000",
+|             "resMsg": "success"
+|         }
+|     }
+| }

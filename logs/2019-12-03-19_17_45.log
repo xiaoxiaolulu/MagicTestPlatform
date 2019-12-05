@@ -1,0 +1,922 @@
+[2019-12-03 19:17:46] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | PostmanRuntime/7.20.1 
+| Accept          | */*             
+| Cache-Control   | no-cache        
+| Postman-Token   | d57c666c-1ca8-4907-be09-f3565c798981 
+| Host            | 127.0.0.1:8084  
+| Accept-Encoding | gzip, deflate   
+| Content-Length  | 1157            
+| Connection      | keep-alive      
++----Arguments----+
+| 'url'           | '/v31/mem/action/login' 
+| 'method'        | 'post'          
+| 'headers'       | "{'Content-Type': 'application/json', 'User-Agent': 'Autoyol_107:Android_28|91AE0144CE0782302F461E04A034F098D30A00DC04FA03A781D9F3CE45', 'Accept': 'application/json;version=3.0;compress=false'}" 
+| 'params'        | "{'publicCityCode': '021', 'IMEI': '06FB700B-5719-4CF0-AD14-FE68BD9B63CF', 'mobile': '13601603008', 'AppVersion': '101', 'schema': 'B', 'PublicLatitude': '31.332778', 'PublicLongitude': '121.450570', 'password': '3d4f2bf07dc1be38b20cd6e46949a1071f9d0e3d', 'deviceName': 'iPhone8,1', 'loginType': 'password', 'OS': 'IOS', 'OsVersion': '13.1.3', 'ModuleName': 'v31\\/mem\\/action\\/login', 'publicToken': '0', 'requestId': '06FB700B-5719-4CF0-AD14-FE68BD9B63CF4789275207346362241'}\n" 
+| 'project'       | '6'             
+
+[2019-12-03 19:17:47] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "接口请求成功",
+|     "data": {
+|         "status_code": 200,
+|         "times": 0.25504207611083984,
+|         "response_body": {
+|             "data": {
+|                 "token": "0cfedf180c1642eab8a3a2a0eda2f065",
+|                 "isNew": "0",
+|                 "hasPassword": "1",
+|                 "baseInfo": {
+|                     "authStatus": 0,
+|                     "memNo": 166680504,
+|                     "nickName": "博士专车",
+|                     "portrait": "portrait/17/01/166680504/20171205162721P.jpg",
+|                     "realName": "陈考荣",
+|                     "regTime": "2017年01月",
+|                     "joinTime": "20170119145334",
+|                     "mobile": "13601603008",
+|                     "idNo": "36232519740319193x",
+|                     "inviteCode": "ntnkub",
+|                     "haveCar": 93,
+|                     "autoCoins": 101988,
+|                     "autoCoinsReadFlag": 1,
+|                     "walletTotal": 1000,
+|                     "walletReadFlag": 0,
+|                     "walletItemReadFlag": 1,
+|                     "couponReadFlag": 0,
+|                     "drawalBalance": 26865,
+|                     "rechargeInfo": {
+|                         "rechargePackageList": [
+|                             {
+|                                 "packageId": "2",
+|                                 "payBalance": "2000",
+|                                 "giveBalance": "100",
+|                                 "totalBalance": "2100",
+|                                 "payBalanceTxt": "充2000",
+|                                 "giveBalanceTxt": "送100",
+|                                 "defaultPackageIconPath": "0",
+|                                 "isDefaultPackage": "0"
+|                             },
+|                             {
+|                                 "packageId": "3",
+|                                 "payBalance": "5000",
+|                                 "giveBalance": "250",
+|                                 "totalBalance": "5250",
+|                                 "payBalanceTxt": "充5000",
+|                                 "giveBalanceTxt": "送250",
+|                                 "defaultPackageIconPath": "https://carphoto.atzuche.com/app/recharge/package/icon1517888830641.png",
+|                                 "isDefaultPackage": "1"
+|                             },
+|                             {
+|                                 "packageId": "4",
+|                                 "payBalance": "10000",
+|                                 "giveBalance": "500",
+|                                 "totalBalance": "10500",
+|                                 "payBalanceTxt": "充10000",
+|                                 "giveBalanceTxt": "送500",
+|                                 "defaultPackageIconPath": "0",
+|                                 "isDefaultPackage": "0"
+|                             },
+|                             {
+|                                 "packageId": "5",
+|                                 "payBalance": "30000",
+|                                 "giveBalance": "1500",
+|                                 "totalBalance": "31500",
+|                                 "payBalanceTxt": "充30000",
+|                                 "giveBalanceTxt": "送1500",
+|                                 "defaultPackageIconPath": "0",
+|                                 "isDefaultPackage": "0"
+|                             }
+|                         ],
+|                         "bannerUrl": "https://carphoto.atzuche.com/app/recharge/package/banner1517888661042.png"
+|                     },
+|                     "verificationState": "5"
+|                 },
+|                 "ownerInfo": {
+|                     "stewardList": [
+|                         {
+|                             "city": "上海",
+|                             "phone": 18521782291
+|                         }
+|                     ],
+|                     "ownerTransMsg": 3,
+|                     "sellTimes": 187,
+|                     "totalIncome": 149202,
+|                     "totalIncomeReadFlag": 1,
+|                     "uploadStatus": 1
+|                 },
+|                 "rentInfo": {
+|                     "buyEvalBad": 0,
+|                     "buyEvalGood": 0,
+|                     "buyEvalMedium": 0,
+|                     "buyResAvgTime": 0,
+|                     "buyTimes": 0,
+|                     "couponNum": 9,
+|                     "driLicAuth": 2,
+|                     "driViceLicAuth": 2,
+|                     "idCardAuth": 2,
+|                     "idCardBackAuth": 2,
+|                     "rentDiscouponMsg": 0,
+|                     "rentTransMsg": 0,
+|                     "socialInsurAuth": 0,
+|                     "reliefFlag": "1"
+|                 },
+|                 "tecentMemberVo": {
+|                     "memberNo": "166680504!APP$2",
+|                     "sign": "eJxFkF1PgzAUhn*LxEujbWmr7g4XokuGIN0y4IYUaFnVMT46wrb4362Mxdv3OSfnfc7ZWi3ZPa9rVaRcp3ZbWDMLWHdjLIZatSLlUovWxJAQggC40l60ndpXBiAACUQ2AP9QFaLSSqrLIqX0CRCAb5wguEXTSKdKwzw3ni8*5vmW06N-kpn9fPh0dZHA79Xadd6jRtPHocT9LtbZW1Nm0llsHZ*FXh6yl4Y9nGgTdIPfxTKSVU*GGG0ikYRJ7i1fmb1ZX48VX*lo*VcHm54EY0wmqNVOjH6UGhVI7Cnneb4-VDrVx1qMb-n5BWTyWis_"
+|                 }
+|             },
+|             "resCode": "000000",
+|             "resMsg": "success"
+|         }
+|     }
+| }
+[2019-12-03 19:20:41] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Access-Control-Request-Method | GET             
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Access-Control-Request-Headers | authorization   
+| Accept          | */*             
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+
+[2019-12-03 19:20:41] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| ProjectHandler object has list index out of range
+[2019-12-03 19:20:41] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+
+[2019-12-03 19:20:41] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "项目数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-02T21:50:07",
+|             "name": "生产",
+|             "env": {
+|                 "id": 9,
+|                 "add_time": "2019-12-03T19:20:41.477880",
+|                 "name": "生产",
+|                 "creator": null,
+|                 "host_address": "https://app30.aotuzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T19:20:41.477880",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "12313"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-11-27T16:41:03",
+|             "name": "踩踩踩踩踩",
+|             "env": {
+|                 "id": 8,
+|                 "add_time": "2019-12-03T19:20:41.477880",
+|                 "name": "谢谢谢谢",
+|                 "creator": null,
+|                 "host_address": "https://testapp.atzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T19:20:41.477880",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "23213"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-11-27T16:18:15",
+|             "name": "测试",
+|             "env": {
+|                 "id": 7,
+|                 "add_time": "2019-12-03T19:20:41.478374",
+|                 "name": "测试",
+|                 "creator": null,
+|                 "host_address": "http://127.0.0.1:8084",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T19:20:41.478374",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1其"
+|         },
+|         {
+|             "id": 3,
+|             "add_time": "2019-11-27T16:06:23",
+|             "name": "嘻嘻嘻",
+|             "env": {
+|                 "id": 6,
+|                 "add_time": "2019-12-03T19:20:41.478374",
+|                 "name": "休息休息",
+|                 "creator": null,
+|                 "host_address": "xxxx",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T19:20:41.478374",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "嘻嘻嘻"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T15:50:44",
+|             "name": "e31231",
+|             "env": {
+|                 "id": 4,
+|                 "add_time": "2019-12-03T19:20:41.478871",
+|                 "name": "made打打",
+|                 "creator": null,
+|                 "host_address": "eqeq",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T19:20:41.478374",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "3131"
+|         },
+|         {
+|             "id": 1,
+|             "add_time": "2019-11-27T15:44:52",
+|             "name": "3131",
+|             "env": {
+|                 "id": 5,
+|                 "add_time": "2019-12-03T19:20:41.478871",
+|                 "name": "远远",
+|                 "creator": null,
+|                 "host_address": "31",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T19:20:41.478871",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1231"
+|         }
+|     ]
+| }
+[2019-12-03 19:22:17] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Access-Control-Request-Method | POST            
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Access-Control-Request-Headers | authorization,content-type 
+| Accept          | */*             
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+
+[2019-12-03 19:22:17] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| InterfacesDebugHandler object has list index out of range
+[2019-12-03 19:22:17] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Content-Length  | 718             
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Content-Type    | application/json;charset=UTF-8 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'url'           | 'v5121/homePop/getPop' 
+| 'method'        | 'get'           
+| 'headers'       | '{"Accept":"application/json;version=3.0;compress=false","Content-Type":"application/json","User-Agent":"Autoyol_107:Android_28|91AE0144CE0782302F461E04A034F098D30A00DC04FA03A781D9F3CE45"}' 
+| 'params'        | 'cityCode=310100&isRenter=1&token=2a3b3ad3e4404281a78d841eabccef46&OS=ANDROID&OsVersion=28&AppVersion=107&IMEI=869704033142271&mac=9CE82B30746D&androidID=f6eb3bbd8b43d0cb&PublicLongitude=121.409381&PublicLatitude=31.172141&publicCityCode=021&appName=atzucheApp&deviceName=vivoX21A&publicToken=2a3b3ad3e4404281a78d841eabccef46&AppChannelId=testmarket&AndroidId=f6eb3bbd8b43d0cb&requestId=9CE82B30746D1574843951903&mem_no=494671888&schema=B' 
+| 'project'       | 5               
+
+[2019-12-03 19:22:18] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "接口请求成功",
+|     "data": {
+|         "status_code": 200,
+|         "times": 0.3695108890533447,
+|         "response_body": {
+|             "data": {
+|                 "homePopContentList": [],
+|                 "privacyAuthorizeInfo": null,
+|                 "couponInfoList": null
+|             },
+|             "resCode": "000000",
+|             "resMsg": "success"
+|         }
+|     }
+| }
+[2019-12-03 19:31:58] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Content-Type    | application/x-www-form-urlencoded 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzQ3NTIxNzd9.lsuunSK7H4MUPRRm-P6uWJxAqSpLvm7yJ6CS0LVBwa8 
+| User-Agent      | PostmanRuntime/7.20.1 
+| Accept          | */*             
+| Cache-Control   | no-cache        
+| Postman-Token   | 985909b2-34fc-4404-b9e2-218f32155a21 
+| Host            | 127.0.0.1:8084  
+| Accept-Encoding | gzip, deflate   
+| Content-Length  | 742             
+| Connection      | keep-alive      
++----Arguments----+
+| 'url'           | 'v5121/homePop/getPop' 
+| 'method'        | 'get'           
+| 'headers'       | "{'Content-Type': 'application/json', 'User-Agent': 'Autoyol_107:Android_28|91AE0144CE0782302F461E04A034F098D30A00DC04FA03A781D9F3CE45', 'Accept': 'application/json;version=3.0;compress=false'}" 
+| 'params'        | 'cityCode=310100&isRenter=1&token=2a3b3ad3e4404281a78d841eabccef46&OS=ANDROID&OsVersion=28&AppVersion=107&IMEI=869704033142271&mac=9CE82B30746D&androidID=f6eb3bbd8b43d0cb&PublicLongitude=121.409381&PublicLatitude=31.172141&publicCityCode=021&appName=atzucheApp&deviceName=vivoX21A&publicToken=2a3b3ad3e4404281a78d841eabccef46&AppChannelId=testmarket&AndroidId=f6eb3bbd8b43d0cb&requestId=9CE82B30746D1574843951903&mem_no=494671888&schema=B' 
+| 'project'       | '5'             
+
+[2019-12-03 19:31:58] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| InterfacesDebugHandler object has list index out of range
+[2019-12-03 19:35:46] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Access-Control-Request-Method | GET             
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Access-Control-Request-Headers | authorization   
+| Accept          | */*             
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+
+[2019-12-03 19:35:46] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| DbSettingHandler object has list index out of range
+[2019-12-03 19:35:46] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Access-Control-Request-Method | GET             
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Access-Control-Request-Headers | authorization   
+| Accept          | */*             
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+
+[2019-12-03 19:35:46] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| DbSettingHandler object has list index out of range
+[2019-12-03 19:35:46] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "5756b2a3a5005919772f8f9f271bb3a286345c5d" 
+
+[2019-12-03 19:35:46] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T19:35:46.258260",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 19:35:46] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "5aaa95eb14b029f6708c4e274c2b31a84d22c901" 
+
+[2019-12-03 19:35:46] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T19:35:46.287828",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 19:38:00] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "b6d0abb040413c5122632e5f998a542ca9eb6930" 
+
+[2019-12-03 19:38:00] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T19:38:00.536624",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 19:38:00] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "84373719ca5d1c4cf079d8f2525efb636c1a266e" 
+
+[2019-12-03 19:38:00] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T19:38:00.555955",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 19:38:01] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Access-Control-Request-Method | GET             
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Access-Control-Request-Headers | authorization   
+| Accept          | */*             
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+
+[2019-12-03 19:38:01] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| ProjectHandler object has list index out of range
+[2019-12-03 19:38:01] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "391a226d98bd12f1770b74362876c74e7d7e8698" 
+
+[2019-12-03 19:38:01] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "项目数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-02T21:50:07",
+|             "name": "生产",
+|             "env": {
+|                 "id": 9,
+|                 "add_time": "2019-12-03T19:38:01.590369",
+|                 "name": "生产",
+|                 "creator": null,
+|                 "host_address": "https://app30.aotuzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T19:38:01.590369",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "12313"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-11-27T16:41:03",
+|             "name": "踩踩踩踩踩",
+|             "env": {
+|                 "id": 8,
+|                 "add_time": "2019-12-03T19:38:01.590867",
+|                 "name": "谢谢谢谢",
+|                 "creator": null,
+|                 "host_address": "https://testapp.atzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T19:38:01.590867",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "23213"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-11-27T16:18:15",
+|             "name": "测试",
+|             "env": {
+|                 "id": 7,
+|                 "add_time": "2019-12-03T19:38:01.590867",
+|                 "name": "测试",
+|                 "creator": null,
+|                 "host_address": "http://127.0.0.1:8084",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T19:38:01.590867",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1其"
+|         },
+|         {
+|             "id": 3,
+|             "add_time": "2019-11-27T16:06:23",
+|             "name": "嘻嘻嘻",
+|             "env": {
+|                 "id": 6,
+|                 "add_time": "2019-12-03T19:38:01.591374",
+|                 "name": "休息休息",
+|                 "creator": null,
+|                 "host_address": "xxxx",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T19:38:01.591374",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "嘻嘻嘻"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T15:50:44",
+|             "name": "e31231",
+|             "env": {
+|                 "id": 4,
+|                 "add_time": "2019-12-03T19:38:01.591374",
+|                 "name": "made打打",
+|                 "creator": null,
+|                 "host_address": "eqeq",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T19:38:01.591374",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "3131"
+|         },
+|         {
+|             "id": 1,
+|             "add_time": "2019-11-27T15:44:52",
+|             "name": "3131",
+|             "env": {
+|                 "id": 5,
+|                 "add_time": "2019-12-03T19:38:01.591859",
+|                 "name": "远远",
+|                 "creator": null,
+|                 "host_address": "31",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T19:38:01.591859",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1231"
+|         }
+|     ]
+| }
+[2019-12-03 19:39:03] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Access-Control-Request-Method | POST            
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Access-Control-Request-Headers | authorization,content-type 
+| Accept          | */*             
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+
+[2019-12-03 19:39:03] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| InterfacesDebugHandler object has list index out of range
+[2019-12-03 19:39:03] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Content-Length  | 718             
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Content-Type    | application/json;charset=UTF-8 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'url'           | 'v5121/homePop/getPop' 
+| 'method'        | 'get'           
+| 'headers'       | '{"Accept":"application/json;version=3.0;compress=false","User-Agent":"Autoyol_107:Android_28|91AE0144CE0782302F461E04A034F098D30A00DC04FA03A781D9F3CE45","Content-Type":"application/json"}' 
+| 'params'        | 'cityCode=310100&isRenter=1&token=2a3b3ad3e4404281a78d841eabccef46&OS=ANDROID&OsVersion=28&AppVersion=107&IMEI=869704033142271&mac=9CE82B30746D&androidID=f6eb3bbd8b43d0cb&PublicLongitude=121.409381&PublicLatitude=31.172141&publicCityCode=021&appName=atzucheApp&deviceName=vivoX21A&publicToken=2a3b3ad3e4404281a78d841eabccef46&AppChannelId=testmarket&AndroidId=f6eb3bbd8b43d0cb&requestId=9CE82B30746D1574843951903&mem_no=494671888&schema=B' 
+| 'project'       | 5               
+
+[2019-12-03 19:39:04] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "接口请求成功",
+|     "data": {
+|         "status_code": 200,
+|         "times": 0.2541828155517578,
+|         "response_body": {
+|             "data": {
+|                 "homePopContentList": [],
+|                 "privacyAuthorizeInfo": null,
+|                 "couponInfoList": null
+|             },
+|             "resCode": "000000",
+|             "resMsg": "success"
+|         }
+|     }
+| }

@@ -21,8 +21,8 @@ database = MySQLDatabase(
 
 
 def init():
-    database_async.create_tables([User, ])
-    database_async.create_tables([Project, FunctionGenerator, TestEnvironment, DBSetting])
+    # database_async.create_tables([User, ])
+    # database_async.create_tables([Project, FunctionGenerator, TestEnvironment, DBSetting])
     database_async.create_tables([Interfaces, ])
 
 

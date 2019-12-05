@@ -1,0 +1,5391 @@
+[2019-12-03 15:48:02] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Access-Control-Request-Method | GET             
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Access-Control-Request-Headers | authorization   
+| Accept          | */*             
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+
+[2019-12-03 15:48:02] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| DbSettingHandler object has list index out of range
+[2019-12-03 15:48:02] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Access-Control-Request-Method | GET             
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Access-Control-Request-Headers | authorization   
+| Accept          | */*             
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+
+[2019-12-03 15:48:02] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| DbSettingHandler object has list index out of range
+[2019-12-03 15:48:02] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+
+[2019-12-03 15:48:02] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:02.402580",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 15:48:02] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "6722fd9174f0b3f5253d8a271830e0836969e11e" 
+
+[2019-12-03 15:48:02] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:02.416579",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 15:48:04] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Access-Control-Request-Method | GET             
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Access-Control-Request-Headers | authorization   
+| Accept          | */*             
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+
+[2019-12-03 15:48:04] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| ProjectHandler object has list index out of range
+[2019-12-03 15:48:04] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+
+[2019-12-03 15:48:04] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "项目数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-02T21:50:07",
+|             "name": "生产",
+|             "env": {
+|                 "id": 9,
+|                 "add_time": "2019-12-03T15:48:04.367296",
+|                 "name": "生产",
+|                 "creator": null,
+|                 "host_address": "https://app30.aotuzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:04.367296",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "12313"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-11-27T16:41:03",
+|             "name": "踩踩踩踩踩",
+|             "env": {
+|                 "id": 8,
+|                 "add_time": "2019-12-03T15:48:04.367296",
+|                 "name": "谢谢谢谢",
+|                 "creator": null,
+|                 "host_address": "https://testapp.atzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:04.367296",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "23213"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-11-27T16:18:15",
+|             "name": "测试",
+|             "env": {
+|                 "id": 7,
+|                 "add_time": "2019-12-03T15:48:04.368308",
+|                 "name": "测试",
+|                 "creator": null,
+|                 "host_address": "http://127.0.0.1:8084",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:04.368308",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1其"
+|         },
+|         {
+|             "id": 3,
+|             "add_time": "2019-11-27T16:06:23",
+|             "name": "嘻嘻嘻",
+|             "env": {
+|                 "id": 6,
+|                 "add_time": "2019-12-03T15:48:04.368308",
+|                 "name": "休息休息",
+|                 "creator": null,
+|                 "host_address": "xxxx",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:04.368308",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "嘻嘻嘻"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T15:50:44",
+|             "name": "e31231",
+|             "env": {
+|                 "id": 4,
+|                 "add_time": "2019-12-03T15:48:04.368308",
+|                 "name": "made打打",
+|                 "creator": null,
+|                 "host_address": "eqeq",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:04.368308",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "3131"
+|         },
+|         {
+|             "id": 1,
+|             "add_time": "2019-11-27T15:44:52",
+|             "name": "3131",
+|             "env": {
+|                 "id": 5,
+|                 "add_time": "2019-12-03T15:48:04.368308",
+|                 "name": "远远",
+|                 "creator": null,
+|                 "host_address": "31",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:04.368308",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1231"
+|         }
+|     ]
+| }
+[2019-12-03 15:48:25] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Access-Control-Request-Method | GET             
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Access-Control-Request-Headers | authorization   
+| Accept          | */*             
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/functionManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+
+[2019-12-03 15:48:25] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| FunctionHandler object has list index out of range
+[2019-12-03 15:48:25] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Access-Control-Request-Method | GET             
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Access-Control-Request-Headers | authorization   
+| Accept          | */*             
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/functionManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+
+[2019-12-03 15:48:25] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| FunctionHandler object has list index out of range
+[2019-12-03 15:48:25] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/functionManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+
+[2019-12-03 15:48:25] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "函数方法数据查询成功!",
+|     "data": []
+| }
+[2019-12-03 15:48:25] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/functionManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "bfa02d994775082feefaf132b0f7f1b5aa9d49a7" 
+
+[2019-12-03 15:48:25] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Undefined       | Undefined       
+
+[2019-12-03 15:48:26] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/projectManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "f511b29a9513d6b5e8af02adaea83745a7274745" 
+
+[2019-12-03 15:48:26] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "项目数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-02T21:50:07",
+|             "name": "生产",
+|             "env": {
+|                 "id": 9,
+|                 "add_time": "2019-12-03T15:48:26.976866",
+|                 "name": "生产",
+|                 "creator": null,
+|                 "host_address": "https://app30.aotuzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:26.976866",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "12313"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-11-27T16:41:03",
+|             "name": "踩踩踩踩踩",
+|             "env": {
+|                 "id": 8,
+|                 "add_time": "2019-12-03T15:48:26.976866",
+|                 "name": "谢谢谢谢",
+|                 "creator": null,
+|                 "host_address": "https://testapp.atzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:26.976866",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "23213"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-11-27T16:18:15",
+|             "name": "测试",
+|             "env": {
+|                 "id": 7,
+|                 "add_time": "2019-12-03T15:48:26.976866",
+|                 "name": "测试",
+|                 "creator": null,
+|                 "host_address": "http://127.0.0.1:8084",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:26.976866",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1其"
+|         },
+|         {
+|             "id": 3,
+|             "add_time": "2019-11-27T16:06:23",
+|             "name": "嘻嘻嘻",
+|             "env": {
+|                 "id": 6,
+|                 "add_time": "2019-12-03T15:48:26.977830",
+|                 "name": "休息休息",
+|                 "creator": null,
+|                 "host_address": "xxxx",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:26.977830",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "嘻嘻嘻"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T15:50:44",
+|             "name": "e31231",
+|             "env": {
+|                 "id": 4,
+|                 "add_time": "2019-12-03T15:48:26.977830",
+|                 "name": "made打打",
+|                 "creator": null,
+|                 "host_address": "eqeq",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:26.977830",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "3131"
+|         },
+|         {
+|             "id": 1,
+|             "add_time": "2019-11-27T15:44:52",
+|             "name": "3131",
+|             "env": {
+|                 "id": 5,
+|                 "add_time": "2019-12-03T15:48:26.977830",
+|                 "name": "远远",
+|                 "creator": null,
+|                 "host_address": "31",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:26.977830",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1231"
+|         }
+|     ]
+| }
+[2019-12-03 15:48:26] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/projectManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "48863925fded228deb5044ba00ad52f74ddaf3ac" 
+
+[2019-12-03 15:48:27] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "项目数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-02T21:50:07",
+|             "name": "生产",
+|             "env": {
+|                 "id": 9,
+|                 "add_time": "2019-12-03T15:48:27.006752",
+|                 "name": "生产",
+|                 "creator": null,
+|                 "host_address": "https://app30.aotuzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:27.006752",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "12313"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-11-27T16:41:03",
+|             "name": "踩踩踩踩踩",
+|             "env": {
+|                 "id": 8,
+|                 "add_time": "2019-12-03T15:48:27.006752",
+|                 "name": "谢谢谢谢",
+|                 "creator": null,
+|                 "host_address": "https://testapp.atzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:27.006752",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "23213"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-11-27T16:18:15",
+|             "name": "测试",
+|             "env": {
+|                 "id": 7,
+|                 "add_time": "2019-12-03T15:48:27.006752",
+|                 "name": "测试",
+|                 "creator": null,
+|                 "host_address": "http://127.0.0.1:8084",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:27.006752",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1其"
+|         },
+|         {
+|             "id": 3,
+|             "add_time": "2019-11-27T16:06:23",
+|             "name": "嘻嘻嘻",
+|             "env": {
+|                 "id": 6,
+|                 "add_time": "2019-12-03T15:48:27.007749",
+|                 "name": "休息休息",
+|                 "creator": null,
+|                 "host_address": "xxxx",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:27.007749",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "嘻嘻嘻"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T15:50:44",
+|             "name": "e31231",
+|             "env": {
+|                 "id": 4,
+|                 "add_time": "2019-12-03T15:48:27.007749",
+|                 "name": "made打打",
+|                 "creator": null,
+|                 "host_address": "eqeq",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:27.007749",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "3131"
+|         },
+|         {
+|             "id": 1,
+|             "add_time": "2019-11-27T15:44:52",
+|             "name": "3131",
+|             "env": {
+|                 "id": 5,
+|                 "add_time": "2019-12-03T15:48:27.007749",
+|                 "name": "远远",
+|                 "creator": null,
+|                 "host_address": "31",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:27.007749",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1231"
+|         }
+|     ]
+| }
+[2019-12-03 15:48:28] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Access-Control-Request-Method | GET             
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Access-Control-Request-Headers | authorization   
+| Accept          | */*             
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/environmentManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+
+[2019-12-03 15:48:28] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| TestEnvironmentHandler object has list index out of range
+[2019-12-03 15:48:28] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Access-Control-Request-Method | GET             
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Access-Control-Request-Headers | authorization   
+| Accept          | */*             
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/environmentManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+
+[2019-12-03 15:48:28] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| TestEnvironmentHandler object has list index out of range
+[2019-12-03 15:48:28] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/environmentManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+
+[2019-12-03 15:48:28] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "测试环境数据查询成功!",
+|     "data": [
+|         {
+|             "id": 9,
+|             "add_time": "2019-12-02T21:38:29",
+|             "name": "生产",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:28.886726",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "host_address": "https://app30.aotuzuche.com:7065",
+|             "desc": "https://app30.aotuzuche.com:7065"
+|         },
+|         {
+|             "id": 8,
+|             "add_time": "2019-11-27T16:40:54",
+|             "name": "谢谢谢谢",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:28.886726",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "host_address": "https://testapp.atzuche.com:7065",
+|             "desc": "https://testapp.atzuche.com:7065"
+|         },
+|         {
+|             "id": 7,
+|             "add_time": "2019-11-27T16:18:01",
+|             "name": "测试",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:28.886726",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "host_address": "http://127.0.0.1:8084",
+|             "desc": "https://testapp.atzuche.com:7065"
+|         },
+|         {
+|             "id": 6,
+|             "add_time": "2019-11-27T16:06:44",
+|             "name": "休息休息",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:28.886726",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "host_address": "xxxx",
+|             "desc": "xxx"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-11-27T15:55:12",
+|             "name": "远远",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:28.886726",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "host_address": "31",
+|             "desc": "3213"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-11-27T15:50:04",
+|             "name": "made打打",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:28.886726",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "host_address": "eqeq",
+|             "desc": "ewq"
+|         },
+|         {
+|             "id": 3,
+|             "add_time": "2019-11-27T15:44:48",
+|             "name": "eqw",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:28.886726",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "host_address": "eqeq",
+|             "desc": "eq"
+|         }
+|     ]
+| }
+[2019-12-03 15:48:28] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/environmentManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "1a9aae009134f9235c75840e530a122456a849d5" 
+
+[2019-12-03 15:48:28] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "测试环境数据查询成功!",
+|     "data": [
+|         {
+|             "id": 9,
+|             "add_time": "2019-12-02T21:38:29",
+|             "name": "生产",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:28.904675",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "host_address": "https://app30.aotuzuche.com:7065",
+|             "desc": "https://app30.aotuzuche.com:7065"
+|         },
+|         {
+|             "id": 8,
+|             "add_time": "2019-11-27T16:40:54",
+|             "name": "谢谢谢谢",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:28.904675",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "host_address": "https://testapp.atzuche.com:7065",
+|             "desc": "https://testapp.atzuche.com:7065"
+|         },
+|         {
+|             "id": 7,
+|             "add_time": "2019-11-27T16:18:01",
+|             "name": "测试",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:28.904675",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "host_address": "http://127.0.0.1:8084",
+|             "desc": "https://testapp.atzuche.com:7065"
+|         },
+|         {
+|             "id": 6,
+|             "add_time": "2019-11-27T16:06:44",
+|             "name": "休息休息",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:28.905685",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "host_address": "xxxx",
+|             "desc": "xxx"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-11-27T15:55:12",
+|             "name": "远远",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:28.905685",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "host_address": "31",
+|             "desc": "3213"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-11-27T15:50:04",
+|             "name": "made打打",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:28.905685",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "host_address": "eqeq",
+|             "desc": "ewq"
+|         },
+|         {
+|             "id": 3,
+|             "add_time": "2019-11-27T15:44:48",
+|             "name": "eqw",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:28.905685",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "host_address": "eqeq",
+|             "desc": "eq"
+|         }
+|     ]
+| }
+[2019-12-03 15:48:30] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "023b39dfac7ebf0fe1dc01c35884e2e12b92e670" 
+
+[2019-12-03 15:48:30] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:30.735810",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 15:48:30] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "33042cb4c5bdb9ff8b95477271b4f455141700f8" 
+
+[2019-12-03 15:48:30] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:48:30.826538",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 15:50:49] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "405c07b63abab6a9b17698b0dd700319f9c0bbdf" 
+
+[2019-12-03 15:50:49] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:50:49.377679",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 15:50:49] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "64afd6e9b1592b937de4bcf4193af52ac21fcd25" 
+
+[2019-12-03 15:50:49] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:50:49.391566",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 15:51:24] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "ff3ce1d6ef9722e2edabd83cf269f57a1d34ef8d" 
+
+[2019-12-03 15:51:24] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:24.993389",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 15:51:25] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "93c839fa7943fcd4f3bdec1ac1a4d7bc3f61c7f6" 
+
+[2019-12-03 15:51:25] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:25.012307",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 15:51:30] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/functionManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "bfa02d994775082feefaf132b0f7f1b5aa9d49a7" 
+
+[2019-12-03 15:51:30] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Undefined       | Undefined       
+
+[2019-12-03 15:51:30] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/functionManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "bfa02d994775082feefaf132b0f7f1b5aa9d49a7" 
+
+[2019-12-03 15:51:30] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Undefined       | Undefined       
+
+[2019-12-03 15:51:35] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/projectManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "c43282596d3df3a88929ca8dbf9f5dfa726dd3a1" 
+
+[2019-12-03 15:51:35] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "项目数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-02T21:50:07",
+|             "name": "生产",
+|             "env": {
+|                 "id": 9,
+|                 "add_time": "2019-12-03T15:51:35.981048",
+|                 "name": "生产",
+|                 "creator": null,
+|                 "host_address": "https://app30.aotuzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:35.981048",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "12313"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-11-27T16:41:03",
+|             "name": "踩踩踩踩踩",
+|             "env": {
+|                 "id": 8,
+|                 "add_time": "2019-12-03T15:51:35.981048",
+|                 "name": "谢谢谢谢",
+|                 "creator": null,
+|                 "host_address": "https://testapp.atzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:35.981048",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "23213"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-11-27T16:18:15",
+|             "name": "测试",
+|             "env": {
+|                 "id": 7,
+|                 "add_time": "2019-12-03T15:51:35.982044",
+|                 "name": "测试",
+|                 "creator": null,
+|                 "host_address": "http://127.0.0.1:8084",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:35.982044",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1其"
+|         },
+|         {
+|             "id": 3,
+|             "add_time": "2019-11-27T16:06:23",
+|             "name": "嘻嘻嘻",
+|             "env": {
+|                 "id": 6,
+|                 "add_time": "2019-12-03T15:51:35.982044",
+|                 "name": "休息休息",
+|                 "creator": null,
+|                 "host_address": "xxxx",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:35.982044",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "嘻嘻嘻"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T15:50:44",
+|             "name": "e31231",
+|             "env": {
+|                 "id": 4,
+|                 "add_time": "2019-12-03T15:51:35.982044",
+|                 "name": "made打打",
+|                 "creator": null,
+|                 "host_address": "eqeq",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:35.982044",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "3131"
+|         },
+|         {
+|             "id": 1,
+|             "add_time": "2019-11-27T15:44:52",
+|             "name": "3131",
+|             "env": {
+|                 "id": 5,
+|                 "add_time": "2019-12-03T15:51:35.982044",
+|                 "name": "远远",
+|                 "creator": null,
+|                 "host_address": "31",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:35.982044",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1231"
+|         }
+|     ]
+| }
+[2019-12-03 15:51:36] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/projectManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "9649306d41eda8dbdd19285705ae6a2fea06f036" 
+
+[2019-12-03 15:51:36] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "项目数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-02T21:50:07",
+|             "name": "生产",
+|             "env": {
+|                 "id": 9,
+|                 "add_time": "2019-12-03T15:51:36.006934",
+|                 "name": "生产",
+|                 "creator": null,
+|                 "host_address": "https://app30.aotuzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:36.006934",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "12313"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-11-27T16:41:03",
+|             "name": "踩踩踩踩踩",
+|             "env": {
+|                 "id": 8,
+|                 "add_time": "2019-12-03T15:51:36.006934",
+|                 "name": "谢谢谢谢",
+|                 "creator": null,
+|                 "host_address": "https://testapp.atzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:36.006934",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "23213"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-11-27T16:18:15",
+|             "name": "测试",
+|             "env": {
+|                 "id": 7,
+|                 "add_time": "2019-12-03T15:51:36.006934",
+|                 "name": "测试",
+|                 "creator": null,
+|                 "host_address": "http://127.0.0.1:8084",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:36.006934",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1其"
+|         },
+|         {
+|             "id": 3,
+|             "add_time": "2019-11-27T16:06:23",
+|             "name": "嘻嘻嘻",
+|             "env": {
+|                 "id": 6,
+|                 "add_time": "2019-12-03T15:51:36.006934",
+|                 "name": "休息休息",
+|                 "creator": null,
+|                 "host_address": "xxxx",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:36.006934",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "嘻嘻嘻"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T15:50:44",
+|             "name": "e31231",
+|             "env": {
+|                 "id": 4,
+|                 "add_time": "2019-12-03T15:51:36.006934",
+|                 "name": "made打打",
+|                 "creator": null,
+|                 "host_address": "eqeq",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:36.006934",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "3131"
+|         },
+|         {
+|             "id": 1,
+|             "add_time": "2019-11-27T15:44:52",
+|             "name": "3131",
+|             "env": {
+|                 "id": 5,
+|                 "add_time": "2019-12-03T15:51:36.007907",
+|                 "name": "远远",
+|                 "creator": null,
+|                 "host_address": "31",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:36.007907",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1231"
+|         }
+|     ]
+| }
+[2019-12-03 15:51:36] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/projectManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "0c9fba35b5bf8f0234819895b0431dcfd629aaff" 
+
+[2019-12-03 15:51:36] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "测试环境数据查询成功!",
+|     "data": [
+|         {
+|             "id": 9,
+|             "add_time": "2019-12-02T21:38:29",
+|             "name": "生产",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:36.854677",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "host_address": "https://app30.aotuzuche.com:7065",
+|             "desc": "https://app30.aotuzuche.com:7065"
+|         },
+|         {
+|             "id": 8,
+|             "add_time": "2019-11-27T16:40:54",
+|             "name": "谢谢谢谢",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:36.854677",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "host_address": "https://testapp.atzuche.com:7065",
+|             "desc": "https://testapp.atzuche.com:7065"
+|         },
+|         {
+|             "id": 7,
+|             "add_time": "2019-11-27T16:18:01",
+|             "name": "测试",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:36.854677",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "host_address": "http://127.0.0.1:8084",
+|             "desc": "https://testapp.atzuche.com:7065"
+|         },
+|         {
+|             "id": 6,
+|             "add_time": "2019-11-27T16:06:44",
+|             "name": "休息休息",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:36.854677",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "host_address": "xxxx",
+|             "desc": "xxx"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-11-27T15:55:12",
+|             "name": "远远",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:36.854677",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "host_address": "31",
+|             "desc": "3213"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-11-27T15:50:04",
+|             "name": "made打打",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:36.855670",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "host_address": "eqeq",
+|             "desc": "ewq"
+|         },
+|         {
+|             "id": 3,
+|             "add_time": "2019-11-27T15:44:48",
+|             "name": "eqw",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:36.855670",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "host_address": "eqeq",
+|             "desc": "eq"
+|         }
+|     ]
+| }
+[2019-12-03 15:51:38] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/functionManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "bfa02d994775082feefaf132b0f7f1b5aa9d49a7" 
+
+[2019-12-03 15:51:38] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Undefined       | Undefined       
+
+[2019-12-03 15:51:38] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/functionManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "bfa02d994775082feefaf132b0f7f1b5aa9d49a7" 
+
+[2019-12-03 15:51:38] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Undefined       | Undefined       
+
+[2019-12-03 15:51:42] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "3e2707a56743eee0e9f482c1f85db037f59deed8" 
+
+[2019-12-03 15:51:42] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:42.862609",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 15:51:42] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "52a54e9345e4fe7d7a0ef460ce157e8bfb87e553" 
+
+[2019-12-03 15:51:42] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:42.877532",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 15:51:43] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "2b8959f0cecc76ccc5903811b2dcb2657c8ff734" 
+
+[2019-12-03 15:51:43] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "项目数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-02T21:50:07",
+|             "name": "生产",
+|             "env": {
+|                 "id": 9,
+|                 "add_time": "2019-12-03T15:51:43.941686",
+|                 "name": "生产",
+|                 "creator": null,
+|                 "host_address": "https://app30.aotuzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:43.941686",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "12313"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-11-27T16:41:03",
+|             "name": "踩踩踩踩踩",
+|             "env": {
+|                 "id": 8,
+|                 "add_time": "2019-12-03T15:51:43.942683",
+|                 "name": "谢谢谢谢",
+|                 "creator": null,
+|                 "host_address": "https://testapp.atzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:43.942683",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "23213"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-11-27T16:18:15",
+|             "name": "测试",
+|             "env": {
+|                 "id": 7,
+|                 "add_time": "2019-12-03T15:51:43.942683",
+|                 "name": "测试",
+|                 "creator": null,
+|                 "host_address": "http://127.0.0.1:8084",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:43.942683",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1其"
+|         },
+|         {
+|             "id": 3,
+|             "add_time": "2019-11-27T16:06:23",
+|             "name": "嘻嘻嘻",
+|             "env": {
+|                 "id": 6,
+|                 "add_time": "2019-12-03T15:51:43.942683",
+|                 "name": "休息休息",
+|                 "creator": null,
+|                 "host_address": "xxxx",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:43.942683",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "嘻嘻嘻"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T15:50:44",
+|             "name": "e31231",
+|             "env": {
+|                 "id": 4,
+|                 "add_time": "2019-12-03T15:51:43.942683",
+|                 "name": "made打打",
+|                 "creator": null,
+|                 "host_address": "eqeq",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:43.942683",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "3131"
+|         },
+|         {
+|             "id": 1,
+|             "add_time": "2019-11-27T15:44:52",
+|             "name": "3131",
+|             "env": {
+|                 "id": 5,
+|                 "add_time": "2019-12-03T15:51:43.942683",
+|                 "name": "远远",
+|                 "creator": null,
+|                 "host_address": "31",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:51:43.942683",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1231"
+|         }
+|     ]
+| }
+[2019-12-03 15:54:09] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "0c561050938009ca1460ff103aefbb3439c548d4" 
+
+[2019-12-03 15:54:09] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:54:09.087527",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 15:54:09] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "70e5d19b75d267253853d445c2ced460503365b9" 
+
+[2019-12-03 15:54:09] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:54:09.105482",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 15:54:09] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "6535413ac0f2c0f8972730ae44b98996711b487c" 
+
+[2019-12-03 15:54:09] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "项目数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-02T21:50:07",
+|             "name": "生产",
+|             "env": {
+|                 "id": 9,
+|                 "add_time": "2019-12-03T15:54:09.877417",
+|                 "name": "生产",
+|                 "creator": null,
+|                 "host_address": "https://app30.aotuzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:54:09.877417",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "12313"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-11-27T16:41:03",
+|             "name": "踩踩踩踩踩",
+|             "env": {
+|                 "id": 8,
+|                 "add_time": "2019-12-03T15:54:09.877417",
+|                 "name": "谢谢谢谢",
+|                 "creator": null,
+|                 "host_address": "https://testapp.atzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:54:09.877417",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "23213"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-11-27T16:18:15",
+|             "name": "测试",
+|             "env": {
+|                 "id": 7,
+|                 "add_time": "2019-12-03T15:54:09.877417",
+|                 "name": "测试",
+|                 "creator": null,
+|                 "host_address": "http://127.0.0.1:8084",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:54:09.877417",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1其"
+|         },
+|         {
+|             "id": 3,
+|             "add_time": "2019-11-27T16:06:23",
+|             "name": "嘻嘻嘻",
+|             "env": {
+|                 "id": 6,
+|                 "add_time": "2019-12-03T15:54:09.877417",
+|                 "name": "休息休息",
+|                 "creator": null,
+|                 "host_address": "xxxx",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:54:09.877417",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "嘻嘻嘻"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T15:50:44",
+|             "name": "e31231",
+|             "env": {
+|                 "id": 4,
+|                 "add_time": "2019-12-03T15:54:09.877417",
+|                 "name": "made打打",
+|                 "creator": null,
+|                 "host_address": "eqeq",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:54:09.877417",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "3131"
+|         },
+|         {
+|             "id": 1,
+|             "add_time": "2019-11-27T15:44:52",
+|             "name": "3131",
+|             "env": {
+|                 "id": 5,
+|                 "add_time": "2019-12-03T15:54:09.878413",
+|                 "name": "远远",
+|                 "creator": null,
+|                 "host_address": "31",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:54:09.877417",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1231"
+|         }
+|     ]
+| }
+[2019-12-03 15:54:37] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "a11f8553e34256ac56da79a983a1ae938960de8a" 
+
+[2019-12-03 15:54:37] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:54:37.862379",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 15:54:37] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "d9299f93dadbb39b0c54ba350678020180db8269" 
+
+[2019-12-03 15:54:37] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:54:37.881343",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 15:54:38] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "fef2ae65e0f2276d74e109e98df59b0fd2430273" 
+
+[2019-12-03 15:54:38] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "项目数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-02T21:50:07",
+|             "name": "生产",
+|             "env": {
+|                 "id": 9,
+|                 "add_time": "2019-12-03T15:54:38.944477",
+|                 "name": "生产",
+|                 "creator": null,
+|                 "host_address": "https://app30.aotuzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:54:38.944477",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "12313"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-11-27T16:41:03",
+|             "name": "踩踩踩踩踩",
+|             "env": {
+|                 "id": 8,
+|                 "add_time": "2019-12-03T15:54:38.944477",
+|                 "name": "谢谢谢谢",
+|                 "creator": null,
+|                 "host_address": "https://testapp.atzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:54:38.944477",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "23213"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-11-27T16:18:15",
+|             "name": "测试",
+|             "env": {
+|                 "id": 7,
+|                 "add_time": "2019-12-03T15:54:38.944477",
+|                 "name": "测试",
+|                 "creator": null,
+|                 "host_address": "http://127.0.0.1:8084",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:54:38.944477",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1其"
+|         },
+|         {
+|             "id": 3,
+|             "add_time": "2019-11-27T16:06:23",
+|             "name": "嘻嘻嘻",
+|             "env": {
+|                 "id": 6,
+|                 "add_time": "2019-12-03T15:54:38.944477",
+|                 "name": "休息休息",
+|                 "creator": null,
+|                 "host_address": "xxxx",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:54:38.944477",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "嘻嘻嘻"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T15:50:44",
+|             "name": "e31231",
+|             "env": {
+|                 "id": 4,
+|                 "add_time": "2019-12-03T15:54:38.945458",
+|                 "name": "made打打",
+|                 "creator": null,
+|                 "host_address": "eqeq",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:54:38.945458",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "3131"
+|         },
+|         {
+|             "id": 1,
+|             "add_time": "2019-11-27T15:44:52",
+|             "name": "3131",
+|             "env": {
+|                 "id": 5,
+|                 "add_time": "2019-12-03T15:54:38.945458",
+|                 "name": "远远",
+|                 "creator": null,
+|                 "host_address": "31",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:54:38.945458",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1231"
+|         }
+|     ]
+| }
+[2019-12-03 15:56:39] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "016f6b2806f2f6229dae7942134c3b6b966a4ca0" 
+
+[2019-12-03 15:56:39] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:56:39.049812",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 15:56:39] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "e67cd0bf8cd991c5da0904659c8ed896e2428110" 
+
+[2019-12-03 15:56:39] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:56:39.062777",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 15:56:40] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "2bd29a5b7cf6b6f838fd1d08adc9c116792ef051" 
+
+[2019-12-03 15:56:40] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "项目数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-02T21:50:07",
+|             "name": "生产",
+|             "env": {
+|                 "id": 9,
+|                 "add_time": "2019-12-03T15:56:40.366330",
+|                 "name": "生产",
+|                 "creator": null,
+|                 "host_address": "https://app30.aotuzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:56:40.366330",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "12313"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-11-27T16:41:03",
+|             "name": "踩踩踩踩踩",
+|             "env": {
+|                 "id": 8,
+|                 "add_time": "2019-12-03T15:56:40.367288",
+|                 "name": "谢谢谢谢",
+|                 "creator": null,
+|                 "host_address": "https://testapp.atzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:56:40.367288",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "23213"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-11-27T16:18:15",
+|             "name": "测试",
+|             "env": {
+|                 "id": 7,
+|                 "add_time": "2019-12-03T15:56:40.367288",
+|                 "name": "测试",
+|                 "creator": null,
+|                 "host_address": "http://127.0.0.1:8084",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:56:40.367288",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1其"
+|         },
+|         {
+|             "id": 3,
+|             "add_time": "2019-11-27T16:06:23",
+|             "name": "嘻嘻嘻",
+|             "env": {
+|                 "id": 6,
+|                 "add_time": "2019-12-03T15:56:40.367288",
+|                 "name": "休息休息",
+|                 "creator": null,
+|                 "host_address": "xxxx",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:56:40.367288",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "嘻嘻嘻"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T15:50:44",
+|             "name": "e31231",
+|             "env": {
+|                 "id": 4,
+|                 "add_time": "2019-12-03T15:56:40.367288",
+|                 "name": "made打打",
+|                 "creator": null,
+|                 "host_address": "eqeq",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:56:40.367288",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "3131"
+|         },
+|         {
+|             "id": 1,
+|             "add_time": "2019-11-27T15:44:52",
+|             "name": "3131",
+|             "env": {
+|                 "id": 5,
+|                 "add_time": "2019-12-03T15:56:40.367288",
+|                 "name": "远远",
+|                 "creator": null,
+|                 "host_address": "31",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:56:40.367288",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1231"
+|         }
+|     ]
+| }
+[2019-12-03 15:57:03] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "18414f9dd0df80119c591303038f6ae3935101d4" 
+
+[2019-12-03 15:57:03] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:57:03.862363",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 15:57:03] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "d1b6db41806e03a87ad46654736b2f74354443a8" 
+
+[2019-12-03 15:57:03] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:57:03.873329",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 15:57:04] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "e354b3b0fb1e78c37b0db1f157fe6267d0481845" 
+
+[2019-12-03 15:57:04] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "项目数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-02T21:50:07",
+|             "name": "生产",
+|             "env": {
+|                 "id": 9,
+|                 "add_time": "2019-12-03T15:57:04.499678",
+|                 "name": "生产",
+|                 "creator": null,
+|                 "host_address": "https://app30.aotuzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:57:04.499678",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "12313"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-11-27T16:41:03",
+|             "name": "踩踩踩踩踩",
+|             "env": {
+|                 "id": 8,
+|                 "add_time": "2019-12-03T15:57:04.500652",
+|                 "name": "谢谢谢谢",
+|                 "creator": null,
+|                 "host_address": "https://testapp.atzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:57:04.500652",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "23213"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-11-27T16:18:15",
+|             "name": "测试",
+|             "env": {
+|                 "id": 7,
+|                 "add_time": "2019-12-03T15:57:04.500652",
+|                 "name": "测试",
+|                 "creator": null,
+|                 "host_address": "http://127.0.0.1:8084",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:57:04.500652",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1其"
+|         },
+|         {
+|             "id": 3,
+|             "add_time": "2019-11-27T16:06:23",
+|             "name": "嘻嘻嘻",
+|             "env": {
+|                 "id": 6,
+|                 "add_time": "2019-12-03T15:57:04.500652",
+|                 "name": "休息休息",
+|                 "creator": null,
+|                 "host_address": "xxxx",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:57:04.500652",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "嘻嘻嘻"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T15:50:44",
+|             "name": "e31231",
+|             "env": {
+|                 "id": 4,
+|                 "add_time": "2019-12-03T15:57:04.500652",
+|                 "name": "made打打",
+|                 "creator": null,
+|                 "host_address": "eqeq",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:57:04.500652",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "3131"
+|         },
+|         {
+|             "id": 1,
+|             "add_time": "2019-11-27T15:44:52",
+|             "name": "3131",
+|             "env": {
+|                 "id": 5,
+|                 "add_time": "2019-12-03T15:57:04.500652",
+|                 "name": "远远",
+|                 "creator": null,
+|                 "host_address": "31",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:57:04.500652",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1231"
+|         }
+|     ]
+| }
+[2019-12-03 15:57:23] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "37c65bee25b17a3047c76bfed023996090e7be31" 
+
+[2019-12-03 15:57:23] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:57:23.411080",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 15:57:23] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "e3611b806dc81c32826366afd92f5e02bde9c923" 
+
+[2019-12-03 15:57:23] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:57:23.428060",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 15:57:24] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "51243f57155cdffec995d50196f658ea69d51526" 
+
+[2019-12-03 15:57:24] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "项目数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-02T21:50:07",
+|             "name": "生产",
+|             "env": {
+|                 "id": 9,
+|                 "add_time": "2019-12-03T15:57:24.521113",
+|                 "name": "生产",
+|                 "creator": null,
+|                 "host_address": "https://app30.aotuzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:57:24.521113",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "12313"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-11-27T16:41:03",
+|             "name": "踩踩踩踩踩",
+|             "env": {
+|                 "id": 8,
+|                 "add_time": "2019-12-03T15:57:24.521113",
+|                 "name": "谢谢谢谢",
+|                 "creator": null,
+|                 "host_address": "https://testapp.atzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:57:24.521113",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "23213"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-11-27T16:18:15",
+|             "name": "测试",
+|             "env": {
+|                 "id": 7,
+|                 "add_time": "2019-12-03T15:57:24.521113",
+|                 "name": "测试",
+|                 "creator": null,
+|                 "host_address": "http://127.0.0.1:8084",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:57:24.521113",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1其"
+|         },
+|         {
+|             "id": 3,
+|             "add_time": "2019-11-27T16:06:23",
+|             "name": "嘻嘻嘻",
+|             "env": {
+|                 "id": 6,
+|                 "add_time": "2019-12-03T15:57:24.522150",
+|                 "name": "休息休息",
+|                 "creator": null,
+|                 "host_address": "xxxx",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:57:24.522150",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "嘻嘻嘻"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T15:50:44",
+|             "name": "e31231",
+|             "env": {
+|                 "id": 4,
+|                 "add_time": "2019-12-03T15:57:24.522150",
+|                 "name": "made打打",
+|                 "creator": null,
+|                 "host_address": "eqeq",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:57:24.522150",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "3131"
+|         },
+|         {
+|             "id": 1,
+|             "add_time": "2019-11-27T15:44:52",
+|             "name": "3131",
+|             "env": {
+|                 "id": 5,
+|                 "add_time": "2019-12-03T15:57:24.522150",
+|                 "name": "远远",
+|                 "creator": null,
+|                 "host_address": "31",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:57:24.522150",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1231"
+|         }
+|     ]
+| }
+[2019-12-03 15:57:40] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "d2dcaae1b866d11480cbbdf13a3039e6ed868fd8" 
+
+[2019-12-03 15:57:40] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:57:40.865264",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 15:57:40] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "bb3df517d8c6c36ad45d40bdc53230cdc50ad93c" 
+
+[2019-12-03 15:57:40] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:57:40.877231",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 15:57:42] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "39b98f1d4a1c075a4fb57eb291f1143aa0a943fe" 
+
+[2019-12-03 15:57:42] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "项目数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-02T21:50:07",
+|             "name": "生产",
+|             "env": {
+|                 "id": 9,
+|                 "add_time": "2019-12-03T15:57:42.020175",
+|                 "name": "生产",
+|                 "creator": null,
+|                 "host_address": "https://app30.aotuzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:57:42.020175",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "12313"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-11-27T16:41:03",
+|             "name": "踩踩踩踩踩",
+|             "env": {
+|                 "id": 8,
+|                 "add_time": "2019-12-03T15:57:42.020175",
+|                 "name": "谢谢谢谢",
+|                 "creator": null,
+|                 "host_address": "https://testapp.atzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:57:42.020175",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "23213"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-11-27T16:18:15",
+|             "name": "测试",
+|             "env": {
+|                 "id": 7,
+|                 "add_time": "2019-12-03T15:57:42.020175",
+|                 "name": "测试",
+|                 "creator": null,
+|                 "host_address": "http://127.0.0.1:8084",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:57:42.020175",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1其"
+|         },
+|         {
+|             "id": 3,
+|             "add_time": "2019-11-27T16:06:23",
+|             "name": "嘻嘻嘻",
+|             "env": {
+|                 "id": 6,
+|                 "add_time": "2019-12-03T15:57:42.020175",
+|                 "name": "休息休息",
+|                 "creator": null,
+|                 "host_address": "xxxx",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:57:42.020175",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "嘻嘻嘻"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T15:50:44",
+|             "name": "e31231",
+|             "env": {
+|                 "id": 4,
+|                 "add_time": "2019-12-03T15:57:42.020175",
+|                 "name": "made打打",
+|                 "creator": null,
+|                 "host_address": "eqeq",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:57:42.020175",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "3131"
+|         },
+|         {
+|             "id": 1,
+|             "add_time": "2019-11-27T15:44:52",
+|             "name": "3131",
+|             "env": {
+|                 "id": 5,
+|                 "add_time": "2019-12-03T15:57:42.021173",
+|                 "name": "远远",
+|                 "creator": null,
+|                 "host_address": "31",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T15:57:42.021173",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1231"
+|         }
+|     ]
+| }
+[2019-12-03 16:01:25] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "dfd48cd40f809c88f1b25231fd89d2280caeac6e" 
+
+[2019-12-03 16:01:25] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:01:25.891761",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 16:01:25] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "6d6986a5e2ad294f288683d49f6d2fdc2cc0cb9a" 
+
+[2019-12-03 16:01:25] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:01:25.910746",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 16:01:26] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "cd30f74c0553aeff8b2e80d07b974cc8bb835961" 
+
+[2019-12-03 16:01:26] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "项目数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-02T21:50:07",
+|             "name": "生产",
+|             "env": {
+|                 "id": 9,
+|                 "add_time": "2019-12-03T16:01:26.607884",
+|                 "name": "生产",
+|                 "creator": null,
+|                 "host_address": "https://app30.aotuzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:01:26.607884",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "12313"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-11-27T16:41:03",
+|             "name": "踩踩踩踩踩",
+|             "env": {
+|                 "id": 8,
+|                 "add_time": "2019-12-03T16:01:26.607884",
+|                 "name": "谢谢谢谢",
+|                 "creator": null,
+|                 "host_address": "https://testapp.atzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:01:26.607884",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "23213"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-11-27T16:18:15",
+|             "name": "测试",
+|             "env": {
+|                 "id": 7,
+|                 "add_time": "2019-12-03T16:01:26.607884",
+|                 "name": "测试",
+|                 "creator": null,
+|                 "host_address": "http://127.0.0.1:8084",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:01:26.607884",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1其"
+|         },
+|         {
+|             "id": 3,
+|             "add_time": "2019-11-27T16:06:23",
+|             "name": "嘻嘻嘻",
+|             "env": {
+|                 "id": 6,
+|                 "add_time": "2019-12-03T16:01:26.607884",
+|                 "name": "休息休息",
+|                 "creator": null,
+|                 "host_address": "xxxx",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:01:26.607884",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "嘻嘻嘻"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T15:50:44",
+|             "name": "e31231",
+|             "env": {
+|                 "id": 4,
+|                 "add_time": "2019-12-03T16:01:26.608845",
+|                 "name": "made打打",
+|                 "creator": null,
+|                 "host_address": "eqeq",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:01:26.608845",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "3131"
+|         },
+|         {
+|             "id": 1,
+|             "add_time": "2019-11-27T15:44:52",
+|             "name": "3131",
+|             "env": {
+|                 "id": 5,
+|                 "add_time": "2019-12-03T16:01:26.608845",
+|                 "name": "远远",
+|                 "creator": null,
+|                 "host_address": "31",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:01:26.608845",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1231"
+|         }
+|     ]
+| }
+[2019-12-03 16:03:34] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "6a1168ec42a9430f9a6d775fa9a648f02de33105" 
+
+[2019-12-03 16:03:34] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:03:34.180667",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 16:03:34] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "3557fdc7bcf0cd13963d38434e270372a4e44f80" 
+
+[2019-12-03 16:03:34] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:03:34.196621",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 16:03:34] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "0a5f83f664473095196cca3e778faff9ac6f8aef" 
+
+[2019-12-03 16:03:34] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "项目数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-02T21:50:07",
+|             "name": "生产",
+|             "env": {
+|                 "id": 9,
+|                 "add_time": "2019-12-03T16:03:34.891796",
+|                 "name": "生产",
+|                 "creator": null,
+|                 "host_address": "https://app30.aotuzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:03:34.891796",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "12313"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-11-27T16:41:03",
+|             "name": "踩踩踩踩踩",
+|             "env": {
+|                 "id": 8,
+|                 "add_time": "2019-12-03T16:03:34.891796",
+|                 "name": "谢谢谢谢",
+|                 "creator": null,
+|                 "host_address": "https://testapp.atzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:03:34.891796",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "23213"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-11-27T16:18:15",
+|             "name": "测试",
+|             "env": {
+|                 "id": 7,
+|                 "add_time": "2019-12-03T16:03:34.892759",
+|                 "name": "测试",
+|                 "creator": null,
+|                 "host_address": "http://127.0.0.1:8084",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:03:34.892759",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1其"
+|         },
+|         {
+|             "id": 3,
+|             "add_time": "2019-11-27T16:06:23",
+|             "name": "嘻嘻嘻",
+|             "env": {
+|                 "id": 6,
+|                 "add_time": "2019-12-03T16:03:34.892759",
+|                 "name": "休息休息",
+|                 "creator": null,
+|                 "host_address": "xxxx",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:03:34.892759",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "嘻嘻嘻"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T15:50:44",
+|             "name": "e31231",
+|             "env": {
+|                 "id": 4,
+|                 "add_time": "2019-12-03T16:03:34.892759",
+|                 "name": "made打打",
+|                 "creator": null,
+|                 "host_address": "eqeq",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:03:34.892759",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "3131"
+|         },
+|         {
+|             "id": 1,
+|             "add_time": "2019-11-27T15:44:52",
+|             "name": "3131",
+|             "env": {
+|                 "id": 5,
+|                 "add_time": "2019-12-03T16:03:34.892759",
+|                 "name": "远远",
+|                 "creator": null,
+|                 "host_address": "31",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:03:34.892759",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1231"
+|         }
+|     ]
+| }
+[2019-12-03 16:05:49] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Access-Control-Request-Method | GET             
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Access-Control-Request-Headers | authorization   
+| Accept          | */*             
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+
+[2019-12-03 16:05:49] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| DbSettingHandler object has list index out of range
+[2019-12-03 16:05:49] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Access-Control-Request-Method | GET             
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Access-Control-Request-Headers | authorization   
+| Accept          | */*             
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+
+[2019-12-03 16:05:49] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| DbSettingHandler object has list index out of range
+[2019-12-03 16:05:49] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "fadadea45c6635444a2f91de03449e2c7b3a2f40" 
+
+[2019-12-03 16:05:49] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:05:49.627876",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 16:05:49] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "3d6dcb934f529cfb11db7e92e24c3665ec3c2758" 
+
+[2019-12-03 16:05:49] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:05:49.645828",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 16:05:50] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Access-Control-Request-Method | GET             
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Access-Control-Request-Headers | authorization   
+| Accept          | */*             
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+
+[2019-12-03 16:05:50] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| ProjectHandler object has list index out of range
+[2019-12-03 16:05:50] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "79ff0694d7dc034062d7e235ee5a21c1a5565734" 
+
+[2019-12-03 16:05:50] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "项目数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-02T21:50:07",
+|             "name": "生产",
+|             "env": {
+|                 "id": 9,
+|                 "add_time": "2019-12-03T16:05:50.700008",
+|                 "name": "生产",
+|                 "creator": null,
+|                 "host_address": "https://app30.aotuzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:05:50.700008",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "12313"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-11-27T16:41:03",
+|             "name": "踩踩踩踩踩",
+|             "env": {
+|                 "id": 8,
+|                 "add_time": "2019-12-03T16:05:50.700008",
+|                 "name": "谢谢谢谢",
+|                 "creator": null,
+|                 "host_address": "https://testapp.atzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:05:50.700008",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "23213"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-11-27T16:18:15",
+|             "name": "测试",
+|             "env": {
+|                 "id": 7,
+|                 "add_time": "2019-12-03T16:05:50.701007",
+|                 "name": "测试",
+|                 "creator": null,
+|                 "host_address": "http://127.0.0.1:8084",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:05:50.701007",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1其"
+|         },
+|         {
+|             "id": 3,
+|             "add_time": "2019-11-27T16:06:23",
+|             "name": "嘻嘻嘻",
+|             "env": {
+|                 "id": 6,
+|                 "add_time": "2019-12-03T16:05:50.701007",
+|                 "name": "休息休息",
+|                 "creator": null,
+|                 "host_address": "xxxx",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:05:50.701007",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "嘻嘻嘻"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T15:50:44",
+|             "name": "e31231",
+|             "env": {
+|                 "id": 4,
+|                 "add_time": "2019-12-03T16:05:50.701007",
+|                 "name": "made打打",
+|                 "creator": null,
+|                 "host_address": "eqeq",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:05:50.701007",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "3131"
+|         },
+|         {
+|             "id": 1,
+|             "add_time": "2019-11-27T15:44:52",
+|             "name": "3131",
+|             "env": {
+|                 "id": 5,
+|                 "add_time": "2019-12-03T16:05:50.701007",
+|                 "name": "远远",
+|                 "creator": null,
+|                 "host_address": "31",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:05:50.701007",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1231"
+|         }
+|     ]
+| }
+[2019-12-03 16:09:52] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "03a88f18c63f837e88dee45b885a12d5cb55fd53" 
+
+[2019-12-03 16:09:52] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "项目数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-02T21:50:07",
+|             "name": "生产",
+|             "env": {
+|                 "id": 9,
+|                 "add_time": "2019-12-03T16:09:52.191920",
+|                 "name": "生产",
+|                 "creator": null,
+|                 "host_address": "https://app30.aotuzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:09:52.191920",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "12313"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-11-27T16:41:03",
+|             "name": "踩踩踩踩踩",
+|             "env": {
+|                 "id": 8,
+|                 "add_time": "2019-12-03T16:09:52.192920",
+|                 "name": "谢谢谢谢",
+|                 "creator": null,
+|                 "host_address": "https://testapp.atzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:09:52.192920",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "23213"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-11-27T16:18:15",
+|             "name": "测试",
+|             "env": {
+|                 "id": 7,
+|                 "add_time": "2019-12-03T16:09:52.192920",
+|                 "name": "测试",
+|                 "creator": null,
+|                 "host_address": "http://127.0.0.1:8084",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:09:52.192920",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1其"
+|         },
+|         {
+|             "id": 3,
+|             "add_time": "2019-11-27T16:06:23",
+|             "name": "嘻嘻嘻",
+|             "env": {
+|                 "id": 6,
+|                 "add_time": "2019-12-03T16:09:52.192920",
+|                 "name": "休息休息",
+|                 "creator": null,
+|                 "host_address": "xxxx",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:09:52.192920",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "嘻嘻嘻"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T15:50:44",
+|             "name": "e31231",
+|             "env": {
+|                 "id": 4,
+|                 "add_time": "2019-12-03T16:09:52.192920",
+|                 "name": "made打打",
+|                 "creator": null,
+|                 "host_address": "eqeq",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:09:52.192920",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "3131"
+|         },
+|         {
+|             "id": 1,
+|             "add_time": "2019-11-27T15:44:52",
+|             "name": "3131",
+|             "env": {
+|                 "id": 5,
+|                 "add_time": "2019-12-03T16:09:52.193916",
+|                 "name": "远远",
+|                 "creator": null,
+|                 "host_address": "31",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:09:52.193916",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1231"
+|         }
+|     ]
+| }
+[2019-12-03 16:10:15] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "d82631a6547bacbca7530a76f247dcdbdab30097" 
+
+[2019-12-03 16:10:15] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "项目数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-02T21:50:07",
+|             "name": "生产",
+|             "env": {
+|                 "id": 9,
+|                 "add_time": "2019-12-03T16:10:15.867604",
+|                 "name": "生产",
+|                 "creator": null,
+|                 "host_address": "https://app30.aotuzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:10:15.867604",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "12313"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-11-27T16:41:03",
+|             "name": "踩踩踩踩踩",
+|             "env": {
+|                 "id": 8,
+|                 "add_time": "2019-12-03T16:10:15.867604",
+|                 "name": "谢谢谢谢",
+|                 "creator": null,
+|                 "host_address": "https://testapp.atzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:10:15.867604",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "23213"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-11-27T16:18:15",
+|             "name": "测试",
+|             "env": {
+|                 "id": 7,
+|                 "add_time": "2019-12-03T16:10:15.867604",
+|                 "name": "测试",
+|                 "creator": null,
+|                 "host_address": "http://127.0.0.1:8084",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:10:15.867604",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1其"
+|         },
+|         {
+|             "id": 3,
+|             "add_time": "2019-11-27T16:06:23",
+|             "name": "嘻嘻嘻",
+|             "env": {
+|                 "id": 6,
+|                 "add_time": "2019-12-03T16:10:15.867604",
+|                 "name": "休息休息",
+|                 "creator": null,
+|                 "host_address": "xxxx",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:10:15.867604",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "嘻嘻嘻"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T15:50:44",
+|             "name": "e31231",
+|             "env": {
+|                 "id": 4,
+|                 "add_time": "2019-12-03T16:10:15.867604",
+|                 "name": "made打打",
+|                 "creator": null,
+|                 "host_address": "eqeq",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:10:15.867604",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "3131"
+|         },
+|         {
+|             "id": 1,
+|             "add_time": "2019-11-27T15:44:52",
+|             "name": "3131",
+|             "env": {
+|                 "id": 5,
+|                 "add_time": "2019-12-03T16:10:15.867604",
+|                 "name": "远远",
+|                 "creator": null,
+|                 "host_address": "31",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:10:15.867604",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1231"
+|         }
+|     ]
+| }
+[2019-12-03 16:11:07] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "a6c42dd0516955145022694ed392d9a06fa65ee3" 
+
+[2019-12-03 16:11:07] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:11:07.371896",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 16:11:07] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "e8d9f9ee3def5def33c7d420ef2b7d6938c0c5e4" 
+
+[2019-12-03 16:11:07] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:11:07.385858",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-03 16:11:08] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "0fb0474b6f5d0850c9c27d1b13fd4aeadd8dc84c" 
+
+[2019-12-03 16:11:08] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "项目数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-02T21:50:07",
+|             "name": "生产",
+|             "env": {
+|                 "id": 9,
+|                 "add_time": "2019-12-03T16:11:08.691339",
+|                 "name": "生产",
+|                 "creator": null,
+|                 "host_address": "https://app30.aotuzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:11:08.691339",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "12313"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-11-27T16:41:03",
+|             "name": "踩踩踩踩踩",
+|             "env": {
+|                 "id": 8,
+|                 "add_time": "2019-12-03T16:11:08.691339",
+|                 "name": "谢谢谢谢",
+|                 "creator": null,
+|                 "host_address": "https://testapp.atzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:11:08.691339",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "23213"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-11-27T16:18:15",
+|             "name": "测试",
+|             "env": {
+|                 "id": 7,
+|                 "add_time": "2019-12-03T16:11:08.692382",
+|                 "name": "测试",
+|                 "creator": null,
+|                 "host_address": "http://127.0.0.1:8084",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:11:08.692382",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1其"
+|         },
+|         {
+|             "id": 3,
+|             "add_time": "2019-11-27T16:06:23",
+|             "name": "嘻嘻嘻",
+|             "env": {
+|                 "id": 6,
+|                 "add_time": "2019-12-03T16:11:08.692382",
+|                 "name": "休息休息",
+|                 "creator": null,
+|                 "host_address": "xxxx",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:11:08.692382",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "嘻嘻嘻"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T15:50:44",
+|             "name": "e31231",
+|             "env": {
+|                 "id": 4,
+|                 "add_time": "2019-12-03T16:11:08.692382",
+|                 "name": "made打打",
+|                 "creator": null,
+|                 "host_address": "eqeq",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:11:08.692382",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "3131"
+|         },
+|         {
+|             "id": 1,
+|             "add_time": "2019-11-27T15:44:52",
+|             "name": "3131",
+|             "env": {
+|                 "id": 5,
+|                 "add_time": "2019-12-03T16:11:08.692382",
+|                 "name": "远远",
+|                 "creator": null,
+|                 "host_address": "31",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-03T16:11:08.692382",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1231"
+|         }
+|     ]
+| }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    

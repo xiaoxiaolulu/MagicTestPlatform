@@ -1,0 +1,832 @@
+[2019-12-04 16:17:50] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Access-Control-Request-Method | GET             
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Access-Control-Request-Headers | authorization   
+| Accept          | */*             
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+
+[2019-12-04 16:17:50] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| DbSettingHandler object has list index out of range
+[2019-12-04 16:17:50] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Access-Control-Request-Method | GET             
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Access-Control-Request-Headers | authorization   
+| Accept          | */*             
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+
+[2019-12-04 16:17:50] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| DbSettingHandler object has list index out of range
+[2019-12-04 16:17:50] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "aab6aa4bc8fde23b42d4a1de4a086fdec9fa8194" 
+
+[2019-12-04 16:17:50] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-04T16:17:50.818116",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-04 16:17:50] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "9c1a1d2683a5f50dc434174980460c5f27e5553d" 
+
+[2019-12-04 16:17:50] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-04T16:17:50.832088",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-04 16:17:52] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Access-Control-Request-Method | GET             
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Access-Control-Request-Headers | authorization   
+| Accept          | */*             
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+
+[2019-12-04 16:17:52] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| ProjectHandler object has list index out of range
+[2019-12-04 16:17:52] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "2e9491b2a0bda5073a27797749ac7569d2205656" 
+
+[2019-12-04 16:17:52] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "项目数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-02T21:50:07",
+|             "name": "生产",
+|             "env": {
+|                 "id": 9,
+|                 "add_time": "2019-12-04T16:17:52.244553",
+|                 "name": "生产",
+|                 "creator": null,
+|                 "host_address": "https://app30.aotuzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-04T16:17:52.244553",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "12313"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-11-27T16:41:03",
+|             "name": "踩踩踩踩踩",
+|             "env": {
+|                 "id": 8,
+|                 "add_time": "2019-12-04T16:17:52.244553",
+|                 "name": "谢谢谢谢",
+|                 "creator": null,
+|                 "host_address": "https://testapp.atzuche.com:7065",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-04T16:17:52.244553",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "23213"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-11-27T16:18:15",
+|             "name": "测试",
+|             "env": {
+|                 "id": 7,
+|                 "add_time": "2019-12-04T16:17:52.244553",
+|                 "name": "测试",
+|                 "creator": null,
+|                 "host_address": "http://127.0.0.1:8084",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-04T16:17:52.244553",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1其"
+|         },
+|         {
+|             "id": 3,
+|             "add_time": "2019-11-27T16:06:23",
+|             "name": "嘻嘻嘻",
+|             "env": {
+|                 "id": 6,
+|                 "add_time": "2019-12-04T16:17:52.245583",
+|                 "name": "休息休息",
+|                 "creator": null,
+|                 "host_address": "xxxx",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-04T16:17:52.245583",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "嘻嘻嘻"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T15:50:44",
+|             "name": "e31231",
+|             "env": {
+|                 "id": 4,
+|                 "add_time": "2019-12-04T16:17:52.245583",
+|                 "name": "made打打",
+|                 "creator": null,
+|                 "host_address": "eqeq",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-04T16:17:52.245583",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "3131"
+|         },
+|         {
+|             "id": 1,
+|             "add_time": "2019-11-27T15:44:52",
+|             "name": "3131",
+|             "env": {
+|                 "id": 5,
+|                 "add_time": "2019-12-04T16:17:52.245583",
+|                 "name": "远远",
+|                 "creator": null,
+|                 "host_address": "31",
+|                 "desc": null
+|             },
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-04T16:17:52.245583",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "1231"
+|         }
+|     ]
+| }
+[2019-12-04 16:19:51] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Content-Length  | 718             
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Content-Type    | application/json;charset=UTF-8 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'url'           | 'v5121/homePop/getPop' 
+| 'method'        | 'get'           
+| 'headers'       | '{"Content-Type":"application/json","User-Agent":"Autoyol_107:Android_28|91AE0144CE0782302F461E04A034F098D30A00DC04FA03A781D9F3CE45","Accept":"application/json;version=3.0;compress=false"}' 
+| 'params'        | 'cityCode=310100&isRenter=1&token=2a3b3ad3e4404281a78d841eabccef46&OS=ANDROID&OsVersion=28&AppVersion=107&IMEI=869704033142271&mac=9CE82B30746D&androidID=f6eb3bbd8b43d0cb&PublicLongitude=121.409381&PublicLatitude=31.172141&publicCityCode=021&appName=atzucheApp&deviceName=vivoX21A&publicToken=2a3b3ad3e4404281a78d841eabccef46&AppChannelId=testmarket&AndroidId=f6eb3bbd8b43d0cb&requestId=9CE82B30746D1574843951903&mem_no=494671888&schema=B' 
+| 'project'       | 5               
+
+[2019-12-04 16:19:52] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "接口请求成功",
+|     "data": {
+|         "status_code": 200,
+|         "times": 0.8,
+|         "response_body": {
+|             "data": {
+|                 "homePopContentList": [],
+|                 "privacyAuthorizeInfo": null,
+|                 "couponInfoList": []
+|             },
+|             "resCode": "000000",
+|             "resMsg": "success"
+|         }
+|     }
+| }
+[2019-12-04 16:20:00] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Access-Control-Request-Method | POST            
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Access-Control-Request-Headers | authorization,content-type 
+| Accept          | */*             
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+
+[2019-12-04 16:20:00] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| InterfacesHandler object has list index out of range
+[2019-12-04 16:20:00] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Content-Length  | 718             
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Content-Type    | application/json;charset=UTF-8 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'url'           | 'v5121/homePop/getPop' 
+| 'method'        | 'get'           
+| 'headers'       | '{"Content-Type":"application/json","User-Agent":"Autoyol_107:Android_28|91AE0144CE0782302F461E04A034F098D30A00DC04FA03A781D9F3CE45","Accept":"application/json;version=3.0;compress=false"}' 
+| 'params'        | 'cityCode=310100&isRenter=1&token=2a3b3ad3e4404281a78d841eabccef46&OS=ANDROID&OsVersion=28&AppVersion=107&IMEI=869704033142271&mac=9CE82B30746D&androidID=f6eb3bbd8b43d0cb&PublicLongitude=121.409381&PublicLatitude=31.172141&publicCityCode=021&appName=atzucheApp&deviceName=vivoX21A&publicToken=2a3b3ad3e4404281a78d841eabccef46&AppChannelId=testmarket&AndroidId=f6eb3bbd8b43d0cb&requestId=9CE82B30746D1574843951903&mem_no=494671888&schema=B' 
+| 'project'       | 5               
+
+[2019-12-04 16:20:00] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 10090,
+|     "msg": {
+|         "desc": [
+|             "请输入接口描述"
+|         ]
+|     },
+|     "data": null
+| }
+[2019-12-04 16:20:02] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Content-Length  | 718             
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Content-Type    | application/json;charset=UTF-8 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'url'           | 'v5121/homePop/getPop' 
+| 'method'        | 'get'           
+| 'headers'       | '{"Content-Type":"application/json","User-Agent":"Autoyol_107:Android_28|91AE0144CE0782302F461E04A034F098D30A00DC04FA03A781D9F3CE45","Accept":"application/json;version=3.0;compress=false"}' 
+| 'params'        | 'cityCode=310100&isRenter=1&token=2a3b3ad3e4404281a78d841eabccef46&OS=ANDROID&OsVersion=28&AppVersion=107&IMEI=869704033142271&mac=9CE82B30746D&androidID=f6eb3bbd8b43d0cb&PublicLongitude=121.409381&PublicLatitude=31.172141&publicCityCode=021&appName=atzucheApp&deviceName=vivoX21A&publicToken=2a3b3ad3e4404281a78d841eabccef46&AppChannelId=testmarket&AndroidId=f6eb3bbd8b43d0cb&requestId=9CE82B30746D1574843951903&mem_no=494671888&schema=B' 
+| 'project'       | 5               
+
+[2019-12-04 16:20:02] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 10090,
+|     "msg": {
+|         "desc": [
+|             "请输入接口描述"
+|         ]
+|     },
+|     "data": null
+| }
+[2019-12-04 16:20:02] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Content-Length  | 718             
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Content-Type    | application/json;charset=UTF-8 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'url'           | 'v5121/homePop/getPop' 
+| 'method'        | 'get'           
+| 'headers'       | '{"Content-Type":"application/json","User-Agent":"Autoyol_107:Android_28|91AE0144CE0782302F461E04A034F098D30A00DC04FA03A781D9F3CE45","Accept":"application/json;version=3.0;compress=false"}' 
+| 'params'        | 'cityCode=310100&isRenter=1&token=2a3b3ad3e4404281a78d841eabccef46&OS=ANDROID&OsVersion=28&AppVersion=107&IMEI=869704033142271&mac=9CE82B30746D&androidID=f6eb3bbd8b43d0cb&PublicLongitude=121.409381&PublicLatitude=31.172141&publicCityCode=021&appName=atzucheApp&deviceName=vivoX21A&publicToken=2a3b3ad3e4404281a78d841eabccef46&AppChannelId=testmarket&AndroidId=f6eb3bbd8b43d0cb&requestId=9CE82B30746D1574843951903&mem_no=494671888&schema=B' 
+| 'project'       | 5               
+
+[2019-12-04 16:20:02] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 10090,
+|     "msg": {
+|         "desc": [
+|             "请输入接口描述"
+|         ]
+|     },
+|     "data": null
+| }
+[2019-12-04 16:20:02] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Content-Length  | 718             
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Content-Type    | application/json;charset=UTF-8 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'url'           | 'v5121/homePop/getPop' 
+| 'method'        | 'get'           
+| 'headers'       | '{"Content-Type":"application/json","User-Agent":"Autoyol_107:Android_28|91AE0144CE0782302F461E04A034F098D30A00DC04FA03A781D9F3CE45","Accept":"application/json;version=3.0;compress=false"}' 
+| 'params'        | 'cityCode=310100&isRenter=1&token=2a3b3ad3e4404281a78d841eabccef46&OS=ANDROID&OsVersion=28&AppVersion=107&IMEI=869704033142271&mac=9CE82B30746D&androidID=f6eb3bbd8b43d0cb&PublicLongitude=121.409381&PublicLatitude=31.172141&publicCityCode=021&appName=atzucheApp&deviceName=vivoX21A&publicToken=2a3b3ad3e4404281a78d841eabccef46&AppChannelId=testmarket&AndroidId=f6eb3bbd8b43d0cb&requestId=9CE82B30746D1574843951903&mem_no=494671888&schema=B' 
+| 'project'       | 5               
+
+[2019-12-04 16:20:02] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 10090,
+|     "msg": {
+|         "desc": [
+|             "请输入接口描述"
+|         ]
+|     },
+|     "data": null
+| }
+[2019-12-04 16:20:03] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Content-Length  | 718             
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Content-Type    | application/json;charset=UTF-8 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'url'           | 'v5121/homePop/getPop' 
+| 'method'        | 'get'           
+| 'headers'       | '{"Content-Type":"application/json","User-Agent":"Autoyol_107:Android_28|91AE0144CE0782302F461E04A034F098D30A00DC04FA03A781D9F3CE45","Accept":"application/json;version=3.0;compress=false"}' 
+| 'params'        | 'cityCode=310100&isRenter=1&token=2a3b3ad3e4404281a78d841eabccef46&OS=ANDROID&OsVersion=28&AppVersion=107&IMEI=869704033142271&mac=9CE82B30746D&androidID=f6eb3bbd8b43d0cb&PublicLongitude=121.409381&PublicLatitude=31.172141&publicCityCode=021&appName=atzucheApp&deviceName=vivoX21A&publicToken=2a3b3ad3e4404281a78d841eabccef46&AppChannelId=testmarket&AndroidId=f6eb3bbd8b43d0cb&requestId=9CE82B30746D1574843951903&mem_no=494671888&schema=B' 
+| 'project'       | 5               
+
+[2019-12-04 16:20:03] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 10090,
+|     "msg": {
+|         "desc": [
+|             "请输入接口描述"
+|         ]
+|     },
+|     "data": null
+| }
+[2019-12-04 16:20:03] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Content-Length  | 718             
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Content-Type    | application/json;charset=UTF-8 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'url'           | 'v5121/homePop/getPop' 
+| 'method'        | 'get'           
+| 'headers'       | '{"Content-Type":"application/json","User-Agent":"Autoyol_107:Android_28|91AE0144CE0782302F461E04A034F098D30A00DC04FA03A781D9F3CE45","Accept":"application/json;version=3.0;compress=false"}' 
+| 'params'        | 'cityCode=310100&isRenter=1&token=2a3b3ad3e4404281a78d841eabccef46&OS=ANDROID&OsVersion=28&AppVersion=107&IMEI=869704033142271&mac=9CE82B30746D&androidID=f6eb3bbd8b43d0cb&PublicLongitude=121.409381&PublicLatitude=31.172141&publicCityCode=021&appName=atzucheApp&deviceName=vivoX21A&publicToken=2a3b3ad3e4404281a78d841eabccef46&AppChannelId=testmarket&AndroidId=f6eb3bbd8b43d0cb&requestId=9CE82B30746D1574843951903&mem_no=494671888&schema=B' 
+| 'project'       | 5               
+
+[2019-12-04 16:20:03] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 10090,
+|     "msg": {
+|         "desc": [
+|             "请输入接口描述"
+|         ]
+|     },
+|     "data": null
+| }
+[2019-12-04 16:20:03] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Content-Length  | 718             
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Content-Type    | application/json;charset=UTF-8 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'url'           | 'v5121/homePop/getPop' 
+| 'method'        | 'get'           
+| 'headers'       | '{"Content-Type":"application/json","User-Agent":"Autoyol_107:Android_28|91AE0144CE0782302F461E04A034F098D30A00DC04FA03A781D9F3CE45","Accept":"application/json;version=3.0;compress=false"}' 
+| 'params'        | 'cityCode=310100&isRenter=1&token=2a3b3ad3e4404281a78d841eabccef46&OS=ANDROID&OsVersion=28&AppVersion=107&IMEI=869704033142271&mac=9CE82B30746D&androidID=f6eb3bbd8b43d0cb&PublicLongitude=121.409381&PublicLatitude=31.172141&publicCityCode=021&appName=atzucheApp&deviceName=vivoX21A&publicToken=2a3b3ad3e4404281a78d841eabccef46&AppChannelId=testmarket&AndroidId=f6eb3bbd8b43d0cb&requestId=9CE82B30746D1574843951903&mem_no=494671888&schema=B' 
+| 'project'       | 5               
+
+[2019-12-04 16:20:03] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 10090,
+|     "msg": {
+|         "desc": [
+|             "请输入接口描述"
+|         ]
+|     },
+|     "data": null
+| }
+[2019-12-04 16:20:03] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Content-Length  | 718             
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Content-Type    | application/json;charset=UTF-8 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'url'           | 'v5121/homePop/getPop' 
+| 'method'        | 'get'           
+| 'headers'       | '{"Content-Type":"application/json","User-Agent":"Autoyol_107:Android_28|91AE0144CE0782302F461E04A034F098D30A00DC04FA03A781D9F3CE45","Accept":"application/json;version=3.0;compress=false"}' 
+| 'params'        | 'cityCode=310100&isRenter=1&token=2a3b3ad3e4404281a78d841eabccef46&OS=ANDROID&OsVersion=28&AppVersion=107&IMEI=869704033142271&mac=9CE82B30746D&androidID=f6eb3bbd8b43d0cb&PublicLongitude=121.409381&PublicLatitude=31.172141&publicCityCode=021&appName=atzucheApp&deviceName=vivoX21A&publicToken=2a3b3ad3e4404281a78d841eabccef46&AppChannelId=testmarket&AndroidId=f6eb3bbd8b43d0cb&requestId=9CE82B30746D1574843951903&mem_no=494671888&schema=B' 
+| 'project'       | 5               
+
+[2019-12-04 16:20:03] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 10090,
+|     "msg": {
+|         "desc": [
+|             "请输入接口描述"
+|         ]
+|     },
+|     "data": null
+| }
+[2019-12-04 16:20:04] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Content-Length  | 718             
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Content-Type    | application/json;charset=UTF-8 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'url'           | 'v5121/homePop/getPop' 
+| 'method'        | 'get'           
+| 'headers'       | '{"Content-Type":"application/json","User-Agent":"Autoyol_107:Android_28|91AE0144CE0782302F461E04A034F098D30A00DC04FA03A781D9F3CE45","Accept":"application/json;version=3.0;compress=false"}' 
+| 'params'        | 'cityCode=310100&isRenter=1&token=2a3b3ad3e4404281a78d841eabccef46&OS=ANDROID&OsVersion=28&AppVersion=107&IMEI=869704033142271&mac=9CE82B30746D&androidID=f6eb3bbd8b43d0cb&PublicLongitude=121.409381&PublicLatitude=31.172141&publicCityCode=021&appName=atzucheApp&deviceName=vivoX21A&publicToken=2a3b3ad3e4404281a78d841eabccef46&AppChannelId=testmarket&AndroidId=f6eb3bbd8b43d0cb&requestId=9CE82B30746D1574843951903&mem_no=494671888&schema=B' 
+| 'project'       | 5               
+
+[2019-12-04 16:20:04] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 10090,
+|     "msg": {
+|         "desc": [
+|             "请输入接口描述"
+|         ]
+|     },
+|     "data": null
+| }
+[2019-12-04 16:20:04] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Content-Length  | 718             
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Content-Type    | application/json;charset=UTF-8 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'url'           | 'v5121/homePop/getPop' 
+| 'method'        | 'get'           
+| 'headers'       | '{"Content-Type":"application/json","User-Agent":"Autoyol_107:Android_28|91AE0144CE0782302F461E04A034F098D30A00DC04FA03A781D9F3CE45","Accept":"application/json;version=3.0;compress=false"}' 
+| 'params'        | 'cityCode=310100&isRenter=1&token=2a3b3ad3e4404281a78d841eabccef46&OS=ANDROID&OsVersion=28&AppVersion=107&IMEI=869704033142271&mac=9CE82B30746D&androidID=f6eb3bbd8b43d0cb&PublicLongitude=121.409381&PublicLatitude=31.172141&publicCityCode=021&appName=atzucheApp&deviceName=vivoX21A&publicToken=2a3b3ad3e4404281a78d841eabccef46&AppChannelId=testmarket&AndroidId=f6eb3bbd8b43d0cb&requestId=9CE82B30746D1574843951903&mem_no=494671888&schema=B' 
+| 'project'       | 5               
+
+[2019-12-04 16:20:04] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 10090,
+|     "msg": {
+|         "desc": [
+|             "请输入接口描述"
+|         ]
+|     },
+|     "data": null
+| }
+[2019-12-04 16:20:04] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Content-Length  | 718             
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Content-Type    | application/json;charset=UTF-8 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'url'           | 'v5121/homePop/getPop' 
+| 'method'        | 'get'           
+| 'headers'       | '{"Content-Type":"application/json","User-Agent":"Autoyol_107:Android_28|91AE0144CE0782302F461E04A034F098D30A00DC04FA03A781D9F3CE45","Accept":"application/json;version=3.0;compress=false"}' 
+| 'params'        | 'cityCode=310100&isRenter=1&token=2a3b3ad3e4404281a78d841eabccef46&OS=ANDROID&OsVersion=28&AppVersion=107&IMEI=869704033142271&mac=9CE82B30746D&androidID=f6eb3bbd8b43d0cb&PublicLongitude=121.409381&PublicLatitude=31.172141&publicCityCode=021&appName=atzucheApp&deviceName=vivoX21A&publicToken=2a3b3ad3e4404281a78d841eabccef46&AppChannelId=testmarket&AndroidId=f6eb3bbd8b43d0cb&requestId=9CE82B30746D1574843951903&mem_no=494671888&schema=B' 
+| 'project'       | 5               
+
+[2019-12-04 16:20:04] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 10090,
+|     "msg": {
+|         "desc": [
+|             "请输入接口描述"
+|         ]
+|     },
+|     "data": null
+| }
+[2019-12-04 16:20:10] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Content-Length  | 718             
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjI1MzJ9.pTzgTRDJHyQfEiLyRTxhcDf10FBCvG0_eyP1Wv0pPzY 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Content-Type    | application/json;charset=UTF-8 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/interfacesManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'url'           | 'v5121/homePop/getPop' 
+| 'method'        | 'get'           
+| 'headers'       | '{"Content-Type":"application/json","User-Agent":"Autoyol_107:Android_28|91AE0144CE0782302F461E04A034F098D30A00DC04FA03A781D9F3CE45","Accept":"application/json;version=3.0;compress=false"}' 
+| 'params'        | 'cityCode=310100&isRenter=1&token=2a3b3ad3e4404281a78d841eabccef46&OS=ANDROID&OsVersion=28&AppVersion=107&IMEI=869704033142271&mac=9CE82B30746D&androidID=f6eb3bbd8b43d0cb&PublicLongitude=121.409381&PublicLatitude=31.172141&publicCityCode=021&appName=atzucheApp&deviceName=vivoX21A&publicToken=2a3b3ad3e4404281a78d841eabccef46&AppChannelId=testmarket&AndroidId=f6eb3bbd8b43d0cb&requestId=9CE82B30746D1574843951903&mem_no=494671888&schema=B' 
+| 'project'       | 5               
+
+[2019-12-04 16:20:10] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 10090,
+|     "msg": {
+|         "desc": [
+|             "请输入接口描述"
+|         ]
+|     },
+|     "data": null
+| }

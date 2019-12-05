@@ -1,3 +1,4 @@
+import time
 import urllib3
 from urllib import parse
 import requests
@@ -44,6 +45,7 @@ class BaseKeyWords(GetJsonParams):
             make_test_templates()
         """
         method = GetJsonParams.get_value(self.request_body, 'method')
+        start_time = time.time()
 
         if method in ['get', 'GET']:
             temp = ('url', 'params', 'headers', 'timeout')
@@ -60,6 +62,7 @@ class BaseKeyWords(GetJsonParams):
                     response_body = response.text
                 return {
                     "status_code": response.status_code,
+                    "times": round(time.time()-start_time, 2),
                     "response_body": response_body
                 }
             except exceptions.Timeout as error:
@@ -77,6 +80,7 @@ class BaseKeyWords(GetJsonParams):
                     response_body = response.text
                 return {
                     "status_code": response.status_code,
+                    "times": round(time.time()-start_time, 2),
                     "response_body": response_body
                 }
             except exceptions.Timeout as error:

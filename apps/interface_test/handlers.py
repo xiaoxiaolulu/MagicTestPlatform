@@ -49,7 +49,6 @@ class InterfacesDebugHandler(BaseHandler, ABC):
 
         if form.validate():
 
-            name = form.interface_name.data
             api = form.url.data
             method = form.method.data
             headers = form.headers.data
@@ -79,7 +78,7 @@ class InterfacesDebugHandler(BaseHandler, ABC):
             http_client = BaseKeyWords(request_body)
             response = http_client.make_test_templates()
             return self.json(
-                Result(code=1, msg=f'{name} 接口请求成功', data=response)
+                Result(code=1, msg='接口请求成功', data=response)
             )
 
         else:
@@ -139,20 +138,17 @@ class InterfacesHandler(BaseHandler, ABC):
                     interface_name=form.interface_name.data,
                     url=form.url.data,
                     method=form.method.data,
-                    headers=form.method.data,
+                    headers=form.headers.data,
                     params=form.params.data,
-                    assertion=form.assertion.data,
-                    db=form.db.data,
-                    check_db=form.check_db.data,
-                    response_extraction=form.response_extraction.data,
                     project=form.project.data,
-                    desc=form.desc.data,
-                    creator=self.current_user
+                    creator=self.current_user,
+                    desc=form.desc.data
                 )
 
                 return self.json(
-                    Result(code=1, msg="接口创建成功!", data={'interfaceId': interface.id})
-                )
+                    Result(
+                        code=1, msg="接口创建成功!", data={'interfaceId': interface.id}
+                    ))
 
         else:
             self.set_status(400)
@@ -196,12 +192,8 @@ class ProjectChangeHandler(BaseHandler, ABC):
                 existed_interface.interface_name = form.interface_name.data
                 existed_interface.url = form.url.data
                 existed_interface.method = form.method.data
-                existed_interface.headers = form.method.data
+                existed_interface.headers = form.headers.data
                 existed_interface.params = form.params.data
-                existed_interface.assertion = form.assertion.data
-                existed_interface.db = form.db.data
-                existed_interface.check_db = form.check_db.data
-                existed_interface.response_extraction = form.response_extraction.data
                 existed_interface.project = form.project.data
                 existed_interface.desc = form.desc.data
 

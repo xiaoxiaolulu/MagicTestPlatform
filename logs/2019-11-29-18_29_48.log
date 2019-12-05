@@ -1,0 +1,48 @@
+[2019-11-29 18:29:48] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Connection      | close           
+| Host            | 127.0.0.1:50336 
+| Content-Length  | 51              
+| Content-Type    | application/x-www-form-urlencoded 
+| Accept-Encoding | gzip            
++----Arguments----+
+| 'account'       | '123456@163.com' 
+| 'password'      | '123456'        
+
+[2019-11-29 18:29:48] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "登陆成功",
+|     "data": {
+|         "id": 1,
+|         "nick_name": "123456@163.com",
+|         "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzUwMjMzODh9.K4XvmIhIlOiPFQ-ZmT1paOFNf_9Jp5Ag_u8phXCI_Gs"
+|     }
+| }
+[2019-11-29 18:29:48] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Connection      | close           
+| Host            | 127.0.0.1:50341 
+| Content-Length  | 29              
+| Content-Type    | application/x-www-form-urlencoded 
+| Accept-Encoding | gzip            
++----Arguments----+
+| 'account'       | '153417@163.com' 
+
+[2019-11-29 18:29:48] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "验证码已发送，请注意接收",
+|     "data": {
+|         "account": "153417@163.com",
+|         "VerCode": "0510"
+|     }
+| }
