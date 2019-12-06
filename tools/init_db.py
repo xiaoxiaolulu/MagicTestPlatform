@@ -1,5 +1,8 @@
 from peewee import MySQLDatabase
-from apps.interface_test.models import Interfaces
+from apps.interface_test.models import (
+    Interfaces,
+    TestCases,
+    InterfacesTestCase)
 from apps.project.models import (
     Project,
     FunctionGenerator,
@@ -23,7 +26,7 @@ database = MySQLDatabase(
 def init():
     # database_async.create_tables([User, ])
     # database_async.create_tables([Project, FunctionGenerator, TestEnvironment, DBSetting])
-    database_async.create_tables([Interfaces, ])
+    database_async.create_tables([Interfaces, TestCases, InterfacesTestCase])
 
 
 if __name__ == '__main__':

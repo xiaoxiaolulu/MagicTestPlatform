@@ -209,3 +209,16 @@ class ProjectChangeHandler(BaseHandler, ABC):
         else:
             self.set_status(400)
             return self.json(Result(code=10090, msg=form.errors))
+
+
+@route(r'/cases/')
+class TestCasesHandler(BaseHandler, ABC):
+
+    @authenticated_async
+    async def get(self, *args, **kwargs):
+        pass
+
+    @authenticated_async
+    async def post(self, *args, **kwargs):
+        pass
+

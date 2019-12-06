@@ -32,3 +32,9 @@ class InterfacesForm(Form):
     params = StringField("请求参数", validators=[DataRequired("请输入请求参数")])
     project = IntegerField("项目配置", validators=[DataRequired("请选择项目")])
     desc = StringField("接口描述", validators=[DataRequired("请输入接口描述")])
+
+
+class TestCase(Form):
+
+    test_name = StringField("用例名称", validators=[DataRequired("请输入用例名称")])
+    interfaces = IntegerField("接口配置")
