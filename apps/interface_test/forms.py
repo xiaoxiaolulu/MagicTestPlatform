@@ -8,8 +8,8 @@
 """
 from wtforms import (
     StringField,
-    IntegerField
-)
+    IntegerField,
+    FieldList)
 from wtforms.validators import DataRequired
 from wtforms_tornado import Form
 
@@ -37,4 +37,8 @@ class InterfacesForm(Form):
 class TestCase(Form):
 
     test_name = StringField("用例名称", validators=[DataRequired("请输入用例名称")])
-    interfaces = IntegerField("接口配置")
+    interfaces = FieldList(IntegerField("接口配置", validators=[DataRequired("请选择接口")]))
+    assertion = StringField("断言数据", validators=[DataRequired("请输入断言数据")])
+    db = IntegerField("数据库配置", validators=[DataRequired("请选择数据库配置")])
+    check_db = StringField("落库校验", validators=[DataRequired("请输入落库校验")])
+    desc = StringField("用例描述", validators=[DataRequired("请输入用例描述")])

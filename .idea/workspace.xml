@@ -24,7 +24,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5db38437-6573-4939-886a-8cb1fda998b1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/apps/interface_test/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/interface_test/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/interface_test/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/interface_test/forms.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -320,7 +321,7 @@
       <workItem from="1575462639867" duration="552000" />
       <workItem from="1575464315719" duration="497000" />
       <workItem from="1575512226695" duration="5663000" />
-      <workItem from="1575599164743" duration="12531000" />
+      <workItem from="1575599164743" duration="14590000" />
     </task>
     <task id="LOCAL-00001" summary="测试代码001">
       <created>1572765563593</created>
@@ -595,7 +596,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575623420293</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="fixed">
+      <created>1575623497719</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1575623497719</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -651,11 +659,11 @@
     <MESSAGE value="优化部分代码" />
     <MESSAGE value="配置文件逻辑优化 &amp; 部分模块代码优化" />
     <MESSAGE value="日志路径变更" />
-    <MESSAGE value="fixed" />
     <MESSAGE value="优化" />
     <MESSAGE value="添加单元测试代码" />
     <MESSAGE value="用例数据库表设计" />
-    <option name="LAST_COMMIT_MESSAGE" value="用例数据库表设计" />
+    <MESSAGE value="fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
