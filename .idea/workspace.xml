@@ -24,18 +24,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5db38437-6573-4939-886a-8cb1fda998b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/logs/2019-12-06-11_21_51.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2019-12-06-16_20_50.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2019-12-06-16_27_13.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2019-12-06-16_29_30.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2019-12-06-16_33_01.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/interface_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/interface_test/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/interface_test/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/interface_test/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/interface_test/handlers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/interface_test/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/interface_test/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/_trial_temp/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/test/_trial_temp/test.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/init_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/init_db.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -331,7 +320,7 @@
       <workItem from="1575462639867" duration="552000" />
       <workItem from="1575464315719" duration="497000" />
       <workItem from="1575512226695" duration="5663000" />
-      <workItem from="1575599164743" duration="12440000" />
+      <workItem from="1575599164743" duration="12531000" />
     </task>
     <task id="LOCAL-00001" summary="测试代码001">
       <created>1572765563593</created>
@@ -599,7 +588,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575022481584</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="用例数据库表设计">
+      <created>1575623420293</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1575623420293</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -634,7 +630,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="测试003" />
     <MESSAGE value="新增删除&amp;更新环境接口" />
     <MESSAGE value="修复潜在问题" />
     <MESSAGE value="新增数据库配置接口" />
@@ -659,7 +654,8 @@
     <MESSAGE value="fixed" />
     <MESSAGE value="优化" />
     <MESSAGE value="添加单元测试代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加单元测试代码" />
+    <MESSAGE value="用例数据库表设计" />
+    <option name="LAST_COMMIT_MESSAGE" value="用例数据库表设计" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

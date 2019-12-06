@@ -71,7 +71,7 @@ class TestCases(BaseModel):
             DBSetting.db_port,
             DBSetting.name) \
             .join(User, join_type=JOIN.LEFT_OUTER, on=cls.creator).switch(cls) \
-            .join(Interfaces, join_type=JOIN.LEFT_OUTER, on=cls.interfaces)\
+            .join(Interfaces, join_type=JOIN.LEFT_OUTER, on=cls.interfaces).switch(cls) \
             .join(DBSetting, join_type=JOIN.LEFT_OUTER, on=cls.db)
 
 
