@@ -4,8 +4,8 @@ from tornado import web
 from tornado.ioloop import IOLoop
 from tornado.httpserver import HTTPServer
 from MagicTestPlatform.settings import database_async
-from apps.utils.parse_settings import settings
-from apps.utils.Router import route
+from common.parse_settings import settings
+from common.Router import route
 
 
 class Application(web.Application):

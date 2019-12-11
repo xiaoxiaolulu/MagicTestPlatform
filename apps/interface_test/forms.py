@@ -34,7 +34,7 @@ class InterfacesForm(Form):
     desc = StringField("接口描述", validators=[DataRequired("请输入接口描述")])
 
 
-class TestCase(Form):
+class TestCaseForm(Form):
 
     test_name = StringField("用例名称", validators=[DataRequired("请输入用例名称")])
     interfaces = FieldList(IntegerField("接口配置", validators=[DataRequired("请选择接口")]))

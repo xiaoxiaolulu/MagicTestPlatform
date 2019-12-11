@@ -33,9 +33,11 @@ from apps.project.forms import (
     FunctionDebugForm,
     FunctionGeneratorForm
 )
-from apps.utils.Result import Result
-from apps.utils.Router import route
-from apps.utils.wrappers import authenticated_async
+from common.core import (
+    authenticated_async,
+    Response,
+    route
+)
 
 
 @route(r'/projects/')
@@ -61,7 +63,7 @@ class ProjectHandler(BaseHandler, ABC):
             project_dict = model_to_dict(project)
             ret_data.append(project_dict)
 
-        return self.json(Result(code=1, msg="项目数据查询成功!", data=ret_data))
+        return self.json(Response(code=1, msg="项目数据查询成功!", data=ret_data))
 
     @authenticated_async
     async def post(self, *args, **kwargs):
@@ -78,7 +80,7 @@ class ProjectHandler(BaseHandler, ABC):
             try:
                 await self.application.objects.get(Project, name=name)
                 return self.json(
-                    Result(code=10020, msg='这个项目已经被创建！'))
+                    Response(code=10020, msg='这个项目已经被创建！'))
 
             except Project.DoesNotExist:
                 project = await self.application.objects.create(
@@ -89,12 +91,12 @@ class ProjectHandler(BaseHandler, ABC):
                     creator=self.current_user
                 )
                 return self.json(
-                    Result(code=1, msg="创建项目成功!", data={"projectId": project.id})
+                    Response(code=1, msg="创建项目成功!", data={"projectId": project.id})
                 )
 
         else:
             self.set_status(400)
-            return self.json(Result(code=10090, msg=form.errors))
+            return self.json(Response(code=10090, msg=form.errors))
 
 
 @route(r'/projects/([0-9]+)/')
@@ -110,11 +112,11 @@ class ProjectChangeHandler(BaseHandler, ABC):
             project = await self.application.objects.get(Project, id=int(project_id))
             await self.application.objects.delete(project)
             return self.json(
-                Result(code=1, msg="项目删除成功!", data={"id": project_id})
+                Response(code=1, msg="项目删除成功!", data={"id": project_id})
             )
         except Project.DoesNotExist:
             self.set_status(400)
-            return self.json(Result(code=10020, msg="该项目尚未创建!"))
+            return self.json(Response(code=10020, msg="该项目尚未创建!"))
 
     @authenticated_async
     async def patch(self, project_id, *args, **kwargs):
@@ -136,16 +138,16 @@ class ProjectChangeHandler(BaseHandler, ABC):
                 existed_project.desc = form.desc.data
                 await self.application.objects.update(existed_project)
                 return self.json(
-                    Result(code=1, msg="项目更新成功!", data={"id": project_id})
+                    Response(code=1, msg="项目更新成功!", data={"id": project_id})
                 )
 
             except Project.DoesNotExist:
                 self.set_status(404)
-                return self.json(Result(code=10020, msg="项目不存在!"))
+                return self.json(Response(code=10020, msg="项目不存在!"))
 
         else:
             self.set_status(400)
-            return self.json(Result(code=10090, msg=form.errors))
+            return self.json(Response(code=10090, msg=form.errors))
 
 
 @route(r'/test_envs/')
@@ -176,7 +178,7 @@ class TestEnvironmentHandler(BaseHandler, ABC):
             environment_dict = model_to_dict(environment)
             ret_data.append(environment_dict)
 
-        return self.json(Result(code=1, msg="测试环境数据查询成功!", data=ret_data))
+        return self.json(Response(code=1, msg="测试环境数据查询成功!", data=ret_data))
 
     @authenticated_async
     async def post(self, *args, **kwargs):
@@ -193,7 +195,7 @@ class TestEnvironmentHandler(BaseHandler, ABC):
             try:
                 await self.application.objects.get(TestEnvironment, name=name)
                 return self.json(
-                    Result(code=10020, msg='这个测试环境已经被创建！'))
+                    Response(code=10020, msg='这个测试环境已经被创建！'))
 
             except TestEnvironment.DoesNotExist:
                 environment = await self.application.objects.create(
@@ -204,13 +206,13 @@ class TestEnvironmentHandler(BaseHandler, ABC):
                     creator=self.current_user
                 )
                 return self.json(
-                    Result(
+                    Response(
                         code=1, msg="创建测试环境成功!", data={"EnvironmentId": environment.id})
                 )
 
         else:
             self.set_status(400)
-            return self.json(Result(code=10090, msg=form.errors))
+            return self.json(Response(code=10090, msg=form.errors))
 
 
 @route(r'/test_envs/([0-9]+)/')
@@ -226,11 +228,11 @@ class TestEnvironmentChangeHandler(BaseHandler, ABC):
             environment = await self.application.objects.get(TestEnvironment, id=int(environment_id))
             await self.application.objects.delete(environment)
             return self.json(
-                Result(code=1, msg="测试环境删除成功!", data={"id": environment_id})
+                Response(code=1, msg="测试环境删除成功!", data={"id": environment_id})
             )
         except TestEnvironment.DoesNotExist:
             self.set_status(400)
-            return self.json(Result(code=10020, msg="该环境尚未创建!"))
+            return self.json(Response(code=10020, msg="该环境尚未创建!"))
 
     @authenticated_async
     async def patch(self, environment_id, *args, **kwargs):
@@ -252,16 +254,16 @@ class TestEnvironmentChangeHandler(BaseHandler, ABC):
                 existed_environment.desc = form.desc.data
                 await self.application.objects.update(existed_environment)
                 return self.json(
-                    Result(code=1, msg="环境更新成功!", data={"id": environment_id})
+                    Response(code=1, msg="环境更新成功!", data={"id": environment_id})
                 )
 
             except TestEnvironment.DoesNotExist:
-                self.set_status(404)
-                return self.json(Result(code=10020, msg="该环境不存在!"))
+                self.set_status(400)
+                return self.json(Response(code=10020, msg="该环境不存在!"))
 
         else:
             self.set_status(400)
-            return self.json(Result(code=10090, msg=form.errors))
+            return self.json(Response(code=10090, msg=form.errors))
 
 
 @route('/db_settings/')
@@ -288,7 +290,7 @@ class DbSettingHandler(BaseHandler, ABC):
             db_dict = model_to_dict(db)
             ret_data.append(db_dict)
 
-        return self.json(Result(code=1, msg="数据库配置数据查询成功!", data=ret_data))
+        return self.json(Response(code=1, msg="数据库配置数据查询成功!", data=ret_data))
 
     @authenticated_async
     async def post(self, *args, **kwargs):
@@ -305,7 +307,7 @@ class DbSettingHandler(BaseHandler, ABC):
             try:
                 await self.application.objects.get(DBSetting, name=name)
                 return self.json(
-                    Result(code=10020, msg='这个数据库已经被创建！'))
+                    Response(code=10020, msg='这个数据库已经被创建！'))
 
             except DBSetting.DoesNotExist:
                 db = await self.application.objects.create(
@@ -320,13 +322,13 @@ class DbSettingHandler(BaseHandler, ABC):
                     creator=self.current_user
                 )
                 return self.json(
-                    Result(
+                    Response(
                         code=1, msg="创建数据库成功!", data={"DBId": db.id})
                 )
 
         else:
             self.set_status(400)
-            return self.json(Result(code=10090, msg=form.errors))
+            return self.json(Response(code=10090, msg=form.errors))
 
 
 @route(r'/db_settings/([0-9]+)/')
@@ -342,12 +344,12 @@ class DbSettingChangeHandler(BaseHandler, ABC):
             db = await self.application.objects.get(DBSetting, id=int(db_id))
             await self.application.objects.delete(db)
             return self.json(
-                Result(
+                Response(
                     code=1, msg="数据库配置删除成功!", data={"id": db_id})
             )
         except DBSetting.DoesNotExist:
             self.set_status(400)
-            return self.json(Result(code=10020, msg="该数据库配置尚未创建!"))
+            return self.json(Response(code=10020, msg="该数据库配置尚未创建!"))
 
     @authenticated_async
     async def patch(self, db_id, *args, **kwargs):
@@ -373,16 +375,16 @@ class DbSettingChangeHandler(BaseHandler, ABC):
                 existed_db.desc = form.desc.data
                 await self.application.objects.update(existed_db)
                 return self.json(
-                    Result(code=1, msg="数据库配置更新成功!", data={"id": db_id})
+                    Response(code=1, msg="数据库配置更新成功!", data={"id": db_id})
                 )
 
             except DBSetting.DoesNotExist:
-                self.set_status(404)
-                return self.json(Result(code=10020, msg="该数据库配置不存在!"))
+                self.set_status(400)
+                return self.json(Response(code=10020, msg="该数据库配置不存在!"))
 
         else:
             self.set_status(400)
-            return self.json(Result(code=10090, msg=form.errors))
+            return self.json(Response(code=10090, msg=form.errors))
 
 
 @route(r'/debug/')
@@ -428,11 +430,11 @@ class FunctionDebugHandler(BaseHandler, ABC):
             result = self.python_running_env(code)
 
             return self.json(
-                Result(code=1, msg='success', data={'RunningRes': result})
+                Response(code=1, msg='success', data={'RunningRes': result})
             )
         else:
             self.set_status(400)
-            return self.json(Result(code=10090, msg=form.errors))
+            return self.json(Response(code=10090, msg=form.errors))
 
 
 @route(r'/functions/')
@@ -461,7 +463,7 @@ class FunctionHandler(BaseHandler, ABC):
             func_dict = model_to_dict(func)
             ret_data.append(func_dict)
 
-        return self.json(Result(code=1, msg="函数方法数据查询成功!", data=ret_data))
+        return self.json(Response(code=1, msg="函数方法数据查询成功!", data=ret_data))
 
     @authenticated_async
     async def post(self, *args, **kwargs):
@@ -478,7 +480,7 @@ class FunctionHandler(BaseHandler, ABC):
             try:
                 await self.application.objects.get(FunctionGenerator, name=name)
                 return self.json(
-                    Result(code=10020, msg='这个函数方法已经被创建！')
+                    Response(code=10020, msg='这个函数方法已经被创建！')
                 )
 
             except FunctionGenerator.DoesNotExist:
@@ -490,12 +492,12 @@ class FunctionHandler(BaseHandler, ABC):
                     creator=self.current_user
                 )
                 return self.json(
-                    Result(code=1, msg="创建函数方法成功!", data={"functionId": function.id})
+                    Response(code=1, msg="创建函数方法成功!", data={"functionId": function.id})
                 )
 
         else:
             self.set_status(400)
-            return self.json(Result(code=10090, msg=form.errors))
+            return self.json(Response(code=10090, msg=form.errors))
 
 
 @route(r'/functions/([0-9]+)/')
@@ -511,11 +513,11 @@ class FunctionChangeHandler(BaseHandler, ABC):
             function = await self.application.objects.get(FunctionGenerator, id=int(function_id))
             await self.application.objects.delete(function)
             return self.json(
-                Result(code=1, msg="函数方法删除成功!", data={"functionId": function_id})
+                Response(code=1, msg="函数方法删除成功!", data={"functionId": function_id})
             )
         except FunctionGenerator.DoesNotExist:
             self.set_status(400)
-            return self.json(Result(code=10020, msg="该函数方法尚未创建!"))
+            return self.json(Response(code=10020, msg="该函数方法尚未创建!"))
 
     @authenticated_async
     async def patch(self, function_id, *args, **kwargs):
@@ -537,14 +539,14 @@ class FunctionChangeHandler(BaseHandler, ABC):
                 existed_function.desc = form.desc.data
                 await self.application.objects.update(existed_function)
                 return self.json(
-                    Result(
+                    Response(
                         code=1, msg="函数方法更新成功!", data={"id": function_id})
                 )
 
             except FunctionGenerator.DoesNotExist:
-                self.set_status(404)
-                return self.json(Result(code=10020, msg="该函数方法不存在!"))
+                self.set_status(400)
+                return self.json(Response(code=10020, msg="该函数方法不存在!"))
 
         else:
             self.set_status(400)
-            return self.json(Result(code=10090, msg=form.errors))
+            return self.json(Response(code=10090, msg=form.errors))

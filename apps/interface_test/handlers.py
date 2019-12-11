@@ -21,17 +21,19 @@ from playhouse.shortcuts import model_to_dict
 from MagicTestPlatform.handlers import BaseHandler
 from apps.interface_test.forms import (
     InterfacesDebugForm,
-    InterfacesForm
-)
-from apps.interface_test.models import Interfaces
+    InterfacesForm,
+    TestCaseForm)
+from apps.interface_test.models import (
+    Interfaces,
+    TestCases,
+    InterfacesTestCase)
 from apps.project.models import Project
-from apps.utils import (
+from common.core import (
     authenticated_async,
-    Result,
-    route
-)
-from apps.utils.Recursion import GetJsonParams
-from apps.utils.http_keywords import BaseKeyWords
+    Response,
+    route)
+from common.Recursion import GetJsonParams
+from common.httpclient import BaseKeyWords
 
 
 @route(r'/interfaces_debug/')
@@ -78,12 +80,12 @@ class InterfacesDebugHandler(BaseHandler, ABC):
             http_client = BaseKeyWords(request_body)
             response = http_client.make_test_templates()
             return self.json(
-                Result(code=1, msg='接口请求成功', data=response)
+                Response(code=1, msg='接口请求成功', data=response)
             )
 
         else:
             self.set_status(400)
-            return self.json(Result(code=10090, msg=form.errors))
+            return self.json(Response(code=10090, msg=form.errors))
 
 
 @route(r'/interfaces/')
@@ -111,7 +113,7 @@ class InterfacesHandler(BaseHandler, ABC):
             interface_dict = model_to_dict(interface)
             ret_data.append(interface_dict)
 
-        return self.json(Result(code=1, msg="接口数据查询成功!", data=ret_data))
+        return self.json(Response(code=1, msg="接口数据查询成功!", data=ret_data))
 
     @authenticated_async
     async def post(self, *args, **kwargs):
@@ -130,7 +132,7 @@ class InterfacesHandler(BaseHandler, ABC):
                     Interfaces, interface_name=form.interface_name.data
                 )
                 return self.json(
-                    Result(code=10020, msg='这个接口已经创建！'))
+                    Response(code=10020, msg='这个接口已经创建！'))
 
             except Interfaces.DoesNotExist:
                 interface = await self.application.objects.create(
@@ -146,13 +148,13 @@ class InterfacesHandler(BaseHandler, ABC):
                 )
 
                 return self.json(
-                    Result(
+                    Response(
                         code=1, msg="接口创建成功!", data={'interfaceId': interface.id}
                     ))
 
         else:
             self.set_status(400)
-            return self.json(Result(code=10090, msg=form.errors))
+            return self.json(Response(code=10090, msg=form.errors))
 
 
 @route(r'/interfaces/([0-9]+)/')
@@ -168,11 +170,11 @@ class ProjectChangeHandler(BaseHandler, ABC):
             interface = await self.application.objects.get(Interfaces, id=int(interface_id))
             await self.application.objects.delete(interface)
             return self.json(
-                Result(code=1, msg="接口删除成功!", data={"id": interface_id})
+                Response(code=1, msg="接口删除成功!", data={"id": interface_id})
             )
         except Interfaces.DoesNotExist:
             self.set_status(400)
-            return self.json(Result(code=10020, msg="该接口尚未创建!"))
+            return self.json(Response(code=10020, msg="该接口尚未创建!"))
 
     @authenticated_async
     async def patch(self, interface_id, *args, **kwargs):
@@ -199,16 +201,16 @@ class ProjectChangeHandler(BaseHandler, ABC):
 
                 await self.application.objects.update(existed_interface)
                 return self.json(
-                    Result(code=1, msg="接口更新成功!", data={"id": interface_id})
+                    Response(code=1, msg="接口更新成功!", data={"id": interface_id})
                 )
 
             except Interfaces.DoesNotExist:
-                self.set_status(404)
-                return self.json(Result(code=10020, msg="接口不存在!"))
+                self.set_status(400)
+                return self.json(Response(code=10020, msg="接口不存在!"))
 
         else:
             self.set_status(400)
-            return self.json(Result(code=10090, msg=form.errors))
+            return self.json(Response(code=10090, msg=form.errors))
 
 
 @route(r'/cases/')
@@ -220,5 +222,46 @@ class TestCasesHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def post(self, *args, **kwargs):
-        pass
+
+        param = self.request.body.decode('utf-8')
+        param = json.loads(param)
+        form = TestCaseForm.from_json(param)
+
+        if form.validate():
+
+            try:
+                await self.application.objects.get(
+                    TestCases, test_name=form.test_name.data
+                )
+                return self.json(
+                    Response(code=10020, msg='这个用例已经创建！'))
+
+            except TestCases.DoesNotExist:
+                case = await self.application.objects.create(
+                    TestCases,
+                    test_name=form.test_name.data,
+                    assertion=form.assertion.data,
+                    db=form.db.data,
+                    check_db=form.check_db.data,
+                    creator=self.current_user,
+                    desc=form.desc.data
+                )
+
+                # 接口与用例关联
+                if len(form.interfaces.data) > 0:
+                    for interface_id in form.interfaces.data:
+                        await self.application.objects.create(
+                            InterfacesTestCase,
+                            testcases_id=case.id,
+                            interfaces_id=interface_id
+                        )
+
+                return self.json(
+                    Response(
+                        code=1, msg="用例创建成功!", data={'caseId': case.id}
+                    ))
+
+        else:
+            self.set_status(400)
+            return self.json(Response(code=10090, msg=form.errors))
 

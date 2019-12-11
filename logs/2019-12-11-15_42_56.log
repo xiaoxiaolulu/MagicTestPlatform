@@ -1,0 +1,30 @@
+[2019-12-11 15:42:58] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzU1Mjc0MTd9.x6DWIiifOqsbafgij7B001K5i7WHrzuvNmDyuVWuRNU 
+| User-Agent      | PostmanRuntime/7.20.1 
+| Accept          | */*             
+| Cache-Control   | no-cache        
+| Postman-Token   | 181769e8-a3fd-4f9c-9068-0608ac2cc6ed 
+| Host            | 127.0.0.1:8084  
+| Accept-Encoding | gzip, deflate   
+| Content-Length  | 176             
+| Connection      | keep-alive      
++----Arguments----+
+| 'test_name'     | '无嘻嘻嘻休息休息敌322222222222221' 
+| 'interfaces'    | [8, 9]          
+| 'assertion'     | '12313'         
+| 'db'            | 2               
+| 'check_db'      | '123'           
+| 'desc'          | '21q313132'     
+
+[2019-12-11 15:42:58] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 10020,
+|     "msg": "这个用例已经创建！",
+|     "data": null
+| }

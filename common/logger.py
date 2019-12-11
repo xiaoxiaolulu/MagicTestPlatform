@@ -2,7 +2,7 @@ import os
 import time
 import logging
 import logging.handlers
-from apps.utils.parse_settings import settings
+from common.parse_settings import settings
 
 
 __all__ = ["logger"]

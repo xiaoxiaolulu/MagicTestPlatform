@@ -3,15 +3,8 @@ from apps.interface_test.models import (
     Interfaces,
     TestCases,
     InterfacesTestCase)
-from apps.project.models import (
-    Project,
-    FunctionGenerator,
-    TestEnvironment,
-    DBSetting
-)
-from apps.users.models import User
 from MagicTestPlatform.settings import database_async
-from apps.utils.parse_settings import settings
+from common.parse_settings import settings
 
 
 database = MySQLDatabase(

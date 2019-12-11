@@ -4,7 +4,7 @@ from urllib import parse
 import requests
 import simplejson
 from requests import exceptions
-from apps.utils.Recursion import GetJsonParams
+from common.Recursion import GetJsonParams
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 

@@ -8,9 +8,7 @@ class InterfaceModelsTest(unittest.TestCase):
     def test_all(self):
         case = TestCases.get(TestCases.test_name == "测试")
 
-        case.interfaces.add([
-            Interfaces.get(Interfaces.interface_name == '李四'),
-            Interfaces.get(Interfaces.interface_name == '王五')])
+        case.interfaces.add([10, 11])
 
 
 if __name__ == '__main__':

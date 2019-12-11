@@ -8,9 +8,9 @@ from tornado.web import (
     RequestHandler,
     HTTPError
 )
-from apps.utils.logger import logger
-from apps.utils.parse_settings import settings
-from apps.utils.json_serializer import json_serializer
+from common.logger import logger
+from common.parse_settings import settings
+from common.json_serializer import json_serializer
 
 
 def log_response(handler):

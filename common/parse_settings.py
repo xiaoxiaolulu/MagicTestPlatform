@@ -1,5 +1,5 @@
 from tornado.util import import_object
-from apps.utils.storage import storage
+from common.storage import storage
 
 
 class Settings(object):
@@ -28,7 +28,3 @@ class Settings(object):
 
 
 settings = Settings()
-
-if __name__ == '__main__':
-
-    print(settings.DATABASES.default.get('NAME'))
