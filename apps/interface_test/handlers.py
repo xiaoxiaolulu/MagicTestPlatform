@@ -236,7 +236,37 @@ class TestCasesHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def get(self, *args, **kwargs):
-        pass
+
+        ret_data = []
+        cases_query = TestCases.extend()
+
+        name = self.get_argument('name', None)
+        
+        if name is not None:
+            cases_query = cases_query.filter(
+                TestCases.test_name == name
+            )
+
+        cases_query = cases_query.order_by(-TestCases.add_time)
+        cases_query = await self.application.objects.execute(cases_query)
+
+        for case in cases_query:
+            case_dict = model_to_dict(case)
+
+            # 用例关联的接口配置
+            interfaces_case_query = InterfacesTestCase.extend()
+            interfaces_case_query = interfaces_case_query.filter(
+                InterfacesTestCase.cases == int(case_dict.get('id'))
+            )
+
+            interfaces_case_query = await self.application.objects.execute(interfaces_case_query)
+            case_dict.update(
+                {
+                    'api': [model_to_dict(interfaces_case) for interfaces_case in interfaces_case_query]}
+            )
+            ret_data.append(case_dict)
+
+        return self.json(Response(code=1, msg="用例数据查询成功!", data=ret_data))
 
     @authenticated_async
     async def post(self, *args, **kwargs):
@@ -270,8 +300,8 @@ class TestCasesHandler(BaseHandler, ABC):
                     for interface_id in form.interfaces.data:
                         await self.application.objects.create(
                             InterfacesTestCase,
-                            testcases_id=case.id,
-                            interfaces_id=interface_id
+                            cases=case.id,
+                            interfaces=interface_id
                         )
 
                 return self.json(

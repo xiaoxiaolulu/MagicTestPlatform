@@ -1,0 +1,45 @@
+[2019-12-13 18:56:47] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzYyMjI3NTR9.KdwdPYH43DI8Qt2bY08dEz5fUhB-lnD5S3NCS2iF4fo 
+| User-Agent      | PostmanRuntime/7.20.1 
+| Accept          | */*             
+| Cache-Control   | no-cache        
+| Postman-Token   | ec5970dd-4afd-4cf7-bc8f-869a32bc3d05 
+| Host            | 127.0.0.1:8084  
+| Accept-Encoding | gzip, deflate   
+| Content-Length  | 176             
+| Connection      | keep-alive      
++----Arguments----+
+| 'test_name'     | 'ÎÞÎûÎûÎûÐÝÏ¢ÐÝÏ¢µÐ322222222222221' 
+| 'interfaces'    | [8, 9]          
+| 'assertion'     | '12313'         
+| 'db'            | 2               
+| 'check_db'      | '123'           
+| 'desc'          | '21q313132'     
+
+[2019-12-13 18:56:47] [ERROR] [MainThread] [handlers.py:105] Uncaught exception GET /cases/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:8084', method='GET', uri='/cases/', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "D:\Users\Null\AppData\Local\Continuum\miniconda3\lib\site-packages\tornado\web.py", line 1699, in _execute
+    result = await result
+  File "F:\MagicTestPlatform\common\core.py", line 37, in wrapper
+    await method(self, *args, **kwargs)
+  File "F:\MagicTestPlatform\apps\interface_test\handlers.py", line 259, in get
+    for interfaces_case in interfaces_case_query:
+  File "D:\Users\Null\AppData\Local\Continuum\miniconda3\lib\site-packages\peewee.py", line 3281, in __iter__
+    return iter(self.execute())
+  File "D:\Users\Null\AppData\Local\Continuum\miniconda3\lib\site-packages\peewee.py", line 3274, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "D:\Users\Null\AppData\Local\Continuum\miniconda3\lib\site-packages\peewee.py", line 2939, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "D:\Users\Null\AppData\Local\Continuum\miniconda3\lib\site-packages\peewee_async.py", line 1035, in execute_sql
+    "Error, sync query is not allowed! Call the `.set_allow_sync()` "
+AssertionError: Error, sync query is not allowed! Call the `.set_allow_sync()` or use the `.allow_sync()` context manager.
+[2019-12-13 18:56:47] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | text/plain      
+
+Body:
+| Traceback (most recent call last):
+| 

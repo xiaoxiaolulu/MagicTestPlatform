@@ -1,0 +1,62 @@
+[2019-12-13 18:35:45] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzYyMjI3NTR9.KdwdPYH43DI8Qt2bY08dEz5fUhB-lnD5S3NCS2iF4fo 
+| User-Agent      | PostmanRuntime/7.20.1 
+| Accept          | */*             
+| Cache-Control   | no-cache        
+| Postman-Token   | 37d4ed73-9438-4d6b-a062-14477b94439c 
+| Host            | 127.0.0.1:8084  
+| Accept-Encoding | gzip, deflate   
+| Content-Length  | 176             
+| Connection      | keep-alive      
++----Arguments----+
+| 'test_name'     | 'ÎÞÎûÎûÎûÐÝÏ¢ÐÝÏ¢µÐ322222222222221' 
+| 'interfaces'    | [8, 9]          
+| 'assertion'     | '12313'         
+| 'db'            | 2               
+| 'check_db'      | '123'           
+| 'desc'          | '21q313132'     
+
+[2019-12-13 18:35:45] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "ÓÃÀýÊý¾Ý²éÑ¯³É¹¦!",
+|     "data": [
+|         {
+|             "id": 1,
+|             "add_time": "2019-12-13T18:29:16",
+|             "test_name": "ÎÞÎûÎûÎûÐÝÏ¢ÐÝÏ¢µÐ322222222222221",
+|             "assertion": "12313",
+|             "db": {
+|                 "id": 2,
+|                 "add_time": "2019-12-13T18:35:45.333013",
+|                 "name": "3131",
+|                 "creator": null,
+|                 "db_type": "313",
+|                 "db_user": "31",
+|                 "db_password": "31",
+|                 "db_host": "31",
+|                 "db_port": 31,
+|                 "desc": null
+|             },
+|             "check_db": "123",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-13T18:35:45.333013",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "21q313132"
+|         }
+|     ]
+| }

@@ -42,7 +42,6 @@ class Interfaces(BaseModel):
 class TestCases(BaseModel):
 
     test_name = CharField(max_length=50, null=True, verbose_name="用例名称")
-    interfaces = ManyToManyField(Interfaces)
     assertion = TextField(null=True, verbose_name="断言数据")
     db = ForeignKeyField(DBSetting, verbose_name="数据库配置")
     check_db = TextField(null=True, verbose_name="落库校验")
@@ -55,13 +54,6 @@ class TestCases(BaseModel):
             cls,
             User.id,
             User.nick_name,
-            Interfaces.id,
-            Interfaces.interface_name,
-            Interfaces.url,
-            Interfaces.method,
-            Interfaces.headers,
-            Interfaces.params,
-            Interfaces.project,
             DBSetting.id,
             DBSetting.db_type,
             DBSetting.db_host,
@@ -70,11 +62,28 @@ class TestCases(BaseModel):
             DBSetting.db_port,
             DBSetting.name) \
             .join(User, join_type=JOIN.LEFT_OUTER, on=cls.creator).switch(cls) \
-            .join(Interfaces, join_type=JOIN.LEFT_OUTER, on=cls.interfaces).switch(cls) \
             .join(DBSetting, join_type=JOIN.LEFT_OUTER, on=cls.db)
 
 
-InterfacesTestCase = TestCases.interfaces.get_through_model()
+class InterfacesTestCase(BaseModel):
+
+    cases = ForeignKeyField(TestCases, verbose_name="用例配置")
+    interfaces = ForeignKeyField(Interfaces, verbose_name="接口配置")
+
+    @classmethod
+    def extend(cls):
+        return cls.select(
+            cls,
+            TestCases.id,
+            TestCases.assertion,
+            TestCases.check_db,
+            Interfaces.interface_name,
+            Interfaces.url,
+            Interfaces.method,
+            Interfaces.params,
+            Interfaces.headers) \
+            .join(TestCases, join_type=JOIN.LEFT_OUTER, on=cls.cases).switch(cls) \
+            .join(Interfaces, join_type=JOIN.LEFT_OUTER, on=cls.interfaces)
 
 
 class VariableDependency(BaseModel):
