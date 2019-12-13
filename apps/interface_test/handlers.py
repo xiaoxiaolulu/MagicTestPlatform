@@ -106,6 +106,24 @@ class InterfacesHandler(BaseHandler, ABC):
                 Interfaces.interface_name == name
             )
 
+        method = self.get_argument('type', None)
+        if method is not None:
+            interfaces_query = interfaces_query.filter(
+                Interfaces.method == method
+            )
+
+        url = self.get_argument('router', None)
+        if url is not None:
+            interfaces_query = interfaces_query.filter(
+                Interfaces.url == url
+            )
+
+        project = self.get_argument('project', None)
+        if project is not None:
+            interfaces_query = interfaces_query.filter(
+                Project.name == project
+            )
+
         interfaces_query = interfaces_query.order_by(-Project.add_time)
         interfaces = await self.application.objects.execute(interfaces_query)
 

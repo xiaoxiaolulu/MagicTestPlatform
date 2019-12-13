@@ -51,12 +51,18 @@ class ProjectHandler(BaseHandler, ABC):
         ret_data = []
         project_query = Project.extend()
 
-        # 根据项目名过滤
         name = self.get_argument('name', None)
         if name is not None:
             project_query = project_query.filter(Project.name == name)
 
-        # 默认排序规则
+        env = self.get_argument('env', None)
+        if env is not None:
+            project_query = project_query.filter(TestEnvironment.name == env)
+
+        host = self.get_argument('host', None)
+        if host is not None:
+            project_query = project_query.filter(TestEnvironment.host_address == host)
+
         project_query = project_query.order_by(-Project.add_time)
         projects = await self.application.objects.execute(project_query)
         for project in projects:
@@ -168,6 +174,12 @@ class TestEnvironmentHandler(BaseHandler, ABC):
                 TestEnvironment.name == name
             )
 
+        host = self.get_argument('router', None)
+        if host is not None:
+            environment_query = environment_query.filter(
+                TestEnvironment.host_address == host
+            )
+
         # 默认排序规则
         environment_query = environment_query.order_by(
             TestEnvironment.add_time.desc()
@@ -277,10 +289,14 @@ class DbSettingHandler(BaseHandler, ABC):
         ret_data = []
         db_query = DBSetting.extend()
 
-        # 根据环境名过滤
         name = self.get_argument('name', None)
+
         if name is not None:
             db_query = db_query.filter(DBSetting.name == name)
+
+        db_type = self.get_argument('type', None)
+        if db_type is not None:
+            db_query = db_query.filter(DBSetting.db_type == db_type)
 
         # 默认排序规则
         db_query = db_query.order_by(DBSetting.add_time.desc())

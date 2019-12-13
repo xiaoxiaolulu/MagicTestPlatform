@@ -1,0 +1,2554 @@
+[2019-12-12 15:51:18] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/projectManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "ff17f4d482a1dad44d602e775837fb114594cb3b" 
+
+[2019-12-12 15:51:18] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json; charset=UTF-8 
+
+Body:
+| {}
+[2019-12-12 15:51:18] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/projectManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "ff17f4d482a1dad44d602e775837fb114594cb3b" 
+
+[2019-12-12 15:51:18] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json; charset=UTF-8 
+
+Body:
+| {}
+[2019-12-12 15:51:23] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "752d34af9402ebd5fbbd4a50c9e3282f8e6ef1e0" 
++----Arguments----+
+| 'type'          | [b'']           
+
+[2019-12-12 15:51:23] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json; charset=UTF-8 
+
+Body:
+| {}
+[2019-12-12 15:51:23] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "752d34af9402ebd5fbbd4a50c9e3282f8e6ef1e0" 
++----Arguments----+
+| 'type'          | [b'']           
+
+[2019-12-12 15:51:23] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json; charset=UTF-8 
+
+Body:
+| {}
+[2019-12-12 15:52:08] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "beca75a0327c7e1a00146b6e5425d23f5aad3028" 
++----Arguments----+
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 15:52:08] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json; charset=UTF-8 
+
+Body:
+| {}
+[2019-12-12 15:52:08] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "beca75a0327c7e1a00146b6e5425d23f5aad3028" 
++----Arguments----+
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 15:52:08] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json; charset=UTF-8 
+
+Body:
+| {}
+[2019-12-12 15:52:16] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/functionManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "6a65a6b5d6c39a2f6851f41d9d2aba731e921b32" 
+
+[2019-12-12 15:52:16] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json; charset=UTF-8 
+
+Body:
+| {}
+[2019-12-12 15:52:16] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/functionManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "6a65a6b5d6c39a2f6851f41d9d2aba731e921b32" 
+
+[2019-12-12 15:52:16] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json; charset=UTF-8 
+
+Body:
+| {}
+[2019-12-12 15:52:21] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Access-Control-Request-Method | POST            
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Access-Control-Request-Headers | content-type    
+| Accept          | */*             
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/functionManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+
+[2019-12-12 15:52:21] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| FunctionHandler object has list index out of range
+[2019-12-12 15:52:21] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Content-Length  | 46              
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Content-Type    | application/json;charset=UTF-8 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/functionManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'name'          | '3131'          
+| 'function'      | '3131'          
+| 'desc'          | '331'           
+
+[2019-12-12 15:52:21] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json; charset=UTF-8 
+
+Body:
+| {}
+[2019-12-12 15:52:21] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Content-Length  | 46              
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Content-Type    | application/json;charset=UTF-8 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/functionManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'name'          | '3131'          
+| 'function'      | '3131'          
+| 'desc'          | '331'           
+
+[2019-12-12 15:52:21] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json; charset=UTF-8 
+
+Body:
+| {}
+[2019-12-12 15:52:22] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Content-Length  | 46              
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Content-Type    | application/json;charset=UTF-8 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/functionManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'name'          | '3131'          
+| 'function'      | '3131'          
+| 'desc'          | '331'           
+
+[2019-12-12 15:52:22] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json; charset=UTF-8 
+
+Body:
+| {}
+[2019-12-12 15:52:22] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Content-Length  | 46              
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Content-Type    | application/json;charset=UTF-8 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/functionManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'name'          | '3131'          
+| 'function'      | '3131'          
+| 'desc'          | '331'           
+
+[2019-12-12 15:52:22] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json; charset=UTF-8 
+
+Body:
+| {}
+[2019-12-12 15:52:33] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Access-Control-Request-Method | POST            
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Access-Control-Request-Headers | content-type    
+| Accept          | */*             
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/login 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+
+[2019-12-12 15:52:33] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| LoginHandler object has list index out of range
+[2019-12-12 15:52:33] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Content-Length  | 48              
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Content-Type    | application/json;charset=UTF-8 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/login 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'account'       | '123456@163.com' 
+| 'password'      | '123456'        
+
+[2019-12-12 15:52:34] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "登陆成功",
+|     "data": {
+|         "id": 1,
+|         "nick_name": "123456@163.com",
+|         "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzYxMzcxNTR9.IQ9vJPS1nPuv-hRVV11WABiUQD7e5VNoQjG4cC56tFk"
+|     }
+| }
+[2019-12-12 15:52:37] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Access-Control-Request-Method | GET             
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Access-Control-Request-Headers | authorization   
+| Accept          | */*             
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 15:52:37] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| DbSettingHandler object has list index out of range
+[2019-12-12 15:52:37] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Access-Control-Request-Method | GET             
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Access-Control-Request-Headers | authorization   
+| Accept          | */*             
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 15:52:37] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| DbSettingHandler object has list index out of range
+[2019-12-12 15:52:37] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzYxMzcxNTR9.IQ9vJPS1nPuv-hRVV11WABiUQD7e5VNoQjG4cC56tFk 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "beca75a0327c7e1a00146b6e5425d23f5aad3028" 
++----Arguments----+
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 15:52:37] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-11T20:47:00",
+|             "name": "12321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:52:37.245430",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "MySQL",
+|             "db_user": "312",
+|             "db_password": "312",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-12-11T20:46:41",
+|             "name": "1321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:52:37.245430",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "Mysql",
+|             "db_user": "3131",
+|             "db_password": "3131",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "313"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-12-05T15:15:11",
+|             "name": "侧深V从",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:52:37.245430",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "侧深V从",
+|             "db_user": "侧深V从",
+|             "db_password": "侧深V从",
+|             "db_host": "侧深V从",
+|             "db_port": 3306,
+|             "desc": "侧深V从"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:52:37.245430",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-12 15:52:37] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzYxMzcxNTR9.IQ9vJPS1nPuv-hRVV11WABiUQD7e5VNoQjG4cC56tFk 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "4ff6e3c16b8f90a9a950f55fdf678ebd3586c95c" 
++----Arguments----+
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 15:52:37] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-11T20:47:00",
+|             "name": "12321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:52:37.514726",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "MySQL",
+|             "db_user": "312",
+|             "db_password": "312",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-12-11T20:46:41",
+|             "name": "1321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:52:37.514726",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "Mysql",
+|             "db_user": "3131",
+|             "db_password": "3131",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "313"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-12-05T15:15:11",
+|             "name": "侧深V从",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:52:37.514726",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "侧深V从",
+|             "db_user": "侧深V从",
+|             "db_password": "侧深V从",
+|             "db_host": "侧深V从",
+|             "db_port": 3306,
+|             "desc": "侧深V从"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:52:37.515703",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-12 15:54:46] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzYxMzcxNTR9.IQ9vJPS1nPuv-hRVV11WABiUQD7e5VNoQjG4cC56tFk 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "347eeeb3ffa5b77bfd93544315d57c481471611d" 
++----Arguments----+
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 15:54:46] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-11T20:47:00",
+|             "name": "12321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:54:46.523736",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "MySQL",
+|             "db_user": "312",
+|             "db_password": "312",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-12-11T20:46:41",
+|             "name": "1321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:54:46.523736",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "Mysql",
+|             "db_user": "3131",
+|             "db_password": "3131",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "313"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-12-05T15:15:11",
+|             "name": "侧深V从",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:54:46.524732",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "侧深V从",
+|             "db_user": "侧深V从",
+|             "db_password": "侧深V从",
+|             "db_host": "侧深V从",
+|             "db_port": 3306,
+|             "desc": "侧深V从"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:54:46.524732",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-12 15:54:46] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzYxMzcxNTR9.IQ9vJPS1nPuv-hRVV11WABiUQD7e5VNoQjG4cC56tFk 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "f7f77805d269bf1a996e9e48e4b9a6948adc6d34" 
++----Arguments----+
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 15:54:46] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-11T20:47:00",
+|             "name": "12321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:54:46.554653",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "MySQL",
+|             "db_user": "312",
+|             "db_password": "312",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-12-11T20:46:41",
+|             "name": "1321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:54:46.554653",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "Mysql",
+|             "db_user": "3131",
+|             "db_password": "3131",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "313"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-12-05T15:15:11",
+|             "name": "侧深V从",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:54:46.554653",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "侧深V从",
+|             "db_user": "侧深V从",
+|             "db_password": "侧深V从",
+|             "db_host": "侧深V从",
+|             "db_port": 3306,
+|             "desc": "侧深V从"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:54:46.555651",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-12 15:56:43] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzYxMzcxNTR9.IQ9vJPS1nPuv-hRVV11WABiUQD7e5VNoQjG4cC56tFk 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "a6378b5081f26574afca3c77dd8e5de931e15aeb" 
++----Arguments----+
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 15:56:43] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-11T20:47:00",
+|             "name": "12321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:56:43.328629",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "MySQL",
+|             "db_user": "312",
+|             "db_password": "312",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-12-11T20:46:41",
+|             "name": "1321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:56:43.328629",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "Mysql",
+|             "db_user": "3131",
+|             "db_password": "3131",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "313"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-12-05T15:15:11",
+|             "name": "侧深V从",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:56:43.328629",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "侧深V从",
+|             "db_user": "侧深V从",
+|             "db_password": "侧深V从",
+|             "db_host": "侧深V从",
+|             "db_port": 3306,
+|             "desc": "侧深V从"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:56:43.329622",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-12 15:56:43] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzYxMzcxNTR9.IQ9vJPS1nPuv-hRVV11WABiUQD7e5VNoQjG4cC56tFk 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "86bb486c0fb3365e4cb73e96e99dfd85667089c3" 
++----Arguments----+
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 15:56:43] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-11T20:47:00",
+|             "name": "12321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:56:43.350566",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "MySQL",
+|             "db_user": "312",
+|             "db_password": "312",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-12-11T20:46:41",
+|             "name": "1321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:56:43.350566",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "Mysql",
+|             "db_user": "3131",
+|             "db_password": "3131",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "313"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-12-05T15:15:11",
+|             "name": "侧深V从",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:56:43.351564",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "侧深V从",
+|             "db_user": "侧深V从",
+|             "db_password": "侧深V从",
+|             "db_host": "侧深V从",
+|             "db_port": 3306,
+|             "desc": "侧深V从"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:56:43.351564",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-12 15:56:51] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Access-Control-Request-Method | GET             
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Access-Control-Request-Headers | authorization   
+| Accept          | */*             
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'name'          | [b'321321321']  
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 15:56:51] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| DbSettingHandler object has list index out of range
+[2019-12-12 15:56:51] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzYxMzcxNTR9.IQ9vJPS1nPuv-hRVV11WABiUQD7e5VNoQjG4cC56tFk 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'name'          | [b'321321321']  
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 15:56:51] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": []
+| }
+[2019-12-12 15:58:21] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzYxMzcxNTR9.IQ9vJPS1nPuv-hRVV11WABiUQD7e5VNoQjG4cC56tFk 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "752d34af9402ebd5fbbd4a50c9e3282f8e6ef1e0" 
++----Arguments----+
+| 'name'          | [b'321321321']  
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 15:58:21] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Undefined       | Undefined       
+
+[2019-12-12 15:58:22] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzYxMzcxNTR9.IQ9vJPS1nPuv-hRVV11WABiUQD7e5VNoQjG4cC56tFk 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "752d34af9402ebd5fbbd4a50c9e3282f8e6ef1e0" 
++----Arguments----+
+| 'name'          | [b'321321321']  
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 15:58:22] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Undefined       | Undefined       
+
+[2019-12-12 15:58:57] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzYxMzcxNTR9.IQ9vJPS1nPuv-hRVV11WABiUQD7e5VNoQjG4cC56tFk 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "f38ae641cc1a99121affa469f4620925997baff4" 
++----Arguments----+
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 15:58:57] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-11T20:47:00",
+|             "name": "12321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:58:57.534412",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "MySQL",
+|             "db_user": "312",
+|             "db_password": "312",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-12-11T20:46:41",
+|             "name": "1321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:58:57.534412",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "Mysql",
+|             "db_user": "3131",
+|             "db_password": "3131",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "313"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-12-05T15:15:11",
+|             "name": "侧深V从",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:58:57.534412",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "侧深V从",
+|             "db_user": "侧深V从",
+|             "db_password": "侧深V从",
+|             "db_host": "侧深V从",
+|             "db_port": 3306,
+|             "desc": "侧深V从"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:58:57.535417",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-12 15:58:57] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzYxMzcxNTR9.IQ9vJPS1nPuv-hRVV11WABiUQD7e5VNoQjG4cC56tFk 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "212fd1ebc6704943a7d77d09d96ce3f4c0f3b1a1" 
++----Arguments----+
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 15:58:57] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-11T20:47:00",
+|             "name": "12321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:58:57.555354",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "MySQL",
+|             "db_user": "312",
+|             "db_password": "312",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-12-11T20:46:41",
+|             "name": "1321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:58:57.555354",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "Mysql",
+|             "db_user": "3131",
+|             "db_password": "3131",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "313"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-12-05T15:15:11",
+|             "name": "侧深V从",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:58:57.555354",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "侧深V从",
+|             "db_user": "侧深V从",
+|             "db_password": "侧深V从",
+|             "db_host": "侧深V从",
+|             "db_port": 3306,
+|             "desc": "侧深V从"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T15:58:57.556386",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-12 16:01:11] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzYxMzcxNTR9.IQ9vJPS1nPuv-hRVV11WABiUQD7e5VNoQjG4cC56tFk 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "32f18a2c07e680d7f0fec28616293a2ce13c94d3" 
++----Arguments----+
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 16:01:11] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-11T20:47:00",
+|             "name": "12321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:01:11.662025",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "MySQL",
+|             "db_user": "312",
+|             "db_password": "312",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-12-11T20:46:41",
+|             "name": "1321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:01:11.662025",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "Mysql",
+|             "db_user": "3131",
+|             "db_password": "3131",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "313"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-12-05T15:15:11",
+|             "name": "侧深V从",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:01:11.662025",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "侧深V从",
+|             "db_user": "侧深V从",
+|             "db_password": "侧深V从",
+|             "db_host": "侧深V从",
+|             "db_port": 3306,
+|             "desc": "侧深V从"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:01:11.662025",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-12 16:01:11] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzYxMzcxNTR9.IQ9vJPS1nPuv-hRVV11WABiUQD7e5VNoQjG4cC56tFk 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "a35945d4ddb1afdfc45fb44c5f82e60638b7e023" 
++----Arguments----+
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 16:01:11] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-11T20:47:00",
+|             "name": "12321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:01:11.691945",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "MySQL",
+|             "db_user": "312",
+|             "db_password": "312",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-12-11T20:46:41",
+|             "name": "1321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:01:11.692954",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "Mysql",
+|             "db_user": "3131",
+|             "db_password": "3131",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "313"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-12-05T15:15:11",
+|             "name": "侧深V从",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:01:11.692954",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "侧深V从",
+|             "db_user": "侧深V从",
+|             "db_password": "侧深V从",
+|             "db_host": "侧深V从",
+|             "db_port": 3306,
+|             "desc": "侧深V从"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:01:11.692954",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-12 16:26:38] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Access-Control-Request-Method | GET             
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Access-Control-Request-Headers | authorization   
+| Accept          | */*             
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 16:26:38] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| DbSettingHandler object has list index out of range
+[2019-12-12 16:26:38] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Access-Control-Request-Method | GET             
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Access-Control-Request-Headers | authorization   
+| Accept          | */*             
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 16:26:38] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| DbSettingHandler object has list index out of range
+[2019-12-12 16:26:38] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzYxMzcxNTR9.IQ9vJPS1nPuv-hRVV11WABiUQD7e5VNoQjG4cC56tFk 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "7035fdce2b5bd8663964dbb294047f910ca6fbd2" 
++----Arguments----+
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 16:26:38] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-11T20:47:00",
+|             "name": "12321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:26:38.653494",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "MySQL",
+|             "db_user": "312",
+|             "db_password": "312",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-12-11T20:46:41",
+|             "name": "1321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:26:38.654491",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "Mysql",
+|             "db_user": "3131",
+|             "db_password": "3131",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "313"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-12-05T15:15:11",
+|             "name": "侧深V从",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:26:38.655503",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "侧深V从",
+|             "db_user": "侧深V从",
+|             "db_password": "侧深V从",
+|             "db_host": "侧深V从",
+|             "db_port": 3306,
+|             "desc": "侧深V从"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:26:38.655503",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-12 16:26:38] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzYxMzcxNTR9.IQ9vJPS1nPuv-hRVV11WABiUQD7e5VNoQjG4cC56tFk 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "2ea02d2f799468cb94ab1b529396c430c04106d6" 
++----Arguments----+
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 16:26:38] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-11T20:47:00",
+|             "name": "12321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:26:38.685447",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "MySQL",
+|             "db_user": "312",
+|             "db_password": "312",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-12-11T20:46:41",
+|             "name": "1321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:26:38.685447",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "Mysql",
+|             "db_user": "3131",
+|             "db_password": "3131",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "313"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-12-05T15:15:11",
+|             "name": "侧深V从",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:26:38.686416",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "侧深V从",
+|             "db_user": "侧深V从",
+|             "db_password": "侧深V从",
+|             "db_host": "侧深V从",
+|             "db_port": 3306,
+|             "desc": "侧深V从"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:26:38.686416",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-12 16:28:11] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzYxMzcxNTR9.IQ9vJPS1nPuv-hRVV11WABiUQD7e5VNoQjG4cC56tFk 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "c5733fca5c3827e3f1d6678d8c60f32549b03508" 
++----Arguments----+
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 16:28:11] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-11T20:47:00",
+|             "name": "12321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:28:11.324493",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "MySQL",
+|             "db_user": "312",
+|             "db_password": "312",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-12-11T20:46:41",
+|             "name": "1321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:28:11.325491",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "Mysql",
+|             "db_user": "3131",
+|             "db_password": "3131",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "313"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-12-05T15:15:11",
+|             "name": "侧深V从",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:28:11.325491",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "侧深V从",
+|             "db_user": "侧深V从",
+|             "db_password": "侧深V从",
+|             "db_host": "侧深V从",
+|             "db_port": 3306,
+|             "desc": "侧深V从"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:28:11.325491",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-12 16:28:11] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzYxMzcxNTR9.IQ9vJPS1nPuv-hRVV11WABiUQD7e5VNoQjG4cC56tFk 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "767ec3253ec264242ed1f6c2e13e35b2e37cfd05" 
++----Arguments----+
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 16:28:11] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-11T20:47:00",
+|             "name": "12321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:28:11.348429",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "MySQL",
+|             "db_user": "312",
+|             "db_password": "312",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-12-11T20:46:41",
+|             "name": "1321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:28:11.348429",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "Mysql",
+|             "db_user": "3131",
+|             "db_password": "3131",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "313"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-12-05T15:15:11",
+|             "name": "侧深V从",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:28:11.348429",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "侧深V从",
+|             "db_user": "侧深V从",
+|             "db_password": "侧深V从",
+|             "db_host": "侧深V从",
+|             "db_port": 3306,
+|             "desc": "侧深V从"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:28:11.348429",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-12 16:28:15] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzYxMzcxNTR9.IQ9vJPS1nPuv-hRVV11WABiUQD7e5VNoQjG4cC56tFk 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "fdfb47ab0c51a8f6d4146230d4043f384d7c4d24" 
++----Arguments----+
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 16:28:15] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-11T20:47:00",
+|             "name": "12321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:28:15.959895",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "MySQL",
+|             "db_user": "312",
+|             "db_password": "312",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-12-11T20:46:41",
+|             "name": "1321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:28:15.959895",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "Mysql",
+|             "db_user": "3131",
+|             "db_password": "3131",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "313"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-12-05T15:15:11",
+|             "name": "侧深V从",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:28:15.960892",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "侧深V从",
+|             "db_user": "侧深V从",
+|             "db_password": "侧深V从",
+|             "db_host": "侧深V从",
+|             "db_port": 3306,
+|             "desc": "侧深V从"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:28:15.960892",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-12 16:29:41] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzYxMzcxNTR9.IQ9vJPS1nPuv-hRVV11WABiUQD7e5VNoQjG4cC56tFk 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "180bc628409daa63b704acafb34b328537ed1644" 
++----Arguments----+
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 16:29:41] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-11T20:47:00",
+|             "name": "12321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:29:41.543325",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "MySQL",
+|             "db_user": "312",
+|             "db_password": "312",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-12-11T20:46:41",
+|             "name": "1321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:29:41.543325",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "Mysql",
+|             "db_user": "3131",
+|             "db_password": "3131",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "313"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-12-05T15:15:11",
+|             "name": "侧深V从",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:29:41.543325",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "侧深V从",
+|             "db_user": "侧深V从",
+|             "db_password": "侧深V从",
+|             "db_host": "侧深V从",
+|             "db_port": 3306,
+|             "desc": "侧深V从"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:29:41.544357",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
+[2019-12-12 16:29:44] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Access-Control-Request-Method | GET             
+| Origin          | http://localhost:8080 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Access-Control-Request-Headers | authorization   
+| Accept          | */*             
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'name'          | [b'31321']      
+| 'type'          | [b'MySQL']      
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 16:29:44] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| DbSettingHandler object has list index out of range
+[2019-12-12 16:29:44] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzYxMzcxNTR9.IQ9vJPS1nPuv-hRVV11WABiUQD7e5VNoQjG4cC56tFk 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'name'          | [b'31321']      
+| 'type'          | [b'MySQL']      
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 16:29:44] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": []
+| }
+[2019-12-12 16:30:24] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzYxMzcxNTR9.IQ9vJPS1nPuv-hRVV11WABiUQD7e5VNoQjG4cC56tFk 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/dbManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "538f23f14d4085e8eb2b35ebc09fb493c7144715" 
++----Arguments----+
+| 'currentPage'   | [b'1']          
+
+[2019-12-12 16:30:24] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "数据库配置数据查询成功!",
+|     "data": [
+|         {
+|             "id": 6,
+|             "add_time": "2019-12-11T20:47:00",
+|             "name": "12321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:30:24.689368",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "MySQL",
+|             "db_user": "312",
+|             "db_password": "312",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-12-11T20:46:41",
+|             "name": "1321",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:30:24.689368",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "Mysql",
+|             "db_user": "3131",
+|             "db_password": "3131",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "313"
+|         },
+|         {
+|             "id": 4,
+|             "add_time": "2019-12-05T15:15:11",
+|             "name": "侧深V从",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:30:24.690379",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "侧深V从",
+|             "db_user": "侧深V从",
+|             "db_password": "侧深V从",
+|             "db_host": "侧深V从",
+|             "db_port": 3306,
+|             "desc": "侧深V从"
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-11-27T18:02:58",
+|             "name": "3131",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-12T16:30:24.690379",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "db_type": "313",
+|             "db_user": "31",
+|             "db_password": "31",
+|             "db_host": "31",
+|             "db_port": 31,
+|             "desc": "31"
+|         }
+|     ]
+| }
