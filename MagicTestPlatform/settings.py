@@ -60,6 +60,17 @@ REDIS = {
 
 
 #################
+#  调式环境配置   #
+#################
+CODE_DEBUG = {
+    'HOST': '172.81.242.70',
+    'PORT': 22,
+    'USER': 'root',
+    'PASSWORD': 'bubai.4393,'
+}
+
+
+#################
 # 数据库异步配置  #
 #################
 database_async = peewee_async.MySQLDatabase(

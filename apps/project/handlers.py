@@ -17,7 +17,6 @@
 """
 import json
 from abc import ABC
-import paramiko
 from playhouse.shortcuts import model_to_dict
 from MagicTestPlatform.handlers import BaseHandler
 from apps.project.models import (
@@ -36,7 +35,8 @@ from apps.project.forms import (
 from common.core import (
     authenticated_async,
     Response,
-    route
+    route,
+    python_running_env
 )
 
 
@@ -406,33 +406,6 @@ class DbSettingChangeHandler(BaseHandler, ABC):
 @route(r'/debug/')
 class FunctionDebugHandler(BaseHandler, ABC):
 
-    @staticmethod
-    def python_running_env(code):
-        """
-        python 代码运行环境
-        :param code: python代码
-        """
-
-        def sftp_exec_command(ssh_client, command):
-            try:
-                std_in, std_out, std_err = ssh_client.exec_command(
-                    command, timeout=4)
-                out = "".join([line for line in std_out])
-                return out
-            except Exception as e:
-                print(e)
-            return None
-
-        ssh_client = paramiko.SSHClient()
-        ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        ssh_client.connect('172.81.242.70', 22, 'root', 'bubai.4393,')
-        sftp_exec_command(ssh_client, "touch test.py")
-        sftp_exec_command(ssh_client, f"echo \"{code}\" > test.py")
-        response = sftp_exec_command(ssh_client, "python test.py")
-        sftp_exec_command(ssh_client, "rm -rf test.py")
-        ssh_client.close()
-        return response
-
     def post(self, *args, **kwargs):
         """
         内置函数-自定义python解释器, 并提供代码运行环境用于debug
@@ -443,7 +416,7 @@ class FunctionDebugHandler(BaseHandler, ABC):
 
         if form.validate():
             code = form.function.data
-            result = self.python_running_env(code)
+            result = python_running_env(code)
 
             return self.json(
                 Response(code=1, msg='success', data={'RunningRes': result})

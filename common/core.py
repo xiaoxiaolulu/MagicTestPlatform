@@ -1,6 +1,7 @@
 import functools
 from random import choice
 import jwt
+import paramiko
 from apps.users.models import User
 from common.parse_settings import settings
 
@@ -13,6 +14,37 @@ def generate_code():
     return "".join(
         [choice(seeds) for index in range(4)]
     )
+
+
+def python_running_env(code: str) -> str:
+    """
+    python 代码运行环境
+    :param code: python代码
+    """
+
+    def sftp_exec_command(client, command):
+        try:
+            std_in, std_out, std_err = client.exec_command(command, timeout=4)
+            out = "".join([line for line in std_out])
+            return out
+        except Exception as msg:
+            return msg
+
+    ssh_client = paramiko.SSHClient()
+    ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+    ssh_client.connect(
+        settings.CODE_DEBUG.HOST,
+        settings.CODE_DEBUG.PORT,
+        settings.CODE_DEBUG.USER,
+        settings.CODE_DEBUG.PASSWORD
+    )
+
+    sftp_exec_command(ssh_client, "touch test.py")
+    sftp_exec_command(ssh_client, f"echo \"{code}\" > test.py")
+    response = sftp_exec_command(ssh_client, "python test.py")
+    sftp_exec_command(ssh_client, "rm -rf test.py")
+    ssh_client.close()
+    return response
 
 
 def authenticated_async(method):
@@ -77,7 +109,3 @@ class Route(object):
 
 
 route = Route()
-
-
-if __name__ == '__main__':
-    print(generate_code())
