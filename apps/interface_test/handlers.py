@@ -22,16 +22,19 @@ from MagicTestPlatform.handlers import BaseHandler
 from apps.interface_test.forms import (
     InterfacesDebugForm,
     InterfacesForm,
-    TestCaseForm)
+    TestCaseForm
+)
 from apps.interface_test.models import (
     Interfaces,
     TestCases,
-    InterfacesTestCase)
+    InterfacesTestCase
+)
 from apps.project.models import Project
 from common.core import (
     authenticated_async,
     Response,
-    route)
+    route
+)
 from common.Recursion import GetJsonParams
 from common.httpclient import BaseKeyWords
 
@@ -236,6 +239,9 @@ class TestCasesHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def get(self, *args, **kwargs):
+        """
+        用例查询
+        """
 
         ret_data = []
         cases_query = TestCases.extend()
@@ -270,6 +276,9 @@ class TestCasesHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def post(self, *args, **kwargs):
+        """
+        用例新增
+        """
 
         param = self.request.body.decode('utf-8')
         param = json.loads(param)
@@ -313,3 +322,98 @@ class TestCasesHandler(BaseHandler, ABC):
             self.set_status(400)
             return self.json(Response(code=10090, msg=form.errors))
 
+
+@route(r'/cases/([0-9]+)/')
+class TestCaseChangeHandler(BaseHandler, ABC):
+
+    @authenticated_async
+    async def delete(self, case_id, *args, **kwargs):
+        """
+        用例删除
+        :param case_id: 用例编号
+        """
+        try:
+
+            # 查询删除用例的接口配置并删除
+            cases_query = InterfacesTestCase.extend()
+
+            if case_id is not None:
+                cases_query = cases_query.filter(
+                    InterfacesTestCase.cases == int(case_id)
+                )
+
+            case_interfaces = await self.application.objects.execute(cases_query)
+
+            for case_interface in case_interfaces:
+                case_interface_index = model_to_dict(case_interface).get('id')
+
+                interface = await self.application.objects.get(
+                    InterfacesTestCase,
+                    id=int(case_interface_index)
+                )
+                await self.application.objects.delete(interface)
+
+            case = await self.application.objects.get(
+                TestCases, id=int(case_id)
+            )
+            await self.application.objects.delete(case)
+
+            return self.json(
+                Response(code=1, msg="用例删除成功!", data={"id": case_id})
+            )
+        except InterfacesTestCase.DoesNotExist:
+            self.set_status(400)
+            return self.json(Response(code=10020, msg="该用例尚未创建!"))
+
+    @authenticated_async
+    async def patch(self, case_id, *args, **kwargs):
+
+        param = self.request.body.decode('utf-8')
+        param = json.loads(param)
+        form = TestCaseForm.from_json(param)
+
+        if form.validate():
+
+            try:
+                existed_case = await self.application.objects.get(TestCases, id=int(case_id))
+                existed_case.test_name = form.test_name.data
+                existed_case.assertion = form.assertion.data
+                existed_case.db = form.db.data
+                existed_case.check_db = form.check_db.data
+                existed_case.desc = form.desc.data
+
+                await self.application.objects.update(existed_case)
+
+                # 查询修改用例的接口配置并更新最新的接口配置信息
+                cases_query = InterfacesTestCase.extend()
+
+                if case_id is not None:
+                    cases_query = cases_query.filter(
+                        InterfacesTestCase.cases == int(case_id)
+                    )
+
+                case_interfaces = await self.application.objects.execute(cases_query)
+                case_interface_index = [model_to_dict(case_interface).get('id') for case_interface in case_interfaces]
+
+                if len(form.interfaces.data) > 0:
+
+                    for index, interface_id in enumerate(form.interfaces.data):
+
+                        existed_interfaces = await self.application.objects.get(
+                            InterfacesTestCase,
+                            id=int(case_interface_index[index])
+                        )
+                        existed_interfaces.interfaces = interface_id
+                        await self.application.objects.update(existed_interfaces)
+
+                return self.json(
+                    Response(code=1, msg="用例更新成功!", data={"id": case_id})
+                )
+
+            except TestCases.DoesNotExist:
+                self.set_status(400)
+                return self.json(Response(code=10020, msg="用例不存在!"))
+
+        else:
+            self.set_status(400)
+            return self.json(Response(code=10090, msg=form.errors))
