@@ -169,9 +169,8 @@ class InterfacesHandler(BaseHandler, ABC):
                 )
 
                 return self.json(
-                    Response(
-                        code=1, msg="接口创建成功!", data={'interfaceId': interface.id}
-                    ))
+                    Response(code=1, msg="接口创建成功!", data={'interfaceId': interface.id})
+                )
 
         else:
             self.set_status(400)
@@ -247,7 +246,7 @@ class TestCasesHandler(BaseHandler, ABC):
         cases_query = TestCases.extend()
 
         name = self.get_argument('name', None)
-        
+
         if name is not None:
             cases_query = cases_query.filter(
                 TestCases.test_name == name
@@ -268,7 +267,8 @@ class TestCasesHandler(BaseHandler, ABC):
             interfaces_case_query = await self.application.objects.execute(interfaces_case_query)
             case_dict.update(
                 {
-                    'api': [model_to_dict(interfaces_case) for interfaces_case in interfaces_case_query]}
+                    'api': [model_to_dict(interfaces_case)for interfaces_case in interfaces_case_query]
+                }
             )
             ret_data.append(case_dict)
 
