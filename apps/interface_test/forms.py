@@ -9,7 +9,8 @@
 from wtforms import (
     StringField,
     IntegerField,
-    FieldList)
+    FieldList
+)
 from wtforms.validators import DataRequired
 from wtforms_tornado import Form
 
@@ -38,5 +39,4 @@ class TestCaseForm(Form):
 
     test_name = StringField("用例名称", validators=[DataRequired("请输入用例名称")])
     interfaces = FieldList(IntegerField("接口配置", validators=[DataRequired("请选择接口")]))
-    assertion = StringField("断言数据", validators=[DataRequired("请输入断言数据")])
     desc = StringField("用例描述", validators=[DataRequired("请输入用例描述")])

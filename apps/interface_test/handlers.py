@@ -27,7 +27,8 @@ from apps.interface_test.forms import (
 from apps.interface_test.models import (
     Interfaces,
     TestCases,
-    InterfacesTestCase
+    InterfacesTestCase,
+    CheckDbContent
 )
 from apps.project.models import Project
 from common.core import (
@@ -282,7 +283,6 @@ class TestCasesHandler(BaseHandler, ABC):
 
         param = self.request.body.decode('utf-8')
         param = json.loads(param)
-        print(param)
         form = TestCaseForm.from_json(param)
 
         if form.validate():
@@ -298,9 +298,7 @@ class TestCasesHandler(BaseHandler, ABC):
                 case = await self.application.objects.create(
                     TestCases,
                     test_name=form.test_name.data,
-                    assertion=form.assertion.data,
-                    db=form.db.data,
-                    check_db=form.check_db.data,
+                    assertion=param.get('assertion'),
                     creator=self.current_user,
                     desc=form.desc.data
                 )
@@ -313,6 +311,18 @@ class TestCasesHandler(BaseHandler, ABC):
                             cases=case.id,
                             interfaces=interface_id
                         )
+
+                # 落库校验与用例关联
+                db_check_content = param.get('db_check')
+                for db_content in db_check_content:
+                    db = db_content.get('db')
+                    content = db_content.get('assertSql')
+                    await self.application.objects.create(
+                        CheckDbContent,
+                        db=db,
+                        check_db=content,
+                        case=case.id
+                    )
 
                 return self.json(
                     Response(

@@ -51,16 +51,8 @@ class TestCases(BaseModel):
         return cls.select(
             cls,
             User.id,
-            User.nick_name,
-            DBSetting.id,
-            DBSetting.db_type,
-            DBSetting.db_host,
-            DBSetting.db_user,
-            DBSetting.db_password,
-            DBSetting.db_port,
-            DBSetting.name) \
-            .join(User, join_type=JOIN.LEFT_OUTER, on=cls.creator).switch(cls) \
-            .join(DBSetting, join_type=JOIN.LEFT_OUTER, on=cls.db)
+            User.nick_name) \
+            .join(User, join_type=JOIN.LEFT_OUTER, on=cls.creator)
 
 
 class CheckDbContent(BaseModel):
@@ -76,15 +68,14 @@ class CheckDbContent(BaseModel):
             TestCases.id,
             TestCases.test_name,
             TestCases.assertion,
-            DBSetting.id,
             DBSetting.db_type,
             DBSetting.db_host,
             DBSetting.db_user,
             DBSetting.db_password,
             DBSetting.db_port,
             DBSetting.name) \
-            .join(DBSetting, join_type=JOIN.LEFT_OUTER, on=cls.db).switch(cls) \
-            .join(TestCases, join_type=JOIN.LEFT_OUTER, on=cls.case)
+            .join(TestCases, join_type=JOIN.LEFT_OUTER, on=cls.case).switch(cls) \
+            .join(DBSetting, join_type=JOIN.LEFT_OUTER, on=cls.db)
 
 
 class InterfacesTestCase(BaseModel):
