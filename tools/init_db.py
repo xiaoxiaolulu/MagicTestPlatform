@@ -1,9 +1,18 @@
 from peewee import MySQLDatabase
+from MagicTestPlatform.settings import database_async
 from apps.interface_test.models import (
     Interfaces,
     TestCases,
-    InterfacesTestCase)
-from MagicTestPlatform.settings import database_async
+    InterfacesTestCase,
+    CheckDbContent
+)
+from apps.project.models import (
+    Project,
+    FunctionGenerator,
+    TestEnvironment,
+    DBSetting
+)
+from apps.users.models import User
 from common.parse_settings import settings
 
 
@@ -17,9 +26,9 @@ database = MySQLDatabase(
 
 
 def init():
-    # database_async.create_tables([User, ])
-    # database_async.create_tables([Project, FunctionGenerator, TestEnvironment, DBSetting])
-    database_async.create_tables([Interfaces, TestCases, InterfacesTestCase])
+    database_async.create_tables([User, ])
+    database_async.create_tables([Project, FunctionGenerator, TestEnvironment, DBSetting])
+    database_async.create_tables([Interfaces, TestCases, InterfacesTestCase, CheckDbContent])
 
 
 if __name__ == '__main__':

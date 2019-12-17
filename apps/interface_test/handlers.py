@@ -282,6 +282,7 @@ class TestCasesHandler(BaseHandler, ABC):
 
         param = self.request.body.decode('utf-8')
         param = json.loads(param)
+        print(param)
         form = TestCaseForm.from_json(param)
 
         if form.validate():

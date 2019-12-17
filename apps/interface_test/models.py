@@ -43,8 +43,6 @@ class TestCases(BaseModel):
 
     test_name = CharField(max_length=50, null=True, verbose_name="用例名称")
     assertion = TextField(null=True, verbose_name="断言数据")
-    db = ForeignKeyField(DBSetting, verbose_name="数据库配置")
-    check_db = TextField(null=True, verbose_name="落库校验")
     creator = ForeignKeyField(User, verbose_name="创建者")
     desc = TextField(verbose_name="用例描述")
 
@@ -63,6 +61,30 @@ class TestCases(BaseModel):
             DBSetting.name) \
             .join(User, join_type=JOIN.LEFT_OUTER, on=cls.creator).switch(cls) \
             .join(DBSetting, join_type=JOIN.LEFT_OUTER, on=cls.db)
+
+
+class CheckDbContent(BaseModel):
+
+    db = ForeignKeyField(DBSetting, verbose_name="数据库配置")
+    check_db = TextField(null=True, verbose_name="落库校验")
+    case = ForeignKeyField(TestCases, verbose_name="关联用例")
+
+    @classmethod
+    def extend(cls):
+        return cls.select(
+            cls,
+            TestCases.id,
+            TestCases.test_name,
+            TestCases.assertion,
+            DBSetting.id,
+            DBSetting.db_type,
+            DBSetting.db_host,
+            DBSetting.db_user,
+            DBSetting.db_password,
+            DBSetting.db_port,
+            DBSetting.name) \
+            .join(DBSetting, join_type=JOIN.LEFT_OUTER, on=cls.db).switch(cls) \
+            .join(TestCases, join_type=JOIN.LEFT_OUTER, on=cls.case)
 
 
 class InterfacesTestCase(BaseModel):
