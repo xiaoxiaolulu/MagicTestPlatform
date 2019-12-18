@@ -89,7 +89,6 @@ class InterfacesTestCase(BaseModel):
             cls,
             TestCases.id,
             TestCases.assertion,
-            TestCases.check_db,
             Interfaces.interface_name,
             Interfaces.url,
             Interfaces.method,

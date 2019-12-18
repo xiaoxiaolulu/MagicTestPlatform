@@ -271,6 +271,26 @@ class TestCasesHandler(BaseHandler, ABC):
                     'api': [model_to_dict(interfaces_case)for interfaces_case in interfaces_case_query]
                 }
             )
+
+            # 用例关联落库校验数据
+            db_check_query = CheckDbContent.extend()
+            db_check_query = db_check_query.filter(
+                CheckDbContent.case == int(case_dict.get('id'))
+            )
+
+            db_check_query = await self.application.objects.execute(db_check_query)
+
+            db_checks = []
+
+            for db_check in db_check_query:
+                db_check_dict = model_to_dict(db_check)
+                db = db_check_dict.get('db').get('id')
+                assert_sql = db_check_dict.get('check_db')
+                db_checks.append(
+                    {'db': db, 'assertSql': assert_sql}
+                )
+
+            case_dict.update({'db_check': db_checks})
             ret_data.append(case_dict)
 
         return self.json(Response(code=1, msg="用例数据查询成功!", data=ret_data))
