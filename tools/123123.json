@@ -1,0 +1,43 @@
+{
+  "travellerInfo": {
+    "birthday": null,
+    "credentialType": 0,
+    "phoneAreaCode": null,
+    "credentialNo": "430922199208092310",
+    "namePinyin": null,
+    "phone": "17621392184",
+    "sex": null,
+    "name": "刘毅",
+    "firstNamePinyin": null,
+    "lastNamePinyin": null,
+    "age": null,
+    "email": null
+  },
+  "orderId": 123415,
+  "carUseInfo": {
+    "carUseTime": "2019-12-21 11:00:00",
+    "sipp": null,
+    "hertzSupplierCode": null,
+    "pickOffAddr": {
+      "address": "上海火车站",
+      "latitude": "31.246179",
+      "longitude": "121.427733"
+    },
+    "returnCityCode": "310100",
+    "carReturnTime": "2019-12-22 12:00:00",
+    "outCarId": "2",
+    "equipmentList": null,
+    "carId": "5",
+    "isPickOffOnDoor": null,
+    "returnStoreCode": null,
+    "isPickUpOnDoor": null,
+    "flightNo": null,
+    "originStoreCode": null,
+    "pickUpAddr": {
+      "address": "上海火车站",
+      "latitude": "31.246179",
+      "longitude": "121.427733"
+    },
+    "originCityCode": "310100"
+  }
+}

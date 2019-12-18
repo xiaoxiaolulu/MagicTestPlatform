@@ -1,0 +1,399 @@
+[2019-12-18 15:11:33] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Content-Length  | 151             
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzYyMjI3NTR9.KdwdPYH43DI8Qt2bY08dEz5fUhB-lnD5S3NCS2iF4fo 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Content-Type    | application/json;charset=UTF-8 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/testCaseManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
++----Arguments----+
+| 'test_name'     | '313131休息休息'    
+| 'assertion'     | [{'name': '3213', 'comparetor': 'LSS', 'value': '3131'}] 
+| 'interfaces'    | [8]             
+| 'db_check'      | []              
+| 'desc'          | '休息休息'          
+
+[2019-12-18 15:11:33] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "用例创建成功!",
+|     "data": {
+|         "caseId": 9
+|     }
+| }
+[2019-12-18 15:11:33] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Host            | 127.0.0.1:8084  
+| Connection      | keep-alive      
+| Accept          | application/json, text/plain, */* 
+| Origin          | http://localhost:8080 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzYyMjI3NTR9.KdwdPYH43DI8Qt2bY08dEz5fUhB-lnD5S3NCS2iF4fo 
+| User-Agent      | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36 
+| Sec-Fetch-Site  | cross-site      
+| Sec-Fetch-Mode  | cors            
+| Referer         | http://localhost:8080/testCaseManage 
+| Accept-Encoding | gzip, deflate, br 
+| Accept-Language | zh-CN,zh;q=0.9  
+| If-None-Match   | "b93a8ba99c29337a1810dddf050a044f170c278b" 
++----Arguments----+
+| 'currentPage'   | [b'1']          
+
+[2019-12-18 15:11:34] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "用例数据查询成功!",
+|     "data": [
+|         {
+|             "id": 9,
+|             "add_time": "2019-12-18T15:11:34",
+|             "test_name": "313131休息休息",
+|             "assertion": "[{'name': '3213', 'comparetor': 'LSS', 'value': '3131'}]",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-18T15:11:33.966799",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "休息休息",
+|             "api": [
+|                 {
+|                     "id": 12,
+|                     "add_time": "2019-12-18T15:11:34",
+|                     "cases": {
+|                         "id": 9,
+|                         "add_time": "2019-12-18T15:11:33.971788",
+|                         "test_name": null,
+|                         "assertion": "[{'name': '3213', 'comparetor': 'LSS', 'value': '3131'}]",
+|                         "creator": null,
+|                         "desc": null
+|                     },
+|                     "interfaces": {
+|                         "id": 8,
+|                         "add_time": "2019-12-18T15:11:33.971788",
+|                         "interface_name": "第三大学",
+|                         "url": "32131231",
+|                         "method": "post",
+|                         "headers": "{\"Accept\":\"3123131\"}",
+|                         "params": "{\"31312\":\"31312\"}",
+|                         "creator": null,
+|                         "project": null,
+|                         "desc": null
+|                     }
+|                 }
+|             ],
+|             "db_check": []
+|         },
+|         {
+|             "id": 8,
+|             "add_time": "2019-12-18T15:06:58",
+|             "test_name": "313131",
+|             "assertion": "[{'name': '3213', 'comparetor': 'LSS', 'value': '3131'}]",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-18T15:11:33.981759",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "休息休息",
+|             "api": [
+|                 {
+|                     "id": 11,
+|                     "add_time": "2019-12-18T15:06:58",
+|                     "cases": {
+|                         "id": 8,
+|                         "add_time": "2019-12-18T15:11:34.107424",
+|                         "test_name": null,
+|                         "assertion": "[{'name': '3213', 'comparetor': 'LSS', 'value': '3131'}]",
+|                         "creator": null,
+|                         "desc": null
+|                     },
+|                     "interfaces": {
+|                         "id": 8,
+|                         "add_time": "2019-12-18T15:11:34.107424",
+|                         "interface_name": "第三大学",
+|                         "url": "32131231",
+|                         "method": "post",
+|                         "headers": "{\"Accept\":\"3123131\"}",
+|                         "params": "{\"31312\":\"31312\"}",
+|                         "creator": null,
+|                         "project": null,
+|                         "desc": null
+|                     }
+|                 }
+|             ],
+|             "db_check": []
+|         },
+|         {
+|             "id": 7,
+|             "add_time": "2019-12-18T14:23:58",
+|             "test_name": "为单位实现",
+|             "assertion": "[{'name': '213', 'comparetor': 'LSS', 'value': '32131'}, {'name': '上线', 'comparetor': 'GEQ', 'value': '12331'}]",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-18T15:11:34.117401",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "嘻嘻嘻",
+|             "api": [
+|                 {
+|                     "id": 9,
+|                     "add_time": "2019-12-18T14:23:58",
+|                     "cases": {
+|                         "id": 7,
+|                         "add_time": "2019-12-18T15:11:34.125374",
+|                         "test_name": null,
+|                         "assertion": "[{'name': '213', 'comparetor': 'LSS', 'value': '32131'}, {'name': '上线', 'comparetor': 'GEQ', 'value': '12331'}]",
+|                         "creator": null,
+|                         "desc": null
+|                     },
+|                     "interfaces": {
+|                         "id": 9,
+|                         "add_time": "2019-12-18T15:11:34.125374",
+|                         "interface_name": "打打",
+|                         "url": "32131231",
+|                         "method": "post",
+|                         "headers": "{\"Accept\":\"3123131\",\"Accept-Charset\":\"32123213221\"}",
+|                         "params": "{\"3131\":\"3122313\",\"31312\":\"31312\"}",
+|                         "creator": null,
+|                         "project": null,
+|                         "desc": null
+|                     }
+|                 },
+|                 {
+|                     "id": 10,
+|                     "add_time": "2019-12-18T14:23:58",
+|                     "cases": {
+|                         "id": 7,
+|                         "add_time": "2019-12-18T15:11:34.125374",
+|                         "test_name": null,
+|                         "assertion": "[{'name': '213', 'comparetor': 'LSS', 'value': '32131'}, {'name': '上线', 'comparetor': 'GEQ', 'value': '12331'}]",
+|                         "creator": null,
+|                         "desc": null
+|                     },
+|                     "interfaces": {
+|                         "id": 8,
+|                         "add_time": "2019-12-18T15:11:34.125374",
+|                         "interface_name": "第三大学",
+|                         "url": "32131231",
+|                         "method": "post",
+|                         "headers": "{\"Accept\":\"3123131\"}",
+|                         "params": "{\"31312\":\"31312\"}",
+|                         "creator": null,
+|                         "project": null,
+|                         "desc": null
+|                     }
+|                 }
+|             ],
+|             "db_check": []
+|         },
+|         {
+|             "id": 5,
+|             "add_time": "2019-12-17T15:05:49",
+|             "test_name": "休息嘻嘻嘻嘻222222嘻休息嘻",
+|             "assertion": "1231",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-18T15:11:34.139337",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "11111",
+|             "api": [
+|                 {
+|                     "id": 5,
+|                     "add_time": "2019-12-17T15:05:49",
+|                     "cases": {
+|                         "id": 5,
+|                         "add_time": "2019-12-18T15:11:34.146321",
+|                         "test_name": null,
+|                         "assertion": "1231",
+|                         "creator": null,
+|                         "desc": null
+|                     },
+|                     "interfaces": {
+|                         "id": 8,
+|                         "add_time": "2019-12-18T15:11:34.146321",
+|                         "interface_name": "第三大学",
+|                         "url": "32131231",
+|                         "method": "post",
+|                         "headers": "{\"Accept\":\"3123131\"}",
+|                         "params": "{\"31312\":\"31312\"}",
+|                         "creator": null,
+|                         "project": null,
+|                         "desc": null
+|                     }
+|                 },
+|                 {
+|                     "id": 6,
+|                     "add_time": "2019-12-17T15:05:49",
+|                     "cases": {
+|                         "id": 5,
+|                         "add_time": "2019-12-18T15:11:34.146321",
+|                         "test_name": null,
+|                         "assertion": "1231",
+|                         "creator": null,
+|                         "desc": null
+|                     },
+|                     "interfaces": {
+|                         "id": 9,
+|                         "add_time": "2019-12-18T15:11:34.146321",
+|                         "interface_name": "打打",
+|                         "url": "32131231",
+|                         "method": "post",
+|                         "headers": "{\"Accept\":\"3123131\",\"Accept-Charset\":\"32123213221\"}",
+|                         "params": "{\"3131\":\"3122313\",\"31312\":\"31312\"}",
+|                         "creator": null,
+|                         "project": null,
+|                         "desc": null
+|                     }
+|                 }
+|             ],
+|             "db_check": []
+|         },
+|         {
+|             "id": 3,
+|             "add_time": "2019-12-17T14:50:11",
+|             "test_name": "休息休息嘻",
+|             "assertion": "1231",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-18T15:11:34.156301",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "11111",
+|             "api": [
+|                 {
+|                     "id": 1,
+|                     "add_time": "2019-12-17T14:50:11",
+|                     "cases": {
+|                         "id": 3,
+|                         "add_time": "2019-12-18T15:11:34.166269",
+|                         "test_name": null,
+|                         "assertion": "1231",
+|                         "creator": null,
+|                         "desc": null
+|                     },
+|                     "interfaces": {
+|                         "id": 8,
+|                         "add_time": "2019-12-18T15:11:34.166269",
+|                         "interface_name": "第三大学",
+|                         "url": "32131231",
+|                         "method": "post",
+|                         "headers": "{\"Accept\":\"3123131\"}",
+|                         "params": "{\"31312\":\"31312\"}",
+|                         "creator": null,
+|                         "project": null,
+|                         "desc": null
+|                     }
+|                 },
+|                 {
+|                     "id": 2,
+|                     "add_time": "2019-12-17T14:50:11",
+|                     "cases": {
+|                         "id": 3,
+|                         "add_time": "2019-12-18T15:11:34.166269",
+|                         "test_name": null,
+|                         "assertion": "1231",
+|                         "creator": null,
+|                         "desc": null
+|                     },
+|                     "interfaces": {
+|                         "id": 9,
+|                         "add_time": "2019-12-18T15:11:34.166269",
+|                         "interface_name": "打打",
+|                         "url": "32131231",
+|                         "method": "post",
+|                         "headers": "{\"Accept\":\"3123131\",\"Accept-Charset\":\"32123213221\"}",
+|                         "params": "{\"3131\":\"3122313\",\"31312\":\"31312\"}",
+|                         "creator": null,
+|                         "project": null,
+|                         "desc": null
+|                     }
+|                 }
+|             ],
+|             "db_check": []
+|         },
+|         {
+|             "id": 2,
+|             "add_time": "2019-12-17T14:49:21",
+|             "test_name": "嘻2222嘻2嘻",
+|             "assertion": "1231",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-18T15:11:34.172249",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "11111",
+|             "api": [],
+|             "db_check": []
+|         },
+|         {
+|             "id": 1,
+|             "add_time": "2019-12-17T14:48:38",
+|             "test_name": "嘻222嘻2嘻",
+|             "assertion": "1231",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-18T15:11:34.188209",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "11111",
+|             "api": [],
+|             "db_check": []
+|         }
+|     ]
+| }

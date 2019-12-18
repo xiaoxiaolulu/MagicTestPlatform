@@ -384,6 +384,24 @@ class TestCaseChangeHandler(BaseHandler, ABC):
                 )
                 await self.application.objects.delete(interface)
 
+            # 删除用例关联的落库数据
+            db_check_query = CheckDbContent.extend()
+            if case_id is not None:
+                db_check_query = db_check_query.filter(
+                    CheckDbContent.case == int(case_id)
+                )
+
+            db_checks = await self.application.objects.execute(db_check_query)
+
+            for db_check in db_checks:
+                db_check_index = model_to_dict(db_check).get('id')
+
+                db_assert = await self.application.objects.get(
+                    CheckDbContent,
+                    id=int(db_check_index)
+                )
+                await self.application.objects.delete(db_assert)
+
             case = await self.application.objects.get(
                 TestCases, id=int(case_id)
             )
