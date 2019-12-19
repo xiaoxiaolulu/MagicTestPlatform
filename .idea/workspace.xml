@@ -24,7 +24,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5db38437-6573-4939-886a-8cb1fda998b1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/tools/init_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/init_db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -351,14 +351,7 @@
       <workItem from="1576550247542" duration="11731000" />
       <workItem from="1576573509079" duration="5520000" />
       <workItem from="1576636038663" duration="14284000" />
-      <workItem from="1576722074103" duration="14768000" />
-    </task>
-    <task id="LOCAL-00011" summary="新增数据库配置接口">
-      <created>1572837573784</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1572837573784</updated>
+      <workItem from="1576722074103" duration="15530000" />
     </task>
     <task id="LOCAL-00012" summary="添加内置函数接口类">
       <created>1572856944393</created>
@@ -696,7 +689,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576747429645</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="别干了天天技术支持madan">
+      <created>1576747545683</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1576747545683</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -731,7 +731,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Add -&gt; 接口测试模块---接口调试功能" />
     <MESSAGE value="Add -&gt; 接口测试模块---接口新增&amp;查询" />
     <MESSAGE value="Add -&gt; 完善接口管理模块" />
     <MESSAGE value="优化部分代码" />
@@ -756,7 +755,8 @@
     <MESSAGE value="配置文件修改" />
     <MESSAGE value="测试" />
     <MESSAGE value="忘记了自己是测试还是技术支持，" />
-    <option name="LAST_COMMIT_MESSAGE" value="忘记了自己是测试还是技术支持，" />
+    <MESSAGE value="别干了天天技术支持madan" />
+    <option name="LAST_COMMIT_MESSAGE" value="别干了天天技术支持madan" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
