@@ -1,14 +1,13 @@
-sudo: required
 language: python
 services:
-	- mysql
+  - mysql
 python:
-	- 3.7
+  - "3.7"
 before_install:
-	- sudo mysql -e 'CREATE DATABASE magic;'
+  - sudo mysql -e 'CREATE DATABASE magic;'
 install:
-	- pip install -r requirements/requirements.txt
+  - pip install -r requirements/requirements.txt
 script:
-	- cp configs.example.json configs.json
-	- python ./tools/init_db.py
-	- python server.py
+  - cp configs.example.json configs.json
+  - python ./tools/init_db.py
+  - python server.py

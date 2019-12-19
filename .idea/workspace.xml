@@ -23,61 +23,7 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5db38437-6573-4939-886a-8cb1fda998b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2019-12-19-15_54_16.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/logger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-16-11_17_33.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-17-10_44_41.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-17-11_37_57.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-17-11_41_36.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-17-14_22_14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-17-14_24_39.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-17-14_31_10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-17-14_32_38.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-17-14_35_08.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-17-14_38_26.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-17-14_39_07.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-17-14_40_57.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-17-14_43_42.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-17-14_47_48.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-17-14_48_18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-17-14_48_35.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-17-14_50_06.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-17-14_51_14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-17-14_51_39.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-17-15_03_49.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-17-15_05_46.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-17-17_53_20.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-17-19_11_49.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-17-19_36_33.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-17-19_37_11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-17-19_39_28.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-17-19_45_58.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-18-10_45_56.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-18-10_58_45.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-18-11_00_35.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-18-11_02_36.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-18-11_18_45.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-18-11_20_54.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-18-11_43_37.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-18-14_06_39.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-18-15_06_35.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-18-15_11_29.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-18-15_12_49.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-18-15_17_42.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-18-15_20_27.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-18-15_23_41.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-18-15_50_18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-18-15_50_43.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-18-15_52_10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-18-16_05_56.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-19-10_23_01.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019-12-19-15_37_02.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings/base.py" afterDir="false" />
-    </list>
+    <list default="true" id="5db38437-6573-4939-886a-8cb1fda998b1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -403,14 +349,7 @@
       <workItem from="1576550247542" duration="11731000" />
       <workItem from="1576573509079" duration="5520000" />
       <workItem from="1576636038663" duration="14284000" />
-      <workItem from="1576722074103" duration="11183000" />
-    </task>
-    <task id="LOCAL-00004" summary="fixed">
-      <created>1572789806325</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1572789806325</updated>
+      <workItem from="1576722074103" duration="11448000" />
     </task>
     <task id="LOCAL-00005" summary="添加md">
       <created>1572790481636</created>
@@ -748,7 +687,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576741176593</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="配置文件优化">
+      <created>1576744028460</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1576744028460</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
