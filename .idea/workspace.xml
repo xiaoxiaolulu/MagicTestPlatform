@@ -23,10 +23,7 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5db38437-6573-4939-886a-8cb1fda998b1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-    </list>
+    <list default="true" id="5db38437-6573-4939-886a-8cb1fda998b1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -352,14 +349,7 @@
       <workItem from="1576550247542" duration="11731000" />
       <workItem from="1576573509079" duration="5520000" />
       <workItem from="1576636038663" duration="14284000" />
-      <workItem from="1576722074103" duration="16155000" />
-    </task>
-    <task id="LOCAL-00013" summary="修复project多表查询问题">
-      <created>1573114196088</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1573114196088</updated>
+      <workItem from="1576722074103" duration="16402000" />
     </task>
     <task id="LOCAL-00014" summary="项目管理模块待完善，添加相应注释">
       <created>1573137997004</created>
@@ -697,7 +687,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576749425583</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="别干了天天技术支持madan">
+      <created>1576750071828</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1576750071829</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
