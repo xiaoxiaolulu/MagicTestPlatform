@@ -26,9 +26,10 @@ DEBUG = env.bool("TORNADO_DEBUG", False)
 
 
 #################
-#   日志路径     #
+#   日志配置     #
 #################
 LOG_PATH = BASE_DIR.path('./logs')
+LOG_BACKUP_NUM = env.int('BACKUP_NUM', default=5)
 
 
 #################

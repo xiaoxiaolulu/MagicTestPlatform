@@ -100,7 +100,11 @@ def _get_logger(log_to_file=True, log_level="DEBUG"):
     if log_to_file:
         now = time.strftime('%Y-%m-%d-%H_%M_%S', time.localtime(time.time()))
         _tmp_path = os.path.join(settings.LOG_PATH, f'{now}.log')
-        file_handler = logging.handlers.TimedRotatingFileHandler(_tmp_path, when="midnight", backupCount=30)
+        file_handler = logging.handlers.TimedRotatingFileHandler(
+            _tmp_path,
+            when="midnight",
+            backupCount=settings.LOG_BACKUP_NUM
+        )
         file_formatter = logging.Formatter(
             fmt=FILE_LOG_FMT,
             datefmt=FILE_DATE_FMT,
