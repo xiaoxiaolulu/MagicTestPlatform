@@ -5,14 +5,6 @@ python:
   - "3.7"
 before_install:
   - sudo mysql -e 'CREATE DATABASE magic;'
-  - sudo service mysqld stop
-  - sudo mysqld_safe --skip-grant-table
-  - mysql -u root mysql
-  - UPDATE user SET Password=PASSWORD(‘123456’) where USER=‘root’;
-  - FLUSH PRIVILEGES
-  - delete from user where USER=’’
-  - exit
-  - sudo service mysqld stop
 install:
   - pip install -r requirements/requirements.txt
 script:

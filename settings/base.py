@@ -14,7 +14,7 @@ BASE_DIR = (
 
 env = environ.Env()
 
-READ_DOT_ENV_FILE = env.bool("TORNADO_READ_DOT_ENV_FILE", default=False)
+READ_DOT_ENV_FILE = env.bool("TORNADO_READ_DOT_ENV_FILE", default=True)
 if READ_DOT_ENV_FILE:
     env.read_env(str(BASE_DIR.path(".env")))
 
