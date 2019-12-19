@@ -4,12 +4,15 @@ services:
 python:
   - "3.7"
 before_install:
+  - sudo mysql -e "use mysql; update user set authentication_string=PASSWORD('123123') where User='root'; update user set plugin='mysql_native_password';FLUSH PRIVILEGES;"
+  - sudo mysql_upgrade -u root -p123123
+  - sudo service mysql restart
+  - sudo service mysql restart
+before_script:
   - sudo service mysql restart
   - sudo mysql -e 'CREATE DATABASE magic;'
 install:
   - pip install -r requirements/requirements.txt
-before_script:
-  - echo "USE mysql;\n update user set password='123456' where user='root';;\nFLUSH PRIVILEGES;\n" | mysql -u root
 script:
   - python ./tools/init_db.py
   - python server.py
