@@ -24,21 +24,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5db38437-6573-4939-886a-8cb1fda998b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/logs/2019-12-19-16_49_20.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2019-12-19-16_49_27.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2019-12-19-16_50_23.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2019-12-19-17_00_14.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2019-12-19-17_00_52.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2019-12-19-17_00_57.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2019-12-19-17_07_32.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2019-12-19-17_07_53.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2019-12-19-17_08_50.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2019-12-19-17_09_06.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2019-12-19-17_09_20.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2019-12-19-17_11_31.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2019-12-19-17_19_14.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings/base.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools/init_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/init_db.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -366,21 +351,7 @@
       <workItem from="1576550247542" duration="11731000" />
       <workItem from="1576573509079" duration="5520000" />
       <workItem from="1576636038663" duration="14284000" />
-      <workItem from="1576722074103" duration="14468000" />
-    </task>
-    <task id="LOCAL-00009" summary="新增删除&amp;更新环境接口">
-      <created>1572829145947</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1572829145947</updated>
-    </task>
-    <task id="LOCAL-00010" summary="修复潜在问题">
-      <created>1572830476914</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1572830476914</updated>
+      <workItem from="1576722074103" duration="14768000" />
     </task>
     <task id="LOCAL-00011" summary="新增数据库配置接口">
       <created>1572837573784</created>
@@ -711,7 +682,21 @@
       <option name="project" value="LOCAL" />
       <updated>1576745085178</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="忘记了自己是测试还是技术支持，">
+      <created>1576747267455</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1576747267455</updated>
+    </task>
+    <task id="LOCAL-00059" summary="忘记了自己是测试还是技术支持，">
+      <created>1576747429645</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1576747429645</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

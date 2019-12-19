@@ -1,19 +1,16 @@
+import sys
+import environ
+root = (environ.Path(__file__) - 2)
+sys.path.append(str(root))
 from peewee import MySQLDatabase
-try:
-    pass
-except (ImportError, ModuleNotFoundError):
-    import sys
-    import environ
-    root = (environ.Path(__file__) - 2)
-    sys.path.append(str(root))
-    from common.parse_settings import settings
-    from settings.base import database_async
-    from apps.interface_test.models import (
-        Interfaces,
-        TestCases,
-        InterfacesTestCase,
-        CheckDbContent
-    )
+from common.parse_settings import settings
+from settings.base import database_async
+from apps.interface_test.models import (
+    Interfaces,
+    TestCases,
+    InterfacesTestCase,
+    CheckDbContent
+)
 
 
 database = MySQLDatabase(
