@@ -13,3 +13,4 @@ peewee==2.10.2
 environ==1.0
 PyJWT==1.7.1
 python_bcrypt==0.3.2
+aiomysql==2.19
