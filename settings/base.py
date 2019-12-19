@@ -28,7 +28,7 @@ DEBUG = env.bool("TORNADO_DEBUG", False)
 #################
 #   日志配置     #
 #################
-LOG_PATH = BASE_DIR.path('./logs')
+LOG_PATH = str(BASE_DIR.path('./logs'))
 LOG_BACKUP_NUM = env.int('BACKUP_NUM', default=5)
 
 
@@ -37,8 +37,8 @@ LOG_BACKUP_NUM = env.int('BACKUP_NUM', default=5)
 #################
 TORNADO_CONF = {
     'SITE_URL': "http://127.0.0.1:8082",
-    'static_path': BASE_DIR.path('./statics'),
-    'MEDIA_ROOT': BASE_DIR.path('./media'),
+    'static_path': str(BASE_DIR.path('./statics')),
+    'MEDIA_ROOT': str(BASE_DIR.path('./media')),
     'static_url_prefix': '/statics/',
     'template_path': 'templates',
     "secret_key": "ZGGA#SJHKS$S6Si",

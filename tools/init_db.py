@@ -1,12 +1,20 @@
 from peewee import MySQLDatabase
-from settings.base import database_async
 from apps.interface_test.models import (
     Interfaces,
     TestCases,
     InterfacesTestCase,
     CheckDbContent
 )
-from common.parse_settings import settings
+try:
+    from common.parse_settings import settings
+    from settings.base import database_async
+except (ImportError, ModuleNotFoundError):
+    import sys
+    import environ
+    root = (environ.Path(__file__) - 2)
+    sys.path.append(str(root))
+    from common.parse_settings import settings
+    from settings.base import database_async
 
 
 database = MySQLDatabase(
@@ -26,3 +34,4 @@ def init():
 
 if __name__ == '__main__':
     init()
+
