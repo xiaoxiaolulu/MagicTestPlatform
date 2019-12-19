@@ -8,6 +8,5 @@ before_install:
 install:
   - pip install -r requirements/requirements.txt
 script:
-  - cp configs.example.json configs.json
   - python ./tools/init_db.py
   - python server.py
