@@ -23,7 +23,9 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5db38437-6573-4939-886a-8cb1fda998b1" name="Default Changelist" comment="" />
+    <list default="true" id="5db38437-6573-4939-886a-8cb1fda998b1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -349,21 +351,7 @@
       <workItem from="1576550247542" duration="11731000" />
       <workItem from="1576573509079" duration="5520000" />
       <workItem from="1576636038663" duration="14284000" />
-      <workItem from="1576722074103" duration="16906000" />
-    </task>
-    <task id="LOCAL-00016" summary="修复路由注册找不到模块问题">
-      <created>1573472871524</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1573472871524</updated>
-    </task>
-    <task id="LOCAL-00017" summary="更新项目表结构">
-      <created>1573539924241</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1573539924241</updated>
+      <workItem from="1576722074103" duration="17280000" />
     </task>
     <task id="LOCAL-00018" summary="fixed 潜在问题">
       <created>1573540920886</created>
@@ -694,7 +682,21 @@
       <option name="project" value="LOCAL" />
       <updated>1576750453741</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="别干了天天技术支持madan">
+      <created>1576750667071</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1576750667071</updated>
+    </task>
+    <task id="LOCAL-00066" summary="侧事故">
+      <created>1576750855856</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1576750855856</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -729,7 +731,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Add -&gt; 接口测试模块---接口新增&amp;查询" />
     <MESSAGE value="Add -&gt; 完善接口管理模块" />
     <MESSAGE value="优化部分代码" />
     <MESSAGE value="配置文件逻辑优化 &amp; 部分模块代码优化" />
@@ -754,7 +755,8 @@
     <MESSAGE value="测试" />
     <MESSAGE value="忘记了自己是测试还是技术支持，" />
     <MESSAGE value="别干了天天技术支持madan" />
-    <option name="LAST_COMMIT_MESSAGE" value="别干了天天技术支持madan" />
+    <MESSAGE value="侧事故" />
+    <option name="LAST_COMMIT_MESSAGE" value="侧事故" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

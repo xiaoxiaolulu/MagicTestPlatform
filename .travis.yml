@@ -9,7 +9,7 @@ before_install:
 install:
   - pip install -r requirements/requirements.txt
 before_script:
-  - echo "USE mysql;\n update mysql.user set password=password('123456') where user='root';;\nFLUSH PRIVILEGES;\n" | mysql -u root
+  - echo "USE mysql;\n update user set password=password('123456') where user='root';;\nFLUSH PRIVILEGES;\n" | mysql -u root
 script:
   - python ./tools/init_db.py
   - python server.py
