@@ -1,13 +1,6 @@
 from peewee import MySQLDatabase
-from apps.interface_test.models import (
-    Interfaces,
-    TestCases,
-    InterfacesTestCase,
-    CheckDbContent
-)
 try:
-    from common.parse_settings import settings
-    from settings.base import database_async
+    pass
 except (ImportError, ModuleNotFoundError):
     import sys
     import environ
@@ -15,6 +8,12 @@ except (ImportError, ModuleNotFoundError):
     sys.path.append(str(root))
     from common.parse_settings import settings
     from settings.base import database_async
+    from apps.interface_test.models import (
+        Interfaces,
+        TestCases,
+        InterfacesTestCase,
+        CheckDbContent
+    )
 
 
 database = MySQLDatabase(
