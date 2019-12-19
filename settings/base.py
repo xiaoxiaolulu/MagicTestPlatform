@@ -1,25 +1,34 @@
 """
 项目全局配置文件
 """
-import os
+import environ
 import peewee_async
+
 
 #################
 #   全局路径     #
 #################
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = (
+        environ.Path(__file__) - 2
+)
+
+env = environ.Env()
+
+READ_DOT_ENV_FILE = env.bool("TORNADO_READ_DOT_ENV_FILE", default=False)
+if READ_DOT_ENV_FILE:
+    env.read_env(str(BASE_DIR.path(".env")))
 
 
 #################
 #   调式开关     #
 #################
-DEBUG = True
+DEBUG = env.bool("TORNADO_DEBUG", False)
 
 
 #################
 #   日志路径     #
 #################
-LOG_PATH = os.path.join(BASE_DIR, 'logs')
+LOG_PATH = BASE_DIR.path('./logs')
 
 
 #################
@@ -27,8 +36,8 @@ LOG_PATH = os.path.join(BASE_DIR, 'logs')
 #################
 TORNADO_CONF = {
     'SITE_URL': "http://127.0.0.1:8082",
-    'static_path': os.path.join(BASE_DIR, 'statics'),
-    'MEDIA_ROOT': os.path.join(BASE_DIR, 'media'),
+    'static_path': BASE_DIR.path('./statics'),
+    'MEDIA_ROOT': BASE_DIR.path('./media'),
     'static_url_prefix': '/statics/',
     'template_path': 'templates',
     "secret_key": "ZGGA#SJHKS$S6Si",
@@ -39,35 +48,21 @@ TORNADO_CONF = {
 #################
 #   数据库配置    #
 #################
-DATABASES = {
-    'NAME': 'magic',
-    'USER': 'root',
-    'PASSWORD': '123456',
-    'HOST': '127.0.0.1',
-    'PORT': 3306
-}
+DATABASES = env.db("DATABASE_URL", default="mysql://root:123456@127.0.0.1:3306/magic")
 
 
 #################
 #   Redis配置    #
 #################
 REDIS = {
-    'default': {
-        'host': '127.0.0.1',
-        'port': 6379
-    }
+    'default': env.db('REDIS_URL', default="rediscache://127.0.0.1:6379")
 }
 
 
 #################
 #  调式环境配置   #
 #################
-CODE_DEBUG = {
-    'HOST': '172.81.242.70',
-    'PORT': 22,
-    'USER': 'root',
-    'PASSWORD': 'bubai.4393,'
-}
+CODE_DEBUG = env.db("SERVER_URL", default="server://root:bubai.4393,@172.81.242.70:22")
 
 
 #################

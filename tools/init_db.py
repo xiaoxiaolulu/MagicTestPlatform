@@ -1,18 +1,11 @@
 from peewee import MySQLDatabase
-from MagicTestPlatform.settings import database_async
+from settings.base import database_async
 from apps.interface_test.models import (
     Interfaces,
     TestCases,
     InterfacesTestCase,
     CheckDbContent
 )
-from apps.project.models import (
-    Project,
-    FunctionGenerator,
-    TestEnvironment,
-    DBSetting
-)
-from apps.users.models import User
 from common.parse_settings import settings
 
 

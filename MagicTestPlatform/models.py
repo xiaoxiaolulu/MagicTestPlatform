@@ -1,6 +1,6 @@
 from datetime import datetime
 from peewee import *
-from MagicTestPlatform.settings import database_async
+from settings.base import database_async
 
 
 class BaseModel(Model):

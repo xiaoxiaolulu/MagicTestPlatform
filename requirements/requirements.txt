@@ -1,0 +1,15 @@
+WTForms==2.1
+simplejson==3.17.0
+WTForms_JSON==0.3.3
+tornado==6.0.3
+django_environ==0.4.5
+peewee_async==0.5.12
+redis==3.3.11
+wtforms_tornado==0.0.2
+paramiko==2.6.0
+requests==2.18.4
+urllib3==1.22
+peewee==2.10.2
+environ==1.0
+PyJWT==1.7.1
+python_bcrypt==0.3.2

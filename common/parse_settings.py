@@ -3,6 +3,7 @@ from common.storage import storage
 
 
 class Settings(object):
+
     def __init__(self):
         pass
 
@@ -12,7 +13,7 @@ class Settings(object):
         :param name: 配置名
         :return:配置项
         """
-        global_settings = import_object('MagicTestPlatform.settings')
+        global_settings = import_object('settings.base')
         self._config = global_settings
 
         if hasattr(self._config, name):

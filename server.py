@@ -3,7 +3,7 @@ from peewee_async import Manager
 from tornado import web
 from tornado.ioloop import IOLoop
 from tornado.httpserver import HTTPServer
-from MagicTestPlatform.settings import database_async
+from settings.base import database_async
 from common.parse_settings import settings
 from common.core import route
 
