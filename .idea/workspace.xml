@@ -24,8 +24,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5db38437-6573-4939-886a-8cb1fda998b1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/logs/2019-12-20-16_13_27.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-12-20-16_13_54.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-12-20-16_14_06.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-12-20-16_22_32.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-12-20-16_22_46.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2019-12-20-16_23_38.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/interface_test/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/interface_test/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/interface_test/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/interface_test/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/init_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/init_db.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +87,7 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/apps/logs/2019-11-26-16_33_23.log&#10;F:/MagicTestPlatform/apps/logs/2019-11-26-14_42_02.log&#10;F:/MagicTestPlatform/apps/logs/2019-11-26-14_16_25.log&#10;F:/MagicTestPlatform/apps/logs/2019-11-27-17_16_23.log&#10;F:/MagicTestPlatform/apps/logs/2019-11-27-16_48_47.log&#10;F:/MagicTestPlatform/.env" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tools" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../intellectual_bloom" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -339,14 +348,7 @@
       <workItem from="1576573509079" duration="5520000" />
       <workItem from="1576636038663" duration="14284000" />
       <workItem from="1576722074103" duration="18182000" />
-      <workItem from="1576808141817" duration="8417000" />
-    </task>
-    <task id="LOCAL-00042" summary="Add:&#10;    -&gt; 分离公共代码、优化公共模块代码&#10;    -&gt; test case Modules `s POST Handlers&#10;    -&gt; test case Modules `s models&amp;form">
-      <created>1576053365205</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1576053365205</updated>
+      <workItem from="1576808141817" duration="10208000" />
     </task>
     <task id="LOCAL-00043" summary="Add:&#10;   -&gt; handlers `s get类型接口优化">
       <created>1576228640425</created>
@@ -684,7 +686,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576817340625</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="调试">
+      <created>1576821940404</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1576821940404</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

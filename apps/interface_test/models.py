@@ -98,6 +98,22 @@ class InterfacesTestCase(BaseModel):
             .join(Interfaces, join_type=JOIN.LEFT_OUTER, on=cls.interfaces)
 
 
+class PublicParams(BaseModel):
+
+    ParamsType = (
+        (0, "headers"),
+        (1, "params"),
+    )
+
+    name = CharField(max_length=50, null=True, verbose_name="参数名称")
+    params_type = SmallIntegerField(
+        choices=ParamsType,
+        default=ParamsType[0][0],
+        verbose_name="参数类型"
+    )
+    params = TextField(null=True, verbose_name="参数")
+
+
 class VariableDependency(BaseModel):
 
     response_extraction = TextField(null=True, verbose_name="临时提取变量")

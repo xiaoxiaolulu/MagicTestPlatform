@@ -40,3 +40,10 @@ class TestCaseForm(Form):
     test_name = StringField("用例名称", validators=[DataRequired("请输入用例名称")])
     interfaces = FieldList(IntegerField("接口配置", validators=[DataRequired("请选择接口")]))
     desc = StringField("用例描述", validators=[DataRequired("请输入用例描述")])
+
+
+class PublicParamsForm(Form):
+
+    name = StringField("参数名称", validators=[DataRequired("请输入参数名称")])
+    params_type = IntegerField("参数类型", validators=[DataRequired("请输入参数类型")])
+    params = StringField("参数", validators=[DataRequired("请输入参数")])
