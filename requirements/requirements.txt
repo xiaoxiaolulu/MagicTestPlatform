@@ -14,3 +14,5 @@ environ==1.0
 PyJWT==1.7.1
 python_bcrypt==0.3.2
 aiomysql==0.0.20
+coverage==4.5.2
+coveralls==1.5.1
