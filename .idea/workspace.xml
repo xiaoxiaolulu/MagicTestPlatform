@@ -24,11 +24,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5db38437-6573-4939-886a-8cb1fda998b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/logs/2019-12-20-11_34_35.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/_trial_temp/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/test/_trial_temp/test.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -342,14 +338,7 @@
       <workItem from="1576573509079" duration="5520000" />
       <workItem from="1576636038663" duration="14284000" />
       <workItem from="1576722074103" duration="18182000" />
-      <workItem from="1576808141817" duration="4756000" />
-    </task>
-    <task id="LOCAL-00035" summary="日志路径变更">
-      <created>1574931603589</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1574931603589</updated>
+      <workItem from="1576808141817" duration="5052000" />
     </task>
     <task id="LOCAL-00036" summary="fixed">
       <created>1574931691285</created>
@@ -687,7 +676,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576812681993</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="调试">
+      <created>1576813084313</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1576813084313</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -722,7 +718,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="用例数据库表设计" />
     <MESSAGE value="fixed" />
     <MESSAGE value="表单验证" />
     <MESSAGE value="Add:" />
@@ -747,7 +742,8 @@
     <MESSAGE value="测试004" />
     <MESSAGE value="测试005" />
     <MESSAGE value="xxxx" />
-    <option name="LAST_COMMIT_MESSAGE" value="xxxx" />
+    <MESSAGE value="调试" />
+    <option name="LAST_COMMIT_MESSAGE" value="调试" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
