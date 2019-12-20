@@ -50,7 +50,6 @@ TORNADO_CONF = {
 #   数据库配置    #
 #################
 DATABASES = env.db("DATABASE_URL", default="mysql://root:123456@127.0.0.1:3306/magic")
-print(DATABASES)
 
 
 #################

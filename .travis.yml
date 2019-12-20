@@ -13,4 +13,5 @@ install:
   - pip install -r requirements/requirements.txt
 script:
   - python ./tools/init_db.py
-  - python server.py
+after_script:
+  - sudo service mysql stop
