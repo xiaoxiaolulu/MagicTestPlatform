@@ -11,7 +11,13 @@ before_script:
   - sudo mysql -e 'CREATE DATABASE magic;'
 install:
   - pip install -r requirements/requirements.txt
+  - pip install python-coveralls
+  - pip install coverage
 script:
   - python ./tools/init_db.py
+  - coverage run server.py
 after_script:
+  - exit
   - sudo service mysql stop
+after_success:
+  - coveralls
