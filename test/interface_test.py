@@ -1,3 +1,7 @@
+import sys
+import environ
+root = (environ.Path(__file__) - 2)
+sys.path.append(str(root))
 import unittest
 from playhouse.shortcuts import model_to_dict
 from apps.interface_test.models import TestCases, Interfaces
