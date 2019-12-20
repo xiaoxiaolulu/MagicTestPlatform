@@ -5,6 +5,13 @@ sys.path.append(str(root))
 from peewee import MySQLDatabase
 from common.parse_settings import settings
 from settings.base import database_async
+from apps.users.models import User
+from apps.project.models import (
+    Project,
+    FunctionGenerator,
+    TestEnvironment,
+    DBSetting
+)
 from apps.interface_test.models import (
     Interfaces,
     TestCases,
@@ -23,8 +30,8 @@ database = MySQLDatabase(
 
 
 def init():
-    # database_async.create_tables([User, ])
-    # database_async.create_tables([Project, FunctionGenerator, TestEnvironment, DBSetting])
+    database_async.create_tables([User, ])
+    database_async.create_tables([Project, FunctionGenerator, TestEnvironment, DBSetting])
     database_async.create_tables([Interfaces, TestCases, InterfacesTestCase, CheckDbContent])
 
 

@@ -23,8 +23,9 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5db38437-6573-4939-886a-8cb1fda998b1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="5db38437-6573-4939-886a-8cb1fda998b1" name="Default Changelist" comment="测试">
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/init_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/init_db.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -352,14 +353,7 @@
       <workItem from="1576573509079" duration="5520000" />
       <workItem from="1576636038663" duration="14284000" />
       <workItem from="1576722074103" duration="18182000" />
-      <workItem from="1576808141817" duration="1246000" />
-    </task>
-    <task id="LOCAL-00027" summary="添加接口管理数据模型">
-      <created>1574837677783</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1574837677783</updated>
+      <workItem from="1576808141817" duration="1548000" />
     </task>
     <task id="LOCAL-00028" summary="Gbk编码问题">
       <created>1574838657998</created>
@@ -697,7 +691,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576809231996</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="测试002">
+      <created>1576809411333</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1576809411333</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -732,7 +733,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="配置文件逻辑优化 &amp; 部分模块代码优化" />
     <MESSAGE value="日志路径变更" />
     <MESSAGE value="优化" />
     <MESSAGE value="添加单元测试代码" />
@@ -757,7 +757,8 @@
     <MESSAGE value="侧事故" />
     <MESSAGE value="日了狗了" />
     <MESSAGE value="测试001" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试001" />
+    <MESSAGE value="测试002" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试002" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
