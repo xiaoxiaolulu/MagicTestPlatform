@@ -56,7 +56,7 @@ DATABASES = env.db("DATABASE_URL", default="mysql://root:123456@127.0.0.1:3306/m
 #   Redis配置    #
 #################
 REDIS = {
-    'default': env.db('REDIS_URL', default="rediscache://127.0.0.1:6379")
+    'default': env.dict('REDIS', default={'host': '127.0.0.1', 'port': 6379})
 }
 
 

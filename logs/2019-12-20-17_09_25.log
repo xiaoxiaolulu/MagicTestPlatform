@@ -1,0 +1,31 @@
+[2019-12-20 17:09:25] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzY4MzI4MTV9.sQQNRJBoSPADTJuoFhLd7fMD0Jg2yjuDpjZ8v38nVQA 
+| Content-Type    | application/json 
+| User-Agent      | PostmanRuntime/7.20.1 
+| Accept          | */*             
+| Cache-Control   | no-cache        
+| Postman-Token   | df88ca33-0dd4-437d-8f60-8200bad2983b 
+| Host            | 127.0.0.1:8084  
+| Accept-Encoding | gzip, deflate   
+| Content-Length  | 82              
+| Connection      | keep-alive      
++----Arguments----+
+| 'name'          | '测试'            
+| 'params_type'   | '0'             
+| 'params'        | '1312222222222222222222222' 
+
+[2019-12-20 17:09:25] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 10090,
+|     "msg": {
+|         "params_type": [
+|             "请输入参数类型"
+|         ]
+|     },
+|     "data": null
+| }

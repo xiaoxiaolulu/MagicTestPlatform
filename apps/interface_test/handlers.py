@@ -22,13 +22,15 @@ from MagicTestPlatform.handlers import BaseHandler
 from apps.interface_test.forms import (
     InterfacesDebugForm,
     InterfacesForm,
-    TestCaseForm
+    TestCaseForm,
+    PublicParamsForm
 )
 from apps.interface_test.models import (
     Interfaces,
     TestCases,
     InterfacesTestCase,
-    CheckDbContent
+    CheckDbContent,
+    PublicParams
 )
 from apps.project.models import Project
 from common.core import (
@@ -38,6 +40,109 @@ from common.core import (
 )
 from common.Recursion import GetJsonParams
 from common.httpclient import BaseKeyWords
+
+
+@route(r'/public_params/')
+class PublicParamsHandler(BaseHandler, ABC):
+
+    @authenticated_async
+    async def get(self, *args, **kwargs):
+
+        ret_data = []
+        public_params_query = PublicParams.extend()
+
+        name = self.get_argument('name', None)
+        if name is not None:
+            public_params_query = public_params_query.filter(
+                PublicParams.name == name
+            )
+
+        public_params_query = public_params_query.order_by(-PublicParams.add_time)
+        public_params = await self.application.objects.execute(public_params_query)
+
+        for public_param in public_params:
+            public_param_dict = model_to_dict(public_param)
+            ret_data.append(public_param_dict)
+
+        return self.json(Response(code=1, msg="公共参数数据查询成功!", data=ret_data))
+
+    @authenticated_async
+    async def post(self, *args, **kwargs):
+
+        param = self.request.body.decode('utf-8')
+        param = json.loads(param)
+        form = PublicParamsForm.from_json(param)
+        print(param)
+
+        if form.validate():
+
+            try:
+                await self.application.objects.get(
+                    PublicParams,
+                    name=form.name.data
+                )
+                return self.json(
+                    Response(code=10020, msg='这个公共参数已经创建！'))
+
+            except PublicParams.DoesNotExist:
+                public_params = await self.application.objects.create(
+                    PublicParams,
+                    name=form.name.data,
+                    params_type=form.params_type.data,
+                    params=form.params.data,
+                    creator=self.current_user
+                )
+
+                return self.json(
+                    Response(code=1, msg="公共参数创建成功!", data={'paramsId': public_params.id})
+                )
+
+        else:
+            self.set_status(400)
+            return self.json(Response(code=10090, msg=form.errors))
+
+
+@route(r'/public_params/([0-9]+)/')
+class PublicParamsChangeHandler(BaseHandler, ABC):
+
+    @authenticated_async
+    async def delete(self, param_id, *args, **kwargs):
+        try:
+            public_params = await self.application.objects.get(PublicParams, id=int(param_id))
+            await self.application.objects.delete(public_params)
+            return self.json(
+                Response(code=1, msg="公共参数删除成功!", data={"id": param_id})
+            )
+        except PublicParams.DoesNotExist:
+            self.set_status(400)
+            return self.json(Response(code=10020, msg="该公共参数尚未创建!"))
+
+    @authenticated_async
+    async def patch(self, param_id, *args, **kwargs):
+
+        param = self.request.body.decode('utf-8')
+        param = json.loads(param)
+        form = PublicParamsForm.from_json(param)
+
+        if form.validate():
+
+            try:
+                existed_public_param = await self.application.objects.get(PublicParams, id=int(param_id))
+                existed_public_param.name = form.name.data
+                existed_public_param.params_type = form.params_type.data
+                existed_public_param.params = form.params.data
+                await self.application.objects.update(existed_public_param)
+                return self.json(
+                    Response(code=1, msg="公共参数更新成功!", data={"id": param_id})
+                )
+
+            except PublicParams.DoesNotExist:
+                self.set_status(404)
+                return self.json(Response(code=10020, msg="公共参数不存在!"))
+
+        else:
+            self.set_status(400)
+            return self.json(Response(code=10090, msg=form.errors))
 
 
 @route(r'/interfaces_debug/')

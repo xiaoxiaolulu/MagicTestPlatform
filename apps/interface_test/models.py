@@ -112,6 +112,15 @@ class PublicParams(BaseModel):
         verbose_name="参数类型"
     )
     params = TextField(null=True, verbose_name="参数")
+    creator = ForeignKeyField(User, verbose_name="创建者")
+
+    @classmethod
+    def extend(cls):
+        return cls.select(
+            cls,
+            User.id,
+            User.nick_name) \
+            .join(User, join_type=JOIN.LEFT_OUTER, on=cls.creator)
 
 
 class VariableDependency(BaseModel):
