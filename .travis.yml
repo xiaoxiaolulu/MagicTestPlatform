@@ -5,7 +5,7 @@ python:
   - "3.7"
 before_install:
   - sudo mysql -e "use mysql; update user set authentication_string=PASSWORD('123456') where User='root'; update user set plugin='mysql_native_password';FLUSH PRIVILEGES;"
-  - sudo mysql_upgrade -u root -p 123456
+#  - sudo mysql_upgrade -u root -p 123456
   - sudo service mysql restart
 before_script:
   - sudo service mysql restart
