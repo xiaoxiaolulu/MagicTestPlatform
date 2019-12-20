@@ -14,8 +14,7 @@ install:
   - pip install python-coveralls
   - pip install coverage
 script:
-  - python ./tools/init_db.py
-  - coverage run ./test/interface_test.py
+  - coverage run ./tools/init_db.py
 after_script:
   - sudo service mysql stop
 after_success:
