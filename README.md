@@ -1,6 +1,5 @@
 ### PostLittleBoy
-[![Build Status](https://travis-ci.org/xiaoxiaolulu/MagicTestPlatform.svg?branch=master)](https://travis-ci.org/xiaoxiaolulu/MagicTestPlatform)
-
+[![LICENSE](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/xiaoxiaolulu/MagicTestPlatform/blob/master/LICENSE) [![Build Status](https://travis-ci.org/xiaoxiaolulu/MagicTestPlatform.svg?branch=master)](https://travis-ci.org/xiaoxiaolulu/MagicTestPlatform)
 PostLittleBoy 基于Tornado + Vue.Js 实现的测试平台, 一站式解决所有自动化方案, 使测试更加有效简单
 
 ```
