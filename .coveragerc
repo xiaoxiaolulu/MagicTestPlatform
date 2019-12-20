@@ -3,11 +3,6 @@ source = .
 include = *.py
 omit =
     *migrations*
-    *tests*
     *.html
-    *whoosh_cn_backend*
-    *apps*
-    *commands*
-    *oauth*
     *travis_test*
     *settings.py*
