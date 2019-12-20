@@ -17,7 +17,7 @@ script:
   - python ./tools/init_db.py
   - coverage run server.py
 after_script:
-  - exit
+  - CTRL+Z
   - sudo service mysql stop
 after_success:
   - coveralls
