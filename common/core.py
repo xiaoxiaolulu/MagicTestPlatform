@@ -77,21 +77,6 @@ def authenticated_async(method):
     return wrapper
 
 
-class Response(object):
-
-    def __init__(self, code=0, msg="", data=None):
-        self.code = code
-        self.msg = msg
-        self.data = data
-
-    def json(self):
-        return {
-            "code": self.code,
-            "msg": self.msg,
-            "data": self.data
-        }
-
-
 class Route(object):
     """ 把每个URL与Handler的关系保存到一个元组中，然后追加到列表内，列表内包含了所有的Handler """
 
