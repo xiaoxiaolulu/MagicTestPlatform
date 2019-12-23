@@ -33,9 +33,9 @@ from apps.interface_test.models import (
     PublicParams
 )
 from apps.project.models import Project
+from common import JsonResponse
 from common.core import (
     authenticated_async,
-    Response,
     route
 )
 from common.Recursion import GetJsonParams
@@ -64,7 +64,7 @@ class PublicParamsHandler(BaseHandler, ABC):
             public_param_dict = model_to_dict(public_param)
             ret_data.append(public_param_dict)
 
-        return self.json(Response(code=1, msg="公共参数数据查询成功!", data=ret_data))
+        return self.json(JsonResponse(code=1, data=ret_data))
 
     @authenticated_async
     async def post(self, *args, **kwargs):
@@ -82,7 +82,7 @@ class PublicParamsHandler(BaseHandler, ABC):
                     name=form.name.data
                 )
                 return self.json(
-                    Response(code=10020, msg='这个公共参数已经创建！'))
+                    JsonResponse(code=10007))
 
             except PublicParams.DoesNotExist:
                 public_params = await self.application.objects.create(
@@ -94,12 +94,12 @@ class PublicParamsHandler(BaseHandler, ABC):
                 )
 
                 return self.json(
-                    Response(code=1, msg="公共参数创建成功!", data={'paramsId': public_params.id})
+                    JsonResponse(code=1, data={'paramsId': public_params.id})
                 )
 
         else:
             self.set_status(400)
-            return self.json(Response(code=10090, msg=form.errors))
+            return self.json(JsonResponse(code=10004, msg=form.errors))
 
 
 @route(r'/public_params/([0-9]+)/')
@@ -111,11 +111,11 @@ class PublicParamsChangeHandler(BaseHandler, ABC):
             public_params = await self.application.objects.get(PublicParams, id=int(param_id))
             await self.application.objects.delete(public_params)
             return self.json(
-                Response(code=1, msg="公共参数删除成功!", data={"id": param_id})
+                JsonResponse(code=1, data={"id": param_id})
             )
         except PublicParams.DoesNotExist:
             self.set_status(400)
-            return self.json(Response(code=10020, msg="该公共参数尚未创建!"))
+            return self.json(JsonResponse(code=10009))
 
     @authenticated_async
     async def patch(self, param_id, *args, **kwargs):
@@ -133,16 +133,16 @@ class PublicParamsChangeHandler(BaseHandler, ABC):
                 existed_public_param.params = form.params.data
                 await self.application.objects.update(existed_public_param)
                 return self.json(
-                    Response(code=1, msg="公共参数更新成功!", data={"id": param_id})
+                    JsonResponse(code=1, data={"id": param_id})
                 )
 
             except PublicParams.DoesNotExist:
                 self.set_status(404)
-                return self.json(Response(code=10020, msg="公共参数不存在!"))
+                return self.json(JsonResponse(code=10009))
 
         else:
             self.set_status(400)
-            return self.json(Response(code=10090, msg=form.errors))
+            return self.json(JsonResponse(code=10004, msg=form.errors))
 
 
 @route(r'/interfaces_debug/')
@@ -189,12 +189,12 @@ class InterfacesDebugHandler(BaseHandler, ABC):
             http_client = BaseKeyWords(request_body)
             response = http_client.make_test_templates()
             return self.json(
-                Response(code=1, msg='接口请求成功', data=response)
+                JsonResponse(code=1, data=response)
             )
 
         else:
             self.set_status(400)
-            return self.json(Response(code=10090, msg=form.errors))
+            return self.json(JsonResponse(code=10004, msg=form.errors))
 
 
 @route(r'/interfaces/')
@@ -240,7 +240,7 @@ class InterfacesHandler(BaseHandler, ABC):
             interface_dict = model_to_dict(interface)
             ret_data.append(interface_dict)
 
-        return self.json(Response(code=1, msg="接口数据查询成功!", data=ret_data))
+        return self.json(JsonResponse(code=1, data=ret_data))
 
     @authenticated_async
     async def post(self, *args, **kwargs):
@@ -259,7 +259,7 @@ class InterfacesHandler(BaseHandler, ABC):
                     Interfaces, interface_name=form.interface_name.data
                 )
                 return self.json(
-                    Response(code=10020, msg='这个接口已经创建！'))
+                    JsonResponse(code=10007))
 
             except Interfaces.DoesNotExist:
                 interface = await self.application.objects.create(
@@ -275,12 +275,12 @@ class InterfacesHandler(BaseHandler, ABC):
                 )
 
                 return self.json(
-                    Response(code=1, msg="接口创建成功!", data={'interfaceId': interface.id})
+                    JsonResponse(code=1, data={'interfaceId': interface.id})
                 )
 
         else:
             self.set_status(400)
-            return self.json(Response(code=10090, msg=form.errors))
+            return self.json(JsonResponse(code=10004, msg=form.errors))
 
 
 @route(r'/interfaces/([0-9]+)/')
@@ -296,11 +296,11 @@ class ProjectChangeHandler(BaseHandler, ABC):
             interface = await self.application.objects.get(Interfaces, id=int(interface_id))
             await self.application.objects.delete(interface)
             return self.json(
-                Response(code=1, msg="接口删除成功!", data={"id": interface_id})
+                JsonResponse(code=1, data={"id": interface_id})
             )
         except Interfaces.DoesNotExist:
             self.set_status(400)
-            return self.json(Response(code=10020, msg="该接口尚未创建!"))
+            return self.json(JsonResponse(code=10009))
 
     @authenticated_async
     async def patch(self, interface_id, *args, **kwargs):
@@ -327,16 +327,16 @@ class ProjectChangeHandler(BaseHandler, ABC):
 
                 await self.application.objects.update(existed_interface)
                 return self.json(
-                    Response(code=1, msg="接口更新成功!", data={"id": interface_id})
+                    JsonResponse(code=1, data={"id": interface_id})
                 )
 
             except Interfaces.DoesNotExist:
                 self.set_status(400)
-                return self.json(Response(code=10020, msg="接口不存在!"))
+                return self.json(JsonResponse(code=10009))
 
         else:
             self.set_status(400)
-            return self.json(Response(code=10090, msg=form.errors))
+            return self.json(JsonResponse(code=10004, msg=form.errors))
 
 
 @route(r'/cases/')
@@ -398,7 +398,7 @@ class TestCasesHandler(BaseHandler, ABC):
             case_dict.update({'db_check': db_checks})
             ret_data.append(case_dict)
 
-        return self.json(Response(code=1, msg="用例数据查询成功!", data=ret_data))
+        return self.json(JsonResponse(code=1, data=ret_data))
 
     @authenticated_async
     async def post(self, *args, **kwargs):
@@ -417,7 +417,7 @@ class TestCasesHandler(BaseHandler, ABC):
                     TestCases, test_name=form.test_name.data
                 )
                 return self.json(
-                    Response(code=10020, msg='这个用例已经创建！'))
+                    JsonResponse(code=10007))
 
             except TestCases.DoesNotExist:
                 case = await self.application.objects.create(
@@ -450,13 +450,13 @@ class TestCasesHandler(BaseHandler, ABC):
                     )
 
                 return self.json(
-                    Response(
-                        code=1, msg="用例创建成功!", data={'caseId': case.id}
+                    JsonResponse(
+                        code=1, data={'caseId': case.id}
                     ))
 
         else:
             self.set_status(400)
-            return self.json(Response(code=10090, msg=form.errors))
+            return self.json(JsonResponse(code=10004, msg=form.errors))
 
 
 @route(r'/cases/([0-9]+)/')
@@ -513,11 +513,11 @@ class TestCaseChangeHandler(BaseHandler, ABC):
             await self.application.objects.delete(case)
 
             return self.json(
-                Response(code=1, msg="用例删除成功!", data={"id": case_id})
+                JsonResponse(code=1, data={"id": case_id})
             )
         except InterfacesTestCase.DoesNotExist:
             self.set_status(400)
-            return self.json(Response(code=10020, msg="该用例尚未创建!"))
+            return self.json(JsonResponse(code=10009))
 
     @authenticated_async
     async def patch(self, case_id, *args, **kwargs):
@@ -561,13 +561,13 @@ class TestCaseChangeHandler(BaseHandler, ABC):
                         await self.application.objects.update(existed_interfaces)
 
                 return self.json(
-                    Response(code=1, msg="用例更新成功!", data={"id": case_id})
+                    JsonResponse(code=1, data={"id": case_id})
                 )
 
             except TestCases.DoesNotExist:
                 self.set_status(400)
-                return self.json(Response(code=10020, msg="用例不存在!"))
+                return self.json(JsonResponse(code=10009))
 
         else:
             self.set_status(400)
-            return self.json(Response(code=10090, msg=form.errors))
+            return self.json(JsonResponse(code=10004, msg=form.errors))
