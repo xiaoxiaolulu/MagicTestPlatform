@@ -25,10 +25,44 @@
   <component name="ChangeListManager">
     <list default="true" id="5db38437-6573-4939-886a-8cb1fda998b1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/interface_test/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/interface_test/handlers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/project/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/project/handlers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/users/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/handlers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/validator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-19-15_54_16.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-19-16_37_53.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-19-16_38_59.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-19-16_49_20.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-19-16_49_27.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-19-16_50_23.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-19-17_00_14.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-19-17_00_52.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-19-17_00_57.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-19-17_07_32.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-19-17_07_53.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-19-17_08_50.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-19-17_09_06.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-19-17_09_20.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-19-17_11_31.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-19-17_19_14.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-19-17_20_25.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-19-17_20_27.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-20-11_07_31.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-20-11_34_35.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-20-16_13_27.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-20-16_13_54.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-20-16_14_06.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-20-16_22_32.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-20-16_22_46.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-20-16_23_38.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-20-16_47_07.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-20-16_56_52.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-20-17_06_17.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-20-17_06_52.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-20-17_09_25.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-20-17_09_42.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-20-17_12_45.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-20-17_12_55.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-21-14_40_03.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2019-12-21-14_40_11.log" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -358,14 +392,7 @@
       <workItem from="1576722074103" duration="18182000" />
       <workItem from="1576808141817" duration="14636000" />
       <workItem from="1576909222015" duration="1312000" />
-      <workItem from="1577068890173" duration="1913000" />
-    </task>
-    <task id="LOCAL-00046" summary="优化代码风格">
-      <created>1576464729652</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1576464729652</updated>
+      <workItem from="1577068890173" duration="3775000" />
     </task>
     <task id="LOCAL-00047" summary="优化:&#10;   -&gt; 服务器信息配置文件化&#10;   -&gt; 代码分离优化">
       <created>1576465622964</created>
@@ -703,7 +730,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576910495410</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="通用code码定义, 减少返回msg定义编写">
+      <created>1577070861368</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1577070861369</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -738,7 +772,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Add:" />
     <MESSAGE value="Add:&#10;    -&gt; 分离公共代码、优化公共模块代码&#10;    -&gt; test case Modules `s POST Handlers&#10;    -&gt; test case Modules `s models&amp;form" />
     <MESSAGE value="Add:&#10;   -&gt; handlers `s get类型接口优化" />
     <MESSAGE value="Add:&#10;   -&gt; case Handler GET Method  API" />
@@ -763,7 +796,8 @@
     <MESSAGE value="调试" />
     <MESSAGE value="公共参数模型创建" />
     <MESSAGE value="公共参数模块编写" />
-    <option name="LAST_COMMIT_MESSAGE" value="公共参数模块编写" />
+    <MESSAGE value="通用code码定义, 减少返回msg定义编写" />
+    <option name="LAST_COMMIT_MESSAGE" value="通用code码定义, 减少返回msg定义编写" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

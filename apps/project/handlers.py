@@ -32,7 +32,7 @@ from apps.project.forms import (
     FunctionDebugForm,
     FunctionGeneratorForm
 )
-from common import JsonResponse
+from common.validator import JsonResponse
 from common.core import (
     authenticated_async,
     route,

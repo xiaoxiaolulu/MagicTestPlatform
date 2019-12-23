@@ -33,7 +33,7 @@ from apps.interface_test.models import (
     PublicParams
 )
 from apps.project.models import Project
-from common import JsonResponse
+from common.validator import JsonResponse
 from common.core import (
     authenticated_async,
     route

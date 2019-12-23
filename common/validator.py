@@ -1,6 +1,6 @@
 class JsonResponse(object):
 
-    """ 这里是通用code码 10000 ~ 10999 """
+    """ 通用code码 10000 ~ 10999 """
     code_1 = "success"
     code_10001 = '无效TOKEN，请重新登陆'
     code_10002 = 'WARNING: TOKEN NOT FOUND!'
