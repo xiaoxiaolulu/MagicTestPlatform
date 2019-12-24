@@ -98,6 +98,38 @@ class InterfacesTestCase(BaseModel):
             .join(Interfaces, join_type=JOIN.LEFT_OUTER, on=cls.interfaces)
 
 
+class TestSuite(BaseModel):
+
+    suite_name = CharField(max_length=50, null=True, verbose_name='套件名称')
+    creator = ForeignKeyField(User, verbose_name="创建者")
+    desc = TextField(verbose_name="用例描述")
+
+    @classmethod
+    def extend(cls):
+        return cls.select(
+            cls,
+            User.id,
+            User.nick_name) \
+            .join(User, join_type=JOIN.LEFT_OUTER, on=cls.creator)
+
+
+class TestCaseSuite(BaseModel):
+
+    suite = ForeignKeyField(TestSuite, verbose_name='测试套件')
+    cases = ForeignKeyField(TestCases, verbose_name="用例配置")
+
+    @classmethod
+    def extend(cls):
+        return cls.select(
+            cls,
+            TestSuite.id,
+            TestSuite.suite_name,
+            TestCases.id,
+            TestCases.assertion) \
+            .join(TestSuite, join_type=JOIN.LEFT_OUTER, on=cls.suite).switch(cls) \
+            .join(TestCases, join_type=JOIN.LEFT_OUTER, on=cls.cases)
+
+
 class PublicParams(BaseModel):
 
     ParamsType = (

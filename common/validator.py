@@ -17,19 +17,9 @@ class JsonResponse(object):
         self.msg = msg
         self.data = data
 
-    def json(self):
+        if self.msg is None:
 
-        if self.msg is not None:
-            msg = self.msg
-        else:
             attr = 'code_{code}'.format(code=self.code)
-            if hasattr(self, attr):
-                msg = self.__getattribute__(attr)
-            else:
-                msg = '未知错误'
 
-        return {
-            "code": self.code,
-            "msg": msg,
-            "data": self.data
-        }
+            if hasattr(self, attr):
+                self.msg = self.__getattribute__(attr)

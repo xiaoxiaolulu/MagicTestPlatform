@@ -1,0 +1,116 @@
+[2019-12-24 11:35:19] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzY4MzI4MTV9.sQQNRJBoSPADTJuoFhLd7fMD0Jg2yjuDpjZ8v38nVQA 
+| User-Agent      | PostmanRuntime/7.21.0 
+| Accept          | */*             
+| Cache-Control   | no-cache        
+| Postman-Token   | aa5f89e6-ff1d-4b74-9dbd-5d13e362dbf3 
+| Host            | 127.0.0.1:8084  
+| Accept-Encoding | gzip, deflate   
+| Content-Length  | 67              
+| Connection      | keep-alive      
++----Arguments----+
+| 'suite_name'    | '12322222213'   
+| 'cases'         | [33]            
+| 'desc'          | '123123'        
+
+[2019-12-24 11:35:19] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "success",
+|     "data": {
+|         "id": "3"
+|     }
+| }
+[2019-12-24 11:35:54] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzY4MzI4MTV9.sQQNRJBoSPADTJuoFhLd7fMD0Jg2yjuDpjZ8v38nVQA 
+| User-Agent      | PostmanRuntime/7.21.0 
+| Accept          | */*             
+| Cache-Control   | no-cache        
+| Postman-Token   | 8fb4c2a0-e6fc-45fd-978f-4f52c454c523 
+| Host            | 127.0.0.1:8084  
+| Accept-Encoding | gzip, deflate   
+| Content-Length  | 79              
+| Connection      | keep-alive      
++----Arguments----+
+| 'suite_name'    | '12322222213'   
+| 'cases'         | [34]            
+| 'desc'          | 'ÎûÎûÎûÎûÎûÎû'        
+
+[2019-12-24 11:35:54] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "success",
+|     "data": {
+|         "id": "3"
+|     }
+| }
+[2019-12-24 11:37:01] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzY4MzI4MTV9.sQQNRJBoSPADTJuoFhLd7fMD0Jg2yjuDpjZ8v38nVQA 
+| User-Agent      | PostmanRuntime/7.21.0 
+| Accept          | */*             
+| Cache-Control   | no-cache        
+| Postman-Token   | 47eae3b9-b8b2-4070-807e-a21613b0e359 
+| Host            | 127.0.0.1:8084  
+| Accept-Encoding | gzip, deflate   
+| Content-Length  | 79              
+| Connection      | keep-alive      
++----Arguments----+
+| 'suite_name'    | '12322222213'   
+| 'cases'         | [34]            
+| 'desc'          | 'ÎûÎûÎûÎûÎûÎû'        
+
+[2019-12-24 11:37:01] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "success",
+|     "data": {
+|         "id": "3"
+|     }
+| }
+[2019-12-24 11:37:10] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzY4MzI4MTV9.sQQNRJBoSPADTJuoFhLd7fMD0Jg2yjuDpjZ8v38nVQA 
+| User-Agent      | PostmanRuntime/7.21.0 
+| Accept          | */*             
+| Cache-Control   | no-cache        
+| Postman-Token   | 3e1a9e2d-2e27-403d-bb82-6c07de45fb69 
+| Host            | 127.0.0.1:8084  
+| Accept-Encoding | gzip, deflate   
+| Content-Length  | 70              
+| Connection      | keep-alive      
++----Arguments----+
+| 'suite_name'    | '12322222213'   
+| 'cases'         | [34]            
+| 'desc'          | 'ÔºÏÖÔÚ'           
+
+[2019-12-24 11:37:11] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "success",
+|     "data": {
+|         "id": "3"
+|     }
+| }

@@ -1,0 +1,253 @@
+[2019-12-24 11:02:48] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzY4MzI4MTV9.sQQNRJBoSPADTJuoFhLd7fMD0Jg2yjuDpjZ8v38nVQA 
+| User-Agent      | PostmanRuntime/7.21.0 
+| Accept          | */*             
+| Cache-Control   | no-cache        
+| Postman-Token   | f9bab0e8-e8ef-4823-be7b-dbe17967facc 
+| Host            | 127.0.0.1:8084  
+| Accept-Encoding | gzip, deflate   
+| Content-Length  | 65              
+| Connection      | keep-alive      
++----Arguments----+
+| 'suite_name'    | '123222213'     
+| 'cases'         | [33]            
+| 'desc'          | '123123'        
+
+[2019-12-24 11:02:48] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "success",
+|     "data": [
+|         {
+|             "id": 3,
+|             "add_time": "2019-12-24T10:59:46",
+|             "suite_name": "123222213",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-24T11:02:48.702460",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "123123",
+|             "case": [
+|                 {
+|                     "id": 2,
+|                     "add_time": "2019-12-24T10:59:46",
+|                     "suite": {
+|                         "id": 3,
+|                         "add_time": "2019-12-24T11:02:48.706449",
+|                         "suite_name": "123222213",
+|                         "creator": null,
+|                         "desc": null
+|                     },
+|                     "cases": {
+|                         "id": 33,
+|                         "add_time": "2019-12-24T11:02:48.706449",
+|                         "test_name": null,
+|                         "assertion": "[{'name': '313', 'comparetor': 'LEQ', 'value': '3131'}]",
+|                         "creator": null,
+|                         "desc": null
+|                     }
+|                 }
+|             ]
+|         }
+|     ]
+| }
+[2019-12-24 11:02:59] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzY4MzI4MTV9.sQQNRJBoSPADTJuoFhLd7fMD0Jg2yjuDpjZ8v38nVQA 
+| User-Agent      | PostmanRuntime/7.21.0 
+| Accept          | */*             
+| Cache-Control   | no-cache        
+| Postman-Token   | ce327d69-8b9c-46d2-b757-d7dde328f18f 
+| Host            | 127.0.0.1:8084  
+| Accept-Encoding | gzip, deflate   
+| Content-Length  | 65              
+| Connection      | keep-alive      
++----Arguments----+
+| 'suite_name'    | '123222213'     
+| 'cases'         | [33]            
+| 'desc'          | '123123'        
+
+[2019-12-24 11:02:59] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 10007,
+|     "msg": "数据已存在",
+|     "data": null
+| }
+[2019-12-24 11:03:04] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzY4MzI4MTV9.sQQNRJBoSPADTJuoFhLd7fMD0Jg2yjuDpjZ8v38nVQA 
+| User-Agent      | PostmanRuntime/7.21.0 
+| Accept          | */*             
+| Cache-Control   | no-cache        
+| Postman-Token   | 088671ee-ed3a-4766-8a98-81cc06787da1 
+| Host            | 127.0.0.1:8084  
+| Accept-Encoding | gzip, deflate   
+| Content-Length  | 67              
+| Connection      | keep-alive      
++----Arguments----+
+| 'suite_name'    | '12322222213'   
+| 'cases'         | [33]            
+| 'desc'          | '123123'        
+
+[2019-12-24 11:03:04] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "success",
+|     "data": {
+|         "suiteId": 4
+|     }
+| }
+[2019-12-24 11:03:08] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzY4MzI4MTV9.sQQNRJBoSPADTJuoFhLd7fMD0Jg2yjuDpjZ8v38nVQA 
+| User-Agent      | PostmanRuntime/7.21.0 
+| Accept          | */*             
+| Cache-Control   | no-cache        
+| Postman-Token   | 7ff8e330-8960-4f72-9986-2a4b47b1a1cc 
+| Host            | 127.0.0.1:8084  
+| Accept-Encoding | gzip, deflate   
+| Content-Length  | 67              
+| Connection      | keep-alive      
++----Arguments----+
+| 'suite_name'    | '12322222213'   
+| 'cases'         | [33]            
+| 'desc'          | '123123'        
+
+[2019-12-24 11:03:08] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 10007,
+|     "msg": "数据已存在",
+|     "data": null
+| }
+[2019-12-24 11:03:15] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzY4MzI4MTV9.sQQNRJBoSPADTJuoFhLd7fMD0Jg2yjuDpjZ8v38nVQA 
+| User-Agent      | PostmanRuntime/7.21.0 
+| Accept          | */*             
+| Cache-Control   | no-cache        
+| Postman-Token   | 702c2914-e5eb-4f3a-8cca-6a946c73fcfb 
+| Host            | 127.0.0.1:8084  
+| Accept-Encoding | gzip, deflate   
+| Content-Length  | 67              
+| Connection      | keep-alive      
++----Arguments----+
+| 'suite_name'    | '12322222213'   
+| 'cases'         | [33]            
+| 'desc'          | '123123'        
+
+[2019-12-24 11:03:15] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "success",
+|     "data": [
+|         {
+|             "id": 4,
+|             "add_time": "2019-12-24T11:03:04",
+|             "suite_name": "12322222213",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-24T11:03:15.795382",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "123123",
+|             "case": [
+|                 {
+|                     "id": 3,
+|                     "add_time": "2019-12-24T11:03:04",
+|                     "suite": {
+|                         "id": 4,
+|                         "add_time": "2019-12-24T11:03:15.798334",
+|                         "suite_name": "12322222213",
+|                         "creator": null,
+|                         "desc": null
+|                     },
+|                     "cases": {
+|                         "id": 33,
+|                         "add_time": "2019-12-24T11:03:15.798334",
+|                         "test_name": null,
+|                         "assertion": "[{'name': '313', 'comparetor': 'LEQ', 'value': '3131'}]",
+|                         "creator": null,
+|                         "desc": null
+|                     }
+|                 }
+|             ]
+|         },
+|         {
+|             "id": 3,
+|             "add_time": "2019-12-24T10:59:46",
+|             "suite_name": "123222213",
+|             "creator": {
+|                 "id": 1,
+|                 "add_time": "2019-12-24T11:03:15.798334",
+|                 "account": null,
+|                 "password": null,
+|                 "nick_name": null,
+|                 "head_url": null,
+|                 "address": null,
+|                 "desc": null,
+|                 "gender": null
+|             },
+|             "desc": "123123",
+|             "case": [
+|                 {
+|                     "id": 2,
+|                     "add_time": "2019-12-24T10:59:46",
+|                     "suite": {
+|                         "id": 3,
+|                         "add_time": "2019-12-24T11:03:15.804328",
+|                         "suite_name": "123222213",
+|                         "creator": null,
+|                         "desc": null
+|                     },
+|                     "cases": {
+|                         "id": 33,
+|                         "add_time": "2019-12-24T11:03:15.804328",
+|                         "test_name": null,
+|                         "assertion": "[{'name': '313', 'comparetor': 'LEQ', 'value': '3131'}]",
+|                         "creator": null,
+|                         "desc": null
+|                     }
+|                 }
+|             ]
+|         }
+|     ]
+| }

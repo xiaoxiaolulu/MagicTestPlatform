@@ -23,14 +23,17 @@ from apps.interface_test.forms import (
     InterfacesDebugForm,
     InterfacesForm,
     TestCaseForm,
-    PublicParamsForm
+    PublicParamsForm,
+    TestSuiteForm
 )
 from apps.interface_test.models import (
     Interfaces,
     TestCases,
     InterfacesTestCase,
     CheckDbContent,
-    PublicParams
+    PublicParams,
+    TestSuite,
+    TestCaseSuite
 )
 from apps.project.models import Project
 from common.validator import JsonResponse
@@ -47,6 +50,9 @@ class PublicParamsHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def get(self, *args, **kwargs):
+        """
+        获取公共参数列表
+        """
 
         ret_data = []
         public_params_query = PublicParams.extend()
@@ -68,11 +74,13 @@ class PublicParamsHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def post(self, *args, **kwargs):
+        """
+        新增公共参数
+        """
 
         param = self.request.body.decode('utf-8')
         param = json.loads(param)
         form = PublicParamsForm.from_json(param)
-        print(param)
 
         if form.validate():
 
@@ -107,6 +115,10 @@ class PublicParamsChangeHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def delete(self, param_id, *args, **kwargs):
+        """
+        删除公共参数
+        :param param_id: 参数id
+        """
         try:
             public_params = await self.application.objects.get(PublicParams, id=int(param_id))
             await self.application.objects.delete(public_params)
@@ -119,6 +131,10 @@ class PublicParamsChangeHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def patch(self, param_id, *args, **kwargs):
+        """
+        修改公共参数
+        :param param_id: 参数id
+        """
 
         param = self.request.body.decode('utf-8')
         param = json.loads(param)
@@ -521,6 +537,10 @@ class TestCaseChangeHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def patch(self, case_id, *args, **kwargs):
+        """
+        用例修改
+        :param case_id: 用例id
+        """
 
         param = self.request.body.decode('utf-8')
         param = json.loads(param)
@@ -565,6 +585,192 @@ class TestCaseChangeHandler(BaseHandler, ABC):
                 )
 
             except TestCases.DoesNotExist:
+                self.set_status(400)
+                return self.json(JsonResponse(code=10009))
+
+        else:
+            self.set_status(400)
+            return self.json(JsonResponse(code=10004, msg=form.errors))
+
+
+@route(r'/suites/')
+class TestSuiteHandler(BaseHandler, ABC):
+
+    @authenticated_async
+    async def get(self, *args, **kwargs):
+        """
+        获取测试套件列表
+        """
+
+        ret_data = []
+        suites_query = TestSuite.extend()
+
+        name = self.get_argument('name', None)
+
+        if name is not None:
+            suites_query = suites_query.filter(
+                TestSuite.suite_name == name
+            )
+
+        suites_query = suites_query.order_by(-TestSuite.add_time)
+        suites_query = await self.application.objects.execute(suites_query)
+
+        for suite in suites_query:
+            suite_dict = model_to_dict(suite)
+
+            # 测试套件关联的测试用例
+            suite_case_query = TestCaseSuite.extend()
+            suite_case_query = suite_case_query.filter(
+                TestCaseSuite.suite == int(suite_dict.get('id'))
+            )
+
+            suite_case_query = await self.application.objects.execute(suite_case_query)
+            suite_dict.update(
+                {
+                    'case': [model_to_dict(suite_case)for suite_case in suite_case_query]
+                }
+            )
+
+            ret_data.append(suite_dict)
+
+        return self.json(JsonResponse(code=1, data=ret_data))
+
+    @authenticated_async
+    async def post(self, *args, **kwargs):
+        """
+        新增测试套件
+        """
+
+        param = self.request.body.decode('utf-8')
+        param = json.loads(param)
+        form = TestSuiteForm.from_json(param)
+
+        if form.validate():
+
+            try:
+                await self.application.objects.get(
+                    TestSuite, suite_name=form.suite_name.data
+                )
+                return self.json(
+                    JsonResponse(code=10007))
+
+            except TestSuite.DoesNotExist:
+                suite = await self.application.objects.create(
+                    TestSuite,
+                    suite_name=form.suite_name.data,
+                    creator=self.current_user,
+                    desc=form.desc.data
+                )
+
+                # 套件与用例关联
+                if len(form.cases.data) > 0:
+                    for case_id in form.cases.data:
+                        await self.application.objects.create(
+                            TestCaseSuite,
+                            suite=suite.id,
+                            cases=case_id
+                        )
+
+                return self.json(
+                    JsonResponse(
+                        code=1, data={'suiteId': suite.id}
+                    ))
+
+        else:
+            self.set_status(400)
+            return self.json(JsonResponse(code=10004, msg=form.errors))
+
+
+@route(r'/suites/([0-9]+)/')
+class TestSuiteChangeHandler(BaseHandler, ABC):
+
+    @authenticated_async
+    async def delete(self, suite_id, *args, **kwargs):
+        """
+        删除测试套件
+        :param suite_id: 测试套件id
+        """
+
+        try:
+
+            # 查询删除用例的接口配置并删除
+            suites_query = TestCaseSuite.extend()
+
+            if suite_id is not None:
+                suites_query = suites_query.filter(
+                    TestCaseSuite.suite == int(suite_id)
+                )
+
+            suite_cases = await self.application.objects.execute(suites_query)
+
+            for suite_case in suite_cases:
+                suite_case_index = model_to_dict(suite_case).get('id')
+
+                cases = await self.application.objects.get(
+                    TestCaseSuite,
+                    id=int(suite_case_index)
+                )
+                await self.application.objects.delete(cases)
+
+            suite = await self.application.objects.get(
+                TestSuite, id=int(suite_id)
+            )
+            await self.application.objects.delete(suite)
+
+            return self.json(
+                JsonResponse(code=1, data={"id": suite_id})
+            )
+        except TestCaseSuite.DoesNotExist:
+            self.set_status(400)
+            return self.json(JsonResponse(code=10009))
+
+    @authenticated_async
+    async def patch(self, suite_id, *args, **kwargs):
+        """
+        修改测试套件
+        :param suite_id: 套件id 
+        """
+
+        param = self.request.body.decode('utf-8')
+        param = json.loads(param)
+        form = TestSuiteForm.from_json(param)
+
+        if form.validate():
+
+            try:
+                existed_suite = await self.application.objects.get(TestSuite, id=int(suite_id))
+                existed_suite.suite_name = form.suite_name.data
+                existed_suite.desc = form.desc.data
+
+                await self.application.objects.update(existed_suite)
+
+                # 修改套件关联的测试用例
+                suites_query = TestCaseSuite.extend()
+
+                if suite_id is not None:
+                    suites_query = suites_query.filter(
+                        TestCaseSuite.suite == int(suite_id)
+                    )
+
+                case_suites = await self.application.objects.execute(suites_query)
+                case_suite_index = [model_to_dict(case_suite).get('id') for case_suite in case_suites]
+
+                if len(form.cases.data) > 0:
+
+                    for index, case_id in enumerate(form.cases.data):
+
+                        existed_cases = await self.application.objects.get(
+                            TestCaseSuite,
+                            id=int(case_suite_index[index])
+                        )
+                        existed_cases.cases = case_id
+                        await self.application.objects.update(existed_cases)
+
+                return self.json(
+                    JsonResponse(code=1, data={"id": suite_id})
+                )
+
+            except TestSuite.DoesNotExist:
                 self.set_status(400)
                 return self.json(JsonResponse(code=10009))
 

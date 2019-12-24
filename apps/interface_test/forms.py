@@ -42,6 +42,12 @@ class TestCaseForm(Form):
     desc = StringField("用例描述", validators=[DataRequired("请输入用例描述")])
 
 
+class TestSuiteForm(Form):
+    suite_name = StringField("用例名称", validators=[DataRequired("请输入用例名称")])
+    cases = FieldList(IntegerField("用例配置", validators=[DataRequired("请选择用例")]))
+    desc = StringField("套件描述", validators=[DataRequired("请输入套件描述")])
+
+
 class PublicParamsForm(Form):
 
     name = StringField("参数名称", validators=[DataRequired("请输入参数名称")])

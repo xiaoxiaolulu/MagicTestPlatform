@@ -1,0 +1,29 @@
+[2019-12-24 11:43:48] [INFO] [MainThread] [handlers.py:63] Request Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+| Authorization   | eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmlja19uYW1lIjpudWxsLCJleHAiOjE1NzY4MzI4MTV9.sQQNRJBoSPADTJuoFhLd7fMD0Jg2yjuDpjZ8v38nVQA 
+| User-Agent      | PostmanRuntime/7.21.0 
+| Accept          | */*             
+| Cache-Control   | no-cache        
+| Postman-Token   | 3b3a2c64-31b7-44cf-8fff-e82e3ee39fe2 
+| Host            | 127.0.0.1:8084  
+| Accept-Encoding | gzip, deflate   
+| Content-Length  | 70              
+| Connection      | keep-alive      
++----Arguments----+
+| 'suite_name'    | '12322222213'   
+| 'cases'         | [34]            
+| 'desc'          | '‘∫œ÷‘⁄'           
+
+[2019-12-24 11:43:49] [INFO] [MainThread] [handlers.py:44] Response Infomations:
++-----Headers-----+
+| Content-Type    | application/json 
+
+Body:
+| {
+|     "code": 1,
+|     "msg": "success",
+|     "data": {
+|         "id": "3"
+|     }
+| }

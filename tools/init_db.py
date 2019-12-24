@@ -8,7 +8,9 @@ from apps.interface_test.models import (
     TestCases,
     InterfacesTestCase,
     CheckDbContent,
-    PublicParams
+    PublicParams,
+    TestSuite,
+    TestCaseSuite
 )
 from apps.project.models import (
     Project,
@@ -46,7 +48,9 @@ def init():
             TestCases,
             InterfacesTestCase,
             CheckDbContent,
-            PublicParams
+            PublicParams,
+            TestSuite,
+            TestCaseSuite
         ]
     )
 
