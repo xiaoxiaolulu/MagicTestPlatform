@@ -1,11 +1,21 @@
-from peewee import *
-from MagicTestPlatform.models import BaseModel
-from apps.users.models import User
+"""
+    测试工具模块表单验证器
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    DESCRIPTION
+
+    :copyright: (c) 2019 by Null.
+"""
+from wtforms import (
+    StringField,
+    IntegerField,
+    FieldList
+)
+from wtforms.validators import DataRequired
+from wtforms_tornado import Form
 
 
-class FunctionGenerator(BaseModel):
+class ImageIdentifyTextForm(Form):
 
-    name = CharField(max_length=50, null=True, verbose_name="名称")
-    creator = ForeignKeyField(User, verbose_name="创建者")
-    function = CharField(max_length=200, null=True, verbose_name="函数方法")
-    desc = TextField(verbose_name="描述")
+    image_name = StringField("图片名称", validators=[DataRequired("请输入图片名称")])
+    desc = StringField("图片描述", validators=[DataRequired("请输入图片描述")])

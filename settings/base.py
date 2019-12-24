@@ -9,7 +9,7 @@ import peewee_async
 #   全局路径     #
 #################
 BASE_DIR = (
-        environ.Path(__file__) - 2
+    environ.Path(__file__) - 2
 )
 
 env = environ.Env()
@@ -64,6 +64,20 @@ REDIS = {
 #  调式环境配置   #
 #################
 CODE_DEBUG = env.db("SERVER_URL", default="server://root:bubai.4393,@172.81.242.70:22")
+
+
+#################
+#  百度AI Toekn  #
+#################
+BAIDUCE_AUTH = r'https://aip.baidubce.com/oauth/2.0/token?' \
+               r'grant_type=client_credentials&client_id=' \
+               r'fDowQhVGrfyof0oFlNAowVTY&client_secret=YegBNDm1gHoXwyEBwxOsNr8WoFMzqmVS'
+
+
+#################
+# 百度图像识别    #
+#################
+BAIDUCE_API = r"https://aip.baidubce.com/rest/2.0/ocr/v1/general"
 
 
 #################

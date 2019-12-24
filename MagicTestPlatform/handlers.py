@@ -87,50 +87,50 @@ class BaseHandler(RequestHandler, ABC):
 
     PREPARES = []
 
-    def _exception_default_handler(self, e):
-        """重写tornado.web.RequestHandler._handle_request_exception
-        """
-        if isinstance(e, HTTPError):
-            if e.log_message:
-                format_msg = "%d %s: " + e.log_message
-                args = [e.status_code, self._request_summary()] + list(e.args)
-                logger.warning(format_msg, *args)
-            if e.status_code not in httplib.responses:
-                logger.error("Bad HTTP status code: %d", e.status_code)
-                self.send_error(500, exc_info=sys.exc_info())
-            else:
-                self.send_error(e.status_code, exc_info=sys.exc_info())
-        else:
-            logger.error("Uncaught exception %s\n%r", self._request_summary(),
-                         self.request, exc_info=True)
-            self.send_error(500, exc_info=sys.exc_info())
-
-    def _handle_request_exception(self, e):
-        """
-        处理HTTPError异常，保留其他异常由用户定义的处理函数处理 映射到类属性“ EXCEPTION_HANDLERS”
-
-        Common HTTP status codes:
-            200 OK
-            301 Moved Permanently
-            302 Found
-            400 Bad Request
-            401 Unauthorized
-            403 Forbidden
-            404 Not Found
-            405 Method Not Allowed
-            500 Internal Server Error
-
-        """
-        handle_func = self._exception_default_handler
-        if self.EXCEPTION_HANDLERS:
-            for excs, func_name in self.EXCEPTION_HANDLERS.items():
-                if isinstance(e, excs):
-                    handle_func = getattr(self, func_name)
-                    break
-
-        handle_func(e)
-        if not self._finished:
-            self.finish()
+    # def _exception_default_handler(self, e):
+    #     """重写tornado.web.RequestHandler._handle_request_exception
+    #     """
+    #     if isinstance(e, HTTPError):
+    #         if e.log_message:
+    #             format_msg = "%d %s: " + e.log_message
+    #             args = [e.status_code, self._request_summary()] + list(e.args)
+    #             logger.warning(format_msg, *args)
+    #         if e.status_code not in httplib.responses:
+    #             logger.error("Bad HTTP status code: %d", e.status_code)
+    #             self.send_error(500, exc_info=sys.exc_info())
+    #         else:
+    #             self.send_error(e.status_code, exc_info=sys.exc_info())
+    #     else:
+    #         logger.error("Uncaught exception %s\n%r", self._request_summary(),
+    #                      self.request, exc_info=True)
+    #         self.send_error(500, exc_info=sys.exc_info())
+    #
+    # def _handle_request_exception(self, e):
+    #     """
+    #     处理HTTPError异常，保留其他异常由用户定义的处理函数处理 映射到类属性“ EXCEPTION_HANDLERS”
+    #
+    #     Common HTTP status codes:
+    #         200 OK
+    #         301 Moved Permanently
+    #         302 Found
+    #         400 Bad Request
+    #         401 Unauthorized
+    #         403 Forbidden
+    #         404 Not Found
+    #         405 Method Not Allowed
+    #         500 Internal Server Error
+    #
+    #     """
+    #     handle_func = self._exception_default_handler
+    #     if self.EXCEPTION_HANDLERS:
+    #         for excs, func_name in self.EXCEPTION_HANDLERS.items():
+    #             if isinstance(e, excs):
+    #                 handle_func = getattr(self, func_name)
+    #                 break
+    #
+    #     handle_func(e)
+    #     if not self._finished:
+    #         self.finish()
 
     def set_default_headers(self):
         self.set_header('Access-Control-Allow-Origin', '*')
@@ -149,19 +149,19 @@ class BaseHandler(RequestHandler, ABC):
     def options(self, *args, **kwargs):
         pass
 
-    def prepare(self):
-        """重写prepare中间件, 在`get`/`post`/etc请求之前调用
-        """
-        log_request(self)
-
-        for i in self.PREPARES:
-            getattr(self, 'prepare_' + i)()
-            if self._finished:
-                return
-
-    def flush(self, *args, **kwargs):
-        """
-        在调用RequestHandler.flush之前，获得了_write_buffer
-        """
-        log_response(self)
-        super(BaseHandler, self).flush(*args, **kwargs)
+    # def prepare(self):
+    #     """重写prepare中间件, 在`get`/`post`/etc请求之前调用
+    #     """
+    #     log_request(self)
+    #
+    #     for i in self.PREPARES:
+    #         getattr(self, 'prepare_' + i)()
+    #         if self._finished:
+    #             return
+    #
+    # def flush(self, *args, **kwargs):
+    #     """
+    #     在调用RequestHandler.flush之前，获得了_write_buffer
+    #     """
+    #     log_response(self)
+    #     super(BaseHandler, self).flush(*args, **kwargs)

@@ -1,5 +1,8 @@
+import json
 import functools
 from random import choice
+import base64
+import requests
 import jwt
 import paramiko
 from apps.users.models import User
@@ -45,6 +48,40 @@ def python_running_env(code: str) -> str:
     sftp_exec_command(ssh_client, "rm -rf test.py")
     ssh_client.close()
     return response
+
+
+def image_identifying_text(filepath: str) -> requests.Response:
+    """
+    图片识别文字
+    :param filepath:  图片路径地址
+    """
+
+    token = requests.get(settings.BAIDUCE_AUTH).json().get('access_token')
+    address = settings.BAIDUCE_API + "?access_token=" + token
+    headers = {'content-type': 'application/x-www-form-urlencoded'}
+    stream = {"image": base64.b64encode(open(filepath, 'rb').read())}
+    res_data = requests.post(address, data=stream, headers=headers)
+    return res_data.json()
+
+
+def format_arguments(arguments):
+    """
+    以request.body_arguments 或者 request.arguments传参时
+    将二进制转化utf-8编码
+    :param arguments:
+    :return:
+    """
+
+    data = {
+        k: list(
+            map(
+                lambda val: str(val, encoding="utf-8"),
+                v
+            )
+        )
+        for k, v in arguments.items()
+    }
+    return data
 
 
 def authenticated_async(method):

@@ -19,6 +19,7 @@ from apps.project.models import (
     DBSetting
 )
 from apps.users.models import User
+from apps.test_tools.models import ImageIdentifyText
 from settings.base import database_async
 from common.parse_settings import settings
 
@@ -33,26 +34,27 @@ database = MySQLDatabase(
 
 
 def init():
-    database_async.create_tables([User, ])
-    database_async.create_tables(
-        [
-            Project,
-            FunctionGenerator,
-            TestEnvironment,
-            DBSetting
-        ]
-    )
-    database_async.create_tables(
-        [
-            Interfaces,
-            TestCases,
-            InterfacesTestCase,
-            CheckDbContent,
-            PublicParams,
-            TestSuite,
-            TestCaseSuite
-        ]
-    )
+    # database_async.create_tables([User, ])
+    # database_async.create_tables(
+    #     [
+    #         Project,
+    #         FunctionGenerator,
+    #         TestEnvironment,
+    #         DBSetting
+    #     ]
+    # )
+    # database_async.create_tables(
+    #     [
+    #         Interfaces,
+    #         TestCases,
+    #         InterfacesTestCase,
+    #         CheckDbContent,
+    #         PublicParams,
+    #         TestSuite,
+    #         TestCaseSuite
+    #     ]
+    # )
+    database_async.create_tables([ImageIdentifyText])
 
 
 if __name__ == '__main__':
