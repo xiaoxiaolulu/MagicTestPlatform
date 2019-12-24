@@ -728,7 +728,7 @@ class TestSuiteChangeHandler(BaseHandler, ABC):
     async def patch(self, suite_id, *args, **kwargs):
         """
         修改测试套件
-        :param suite_id: 套件id 
+        :param suite_id: 套件id
         """
 
         param = self.request.body.decode('utf-8')
