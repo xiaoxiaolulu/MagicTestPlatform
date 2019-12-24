@@ -2,7 +2,7 @@ peewee==2.10.2
 WTForms_JSON==0.3.3
 aiofiles==0.4.0
 paramiko==2.6.0
-requests==2.18.4
+requests==2.20.0
 tornado==6.0.3
 django_environ==0.4.5
 redis==3.3.11
