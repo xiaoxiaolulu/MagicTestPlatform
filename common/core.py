@@ -5,6 +5,9 @@ import base64
 import requests
 import jwt
 import paramiko
+from urllib.parse import urlencode
+from tornado import httpclient
+from tornado.httpclient import HTTPRequest
 from apps.users.models import User
 from common.parse_settings import settings
 
@@ -62,6 +65,24 @@ def image_identifying_text(filepath: str) -> requests.Response:
     stream = {"image": base64.b64encode(open(filepath, 'rb').read())}
     res_data = requests.post(address, data=stream, headers=headers)
     return res_data.json()
+
+
+async def async_image_identifying_text(filepath: str) -> requests.Response:
+    """
+    异步方法-图片识别文字
+    :param filepath:  图片路径地址
+    """
+    http_client = httpclient.AsyncHTTPClient()
+    token = requests.get(settings.BAIDUCE_AUTH).json().get('access_token')
+    address = settings.BAIDUCE_API + "?access_token=" + token
+    stream = {"image": base64.b64encode(open(filepath, 'rb').read())}
+    post_request = HTTPRequest(url=address, method="POST", body=urlencode(stream))
+    try:
+        res = await http_client.fetch(post_request)
+        res_data = json.loads(res.body.decode("utf8"))
+    except Exception as msg:
+        res_data = {"code": 0, "msg": f"{msg}"}
+    return res_data
 
 
 def format_arguments(arguments):

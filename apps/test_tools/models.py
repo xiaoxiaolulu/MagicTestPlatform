@@ -16,6 +16,7 @@ class ImageIdentifyText(BaseModel):
 
     image_name = CharField(max_length=50, null=True, verbose_name='图片名称')
     address = CharField(max_length=150, null=True, verbose_name="图片地址")
+    content = TextField(verbose_name='图片文字')
     creator = ForeignKeyField(User, verbose_name="创建者")
     desc = TextField(verbose_name="图片描述")
 
