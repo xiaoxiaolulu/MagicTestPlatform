@@ -29,7 +29,7 @@ from common.validator import JsonResponse
 
 
 @route(r'/images_search/')
-class ProjectHandler(BaseHandler, ABC):
+class ImagesSearchHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def get(self, *args, **kwargs):
@@ -110,6 +110,71 @@ class ProjectHandler(BaseHandler, ABC):
                 return self.json(
                     JsonResponse(code=1, data={"Id": image.id})
                 )
+
+        else:
+            self.set_status(400)
+            return self.json(JsonResponse(code=10004, msg=form.errors))
+
+
+@route(r'/images_search/([0-9]+)/')
+class ImagesSearchChangeHandler(BaseHandler, ABC):
+
+    @authenticated_async
+    async def delete(self, image_id, *args, **kwargs):
+        try:
+            public_params = await self.application.objects.get(ImageIdentifyText, id=int(image_id))
+            await self.application.objects.delete(public_params)
+            return self.json(
+                JsonResponse(code=1, data={"id": image_id})
+            )
+        except ImageIdentifyText.DoesNotExist:
+            self.set_status(400)
+            return self.json(JsonResponse(code=10009))
+
+    @authenticated_async
+    async def patch(self, image_id, *args, **kwargs):
+
+        body = self.request.body_arguments
+        body = format_arguments(body)
+        form = ImageIdentifyTextForm(body)
+
+        if form.validate():
+
+            files_meta = self.request.files.get("image")
+
+            try:
+                new_filename, content = None, None
+                if files_meta:
+                    # 完成图片保存并将值设置给对应的记录
+                    # 通过aiofiles写文件
+                    for meta in files_meta:
+                        filename = meta["filename"]
+                        new_filename = "{uuid}_{filename}".format(
+                            uuid=shortuuid.uuid(), filename=filename
+                        )
+                        filepath = path.join(
+                            settings.TORNADO_CONF.MEDIA_ROOT, new_filename
+                        )
+                        async with aiofiles.open(filepath, 'wb') as f:
+                            await f.write(meta['body'])
+
+                        # 识别图片文字, 识别速度1~3秒左右
+                        words_result = dict(await async_image_identifying_text(filepath)).get('words_result')
+                        content = ','.join([word_result.get('words') for word_result in words_result])
+
+                existed_image_search = await self.application.objects.get(ImageIdentifyText, id=int(image_id))
+                existed_image_search.image_name = form.image_name.data
+                existed_image_search.address = new_filename
+                existed_image_search.content = content
+                existed_image_search.desc = form.desc.data
+                await self.application.objects.update(existed_image_search)
+                return self.json(
+                    JsonResponse(code=1, data={"id": image_id})
+                )
+
+            except ImageIdentifyText.DoesNotExist:
+                self.set_status(404)
+                return self.json(JsonResponse(code=10009))
 
         else:
             self.set_status(400)
