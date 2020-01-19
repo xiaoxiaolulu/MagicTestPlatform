@@ -758,15 +758,23 @@ class TestSuiteChangeHandler(BaseHandler, ABC):
                 case_suite_index = [model_to_dict(case_suite).get('id') for case_suite in case_suites]
 
                 if len(form.cases.data) > 0:
+                    # 对于修改时未删减原有配置并新增一条用例配置时, 则对testCaseSuite中间表进行新增操作, 防止程序抛出IndexError.
 
                     for index, case_id in enumerate(form.cases.data):
 
-                        existed_cases = await self.application.objects.get(
-                            TestCaseSuite,
-                            id=int(case_suite_index[index])
-                        )
-                        existed_cases.cases = case_id
-                        await self.application.objects.update(existed_cases)
+                        try:
+                            existed_cases = await self.application.objects.get(
+                                TestCaseSuite,
+                                id=int(case_suite_index[index])
+                            )
+                            existed_cases.cases = case_id
+                            await self.application.objects.update(existed_cases)
+                        except IndexError:
+                            await self.application.objects.create(
+                                TestCaseSuite,
+                                suite=suite_id,
+                                cases=case_id
+                            )
 
                 return self.json(
                     JsonResponse(code=1, data={"id": suite_id})

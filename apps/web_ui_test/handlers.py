@@ -28,7 +28,7 @@ from common.core import (
 
 
 @route(r'/get_keywords/')
-class PublicParamsHandler(BaseHandler, ABC):
+class RobotFrameWorkKeyWordsHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def get(self, *args, **kwargs):
@@ -52,6 +52,12 @@ class PageElementHandler(BaseHandler, ABC):
         if name is not None:
             page_element_query = page_element_query.filter(
                 page_element_query.element_name == name
+            )
+
+        page = self.get_argument('page', None)
+        if page is not None:
+            page_element_query = page_element_query.filter(
+                page_element_query.owner_page == page
             )
 
         page_element_query = page_element_query.order_by(-PageElement.add_time)
@@ -100,7 +106,7 @@ class PageElementHandler(BaseHandler, ABC):
 
 
 @route(r'/page_element/([0-9]+)/')
-class PublicParamsChangeHandler(BaseHandler, ABC):
+class PageElementChangeHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def delete(self, element_id, *args, **kwargs):
