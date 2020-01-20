@@ -645,8 +645,21 @@ class TestCaseRunHandler(BaseHandler, ABC):
                     project_query = Project.extend().filter(Project.id == _interface.get('project').get('id'))
                     projects = await self.application.objects.execute(project_query)
                     host = GetJsonParams.get_value(model_to_dict(projects[_index]), 'host_address')
-                    temp = ('url', 'params', 'headers')
-                    request_body = GetJsonParams.for_keys_to_dict(host, *temp, my_dict=_interface)
+
+                    if _interface['method'] in ['get', 'GET']:
+                        request_body = {
+                            'url': getattr(parse, 'urljoin')(host, _interface['url']),
+                            'method': _interface['method'],
+                            'params': _interface['params'],
+                            'headers': ast.literal_eval(_interface['headers'])
+                        }
+                    else:
+                        request_body = {
+                            'url': getattr(parse, 'urljoin')(host, _interface['url']),
+                            'method': _interface['method'],
+                            'json': ast.literal_eval(_interface['params']),
+                            'headers': ast.literal_eval(_interface['headers'])
+                        }
                     body.append({_interface.get('interface_name'): request_body})
 
             # 用例关联落库校验数据
@@ -670,8 +683,13 @@ class TestCaseRunHandler(BaseHandler, ABC):
             cases_content.append({'name': name, "body": body, 'assert': assertion, 'dbCheck': db_checks})
 
         # TODO: 上下文管理器类, 生成器函数,自动创建Unittest用例, 批量运行测试用例
+        response = None
+        for request_body in cases_content[0].get('body'):
+            for name, content in request_body.items():
+                http_client = BaseKeyWords(content)
+                response = http_client.make_test_templates()
 
-        return self.json(JsonResponse(code=1, data=cases_content))
+        return self.json(JsonResponse(code=1, data={cases_content[0].get('name'): response}))
 
 
 @route(r'/suites/')

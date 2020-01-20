@@ -1,4 +1,3 @@
-from urllib import parse
 
 
 class GetJsonParams(object):
@@ -47,7 +46,7 @@ class GetJsonParams(object):
         return dict(cls.get_value(my_dict=my_dict, key=list_key)[list_index])[same_key]
 
     @classmethod
-    def for_keys_to_dict(cls,  host: str, *args: tuple, my_dict: dict) -> dict:
+    def for_keys_to_dict(cls, *args: tuple, my_dict: dict, flag: bool = True, host: str = None) -> dict:
         r"""指定多个key，并获取一个字典的多个对应的key，组成一个新的字典
 
         :Arg:
@@ -61,6 +60,5 @@ class GetJsonParams(object):
         result = {}
         if len(args) > 0:
             for key in args:
-                result.update({key: getattr(parse, 'urljoin')(host, cls.get_value(my_dict, str(key)))}) \
-                    if key.__contains__('url') else result.update({key: cls.get_value(my_dict, str(key))})
+                result.update({key: cls.get_value(my_dict, str(key))})
         return result

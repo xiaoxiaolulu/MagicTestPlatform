@@ -48,8 +48,9 @@ class BaseKeyWords(GetJsonParams):
         start_time = time.time()
 
         if method in ['get', 'GET']:
-            temp = ('url', 'params', 'headers', 'timeout')
-            request_body = GetJsonParams.for_keys_to_dict(*temp, my_dict=self.request_body)
+            temp = ('url', 'params', 'headers')
+            request_body = GetJsonParams.for_keys_to_dict(host=None, *temp, my_dict=self.request_body, flag=False)
+
             if request_body['params']:
                 if '=' in request_body.get('params') or '&' in request_body.get('params'):
                     request_body['params'] = dict(parse.parse_qsl(request_body['params']))
