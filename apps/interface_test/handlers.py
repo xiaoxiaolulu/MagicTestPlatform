@@ -251,7 +251,7 @@ class InterfacesHandler(BaseHandler, ABC):
                 Project.name == project
             )
 
-        interfaces_query = interfaces_query.order_by(-Project.add_time)
+        interfaces_query = interfaces_query.order_by(-Interfaces.add_time)
         interfaces = await self.application.objects.execute(interfaces_query)
 
         for interface in interfaces:
@@ -302,7 +302,7 @@ class InterfacesHandler(BaseHandler, ABC):
 
 
 @route(r'/interfaces/([0-9]+)/')
-class ProjectChangeHandler(BaseHandler, ABC):
+class InterfacesChangeHandler(BaseHandler, ABC):
 
     @authenticated_async
     async def delete(self, interface_id, *args, **kwargs):
@@ -595,6 +595,85 @@ class TestCaseChangeHandler(BaseHandler, ABC):
             return self.json(JsonResponse(code=10004, msg=form.errors))
 
 
+@route(r'/cases_run/([0-9]+)/')
+class TestCaseRunHandler(BaseHandler, ABC):
+
+    @authenticated_async
+    async def post(self, case_id, *args, **kwargs):
+        """
+
+        :param case_id:
+        :param args:
+        :param kwargs:
+        :return:
+        """
+
+        cases_content = []
+        cases_query = TestCases.extend()
+
+        cases_query = cases_query.where(TestCases.id == case_id).order_by(-TestCases.add_time)
+        cases_query = await self.application.objects.execute(cases_query)
+
+        for case in cases_query:
+            case_dict = model_to_dict(case)
+
+            # 用例关联的接口配置
+            interfaces_case_query = InterfacesTestCase.extend()
+            interfaces_case_query = interfaces_case_query.filter(
+                InterfacesTestCase.cases == int(case_dict.get('id'))
+            )
+
+            interfaces_case_query = await self.application.objects.execute(interfaces_case_query)
+
+            # 获取用例名称
+            name = GetJsonParams.get_value(case_dict, 'test_name')
+
+            # 获取断言配置
+            assertion = GetJsonParams.get_value(case_dict, 'assertion')
+
+            # 获取Api配置信息
+            body = []
+            interfaces = [model_to_dict(interfaces_case) for interfaces_case in interfaces_case_query]
+            for interface in interfaces:
+
+                interface_query = Interfaces.extend().where(Interfaces.id == interface.get('interfaces').get('id'))
+                interface_query = await self.application.objects.execute(interface_query)
+                for _index, _interface in enumerate(interface_query):
+                    _interface = model_to_dict(_interface)
+
+                    # 获取host配置信息
+                    project_query = Project.extend().filter(Project.id == _interface.get('project').get('id'))
+                    projects = await self.application.objects.execute(project_query)
+                    host = GetJsonParams.get_value(model_to_dict(projects[_index]), 'host_address')
+                    temp = ('url', 'params', 'headers')
+                    request_body = GetJsonParams.for_keys_to_dict(host, *temp, my_dict=_interface)
+                    body.append({_interface.get('interface_name'): request_body})
+
+            # 用例关联落库校验数据
+            db_check_query = CheckDbContent.extend()
+            db_check_query = db_check_query.filter(
+                CheckDbContent.case == int(case_dict.get('id'))
+            )
+
+            db_check_query = await self.application.objects.execute(db_check_query)
+
+            db_checks = []
+
+            for db_check in db_check_query:
+                db_check_dict = model_to_dict(db_check)
+                db = db_check_dict.get('db').get('id')
+                assert_sql = db_check_dict.get('check_db')
+                db_checks.append(
+                    {'db': db, 'assertSql': assert_sql}
+                )
+
+            cases_content.append({'name': name, "body": body, 'assert': assertion, 'dbCheck': db_checks})
+
+        # TODO: 上下文管理器类, 生成器函数,自动创建Unittest用例, 批量运行测试用例
+
+        return self.json(JsonResponse(code=1, data=cases_content))
+
+
 @route(r'/suites/')
 class TestSuiteHandler(BaseHandler, ABC):
 
@@ -787,3 +866,21 @@ class TestSuiteChangeHandler(BaseHandler, ABC):
         else:
             self.set_status(400)
             return self.json(JsonResponse(code=10004, msg=form.errors))
+
+
+class TestSuiteRunHandler(BaseHandler, ABC):
+
+    @authenticated_async
+    async def post(self, suite_id, *args, **kwargs):
+        """
+        API1 -----|--- Case1 ---|------|
+        API2 -----|                    |
+        API3 -----|                    |---- Suites1
+                                       |
+        API4 -----|--- Case2 ---|------|
+        API5 -----|
+        API6 -----|
+        """
+
+        # TODO: 同测试用例运行接口, 开发老大太吵了，心情都没了， Last day等下班
+        pass

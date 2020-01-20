@@ -85,17 +85,18 @@ class InterfacesTestCase(BaseModel):
 
     @classmethod
     def extend(cls):
+
+        interfaces_case = Interfaces.alias()
         return cls.select(
             cls,
-            TestCases.id,
             TestCases.assertion,
-            Interfaces.interface_name,
-            Interfaces.url,
-            Interfaces.method,
-            Interfaces.params,
-            Interfaces.headers) \
+            interfaces_case.interface_name,
+            interfaces_case.url,
+            interfaces_case.method,
+            interfaces_case.params,
+            interfaces_case.headers,) \
             .join(TestCases, join_type=JOIN.LEFT_OUTER, on=cls.cases).switch(cls) \
-            .join(Interfaces, join_type=JOIN.LEFT_OUTER, on=cls.interfaces)
+            .join(interfaces_case, join_type=JOIN.LEFT_OUTER, on=cls.interfaces)
 
 
 class TestSuite(BaseModel):
