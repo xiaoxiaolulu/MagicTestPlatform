@@ -6,7 +6,7 @@ requests==2.18.4
 tornado==6.0.3
 django_environ==0.4.5
 redis==3.3.11
-urllib3==1.22
+urllib3==1.26.5
 simplejson==3.17.0
 WTForms==2.1
 peewee_async==0.5.12
